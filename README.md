@@ -1,6 +1,6 @@
 # aafu Theme
 
-The sada Theme is a one page responsive portfolio created using Bootstrap 4.
+The aafu Theme is a one page responsive portfolio with accordion and a switch to toggle between light/dark mode.
 
 ## Installation
 
