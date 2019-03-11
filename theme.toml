@@ -1,6 +1,6 @@
 name = "aafu"
 license = "MIT"
-licenselink = "https://github.com/yourname/yourtheme/blob/master/LICENSE"
+licenselink = "https://github.com/darshanbaral/aafu/blob/master/LICENSE"
 description = "Single page portfolio theme with accordion and switchable dark/light theme"
 homepage = "/"
 tags = ["portfolio", "single page"]
