@@ -1,0 +1,17 @@
+<h2 class="accordion w-100 text-primary">
+  <i class="fas {{ .Site.Params.experiences.icon }}"></i>
+  {{ .Site.Params.experiences.title }}
+</h2>
+
+<div class="panel overflow-hidden h-100 d-block">
+  {{ range.Site.Params.jobs.list }}
+  <dl>
+    <dt class="text-dark mb-0">
+      {{ if .link }}<a class="text-primary" href="{{ .link }}">{{ .company }}</a
+      >{{ else }} {{ .company }} {{ end }}
+    </dt>
+    <dd class="text-dark ml-3">{{ .dates | markdownify }} &middot; {{ .position }}</dd>
+    <dd class="text-dark mb-0 ml-3">{{ .details | markdownify }}</dd>
+  </dl>
+  {{ end }}
+</div>

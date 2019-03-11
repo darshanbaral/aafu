@@ -1,0 +1,25 @@
+<div class="ml-auto mr-auto row row-eq-height mt-4">
+  <div class="col-md-5 text-center rounded border-light p-2  mb-4">
+    <div class="float-left" style="width: 45px; height: 45px;">
+      <h3>
+        <i
+          class="fas fa-toggle-off zoomlink text-dark"
+          id="toggle"
+          onclick="toggleTheme()"
+        ></i>
+      </h3>
+    </div>
+    {{ partial "profile_photo.html" . }}
+    {{ partial "social.html" . }}
+    {{ partial "footer.html" . }}
+  </div>
+  <div class="col-md-7 border rounded p-2 mb-4">
+    {{ partial "experience.html" . }}
+    {{ partial "education.html" . }}
+    {{ partial "publication.html" . }}
+    {{ partial "project.html" . }}
+    {{ partial "skill.html" . }}
+    {{ partial "hobby.html" . }}
+    <script src="{{ .Site.BaseURL }}/js/accordion.js"></script>
+  </div>
+</div>

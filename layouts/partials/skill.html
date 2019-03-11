@@ -1,0 +1,15 @@
+<h2 class="accordion w-100 text-primary">
+  <i class="fas {{ .Site.Params.skills.icon }}"></i>
+  {{ .Site.Params.skills.title }}
+</h2>
+<div class="panel overflow-hidden">
+  {{ range.Site.Params.skills.list }}
+  <code>{{ .skill }}</code>
+  <div class="rounded w-100 bg-secondary border border-secondary mt-1 mb-3">
+    <div
+      class="card bg-success"
+      style="width: {{ .skillrating }}%; height:15px;"
+    ></div>
+  </div>
+  {{ end }}
+</div>

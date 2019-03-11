@@ -1,0 +1,20 @@
+<h2 class="accordion w-100 text-primary active">
+  <i class="fas fa-graduation-cap"></i>
+  {{ .Site.Params.education.title }}
+</h2>
+<div class="panel overflow-hidden">
+  {{ range.Site.Params.education.list }}
+  <dl>
+    <dt class="text-dark">{{ .degree }}</dt>
+    <dd class="text-dark mb-0 ml-3">{{ .dates }} &middot; {{ .college }}</dd>
+    {{ if .thesis_link }}
+    <dd class="text-dark mb-0 ml-4">
+      Thesis:
+      <a class="text-primary" href="{{ .thesis_link }}"
+        ><i>{{ .thesis_title }}</i></a
+      >
+    </dd>
+    {{ end }}
+  </dl>
+  {{ end }}
+</div>

@@ -1,0 +1,58 @@
+<head>
+  <title>{{ .Site.Params.title }}</title>
+
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+  <meta name="description" content="{{ .Site.Params.description }}" />
+  <meta name="author" content="{{ .Site.Params.author }}" />
+
+  <link
+    rel="stylesheet"
+    href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+    crossorigin="anonymous"
+  />
+  <link
+    rel="stylesheet"
+    href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
+    integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
+    crossorigin="anonymous"
+  />
+  <link
+    rel="stylesheet"
+    href="https://cdn.rawgit.com/jpswalsh/academicons/master/css/academicons.min.css"
+  />
+  <link
+    href="https://fonts.googleapis.com/css?family=Cardo|Catamaran"
+    rel="stylesheet"
+  />
+
+  <script src="{{ .Site.BaseURL }}/js/themes.js"></script>
+  <script src="{{ .Site.BaseURL }}/js/toggleTheme.js"></script>
+
+  <style>
+    html {
+      width: 100vw;
+    }
+    * {
+      font-family: "Catamaran", sans-serif;
+    }
+    h1,
+    h2,
+    h3 {
+      font-family: "Cardo", serif;
+    }
+    .zoomlink:hover {
+      font-size: 1.1em;
+      cursor: pointer;
+    }
+    .accordion {
+      cursor: pointer;
+      transition: 0.5s;
+    }
+    .panel {
+      max-height: 0;
+      transition: 0.3s ease-out;
+    }
+  </style>
+</head>

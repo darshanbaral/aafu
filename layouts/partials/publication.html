@@ -1,0 +1,14 @@
+<h2 class="accordion w-100 text-primary">
+  <i class="fa fa-book" aria-hidden="true"></i>
+  {{ .Site.Params.publication.title }}
+</h2>
+<div class="panel overflow-hidden">
+  {{ range.Site.Params.publication.list }}
+  <p class="text-dark">
+    {{ .date }} &middot; {{ .authors }} &middot;
+    <a class="text-primary" href="{{ .link }}"
+      ><i>"{{ .title }}"</i></a
+    >
+  </p>
+  {{ end }}
+</div>

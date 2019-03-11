@@ -1,0 +1,186 @@
+baseURL = "https://www.example.org/"
+languageCode = "en-us"
+theme = "aafu"
+
+[params]
+    title = "Aafu theme"
+    author = "Darshan Baral"
+    description = "Website title"
+    copyright = "aaa"
+    copyright_link = "#"
+
+    # Profile section
+    [params.profile]
+        name = "First Last, Abbr."
+		tagline = "Title"
+		location = "City Name, ST"
+        photo = "profile.jpg"
+
+    # Section for links to social websites
+    [params.social]
+        title = "Links"
+
+        [[params.social.list]]
+        class = "fab"
+        icon = "fa-linkedin-in"
+        url = "#"
+        title = "LinkedIn"
+		
+        [[params.social.list]]
+        class = "fab"
+        icon = "fa-stack-overflow"
+        url = "#"
+        title = "StackOverflow"
+
+        [[params.social.list]]
+        class = "fab"
+        icon = "fa-github"
+        url = "#"
+        title = "GitHub"
+
+        [[params.social.list]]
+        class = "fab"
+        icon = "fa-twitter"
+        url = "#"
+        title = "Twitter"
+		
+		[[params.social.list]]
+        class = "ai"
+        icon = "ai-google-scholar"
+        url = "#"
+        title = "Google Scholar"
+		
+		[[params.social.list]]
+        class = "ai"
+        icon = "ai-researchgate"
+        url = "#"
+        title = "ResearchGate"		
+
+    # Education section
+    [params.education]
+        title = "Education"
+
+        [[params.education.list]]
+        degree = "Ph.D. in Subject"
+        college = "University of State-City"
+        dates = "2013 - 2018"
+        thesis_title = "Effect of humans on other humans: a study of human behavior."
+        thesis_link = "#"
+
+        [[params.education.list]]
+        degree = "M.S. in Subject"
+        college = "University of State-City"
+        dates = "2013 - 2018"
+        thesis_title = "Effect of humans on other humans: a study of human behavior."
+        thesis_link = "#"
+
+        [[params.education.list]]
+        degree = "B.S. in Subject"
+        college = "University of State-City"
+        dates = "2004 - 2009"
+
+    # Hobbies section
+    [params.hobbies]
+        title = "Hobbies"
+		
+        [[params.hobbies.list]]		
+		hobby = "Cooking"
+		
+        [[params.hobbies.list]]		
+		hobby = "Hiking"
+
+        [[params.hobbies.list]]		
+		hobby = "Baking"
+
+
+    # Publication section
+    [params.publication]
+        title = "Publications"
+
+        [[params.publication.list]]
+        title = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+        authors = "F Last, F Second, P secondary"
+        date = "2018"
+        journal = "Journal of Field 52 (16), 9033-9044"
+        link = "#"
+
+        [[params.publication.list]]
+        title = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+        authors = "F Last, F Second, P secondary"
+        date = "2018"
+        journal = "Journal of Field 52 (16), 9033-9044"
+        link = "#"
+		
+        [[params.publication.list]]
+        title = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+        authors = "F Last, F Second, P secondary"
+        date = "2018"
+        journal = "Journal of Field 52 (16), 9033-9044"
+        link = "#"
+		
+        [[params.publication.list]]
+        title = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+        authors = "F Last, F Second, P secondary"
+        date = "2018"
+        journal = "Journal of Field 52 (16), 9033-9044"
+        link = "#"
+
+    # Experiences section
+    [params.experiences]
+        icon = "fa-briefcase"
+        title = "Experience"
+
+        [[params.jobs.list]]
+        position = "Job Title"
+        dates = "2019 - *Present*"
+        company = "Company Name"
+
+        [[params.jobs.list]]
+        position = "Job Title"
+        dates = "2018 - 2019"
+		link = "#"
+        company = "Company Name"
+
+    # Projects section
+    [params.projects]
+        icon = "fa-project-diagram"
+        title = "Projects"
+
+        [[params.projects.list]]
+        title = "project"
+        url = "#"
+        description = "Description of the project"
+		
+        [[params.projects.list]]
+        title = "project"
+        url = "#"
+        description = "Description of the project"
+
+        [[params.projects.list]]
+        title = "project"
+        url = "#"
+        description = "Description of the project"
+		
+        [[params.projects.list]]
+        title = "project"
+        url = "#"
+        description = "Description of the project"
+		
+        [[params.projects.list]]
+        title = "project"
+        url = "#"
+        description = "Description of the project"
+
+    # Skills section
+    [params.skills]
+        icon = "fa-cogs"
+        title = "Skills"
+
+        [[params.skills.list]]
+        skill = "Skill 1"
+                
+        [[params.skills.list]]
+        skill = "Skill 3"
+		
+        [[params.skills.list]]
+        skill = "Skill 4"

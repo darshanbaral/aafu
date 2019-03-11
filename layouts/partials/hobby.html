@@ -1,0 +1,14 @@
+<h2 class="accordion w-100 text-primary">
+  <i class="fas fa-gamepad"></i>
+  {{ .Site.Params.hobbies.title }}
+</h2>
+
+<div class="panel overflow-hidden h-100 d-block">
+  <dl>
+    <dt>
+      {{ range.Site.Params.hobbies.list }}
+    </dt>
+    <dd class="text-dark">{{ .hobby }}</dd>
+    {{ end }}
+  </dl>
+</div>

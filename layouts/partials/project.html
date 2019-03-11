@@ -1,0 +1,14 @@
+<h2 class="accordion w-100 text-primary">
+  <i class="fas {{ .Site.Params.projects.icon }}"></i>
+  {{ .Site.Params.projects.title }}
+</h2>
+<div class="panel overflow-hidden">
+  <dl>
+    {{ range.Site.Params.projects.list }}
+    <dt>
+      <a class="text-primary" href="{{ .url }}"><code>{{ .title }}</code></a>
+    </dt>
+    <dd class="text-dark mb-0 ml-3">{{ .description | markdownify }}</dd>
+    {{ end }}
+  </dl>
+</div>

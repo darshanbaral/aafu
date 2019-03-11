@@ -1,0 +1,14 @@
+<h1 class="text-dark mb-0">{{ .Site.Params.profile.name }}</h1>
+<h2 class="text-dark mb-0">{{ .Site.Params.profile.tagline }}</h2>
+<h3 class="text-dark mb-0">{{ .Site.Params.profile.location }}</h3>
+<div class="mt-2 d-flex flex-wrap justify-content-center">
+  {{ range.Site.Params.social.list }}
+  <div style="height:45px; width:45px;">
+    <h2>
+      <a href="{{ .url }}">
+        <i class="text-primary zoomlink {{ .class }} {{ .icon }}"></i>
+      </a>
+    </h2>
+  </div>
+  {{ end }}
+</div>
