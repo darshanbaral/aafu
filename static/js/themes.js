@@ -13,3 +13,5 @@ var darkTheme = {
 };
 
 var isDark = false;
+
+var themeColor = document.querySelector("meta[name=theme-color]");

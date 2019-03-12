@@ -5,6 +5,7 @@ let toggleTheme = function() {
       console.log(elems);
       elems.forEach(elem => elem.classList.add(lightTheme[key]));
       elems.forEach(elem => elem.classList.remove(darkTheme[key]));
+      themeColor.content = "#fff"
     }
     isDark = !isDark;
   } else {
@@ -13,6 +14,7 @@ let toggleTheme = function() {
       console.log(elems);
       elems.forEach(elem => elem.classList.add(darkTheme[key]));
       elems.forEach(elem => elem.classList.remove(lightTheme[key]));
+      themeColor.content = "#000000"
     }
     isDark = !isDark;
   }
