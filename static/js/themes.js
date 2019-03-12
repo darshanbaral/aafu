@@ -6,7 +6,7 @@ var lightTheme = {
 };
 
 var darkTheme = {
-  mainBackground: "bg-dark",
+  mainBackground: "bg-black",
   mainText: "text-white",
   linkText: "text-warning",
   toggleIcon: "fa-toggle-on"
