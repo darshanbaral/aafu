@@ -177,10 +177,13 @@ theme = "aafu"
         title = "Skills"
 
         [[params.skills.list]]
-        skill = "Skill 1"
+        skill = "Skill 1, Skill 2"
+        skillrating = 90
                 
         [[params.skills.list]]
         skill = "Skill 3"
+        skillrating = 80
 		
         [[params.skills.list]]
         skill = "Skill 4"
+        skillrating = 50

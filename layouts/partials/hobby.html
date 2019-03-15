@@ -5,9 +5,7 @@
 
 <div class="panel overflow-hidden h-100 d-block">
   <dl>
-    <dt>
-      {{ range.Site.Params.hobbies.list }}
-    </dt>
+    {{ range.Site.Params.hobbies.list }}
     <dd class="text-dark">{{ .hobby }}</dd>
     {{ end }}
   </dl>

@@ -1,5 +1,5 @@
-let acc = document.getElementsByClassName("accordion");
-let allPanels = document.getElementsByClassName("panel");
+let acc = Array.from(document.getElementsByClassName("accordion"));
+let allPanels = Array.from(document.getElementsByClassName("panel"));
 
 [...acc].forEach(function(elem) {
   if (elem.classList.contains("active")) {
