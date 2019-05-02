@@ -3,10 +3,10 @@
   {{ .Site.Params.hobbies.title }}
 </h2>
 
-<div class="panel overflow-hidden h-100 d-block">
-  <dl>
+<div class="panel overflow-hidden h-100 d-block d-print-none">
+  <ul class="pl-0">
     {{ range.Site.Params.hobbies.list }}
-    <dd class="text-dark">{{ .hobby }}</dd>
+    <li class="text-dark list-unstyled mb-2">{{ .hobby }}</li>
     {{ end }}
-  </dl>
+  </ul>
 </div>

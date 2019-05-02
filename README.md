@@ -13,7 +13,7 @@ For more information read the official [setup guide](//gohugo.io/overview/instal
 
 ## Getting started
 
-After installing the Sada Theme successfully, modify the `config.toml` as you wish to generate your online resume.
+After installing the aafu Theme successfully, modify the `config.toml` as you wish to generate your online resume.
 
 ### The config file
 
