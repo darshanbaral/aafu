@@ -4,11 +4,9 @@
 <div class="mt-2 d-flex flex-wrap justify-content-center">
   {{ range.Site.Params.social.list }}
   <div style="height:45px; width:45px;">
-    <h2>
-      <a href="{{ .url }}">
-        <i class="text-primary zoomlink {{ .class }} {{ .icon }}"></i>
-      </a>
-    </h2>
+    <a href="{{ .url }}">
+      <i class="text-primary zoomlink mt-1 {{ .class }} {{ .icon }}"></i>
+    </a>
   </div>
   {{ end }}
 </div>
