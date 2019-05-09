@@ -12,12 +12,12 @@
     {{ partial "footer.html" . }}
   </div>
   <div class="col-md-7 border rounded p-2 mb-4">
-    {{ partial "experience.html" . }}
-    {{ partial "education.html" . }}
-    {{ partial "publication.html" . }}
-    {{ partial "project.html" . }}
-    {{ partial "skill.html" . }}
-    {{ partial "hobby.html" . }}
+    {{ if .Site.Params.experiences }}{{ partial "experience.html" . }}{{end}}
+    {{ if .Site.Params.education }}{{ partial "education.html" . }}{{end}}
+    {{ if .Site.Params.publication }}{{ partial "publication.html" . }}{{end}}
+    {{ if .Site.Params.projects }}{{ partial "project.html" . }}{{end}}
+    {{ if .Site.Params.skills }}{{ partial "skill.html" . }}{{end}}
+    {{ if .Site.Params.hobbies }}{{ partial "hobby.html" . }}{{end}}
     <script src="{{ .Site.BaseURL }}/js/accordion.js"></script>
   </div>
 </div>
