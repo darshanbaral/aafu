@@ -1,23 +1,27 @@
 <div class="ml-auto mr-auto row row-eq-height mt-4">
-  <div class="col-md-5 text-center rounded border-light p-2  mb-4">
+  <div class="col-md-5 text-center border-light p-2  mb-4 bg-white">
     <div class="float-left" style="width: 45px; height: 45px;">
       <i
         class="fas fa-toggle-off zoomlink text-dark"
         id="toggle"
+        title="Toggle Theme"
         onclick="toggleTheme()"
       ></i>
     </div>
-    {{ partial "profile_photo.html" . }}
-    {{ partial "social.html" . }}
-    {{ partial "footer.html" . }}
+    {{ partial "profilePhoto" . }}
+    {{ partial "social" . }}
+    {{ partial "footer" . }}
   </div>
-  <div class="col-md-7 border rounded p-2 mb-4">
-    {{ partial "experience.html" . }}
-    {{ partial "education.html" . }}
-    {{ partial "publication.html" . }}
-    {{ partial "project.html" . }}
-    {{ partial "skill.html" . }}
-    {{ partial "hobby.html" . }}
+  <div class="col-md-7 border p-2 mb-4 bg-white">
+    {{ range .Site.Params.showInAccordion }}
+    <h2 class="accordion w-100 text-primary {{ if .expand }} active {{ end }}">
+      <i class="{{ .icon }}"></i>
+      {{ .title }}
+    </h2>
+    <div class="panel overflow-hidden">
+      {{ partial .items $ }}
+    </div>
+    {{ end }}
     <script src="{{ .Site.BaseURL }}/js/accordion.js"></script>
   </div>
 </div>

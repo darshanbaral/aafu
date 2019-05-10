@@ -1,12 +1,5 @@
-<h2 class="accordion w-100 text-primary">
-  <i class="fas fa-gamepad"></i>
-  {{ .Site.Params.hobbies.title }}
-</h2>
-
-<div class="panel overflow-hidden h-100 d-block d-print-none">
-  <ul class="pl-0">
-    {{ range.Site.Params.hobbies.list }}
-    <li class="text-dark list-unstyled mb-2">{{ .hobby }}</li>
-    {{ end }}
-  </ul>
-</div>
+<ul class="pl-0">
+  {{ range.Site.Params.hobby.list }}
+  <li class="text-dark list-unstyled mb-2">{{ .hobby }}</li>
+  {{ end }}
+</ul>
