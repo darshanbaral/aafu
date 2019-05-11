@@ -63,8 +63,8 @@ theme = "aafu"
         item = "publication"
     [[params.showInAccordion]]
         item = "project"
-    #[[params.showInAccordion]]
-    #    item = "skill"
+    [[params.showInAccordion]]
+        item = "skill"
     [[params.showInAccordion]]
         item = "hobby"
 
