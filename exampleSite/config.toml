@@ -7,7 +7,7 @@ theme = "aafu"
     author = "Darshan Baral"
     description = "Website title"
     copyright = "aaa"
-    copyright_link = "#"
+    useDarkTheme = false
 
     # Profile section
     [params.profile]

@@ -24,5 +24,11 @@
     </div>
     {{ end }}
     <script src="{{ .Site.BaseURL }}/js/accordion.js"></script>
+    <script>
+      let isBaseThemeDark = {{ .Site.Params.useDarkTheme }};
+      if (isBaseThemeDark) {
+        toggleTheme();
+      }
+    </script>
   </div>
 </div>
