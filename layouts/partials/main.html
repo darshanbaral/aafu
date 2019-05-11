@@ -15,11 +15,12 @@
   <div class="col-md-7 border p-2 mb-4 bg-white">
     {{ range .Site.Params.showInAccordion }}
     <h2 class="accordion w-100 text-primary {{ if .expand }} active {{ end }}">
-      <i class="{{ .icon }}"></i>
-      {{ .title }}
+      {{ $current := index $.Site.Params .item }}
+      <i class="{{ $current.icon }}"></i>
+      {{ $current.title }}
     </h2>
     <div class="panel overflow-hidden">
-      {{ partial .items $ }}
+      {{ partial .item $ }}
     </div>
     {{ end }}
     <script src="{{ .Site.BaseURL }}/js/accordion.js"></script>
