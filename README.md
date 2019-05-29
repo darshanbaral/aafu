@@ -24,3 +24,7 @@ Note that the sections to be displayed in the accordion, the order of the sectio
 ### Add your photo
 
 Go to `static/images` and replace the `profile.jpg` with your own file.
+
+## Reporting Issues
+
+If you have discovered a bug or have a feature request, [create an issue](https://github.com/darshanbaral/aafu/issues/new).
