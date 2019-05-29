@@ -7,7 +7,8 @@
   <meta name="description" content="{{ .Site.Params.description }}" />
   <meta name="author" content="{{ .Site.Params.author }}" />
   {{- $hugoGenerator := index (findRE `content=\"(.+)\"` hugo.Generator) 0 }}
-  <meta name="generator" content="aafu theme by Darshan in {{ replaceRE `content=|\"` `` $hugoGenerator }}" />
+  <meta name="generator" content="aafu theme by Darshan in
+  {{ replaceRE `content=|\"` `` $hugoGenerator }}" />
 
   {{- if .Site.Params.favicons.use }}
   {{- $metas := .Site.Params.favicons.metas }}
@@ -37,39 +38,8 @@
     href="https://fonts.googleapis.com/css?family=Alegreya%7CLato"
     rel="stylesheet"
   />
+  <link rel="stylesheet" href="{{ `/css/aafu.css` | relURL }}" />
 
-  <script src="{{ .Site.BaseURL }}/js/themes.js"></script>
-  <script src="{{ .Site.BaseURL }}/js/toggleTheme.js"></script>
-
-  <style>
-    html {
-      width: 100vw;
-    }
-    body {
-      font-family: "Lato", sans-serif;
-    }
-    h1,
-    h2,
-    h3 {
-      font-family: "Alegreya", serif;
-    }
-    .zoomlink {
-      font-size: 2em;
-    }
-    .zoomlink:hover {
-      font-size: 1.9em;
-      cursor: pointer;
-    }
-    .accordion {
-      cursor: pointer;
-      transition: 0.5s;
-    }
-    .panel {
-      max-height: 0;
-      transition: 0.3s ease-out;
-    }
-    .bg-black {
-      background-color: #252525;
-    }
-  </style>
+  <script src="{{ `/js/themes.js` | relURL }}"></script>
+  <script src="{{ `/js/toggleTheme.js` | relURL }}"></script>
 </head>

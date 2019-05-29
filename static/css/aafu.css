@@ -1,0 +1,47 @@
+html {
+  width: 100vw;
+}
+body {
+  font-family: "Lato", sans-serif;
+}
+h1,
+h2,
+h3 {
+  font-family: "Alegreya", serif;
+}
+.zoomlink {
+  font-size: 2em;
+}
+.zoomlink:hover {
+  font-size: 1.9em;
+  cursor: pointer;
+}
+.accordion {
+  cursor: pointer;
+  transition: 0.5s;
+}
+.panel {
+  max-height: 0;
+  transition: 0.3s ease-out;
+}
+.bg-black {
+  background-color: #252525;
+}
+.toggleSwitchContainer {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+.middleCenter {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+}
+.shadowsDark {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.shadowsLight {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
+    0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}

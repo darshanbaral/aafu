@@ -1,7 +1,10 @@
-<img
-  class="rounded-circle mb-4 mt-2 img-fluid"
-  src="{{ .Site.BaseURL }}/images/{{ .Site.Params.profile.photo }}"
-  alt="{{ .Site.Params.author }}"
-  style="width: 250px;"
-/>
-
+<div class="d-flex justify-content-center">
+  <div class="w-100 h-100">
+    <img
+      class="rounded m-2 rounded-circle"
+      src="{{ .Site.BaseURL }}/images/{{ .Site.Params.profile.photo }}"
+      alt="{{ .Site.Params.author }}"
+      style="max-width: 100%; max-width: 300px;"
+    />
+  </div>
+</div>

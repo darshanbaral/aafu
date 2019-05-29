@@ -3,7 +3,8 @@ var lightTheme = {
   skillBackground: "bg-primary",
   mainText: "text-dark",
   linkText: "text-primary",
-  toggleIcon: "fa-toggle-off"
+  toggleIcon: "fa-toggle-off",
+  shadow: "shadowsDark"
 };
 
 var darkTheme = {
@@ -11,7 +12,8 @@ var darkTheme = {
   skillBackground: "bg-warning",
   mainText: "text-white",
   linkText: "text-warning",
-  toggleIcon: "fa-toggle-on"
+  toggleIcon: "fa-toggle-on",
+  shadow: "shadowsLight"
 };
 
 var isDark = false;
