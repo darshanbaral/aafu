@@ -2,7 +2,7 @@
   <div class="w-100 h-100">
     <img
       class="rounded m-2 rounded-circle"
-      src="{{ .Site.BaseURL }}/images/{{ .Site.Params.profile.photo }}"
+      src="{{ `images` | relURL }}/{{ .Site.Params.profile.photo }}"
       alt="{{ .Site.Params.author }}"
       style="max-width: 100%; max-width: 300px;"
     />
