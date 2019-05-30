@@ -28,7 +28,7 @@
         {{ partial .item $ }}
       </div>
       {{ end }}
-      <script src="{{ .Site.BaseURL }}/js/accordion.js"></script>
+      <script src="{{ `js/accordion.js` | relURL }}"></script>
       <script>
         if ({{ .Site.Params.useDarkTheme }}) {
           toggleTheme();
