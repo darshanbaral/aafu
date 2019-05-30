@@ -2,6 +2,9 @@
 
 The aafu Theme is a one page responsive portfolio with accordion and a switch to toggle between light/dark mode.
 
+## Live Demo
+[Click here](https://aafudemo.netlify.com/) for live demo.
+
 ## Installation
 
 Inside the folder of your Hugo site run:
