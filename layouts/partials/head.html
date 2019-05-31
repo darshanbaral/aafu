@@ -48,7 +48,7 @@
         document.querySelector(".siteFooter").querySelectorAll("a")
       );
       elems.forEach(function(elem) {
-        elem.classList.add("text-primary");
+        elem.classList.add("{{cond .Site.Params.useDarkTheme `text-warning` `text-primary` }}");
       });
     };
   </script>
