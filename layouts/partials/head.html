@@ -8,7 +8,7 @@
   <meta name="author" content="{{ .Site.Params.author }}" />
   {{- $hugoGenerator := index (findRE `content=\"(.+)\"` hugo.Generator) 0 }}
   <meta name="generator" content="aafu theme by Darshan in
-  {{ replaceRE `content=|\"` `` $hugoGenerator }}" />
+  {{- replaceRE `content=|\"` `` $hugoGenerator }}" />
 
   {{- if .Site.Params.favicons.use }}
   {{- $metas := .Site.Params.favicons.metas }}
@@ -42,4 +42,14 @@
 
   <script src="{{ `/js/themes.js` | relURL }}"></script>
   <script src="{{ `/js/toggleTheme.js` | relURL }}"></script>
+  <script>
+    window.onload = function() {
+      let elems = Array.from(
+        document.querySelector(".siteFooter").querySelectorAll("a")
+      );
+      elems.forEach(function(elem) {
+        elem.classList.add("text-primary");
+      });
+    };
+  </script>
 </head>
