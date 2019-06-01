@@ -4,7 +4,7 @@ let toggleTheme = function() {
       let elems = document.querySelectorAll(`.${darkTheme[key]}`);
       elems.forEach(elem => elem.classList.add(lightTheme[key]));
       elems.forEach(elem => elem.classList.remove(darkTheme[key]));
-      themeColor.content = "#2c2b2b"
+      themeColor.content = "#fff"
     }
     isDark = !isDark;
   } else {
@@ -12,7 +12,7 @@ let toggleTheme = function() {
       let elems = document.querySelectorAll(`.${lightTheme[key]}`);
       elems.forEach(elem => elem.classList.add(darkTheme[key]));
       elems.forEach(elem => elem.classList.remove(lightTheme[key]));
-      themeColor.content = "#000000"
+      themeColor.content = "#2c2b2b"
     }
     isDark = !isDark;
   }
