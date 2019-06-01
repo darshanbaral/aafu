@@ -23,8 +23,8 @@ theme = "aafu"
     # Profile section
     [params.profile]
         name = "First Last, Abbr."
-		tagline = "Title"
-		location = "City Name, ST"
+        tagline = "Title"
+        location = "City Name, ST"
         photo = "profile.jpg"
 
     # Section for links to social websites
@@ -51,12 +51,12 @@ theme = "aafu"
             icon = "fa-twitter"
             url = "#"
             title = "Twitter"
-		[[params.social.list]]
+        [[params.social.list]]
             class = "ai"
             icon = "ai-google-scholar"
             url = "#"
             title = "Google Scholar"
-		[[params.social.list]]
+        [[params.social.list]]
             class = "ai"
             icon = "ai-researchgate"
             url = "#"
@@ -93,6 +93,7 @@ theme = "aafu"
             position = "Job Title"
             dates = "2019 - *Present*"
             company = "Company Name"
+            details = "Printed from desktop. Sent [emails](#). Called people using telephone. Drank water from office cooler. Ate donuts on people's birthdays."
         [[params.experience.list]]
             position = "Job Title"
             dates = "2018 - 2019"
@@ -132,14 +133,12 @@ theme = "aafu"
             date = "2018"
             journal = "Journal of Field 52 (16), 9033-9044"
             link = "#"
-
         [[params.publication.list]]
             title = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
             authors = "F Last, F Second, P secondary"
             date = "2018"
             journal = "Journal of Field 52 (16), 9033-9044"
             link = "#"
-		
         [[params.publication.list]]
             title = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
             authors = "F Last, F Second, P secondary"
@@ -188,10 +187,10 @@ theme = "aafu"
     [params.hobby]
         title = "Hobbies"
         icon = "fas fa-gamepad"
-		
+
         [[params.hobby.list]]		
-		    hobby = "Cooking"
+            hobby = "Cooking"
         [[params.hobby.list]]		
-		    hobby = "Hiking"
+            hobby = "Hiking"
         [[params.hobby.list]]		
-		    hobby = "Baking"
+            hobby = "Baking"
