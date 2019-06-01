@@ -5,7 +5,7 @@ description = "Single page portfolio theme with accordion and dark/light theme a
 homepage = "https://github.com/darshanbaral/aafu"
 tags = ["portfolio", "single page", "resume"]
 features = ["responsive", "dark", "clean"]
-min_version = "0.41"
+min_version = "0.55"
 
 [author]
   name = "Darshan Baral"
