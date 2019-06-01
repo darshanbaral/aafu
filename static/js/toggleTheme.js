@@ -4,7 +4,7 @@ let toggleTheme = function() {
       let elems = document.querySelectorAll(`.${darkTheme[key]}`);
       elems.forEach(elem => elem.classList.add(lightTheme[key]));
       elems.forEach(elem => elem.classList.remove(darkTheme[key]));
-      themeColor.content = "#fff"
+      themeColor.content = "#2c2b2b"
     }
     isDark = !isDark;
   } else {

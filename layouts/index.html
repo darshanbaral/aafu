@@ -1,7 +1,7 @@
 {{ define "main" }}
 <div class="ml-auto mr-auto row row-eq-height mt-3 p-2 rounded">
-    <div class="col-md-5 text-center p-2 bg-white">
-      <div class="shadowsDark rounded">
+    <div class="col-md-5 text-center p-2">
+      <div class="shadowsDark rounded bg-white">
       <div class="toggleSwitchContainer" style="width: 45px; height: 45px;">
         <i
           class="middleCenter fas fa-toggle-off zoomlink text-dark"
@@ -17,7 +17,7 @@
     </div>
     </div>
   </div>
-    <div class="col-md-7 bg-white pt-2">
+    <div class="col-md-7 bg-light pt-2">
       {{ range .Site.Params.showInAccordion }}
       <h2 class="accordion w-100 text-primary {{ if .expand }} active {{ end }}">
         {{ $current := index $.Site.Params .item }}

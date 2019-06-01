@@ -1,5 +1,6 @@
 var lightTheme = {
-  mainBackground: "bg-white",
+  mainBackground: "bg-light",
+  leftBackground: "bg-white",
   skillBackground: "bg-primary",
   mainText: "text-dark",
   linkText: "text-primary",
@@ -9,6 +10,7 @@ var lightTheme = {
 
 var darkTheme = {
   mainBackground: "bg-black",
+  leftBackground: "bg-alt-black",
   skillBackground: "bg-warning",
   mainText: "text-white",
   linkText: "text-warning",
