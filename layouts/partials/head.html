@@ -33,20 +33,25 @@
     rel="stylesheet"
     href="https://cdn.rawgit.com/jpswalsh/academicons/master/css/academicons.min.css"
   />
+
   <link
-    href="https://fonts.googleapis.com/css?family=Alegreya%7CLato"
     rel="stylesheet"
+    href="//fonts.googleapis.com/css?family=Didact+Gothic%7CRoboto:400%7CRoboto+Mono"
   />
+
   <link rel="stylesheet" href="{{ `/css/aafu.css` | relURL }}" />
 
   <script src="{{ `/js/themes.js` | relURL }}"></script>
   <script src="{{ `/js/toggleTheme.js` | relURL }}"></script>
   <script>
     window.onload = function() {
-      Array.from(document.querySelectorAll(".markdownify")).map(function(elems) {
+      Array.from(document.querySelectorAll(".markdownify")).map(function(
+        elems
+      ) {
         let elem = Array.from(elems.querySelectorAll("a"));
         elem.forEach(function(x) {
-          x.classList.add("{{cond .Site.Params.useDarkTheme `text-warning` `text-primary` }}"
+          x.classList.add(
+            "{{cond .Site.Params.useDarkTheme `text-warning` `text-primary` }}"
           );
         });
       });

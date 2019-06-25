@@ -2,12 +2,19 @@ html {
   width: 100vw;
 }
 body {
-  font-family: "Lato", sans-serif;
+  font-family: "Roboto", sans-serif;
+}
+code {
+  font-family: "Roboto Mono", monospace;
+  font-size: 1em;
+}
+dt {
+  font-weight: 400;
 }
 h1,
 h2,
 h3 {
-  font-family: "Alegreya", serif;
+  font-family: 'Didact Gothic', sans-serif;
 }
 .zoomlink {
   font-size: 2em;
@@ -30,7 +37,7 @@ h3 {
 .toggleSwitchContainer {
   position: absolute;
   top: 10px;
-  left: 10px;
+  left: 18px;
 }
 .middleCenter {
   position: absolute;
@@ -39,14 +46,14 @@ h3 {
   transform: translateX(-50%) translateY(-50%);
 }
 .shadowsDark {
-  -webkit-box-shadow: -4px -4px 5px 2px rgba(89,86,89,1);
-  -moz-box-shadow: -4px -4px 5px 2px rgba(89,86,89,1);
-  box-shadow: -4px -4px 5px 2px rgba(89,86,89,1);
+  -webkit-box-shadow: -4px -4px 5px 2px rgba(89, 86, 89, 1);
+  -moz-box-shadow: -4px -4px 5px 2px rgba(89, 86, 89, 1);
+  box-shadow: -4px -4px 5px 2px rgba(89, 86, 89, 1);
 }
 .shadowsLight {
-  -webkit-box-shadow: -4px -4px 5px 2px rgba(28,28,28,1);
-  -moz-box-shadow: -4px -4px 5px 2px rgba(28,28,28,1);
-  box-shadow: -4px -4px 5px 2px rgba(28,28,28,1);
+  -webkit-box-shadow: -4px -4px 5px 2px rgba(28, 28, 28, 1);
+  -moz-box-shadow: -4px -4px 5px 2px rgba(28, 28, 28, 1);
+  box-shadow: -4px -4px 5px 2px rgba(28, 28, 28, 1);
 }
 .bg-alt-black {
   background-color: #373737 !important;
