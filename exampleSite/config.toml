@@ -175,6 +175,7 @@ theme = "aafu"
     # Skill section
     [params.skill]
         title = "Skills"
+        panelId = "skill-panel"
         icon = "fas fa-cogs"
 
         [[params.skill.list]]
