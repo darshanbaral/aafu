@@ -14,6 +14,12 @@ for (let i = 0; i < acc.length; i++) {
     [...allPanels].forEach(function(elem) {
       elem.style.maxHeight = null;
     });
+    console.log(this.nextElementSibling.contains(document.querySelector("#skill-panel")));
+    if (!this.nextElementSibling.contains(document.querySelector("#skill-panel"))) {
+      document.querySelectorAll("#skill-percent").forEach(elem => {
+        elem.style.width = "0px";
+      });
+    }
     this.classList.add("active");
     let panel = this.nextElementSibling;
     panel.style.maxHeight = panel.scrollHeight + "px";

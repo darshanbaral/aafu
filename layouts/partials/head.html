@@ -1,7 +1,7 @@
 <head>
   <title>{{ .Site.Params.title }}</title>
 
-  <meta name="theme-color" content="#fff" />
+  <meta name="theme-color" content="" />
   <meta charset="utf-8" />
   <meta content="width=device-width, initial-scale=1.0" name="viewport" />
   <meta name="description" content="{{ .Site.Params.description }}" />
@@ -33,28 +33,22 @@
     rel="stylesheet"
     href="https://cdn.rawgit.com/jpswalsh/academicons/master/css/academicons.min.css"
   />
-
   <link
     rel="stylesheet"
     href="//fonts.googleapis.com/css?family=Didact+Gothic%7CRoboto:400%7CRoboto+Mono"
   />
 
+  <link
+    id="color-CSS"
+    rel="stylesheet"
+    href="{{ print `/css/aafu_` .Site.Params.theme.mainTheme `.css` | relURL }}"
+  />
   <link rel="stylesheet" href="{{ `/css/aafu.css` | relURL }}" />
 
-  <script src="{{ `/js/themes.js` | relURL }}"></script>
-  <script src="{{ `/js/toggleTheme.js` | relURL }}"></script>
   <script>
+    var themeColor = document.querySelector("meta[name=theme-color]");
     window.onload = function() {
-      Array.from(document.querySelectorAll(".markdownify")).map(function(
-        elems
-      ) {
-        let elem = Array.from(elems.querySelectorAll("a"));
-        elem.forEach(function(x) {
-          x.classList.add(
-            "{{cond .Site.Params.useDarkTheme `text-warning` `text-primary` }}"
-          );
-        });
-      });
+      themeColor.content = getComputedStyle(document.body)["background-color"];
     };
   </script>
 </head>

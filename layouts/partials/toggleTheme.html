@@ -1,0 +1,35 @@
+{{ if .Site.Params.theme.allowToggle }}
+<div class="toggleSwitchContainer" style="width: 45px; height: 45px;">
+  <i
+    class="fas fa-toggle-on zoomlink"
+    id="toggle"
+    title="Toggle Theme"
+    onclick="toggleTheme(this)"
+  ></i>
+</div>
+
+<script>
+  let mainTheme =
+    "{{ print `/css/aafu_` .Site.Params.theme.mainTheme `.css` | relURL }}";
+  let altTheme =
+    "{{ print `/css/aafu_` .Site.Params.theme.altTheme `.css` | relURL }}";
+  let toggleTheme = function(elem) {
+    elem.classList.toggle("fa-toggle-off");
+    elem.classList.toggle("fa-toggle-on");
+    let currentCSS = document.querySelector("#color-CSS");
+    if (currentCSS.href.includes(mainTheme)) {
+      currentCSS.href = altTheme;
+    } else {
+      currentCSS.href = mainTheme;
+    }
+  };
+
+  let changeThemeColor = function() {
+    console.log(getComputedStyle(document.body)["background-color"]);
+    themeColor.content = getComputedStyle(document.body)["background-color"];
+  };
+  let thisBody = document.body;
+  thisBody.addEventListener("webkitTransitionEnd", changeThemeColor);
+  thisBody.addEventListener("transitionend", changeThemeColor);
+</script>
+{{ end }}

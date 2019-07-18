@@ -1,0 +1,24 @@
+body {
+  background-color: #f8f9fa;
+  color: black;
+}
+
+.profile-area {
+  background-color: #fff;
+  box-shadow: -4px -4px 5px 2px #595659;
+}
+
+a,
+.accordion,
+.social-icons * {
+  color: #007bff;
+}
+
+.skillbar {
+  background-color: #fff;
+  border: solid 1px black;
+}
+
+#skill-percent {
+  background-color: #007bff;
+}

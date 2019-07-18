@@ -1,11 +1,11 @@
 {{ range.Site.Params.education.list }}
 <dl>
-  <dt class="text-dark">{{ .degree }}</dt>
-  <dd class="text-dark mb-0 ml-3">{{ .dates }} &middot; {{ .college }}</dd>
+  <dt>{{ .degree }}</dt>
+  <dd class="mb-0 ml-3">{{ .dates }} &middot; {{ .college }}</dd>
   {{ if .thesis_link }}
-  <dd class="text-dark mb-0 ml-4">
+  <dd class="mb-0 ml-4">
     Thesis:
-    <a class="text-primary" href="{{ .thesis_link }}"
+    <a href="{{ .thesis_link }}"
       ><i>{{ .thesis_title }}</i></a
     >
   </dd>
