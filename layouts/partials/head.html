@@ -1,21 +1,5 @@
 <head>
-  <title>{{ .Site.Params.title }}</title>
-
-  <meta name="theme-color" content="" />
-  <meta charset="utf-8" />
-  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
-  <meta name="description" content="{{ .Site.Params.description }}" />
-  <meta name="author" content="{{ .Site.Params.author }}" />
-  {{- $hugoGenerator := index (findRE `content=\"(.+)\"` hugo.Generator) 0 }}
-  <meta name="generator" content="aafu theme by Darshan in {{ replaceRE `content=|\"` `` $hugoGenerator }}" />
-
-  {{- if .Site.Params.favicons.use }}
-  {{- $metas := .Site.Params.favicons.metas }}
-  {{- range (split $metas "\n") }}
-  {{- $ll := (index (findRE "^href=\"(.+)\"$" .) 0) | relURL }}
-  {{- replaceRE "^href=\"(.+)\"$" `$ll` . | safeHTML }}
-  {{- end }}
-  {{ end -}}
+  {{ partial "meta" . }}
 
   <link
     rel="stylesheet"
@@ -49,6 +33,10 @@
     var themeColor = document.querySelector("meta[name=theme-color]");
     window.onload = function() {
       themeColor.content = getComputedStyle(document.body)["background-color"];
+      let defaultActivePanel = document.querySelector(".accordion.active")
+        .nextElementSibling;
+      defaultActivePanel.style.maxHeight =
+        defaultActivePanel.scrollHeight + "px";
     };
   </script>
 </head>
