@@ -9,25 +9,25 @@
 </div>
 
 <script>
-  let mainTheme =
+  const mainTheme =
     "{{ print `/css/aafu_` .Site.Params.theme.mainTheme `.css` | absURL }}";
-  let altTheme =
+  const altTheme =
     "{{ print `/css/aafu_` .Site.Params.theme.altTheme `.css` | absURL }}";
-  let toggleTheme = function(elem) {
+  const currentCSS = document.querySelector("#color-CSS");
+  function toggleTheme(elem) {
     elem.classList.toggle("fa-toggle-off");
     elem.classList.toggle("fa-toggle-on");
-    let currentCSS = document.querySelector("#color-CSS");
     if (currentCSS.href.includes(mainTheme)) {
-      currentCSS.href = altTheme;
+      currentCSS.setAttribute("href", altTheme);
     } else {
-      currentCSS.href = mainTheme;
+      currentCSS.setAttribute("href", mainTheme);
     }
-  };
+  }
 
-  let changeThemeColor = function() {    
+  function changeThemeColor() {
     themeColor.content = getComputedStyle(document.body)["background-color"];
-  };
-  let thisBody = document.body;
+  }
+  const thisBody = document.body;
   thisBody.addEventListener("webkitTransitionEnd", changeThemeColor);
   thisBody.addEventListener("transitionend", changeThemeColor);
 </script>
