@@ -38,5 +38,10 @@
       defaultActivePanel.style.maxHeight =
         defaultActivePanel.scrollHeight + "px";
     };
+    window.onresize = function() {
+      document.querySelector(".active").nextElementSibling.style.maxHeight =
+        document.querySelector(".active").nextElementSibling.scrollHeight +
+        "px";
+    };
   </script>
 </head>
