@@ -10,17 +10,19 @@
 
 <script>
   const mainTheme =
-    "{{ print `/css/aafu_` .Site.Params.theme.mainTheme `.css` | absURL }}";
+    "{{ print (`/css/aafu_` | relURL) .Site.Params.theme.mainTheme `.css` }}";
   const altTheme =
-    "{{ print `/css/aafu_` .Site.Params.theme.altTheme `.css` | absURL }}";
+    "{{ print (`/css/aafu_` | relURL) .Site.Params.theme.altTheme `.css` }}";
   const currentCSS = document.querySelector("#color-CSS");
   function toggleTheme(elem) {
+    //console.log("." + mainTheme);
+    //console.log(altTheme);
     elem.classList.toggle("fa-toggle-off");
     elem.classList.toggle("fa-toggle-on");
     if (currentCSS.href.includes(mainTheme)) {
-      currentCSS.setAttribute("href", altTheme);
+      currentCSS.setAttribute("href", "." + altTheme);
     } else {
-      currentCSS.setAttribute("href", mainTheme);
+      currentCSS.setAttribute("href", "." + mainTheme);
     }
   }
 
