@@ -12,10 +12,12 @@
   </div>
   <div class="col-md-7 pt-2 mt-3">
     {{ range.Site.Params.showInAccordion }}
-    <h2 class="accordion w-100 {{ if .expand }} active {{ end }}">
+    <h2 class="accordion {{ if .expand }} active {{ end }}">
       {{ $current := index $.Site.Params .item }}
-      <i class="{{ $current.icon }}"></i>
-      {{ $current.title }}
+      <span onclick="expandAccordion(this)" style="cursor: pointer;">
+        <i class="{{ $current.icon }}"></i>
+        {{ $current.title -}}
+      </span>
     </h2>
     <div
       class="panel overflow-hidden"
