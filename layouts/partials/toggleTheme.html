@@ -10,9 +10,9 @@
 
 <script>
   let mainTheme =
-    "{{ print `/css/aafu_` .Site.Params.theme.mainTheme `.css` | relURL }}";
+    "{{ print `/css/aafu_` .Site.Params.theme.mainTheme `.css` | absURL }}";
   let altTheme =
-    "{{ print `/css/aafu_` .Site.Params.theme.altTheme `.css` | relURL }}";
+    "{{ print `/css/aafu_` .Site.Params.theme.altTheme `.css` | absURL }}";
   let toggleTheme = function(elem) {
     elem.classList.toggle("fa-toggle-off");
     elem.classList.toggle("fa-toggle-on");
