@@ -1,26 +1,28 @@
-let acc = Array.from(document.getElementsByClassName("accordion"));
-let allPanels = Array.from(document.getElementsByClassName("panel"));
-
-[...acc].forEach(function(elem) {
-  if (elem.classList.contains("active")) {
-    let activePanel = elem.nextElementSibling;
-    activePanel.style.maxHeight = activePanel.scrollHeight + "px";
-  }
-});
-
-for (let i = 0; i < acc.length; i++) {
-  acc[i].addEventListener("click", function() {
-    [...acc].forEach(elem => elem.classList.remove("active"));
-    [...allPanels].forEach(function(elem) {
+const allPanels = Array.from(document.querySelectorAll(".panel"));
+const allAccordion = Array.from(document.querySelectorAll(".accordion"));
+const expandAccordion = elem => {
+  if (!elem.parentElement.classList.contains("active")) {
+    allAccordion.forEach(acc => {
+      acc.classList.remove("active");
+    });
+    elem.parentElement.classList.add("active");
+    allPanels.forEach(function(elem) {
       elem.style.maxHeight = null;
     });
-    if (!this.nextElementSibling.contains(document.querySelector("#skill-panel"))) {
-      document.querySelectorAll("#skill-percent").forEach(elem => {
-        elem.style.width = "0px";
+    let activePanel = elem.parentElement.nextElementSibling;
+    if (
+      activePanel.id != "skill-panel" &&
+      document.querySelector("#skill-panel")
+    ) {
+      let skillBars = Array.from(document.querySelectorAll("#skill-percent"));
+      skillBars.forEach(elem => {
+        elem.style.width = "0";
       });
-    }
-    this.classList.add("active");
-    let panel = this.nextElementSibling;
-    panel.style.maxHeight = panel.scrollHeight + "px";
-  });
-}
+    } //else {
+    //console.log("Skill Section Disabled");
+    //}
+    activePanel.style.maxHeight = activePanel.scrollHeight + "px";
+  } // else {
+  //  console.log("Already Expanded");
+  //}
+};
