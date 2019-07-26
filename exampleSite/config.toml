@@ -130,6 +130,7 @@ theme = "aafu"
     [params.publication]
         title = "Publications"
         icon = "fas fa-book"
+        #The order below determines the order in which the items appear in "Publications" section
         format = ["date", "authors", "title", "journal"]
 
         [[params.publication.list]]
