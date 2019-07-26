@@ -7,13 +7,13 @@ theme = "aafu"
     author = "Darshan Baral"
     description = "Website title"
     copyright = "aaa"
-    
+
     [params.theme]
         allowToggle = true
         mainTheme = "light"
         altTheme = "dark"
 
-   [params.favicons]
+    [params.favicons]
         use = true
         metas = '''
         <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
@@ -27,8 +27,8 @@ theme = "aafu"
     # Profile section
     [params.profile]
         name = "First Last, Abbr."
-        tagline = "Title"
-        location = "City Name, ST"
+		tagline = "Title"
+		location = "City Name, ST"
         photo = "profile.jpg"
 
     # Section for links to social websites
@@ -55,12 +55,12 @@ theme = "aafu"
             icon = "fa-twitter"
             url = "#"
             title = "Twitter"
-        [[params.social.list]]
+		[[params.social.list]]
             class = "ai"
             icon = "ai-google-scholar"
             url = "#"
             title = "Google Scholar"
-        [[params.social.list]]
+		[[params.social.list]]
             class = "ai"
             icon = "ai-researchgate"
             url = "#"
@@ -130,6 +130,7 @@ theme = "aafu"
     [params.publication]
         title = "Publications"
         icon = "fas fa-book"
+        format = ["date", "authors", "title", "journal"]
 
         [[params.publication.list]]
             title = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
@@ -137,12 +138,14 @@ theme = "aafu"
             date = "2018"
             journal = "Journal of Field 52 (16), 9033-9044"
             link = "#"
+
         [[params.publication.list]]
             title = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
             authors = "F Last, F Second, P secondary"
             date = "2018"
             journal = "Journal of Field 52 (16), 9033-9044"
             link = "#"
+		
         [[params.publication.list]]
             title = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
             authors = "F Last, F Second, P secondary"
@@ -192,10 +195,10 @@ theme = "aafu"
     [params.hobby]
         title = "Hobbies"
         icon = "fas fa-gamepad"
-
+		
         [[params.hobby.list]]		
-            hobby = "Cooking"
+		    hobby = "Cooking"
         [[params.hobby.list]]		
-            hobby = "Hiking"
+		    hobby = "Hiking"
         [[params.hobby.list]]		
-            hobby = "Baking"
+		    hobby = "Baking"

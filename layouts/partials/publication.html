@@ -1,9 +1,12 @@
+{{- $first := index .Site.Params.publication.format 0 -}}
+{{- $second := index .Site.Params.publication.format 1 -}}
+{{- $third := index .Site.Params.publication.format 2 -}}
+{{- $fourth := index .Site.Params.publication.format 3 -}}
 {{ range .Site.Params.publication.list }}
 <p>
-  {{ .date }} &middot; {{ .authors }} &middot;
-  <a href="{{ .link }}"
-    ><i>"{{ .title }}"</i></a
-  >
-  {{ .journal }}
+  {{ partial "addTitle" (dict "all" . "ind" $first) }}
+  {{ partial "addTitle" (dict "all" . "ind" $second) }}
+  {{ partial "addTitle" (dict "all" . "ind" $third) }}
+  {{ partial "addTitle" (dict "all" . "ind" $fourth) }}
 </p>
 {{ end }}

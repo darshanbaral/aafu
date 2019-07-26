@@ -1,0 +1,9 @@
+{{ if (eq .ind "title") }}
+<a href="{{ index .all `link` }}">
+  <em>
+    {{ index .all .ind }}{{ cond (eq (substr (index .all .ind) -1 1) ".") "" "." }}
+  </em>
+</a>
+{{ else }}
+{{ index .all .ind }}{{ cond (eq (substr (index .all .ind) -1 1) ".") "" "." }}
+{{ end }}
