@@ -1,5 +1,4 @@
 {{ if .Site.Params.publication.types }}
-{{ if .Site.Params.publication.types }}
 {{ range.Site.Params.publication.types }}
 {{ $type := . }}
 <h4 style="text-decoration: underline;">{{ $type }}</h4>
@@ -13,7 +12,6 @@
 </p>
 {{ end }}
 {{- end -}}
-{{ end }}
 {{ end }}
 
 {{ else }}
