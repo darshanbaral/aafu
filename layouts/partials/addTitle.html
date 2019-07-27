@@ -1,9 +1,18 @@
 {{ if (eq .ind "title") }}
+{{ if (index .all `link`) }}
 <a href="{{ index .all `link` }}">
   <em>
-    {{ index .all .ind }}{{ cond (eq (substr (index .all .ind) -1 1) ".") "" "." }}
+    {{- index .all .ind -}}
+    {{- cond (eq (substr (index .all .ind) -1 1) ".") "" "." -}}
   </em>
 </a>
 {{ else }}
-{{ index .all .ind }}{{ cond (eq (substr (index .all .ind) -1 1) ".") "" "." }}
+<em>
+  {{- index .all .ind -}}
+  {{- cond (eq (substr (index .all .ind) -1 1) ".") "" "." -}}
+</em>
+{{ end }}
+{{ else }}
+{{- index .all .ind -}}
+{{- cond (eq (substr (index .all .ind) -1 1) ".") "" "." -}}
 {{ end }}

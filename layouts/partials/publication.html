@@ -1,12 +1,29 @@
-{{- $first := index .Site.Params.publication.format 0 -}}
-{{- $second := index .Site.Params.publication.format 1 -}}
-{{- $third := index .Site.Params.publication.format 2 -}}
-{{- $fourth := index .Site.Params.publication.format 3 -}}
-{{ range .Site.Params.publication.list }}
+{{ if .Site.Params.publication.types }}
+{{ if .Site.Params.publication.types }}
+{{ range.Site.Params.publication.types }}
+{{ $type := . }}
+<h4 style="text-decoration: underline;">{{ $type }}</h4>
+{{- range $.Site.Params.publication.list -}}
+{{ if eq $type .type }}
+{{- $this_publication := . -}}
 <p>
-  {{ partial "addTitle" (dict "all" . "ind" $first) }}
-  {{ partial "addTitle" (dict "all" . "ind" $second) }}
-  {{ partial "addTitle" (dict "all" . "ind" $third) }}
-  {{ partial "addTitle" (dict "all" . "ind" $fourth) }}
+  {{- range $.Site.Params.publication.format -}}
+  {{- partial "addTitle" (dict "all" $this_publication "ind" .) -}}
+  {{- end -}}
 </p>
+{{ end }}
+{{- end -}}
+{{ end }}
+{{ end }}
+
+{{ else }}
+
+{{- range $.Site.Params.publication.list -}}
+{{- $this_publication := . -}}
+<p>
+  {{- range $.Site.Params.publication.format -}}
+  {{- partial "addTitle" (dict "all" $this_publication "ind" .) -}}
+  {{- end -}}
+</p>
+{{ end }}
 {{ end }}
