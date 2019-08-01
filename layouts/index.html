@@ -11,7 +11,7 @@
     </div>
   </div>
   <div class="col-md-7 pt-2 mt-3">
-    {{ range.Site.Params.showInAccordion }}
+    {{ range   .Site.Params.showInAccordion }}
     <h2 class="accordion {{ if .expand }} active {{ end }}">
       {{ $current := index $.Site.Params .item }}
       <span onclick="expandAccordion(this)" style="cursor: pointer;">
@@ -25,7 +25,7 @@
       id="{{ $current.panelid }}"
       {{ end }}
     >
-      {{ partial .item $ }}
+      {{ partial (print "accordion/" .item) $ }}
     </div>
     {{ end }}
     <script src="{{ `js/accordion.js` | relURL }}"></script>

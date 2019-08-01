@@ -1,0 +1,27 @@
+{{ if .Site.Params.publication.types }}
+{{ range.Site.Params.publication.types }}
+{{ $type := . }}
+<h4 style="text-decoration: underline;">{{ $type }}</h4>
+{{- range $.Site.Params.publication.list -}}
+{{ if eq $type .type }}
+{{- $this_publication := . -}}
+<p>
+  {{- range $.Site.Params.publication.format -}}
+  {{- partial "accordion/supportingPartials/addTitle" (dict "all" $this_publication "ind" .) -}}
+  {{- end -}}
+</p>
+{{ end }}
+{{- end -}}
+{{ end }}
+
+{{ else }}
+
+{{- range $.Site.Params.publication.list -}}
+{{- $this_publication := . -}}
+<p>
+  {{- range $.Site.Params.publication.format -}}
+  {{- partial "addTitle" (dict "all" $this_publication "ind" .) -}}
+  {{- end -}}
+</p>
+{{ end }}
+{{ end }}
