@@ -1,7 +1,7 @@
 name = "aafu"
 license = "MIT"
 licenselink = "https://github.com/darshanbaral/aafu/blob/master/LICENSE"
-description = "Single page portfolio theme with accordion and multiple themes with option to toggle between main and alternate theme"
+description = "Single page portfolio theme with accordion and multiple theme colors with option to toggle between main and alternate theme color"
 homepage = "https://github.com/darshanbaral/aafu"
 tags = ["portfolio", "single page", "resume"]
 features = ["responsive", "dark", "clean"]
