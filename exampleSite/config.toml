@@ -10,6 +10,7 @@ theme = "aafu"
 
     [params.theme]
         allowToggle = true
+        # Available themes are 'light', 'dark', and 'pinkish'
         mainTheme = "light"
         altTheme = "dark"
 
