@@ -28,9 +28,9 @@ Note that the sections to be displayed in the accordion, the order of the sectio
 
 Go to `static/images` and replace the `profile.jpg` with your own file.
 
-### Themes
+### Theme Colors
 
-The `aafu` theme provides three different themes - `light`, `dark`, and `pinkish`. These can be specified in the `config.toml`
+The `aafu` theme provides three different theme colors - `light`, `dark`, and `pinkish`. These can be specified in the `config.toml`
 
 ```
     [params.theme]
