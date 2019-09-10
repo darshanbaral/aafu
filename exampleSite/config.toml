@@ -13,6 +13,8 @@ theme = "aafu"
         # Available themes are 'light', 'dark', and 'pinkish'
         mainTheme = "light"
         altTheme = "dark"
+        # setting false below will hide 'aafu by darshan' displayed under the profile pic
+        showAttribute = true
 
     [params.favicons]
         use = true

@@ -1,12 +1,15 @@
 <footer class="mb-4">
-  <span class="markdownify">{{ .Site.Params.copyright | markdownify }}</span> &middot;
-  <i>
-    <a href="https://github.com/darshanbaral/aafu">
-      aafu
+  <span class="markdownify">{{ .Site.Params.copyright | markdownify }}</span>
+  <span {{ if not .Site.Params.theme.showAttribute }}style="font-size:0px;"{{ end }}>
+    &middot;
+    <i>
+      <a href="https://github.com/darshanbaral/aafu">
+        aafu
+      </a>
+    </i>
+    by
+    <a href="https://www.darshanbaral.com/">
+      darshan
     </a>
-  </i>
-  by
-  <a href="https://www.darshanbaral.com/">
-    darshan
-  </a>
+  </span>
 </footer>
