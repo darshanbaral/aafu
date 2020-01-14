@@ -6,7 +6,10 @@ body {
 .profile-area {
   background-color: #81415f;
   color: white;
-  box-shadow: -4px -4px 5px 2px #595659;
+}
+
+.shadow {
+  box-shadow: -4px -4px 5px 2px #595659 !important;
 }
 
 a,
