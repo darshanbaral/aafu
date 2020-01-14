@@ -1,0 +1,22 @@
+{{ define "main" }}
+<h1 class="standard top-h1 mt-4 mb-4">
+  {{- .Title -}}
+</h1>
+<div class="standard grid-container">
+  {{ range (.Paginator 2).Pages }}
+  <div class="index-box p-3 shadow rounded mb-4">
+    <p class="mb-0">{{ .Date.Format "January 2, 2006" }}</p>
+    <h3>
+      <a href="{{ .Permalink | relURL }}">
+        {{- .Title -}}
+      </a>
+    </h3>
+
+    <p>Reading Time: {{ .ReadingTime }} minutes</p>
+  </div>
+  {{ end }}
+</div>
+<div class="mt-4 d-flex justify-content-center">
+  {{ template "_internal/pagination.html" . }}
+</div>
+{{ end }}
