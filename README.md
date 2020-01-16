@@ -1,6 +1,6 @@
 # aafu Theme
 
-The aafu Theme is a one page responsive portfolio with accordion and a switch to toggle between light/dark mode.
+The aafu Theme is a responsive portfolio with blog.
 
 ## Live Demo
 [Click here](https://aafudemo.netlify.com/) for live demo.
@@ -34,10 +34,8 @@ The `aafu` theme provides three different theme colors - `light`, `dark`, and `p
 
 ```
     [params.theme]
-        allowToggle = true
         # Available themes are 'light', 'dark', and 'pinkish'
         mainTheme = "light"
-        altTheme = "dark"
 ```    
 
 ## Reporting Issues
