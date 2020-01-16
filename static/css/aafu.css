@@ -85,3 +85,6 @@ a:hover,
   color: var(--secondaryText) !important;
   background-color: var(--secondaryBg) !important;
 }
+.aafu-border {
+  border-color: var(--primaryLinks) !important;
+}

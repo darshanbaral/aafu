@@ -1,40 +1,9 @@
-body {
-  background-color: #f8f9fa;
-  color: black;
-}
-
-.profile-area {
-  background-color: #81415f;
-  color: white;
-}
-
-.shadow {
-  box-shadow: -4px -4px 5px 2px #595659 !important;
-}
-
-a,
-.accordion {
-  color: #81415f;
-}
-
-a:hover,
-.accordion:hover {
-  color: #81415f;
-}
-
-.profile-area a {
-  color: #ffc107;
-}
-
-.profile-area a:hover {
-  color: #d6a206;
-}
-
-.skillbar {
-  background-color: #fff;
-  border: solid 1px black;
-}
-
-#skill-percent {
-  background-color: #81415f;
+:root {
+  --primaryBg: #f8f9fa;
+  --primaryText: black;
+  --primaryLinks: #81415f;
+  --secondaryBg: #81415f;
+  --secondaryText: white;
+  --secondaryLinks: #ffc107;
+  --shadow: #595659;
 }
