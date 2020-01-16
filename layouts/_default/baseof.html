@@ -2,8 +2,13 @@
 <html lang="{{ .Site.LanguageCode }}">
   {{- partial "head.html" . -}}
   <body class="container">
-    {{ partial "header" . }}
-    {{- block "main" . }}
-    {{- end }}
+    <main style="min-height: calc(100vh - 60px);">
+      {{ partial "header" . }}
+      {{- block "main" . }}
+      {{- end }}
+    </main>
+    {{ if not .IsHome }}
+    {{ partial "footer" . }}
+    {{ end }}
   </body>
 </html>

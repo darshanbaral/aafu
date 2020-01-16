@@ -9,10 +9,8 @@ theme = "aafu"
     copyright = "aaa"
 
     [params.theme]
-        allowToggle = true
         # Available themes are 'light', 'dark', and 'pinkish'
         mainTheme = "light"
-        altTheme = "dark"
         # setting false below will hide 'aafu by darshan' displayed under the profile pic
         showAttribute = true
 

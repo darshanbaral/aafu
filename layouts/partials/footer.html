@@ -1,4 +1,4 @@
-<footer class="mb-4">
+<footer class="{{ if .IsHome }} mt-2 mb-2 {{ else }} mt-2 mb-4 text-center {{ end }}">
   <span class="markdownify">{{ .Site.Params.copyright | markdownify }}</span>
   <span {{ if not .Site.Params.theme.showAttribute }}style="font-size:0px;"{{ end }}>
     &middot;

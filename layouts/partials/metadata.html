@@ -1,0 +1,18 @@
+<div class="mb-2">
+  <p class="mb-1">{{ .Date.Format "January 2, 2006" }}</p>
+  {{ $params := .Params }} {{ range $name, $value := .Site.Taxonomies }}
+  {{ if index $params $name }}
+  <p class="metadata-value mb-1 taxa taxa-container-div list-{{- $name -}}">
+    {{ $name | humanize }}: {{ range index $params $name }}
+    <a
+      class="pl-1 pr-1 rounded border border-secondary"
+      href="{{ $name | relURL }}/{{ . | urlize }}"
+      title="{{ $name }}"
+    >
+      {{- . -}}
+    </a>
+    {{ end }}
+  </p>
+  {{ end }}
+  {{ end }}
+</div>

@@ -1,0 +1,26 @@
+<div class="d-flex flex-row justify-content-center">
+  <h3 class="mb-1 mt-1 text-left mr-4">
+    {{ if .PrevInSection }}
+    <a
+      href="{{ .PrevInSection.Permalink | relURL }}"
+      title="{{ .PrevInSection.Title }}"
+    >
+      <i class="nav-menu fas fa-chevron-circle-left"></i>
+    </a>
+    {{ else }}
+    <i class="nav-menu-disabled fas fa-chevron-circle-left"></i>
+    {{ end }}
+  </h3>
+  <h3 class="mb-1 mt-1 text-left ml-4">
+    {{ if .NextInSection }}
+    <a
+      href="{{ .NextInSection.Permalink | relURL }}"
+      title="{{ .NextInSection.Title }}"
+    >
+      <i class="nav-menu fas fa-chevron-circle-right"></i>
+    </a>
+    {{ else }}
+    <i class="nav-menu-disabled fas fa-chevron-circle-right"></i>
+    {{ end }}
+  </h3>
+</div>

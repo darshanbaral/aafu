@@ -19,62 +19,25 @@
     rel="stylesheet"
     href="//fonts.googleapis.com/css?family=Didact+Gothic%7CRoboto:400%7CRoboto+Mono"
   />
-
+  <link rel="stylesheet" href="{{ print "/css/aafu_" .Site.Params.theme.mainTheme ".css" | relURL }}" />
   <link rel="stylesheet" href="{{ `/css/aafu.css` | relURL }}" />
 
   <script>
-    const colors = {
-      light: {
-        primaryBg: "#f8f9fa",
-        primaryText: "black",
-        primaryLinks: "#007bff",
-        secondaryBg: "#fff",
-        secondaryText: "black",
-        secondaryLinks: "#007bff",
-        shadow: "#595659"
-      },
-      dark: {
-        primaryBg: "#2c2b2b",
-        primaryText: "white",
-        primaryLinks: "#ffc107",
-        secondaryBg: "#373737",
-        secondaryText: "white",
-        secondaryLinks: "#ffc107",
-        shadow: "black"
-      },
-      pinkish: {
-        primaryBg: "#f8f9fa",
-        primaryText: "black",
-        primaryLinks: "#81415f",
-        secondaryBg: "#81415f",
-        secondaryText: "white",
-        secondaryLinks: "#ffc107",
-        shadow: "#595659"
+    var themeColor = document.querySelector("meta[name=theme-color]");
+    window.onload = () => {
+      themeColor.content = getComputedStyle(document.body)["background-color"];
+      let defaultActivePanel = document.querySelector(".accordion.active");
+      if (defaultActivePanel) {
+        defaultActivePanel.nextElementSibling.style.maxHeight =
+          defaultActivePanel.nextElementSibling.scrollHeight + "px";
       }
     };
-    const mainTheme = {{ .Site.Params.theme.mainTheme }};
-    let currentTheme = mainTheme;
-    const altTheme = {{ .Site.Params.theme.altTheme }};
-    const foo = (theme) => {
-      let thisTheme = colors[theme];
-      Object.keys(thisTheme).forEach(function(key) {
-        document.documentElement.style.setProperty(`--${key}`, thisTheme[key]);
-      });
-    };
-    var themeColor = document.querySelector("meta[name=theme-color]");
-    window.onload = function() {
-      foo(currentTheme);
-      const root = document.documentElement;
-      themeColor.content = getComputedStyle(document.body)["background-color"];
-      let defaultActivePanel = document.querySelector(".accordion.active")
-        .nextElementSibling;
-      defaultActivePanel.style.maxHeight =
-        defaultActivePanel.scrollHeight + "px";
-    };
-    window.onresize = function() {
-      document.querySelector(".active").nextElementSibling.style.maxHeight =
-        document.querySelector(".active").nextElementSibling.scrollHeight +
-        "px";
+    window.onresize = () => {
+      let defaultActivePanel = document.querySelector(".accordion.active");
+      if (defaultActivePanel) {
+        defaultActivePanel.nextElementSibling.style.maxHeight =
+          defaultActivePanel.nextElementSibling.scrollHeight + "px";
+      }
     };
   </script>
 </head>
