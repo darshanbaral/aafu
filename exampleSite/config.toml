@@ -13,6 +13,7 @@ theme = "aafu"
         mainTheme = "light"
         # setting false below will hide 'aafu by darshan' displayed under the profile pic
         showAttribute = true
+        singlePage = false
 
     [params.favicons]
         use = true
