@@ -6,7 +6,9 @@
     </h1>
     {{- partial "metadata" . -}}
   </div>
-  {{ .Content }}
+  <div class="content">
+    {{ .Content }}
+  </div>
 </div>
 {{ partial "prevnext" . }}
 {{ end }}

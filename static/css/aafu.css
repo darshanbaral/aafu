@@ -5,9 +5,19 @@ body {
   background-color: var(--primaryBg);
   color: var(--primaryText);
 }
+.content img {
+  width: 100%;
+}
+pre {
+  background-color: var(--secondaryBg);
+  color: var(--secondaryText);
+  padding: 6px 12px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 3px 1px var(--shadow) !important;
+}
 code {
   font-family: "Roboto Mono", monospace !important;
-  font-size: 0.9em !important;
+  font-size: 1em !important;
 }
 footer {
   font-size: 0.9em !important;
