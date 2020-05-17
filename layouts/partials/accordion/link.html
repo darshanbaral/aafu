@@ -1,0 +1,8 @@
+{{ range.Site.Params.link.list }}
+<dl>
+  <dt class="mb-0">
+    <a href="{{ .link }}">{{ .title }}</a>
+  </dt>
+  <dd class="mb-0 ml-4 markdownify">{{ .details | markdownify }}</dd>
+</dl>
+{{ end }}

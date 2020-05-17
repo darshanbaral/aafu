@@ -1,5 +1,5 @@
 body {
-  font-family: "Roboto", sans-serif;
+  font-family: 'Kosugi Maru', sans-serif;
   overflow-y: scroll;
   transition: all 0.15s;
   background-color: var(--primaryBg);
@@ -16,7 +16,7 @@ pre {
   box-shadow: 0px 0px 3px 1px var(--shadow) !important;
 }
 code {
-  font-family: "Roboto Mono", monospace !important;
+  font-family: 'Sawarabi Gothic', sans-serif monospace !important;
   font-size: 1em !important;
 }
 footer {
@@ -29,7 +29,7 @@ h1,
 h2,
 h3,
 h4 {
-  font-family: "Didact Gothic", sans-serif;
+  font-family: 'Sawarabi Gothic', sans-serif;
 }
 a,
 a:hover,
