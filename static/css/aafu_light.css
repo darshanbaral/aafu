@@ -3,7 +3,10 @@
   --primaryText: black;
   --primaryLinks: #007bff;
   --secondaryBg: #fff;
-  --secondaryText: black;
+  --secondaryText: #555050;
   --secondaryLinks: #007bff;
   --shadow: #595659;
+  --cardBg: white;
+  --cardText: black;
+  --cardLink: #007bff;
 }

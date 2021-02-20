@@ -2,8 +2,11 @@
   --primaryBg: #f8f9fa;
   --primaryText: black;
   --primaryLinks: #81415f;
-  --secondaryBg: #81415f;
-  --secondaryText: white;
+  --secondaryBg: #f2e5eb;
+  --secondaryText: #582d41;
   --secondaryLinks: #ffc107;
   --shadow: #595659;
+  --cardBg: #81415f;
+  --cardText: white;
+  --cardLink: #ffc107;
 }

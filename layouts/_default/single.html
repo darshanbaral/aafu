@@ -1,14 +1,9 @@
 {{ define "main" }}
-<div class="rounded p-2 aafu-border border">
-  <div class="border-bottom aafu-border">
-    <h1 class="top-h1" style="font-size: 2.75em;">
-      {{- .Title -}}
-    </h1>
-    {{- partial "metadata" . -}}
-  </div>
-  <div class="content">
-    {{ .Content }}
-  </div>
+<div class="mb-3">
+  <h1 class="top-h1" style="font-size: 2.75em">{{- .Title -}}</h1>
+  <p class="mb-1">{{ .Date.Format "January 2, 2006" }}</p>
+  <p>&mdash;</p>
 </div>
+<div class="content">{{ .Content }}</div>
 {{ partial "prevnext" . }}
 {{ end }}

@@ -5,6 +5,13 @@ body {
   background-color: var(--primaryBg);
   color: var(--primaryText);
 }
+blockquote > p {
+  margin-left: 1em;
+  color: var(--secondaryText);
+  background-color: var(--secondaryBg);
+  padding: 0.25em 0.25em 0.25em 0.5em;
+  border-left: solid 3px;
+}
 .content img {
   width: 100%;
 }
@@ -16,11 +23,26 @@ pre {
   box-shadow: 0px 0px 3px 1px var(--shadow) !important;
 }
 code {
+  color: var(--secondaryText) !important;
   font-family: "Roboto Mono", monospace !important;
   font-size: 1em !important;
 }
 footer {
   font-size: 0.9em !important;
+}
+table {
+  border-spacing: 0;
+  border-collapse: collapse;
+  display: block;
+  overflow-x: auto;
+  margin-bottom: 0.5em;
+}
+th,
+td {
+  background-color: var(--secondaryBg);
+  border: solid 1px var(--primaryText);
+  padding: 0.25em 0.5em;
+  text-align: left;
 }
 dt {
   font-weight: 400;
@@ -28,7 +50,9 @@ dt {
 h1,
 h2,
 h3,
-h4 {
+h4,
+h5,
+h6 {
   font-family: "Didact Gothic", sans-serif;
 }
 a,
@@ -36,11 +60,6 @@ a:hover,
 .accordion,
 .accordion:hover {
   color: var(--primaryLinks);
-}
-.profile-area a,
-.profile-area .accordion:hover,
-.social-icons * {
-  color: var(--secondaryLinks);
 }
 .fa-toggle-on,
 .fa-toggle-off {
@@ -54,11 +73,16 @@ a:hover,
   background-color: var(--primaryLinks);
 }
 .profile-area {
-  background-color: var(--secondaryBg);
-  color: var(--secondaryText);
+  background-color: var(--cardBg);
+  color: var(--cardText);
+}
+.profile-area a,
+.profile-area .accordion:hover,
+.social-icons * {
+  color: var(--cardLink);
 }
 .shadow {
-  box-shadow: -4px -4px 5px 2px var(--shadow) !important;
+  box-shadow: 0px 0px 5px 1px var(--shadow) !important;
 }
 .top-h1 {
   font-size: 2.5em;
