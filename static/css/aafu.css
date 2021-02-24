@@ -44,6 +44,20 @@ td {
   padding: 0.25em 0.5em;
   text-align: left;
 }
+.main-menu > a {
+  text-decoration: none;
+  padding: 2px;
+  border-radius: 5px;
+  border: solid 1px var(--primaryLinks);
+  background-color: var(--primaryBg);
+  color: var(--primaryLinks);
+}
+.main-menu > a:hover {
+  text-decoration: none;
+  border: solid 1px var(--primaryLinks);
+  background-color: var(--primaryLinks);
+  color: var(--primaryBg);
+}
 dt {
   font-weight: 400;
 }
@@ -97,6 +111,27 @@ a:hover,
 .panel {
   max-height: 0;
   transition: 0.3s ease-out;
+  box-sizing: border-box;
+}
+.active + .metadata-panel {
+  margin-bottom: 1em;
+}
+.metadata {
+  background-color: var(--secondaryBg);
+  padding: 0.5em;
+}
+.metadata-tags {
+  font-size: 0.9em;
+  font-style: italic;
+}
+.metadata-tags::before {
+  content: "#";
+}
+.metadata-tags::after {
+  content: ",";
+}
+.metadata-tags:last-child::after {
+  content: "";
 }
 .skillbar {
   border-radius: 3px;
