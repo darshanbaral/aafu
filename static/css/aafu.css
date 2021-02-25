@@ -113,12 +113,27 @@ a:hover,
   transition: 0.3s ease-out;
   box-sizing: border-box;
 }
+.metadata-panel {
+  margin-left: 1.7em;
+}
 .active + .metadata-panel {
   margin-bottom: 1em;
 }
 .metadata {
   background-color: var(--secondaryBg);
   padding: 0.5em;
+}
+.expand-metadata {
+  cursor: pointer;
+  text-align: left;
+  min-width: 1em;
+  font-size: 1em;
+}
+.expand-metadata::after {
+  content: "+";
+}
+.active > .expand-metadata::after {
+  content: "-";
 }
 .metadata-tags {
   font-size: 0.9em;
