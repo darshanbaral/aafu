@@ -6,11 +6,11 @@ theme = "aafu"
     title = "Aafu theme"
     author = "Darshan Baral"
     description = "Website title"
-    copyright = "aaa"
+    copyright = "short copyright message"
 
     [params.theme]
-        # Available themes are 'light', 'dark', and 'pinkish'
-        mainTheme = "light"
+        # Available themes are 'light', 'dark', 'ocean', and 'pinkish'
+        mainTheme = "ocean"
         # setting false below will hide 'aafu by darshan' displayed under the profile pic
         showAttribute = true
         singlePage = false
@@ -29,8 +29,8 @@ theme = "aafu"
     # Profile section
     [params.profile]
         name = "First Last, Abbr."
-		tagline = "Title"
-		location = "City Name, ST"
+        tagline = "Title"
+        location = "City Name, ST"
         photo = "profile.jpg"
 
     # Section for links to social websites
@@ -38,33 +38,31 @@ theme = "aafu"
         title = "Links"
 
         [[params.social.list]]
-            class = "fab"
-            icon = "fa-linkedin-in"
+            icon = "fab fa-linkedin-in"
             url = "#"
             title = "LinkedIn"		
         [[params.social.list]]
-            class = "fab"
-            icon = "fa-stack-overflow"
+            icon = "fab fa-stack-overflow"
             url = "#"
             title = "StackOverflow"
         [[params.social.list]]
-            class = "fab"
-            icon = "fa-github"
+            icon = "fab fa-github"
             url = "#"
             title = "GitHub"
         [[params.social.list]]
-            class = "fab"
-            icon = "fa-twitter"
+            icon = "fab fa-twitter"
             url = "#"
             title = "Twitter"
-		[[params.social.list]]
-            class = "ai"
-            icon = "ai-google-scholar"
+        [[params.social.list]]
+            icon = "fab fa-orcid"
+            url = "#"
+            title = "Orcid"
+        [[params.social.list]]
+            icon = "ai ai-google-scholar"
             url = "#"
             title = "Google Scholar"
-		[[params.social.list]]
-            class = "ai"
-            icon = "ai-researchgate"
+        [[params.social.list]]
+            icon = "fab fa-researchgate"
             url = "#"
             title = "ResearchGate"
 
@@ -88,7 +86,7 @@ theme = "aafu"
     [params.aboutme]
         title = "About Me"
         icon = "fas fa-user"
-        description = "**Tagline. Lorem ipsum dolor sit amet**, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+        description = "This is a demo of the `aafu` theme. It has `light`, `dark`, `ocean`, and `pinkish` themes."
 
     # Experience section
     [params.experience]
@@ -103,7 +101,7 @@ theme = "aafu"
         [[params.experience.list]]
             position = "Job Title"
             dates = "2018 - 2019"
-            link = "#"
+            url = "#"
             company = "Company Name"
 
     # Education section
@@ -116,13 +114,13 @@ theme = "aafu"
             college = "University of State-City"
             dates = "2013 - 2018"
             thesis_title = "Effect of humans on other humans: a study of human behavior."
-            thesis_link = "#"
+            thesis_url = "#"
         [[params.education.list]]
             degree = "M.S. in Subject"
             college = "University of State-City"
             dates = "2013 - 2018"
             thesis_title = "Effect of humans on other humans: a study of human behavior."
-            thesis_link = "#"
+            thesis_url = "#"
         [[params.education.list]]
             degree = "B.S. in Subject"
             college = "University of State-City"
@@ -142,7 +140,7 @@ theme = "aafu"
             authors = "F Last, F Second, P secondary"
             date = "2018"
             journal = "Journal of Field 52 (16), 9033-9044"
-            link = "#"
+            url = "#"
             type = "Journal Articles"
 
         [[params.publication.list]]
@@ -150,7 +148,7 @@ theme = "aafu"
             authors = "F Last, F Second, P secondary"
             date = "2018"
             journal = "Journal of Field 52 (16), 9033-9044"
-            link = "#"
+            url = "#"
             type = "Journal Articles"
 		
         [[params.publication.list]]
@@ -158,7 +156,7 @@ theme = "aafu"
             authors = "F Last, F Second, P secondary"
             date = "2018"
             journal = "Journal of Field 52 (16), 9033-9044"
-            link = "#"
+            url = "#"
             type = "Proceedings"
 
     # Project section
@@ -167,21 +165,21 @@ theme = "aafu"
         icon = "fas fa-project-diagram"
 
         [[params.project.list]]
-            title = "project"
+            title = "Project 1"
             url = "#"
             description = "Description of the project"
         [[params.project.list]]
-            title = "project"
+            title = "Project 2"
             url = "#"
             description = "Description of the project"
         [[params.project.list]]
-            title = "project"
+            title = "Project 3"
             url = "#"
             description = "Description of the project"
         [[params.project.list]]
-            title = "project"
+            title = "Project 4"
             url = "#"
-            description = "Description of the project"            
+            description = "Description of the project"
 
     # Skill section
     [params.skill]
@@ -203,10 +201,10 @@ theme = "aafu"
     [params.hobby]
         title = "Hobbies"
         icon = "fas fa-gamepad"
-		
-        [[params.hobby.list]]		
-		    hobby = "Cooking"
-        [[params.hobby.list]]		
-		    hobby = "Hiking"
-        [[params.hobby.list]]		
-		    hobby = "Baking"
+
+        [[params.hobby.list]]
+            hobby = "Cooking"
+        [[params.hobby.list]]
+            hobby = "Hiking"
+        [[params.hobby.list]]
+            hobby = "Baking"
