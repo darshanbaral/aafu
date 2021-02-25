@@ -5,7 +5,7 @@ description = "Portfolio and blog theme with multiple theme colors"
 homepage = "https://github.com/darshanbaral/aafu"
 tags = ["portfolio", "accordion", "resume", "blog"]
 features = ["responsive", "dark", "clean"]
-min_version = "0.55"
+min_version = "0.80.0"
 
 [author]
   name = "Darshan Baral"
