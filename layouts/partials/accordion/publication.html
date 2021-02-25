@@ -20,7 +20,7 @@
 {{- $this_publication := . -}}
 <p>
   {{- range $.Site.Params.publication.format -}}
-  {{- partial "addTitle" (dict "all" $this_publication "ind" .) -}}
+  {{- partial "accordion/supportingPartials/addTitle" (dict "all" $this_publication "ind" .) -}}
   {{- end -}}
 </p>
 {{ end }}
