@@ -1,17 +1,10 @@
 {{ range.Site.Params.experience.list }}
-<dl>
-  <dt class="mb-0">
-    {{ .position }}
-  </dt>
-  <dd class="mb-0 ml-3">
-    <span class="markdownify">{{ .dates | markdownify }}</span>
-    &middot;
-    {{ if .url }}
-    <a href="{{ .url }}">{{ .company }}</a>
-    {{ else }}
-    {{ .company }}
-    {{ end }}
-  </dd>
-  <dd class="mb-0 ml-4 markdownify">{{ .details | markdownify }}</dd>
-</dl>
+<h4 style="text-decoration: underline;">{{ .position }}</h4>
+<p {{if .details }}class="mb-0"{{ end }}>
+  {{ .dates | markdownify }} &middot; {{ if .url }}
+  <a href="{{ .url }}">{{ .company }}</a>
+  {{ else }} {{ .company }} {{ end }}
+</p>
+<p>{{ .details | markdownify }}</p>
+
 {{ end }}

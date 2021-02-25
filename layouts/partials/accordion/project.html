@@ -1,12 +1,6 @@
-<dl>
-  {{ range.Site.Params.project.list }}
-  <h4>
-    <a href="{{ .url }}">
-      {{- .title -}}
-    </a>
-  </h4>
-  <p class="mb-0 ml-3 markdownify">
-    {{- .description | markdownify -}}
-  </p>
-  {{ end }}
-</dl>
+{{ range.Site.Params.project.list }}
+<h4>
+  <a href="{{ .url }}">{{- .title -}}</a>
+</h4>
+<p class="markdownify">{{- .description | markdownify -}}</p>
+{{ end }}
