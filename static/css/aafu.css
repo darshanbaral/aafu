@@ -17,13 +17,18 @@ blockquote > p {
 }
 pre {
   background-color: var(--secondaryBg);
-  color: var(--secondaryText);
   padding: 6px 12px;
   border-radius: 5px;
   box-shadow: 0px 0px 3px 1px var(--shadow) !important;
 }
+pre code {
+  color: var(--secondaryText);
+}
+.highlight > pre code {
+  color: white;
+}
 code {
-  color: var(--secondaryText) !important;
+  color: var(--secondaryText);
   font-family: "Roboto Mono", monospace !important;
   font-size: 1em !important;
 }
@@ -171,4 +176,7 @@ a:hover,
 }
 .aafu-border {
   border-color: var(--primaryLinks) !important;
+}
+.nav-menu-disabled {
+  color: var(--secondaryBg);
 }

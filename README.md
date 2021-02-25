@@ -30,11 +30,11 @@ Go to `static/images` and replace the `profile.jpg` with your own file.
 
 ### Theme Colors
 
-The `aafu` theme provides three different theme colors - `light`, `dark`, and `pinkish`. These can be specified in the `config.toml`
+The `aafu` theme provides four different theme colors - `light`, `dark`, `ocean`, and `pinkish`. These can be specified in the `config.toml`
 
 ```
     [params.theme]
-        # Available themes are 'light', 'dark', and 'pinkish'
+        # Available themes are 'light', 'dark', `ocean`, and 'pinkish'
         mainTheme = "light"
 ```    
 
