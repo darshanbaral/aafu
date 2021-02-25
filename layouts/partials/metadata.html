@@ -1,5 +1,5 @@
-<p class="mb-1">Reading Time: {{ .ReadingTime }} minutes</p>
 <p class="mb-1">{{ .Date.Format "January 2, 2006" }}</p>
+<p class="mb-1">Reading Time: {{ .ReadingTime }} minutes</p>
 {{ $params := .Params }} {{ range $name, $value := .Site.Taxonomies }}
 {{ if index $params $name }}
 <p class="metadata-value mb-1 taxa taxa-container-div list-{{- $name -}}">
