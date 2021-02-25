@@ -2,10 +2,10 @@
 <dl>
   <dt>{{ .degree }}</dt>
   <dd class="mb-0 ml-3">{{ .dates }} &middot; {{ .college }}</dd>
-  {{ if .thesis_link }}
+  {{ if .thesis_url }}
   <dd class="mb-0 ml-4">
     Thesis:
-    <a href="{{ .thesis_link }}"
+    <a href="{{ .thesis_url }}"
       ><i>{{ .thesis_title }}</i></a
     >
   </dd>

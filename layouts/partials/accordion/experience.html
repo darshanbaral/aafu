@@ -6,8 +6,8 @@
   <dd class="mb-0 ml-3">
     <span class="markdownify">{{ .dates | markdownify }}</span>
     &middot;
-    {{ if .link }}
-    <a href="{{ .link }}">{{ .company }}</a>
+    {{ if .url }}
+    <a href="{{ .url }}">{{ .company }}</a>
     {{ else }}
     {{ .company }}
     {{ end }}

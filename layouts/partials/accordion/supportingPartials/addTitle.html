@@ -1,6 +1,6 @@
 {{ if (eq .ind "title") }}
-{{ if (index .all `link`) }}
-<a href="{{ index .all `link` }}">
+{{ if (index .all `url`) }}
+<a href="{{ index .all `url` }}">
   <em>
     {{- index .all .ind -}}
     {{- cond (eq (substr (index .all .ind) -1 1) ".") "" "." -}}
