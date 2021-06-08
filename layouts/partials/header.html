@@ -2,7 +2,14 @@
   <h3 class="main-menu mr-3">
     <a href="{{ .Site.BaseURL }}">Home</a>
   </h3>
+  {{ if not .Site.Params.disableBlog }}
   <h3 class="main-menu mr-3">
     <a href="{{ `blog` | relURL }}">Blog</a>
   </h3>
+  {{ end }}
+  {{ range .Site.Params.menu.list }}
+  <h3 class="main-menu mr-3">
+    <a href="{{ .dir | relURL }}">{{ .label }}</a>
+  </h3>
+  {{ end }}
 </div>
