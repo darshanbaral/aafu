@@ -1,0 +1,8 @@
+{{ define "main" }}
+<div class="mb-3">
+  <h1 class="top-h1" style="font-size: 2.75em">{{- .Title -}}</h1>
+  <p>&mdash;</p>
+</div>
+<div class="content">{{ .Content }}</div>
+{{ partial "prevnext" . }}
+{{ end }}
