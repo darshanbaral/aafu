@@ -208,3 +208,9 @@ theme = "aafu"
             hobby = "Hiking"
         [[params.hobby.list]]
             hobby = "Baking"
+
+  # More menu
+    [params.menu]
+        [[params.menu.list]]
+            label='single page'
+            dir = "single_page"
