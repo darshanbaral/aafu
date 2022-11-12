@@ -1,6 +1,6 @@
 const allPanels = Array.from(document.querySelectorAll(".panel"));
 const allAccordion = Array.from(document.querySelectorAll(".accordion"));
-const expandAccordion = elem => {
+const expandAccordion = elem => {  
   if (!elem.parentElement.classList.contains("active")) {
     allAccordion.forEach(acc => {
       acc.classList.remove("active");

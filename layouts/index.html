@@ -1,31 +1,39 @@
 {{ define "main" }}
-<div class="ml-auto mr-auto row row-eq-height rounded">
-  <div class="col-md-5 text-center p-2 mt-1">
-    <div class="profile-area rounded text-center position-relative shadow">
+<div class="grid grid-cols-5 gap-2">
+  <div class="col-span-2 p-2 bg-gray-300 dark:bg-gray-800 rounded drop-shadow-md">
+    <div class="flex flex-col justify-center">
+      <div class="">
       {{ partial "profilePhoto" . }}
-      <div class="p-2">
+    </div>
+      <div class="p-2 text-center">
         {{ partial "social" . }} {{ partial "footer" . }}
       </div>
     </div>
   </div>
-  <div class="col-md-7 pt-2 mt-3">
+  <div class="col-span-3 relative p-2">
     {{ range .Site.Params.showInAccordion }}
-    <h2 class="accordion {{ if .expand }} active {{ end }}">
+    <div class="mb-2">
+    <h2 class="my-0 accordion {{ if .expand }} active {{ end }}">
       {{ $current := index $.Site.Params .item }}
       <span onclick="expandAccordion(this)" style="cursor: pointer;">
         <i class="{{ $current.icon }}"></i>
         {{ $current.title -}}
       </span>
     </h2>
+  
     <div
       class="panel overflow-hidden"
       {{ if $current.panelid }}
       id="{{ $current.panelid }}"
       {{ end }}
     >
+    <div class="p-2">
       {{ partial (print "accordion/" .item) $ }}
     </div>
+    </div>
+  </div>
     {{ end }}
+  
     <script src="{{ `js/accordion.js` | relURL }}"></script>
   </div>
 </div>

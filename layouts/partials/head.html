@@ -1,10 +1,5 @@
 <head>
   {{ partial "meta" . }}
-
-  <link
-    rel="stylesheet"
-    href="{{ `/css/bootstrap/bootstrap.min.css` | relURL }}"
-  />
   <link
     rel="stylesheet"
     href="https://use.fontawesome.com/releases/v5.15.2/css/all.css"
@@ -19,8 +14,11 @@
     rel="stylesheet"
     href="//fonts.googleapis.com/css?family=Didact+Gothic%7CRoboto:400%7CRoboto+Mono"
   />
-  <link rel="stylesheet" href="{{ print "/css/aafu_" .Site.Params.theme.mainTheme ".css" | relURL }}" />
-  <link rel="stylesheet" href="{{ `/css/aafu.css` | relURL }}" />
+  {{/*  <link rel="stylesheet" href="{{ print "/css/aafu_" .Site.Params.theme.mainTheme ".css" | relURL }}" />
+  <link rel="stylesheet" href="{{ `/css/aafu.css` | relURL }}" />  */}}
+  {{ $css := resources.Get "style.css" }}
+  {{ $style := $css | resources.Minify }}
+  <link rel="stylesheet" href="{{ $style.Permalink }}"> 
 
   <script>
     var themeColor = document.querySelector("meta[name=theme-color]");

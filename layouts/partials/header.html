@@ -1,8 +1,24 @@
-<div class="d-flex flex-row row p-2">
-  <h3 class="main-menu mr-3">
-    <a href="{{ .Site.BaseURL }}">Home</a>
-  </h3>
-  <h3 class="main-menu mr-3">
-    <a href="{{ `blog` | relURL }}">Blog</a>
-  </h3>
+<div class="nav flex flex-row row py-2 w-full">
+  <a class="mr-4 no-underline" href="{{ .Site.BaseURL }}">Home</a>
+  <a class="mr-4 no-underline" href="{{ `blog` | relURL }}">Blog</a>
+  <a class="theme-toggle cursor-pointer no-underline" onclick="lightDark(this)"
+    >a</a
+  >
 </div>
+
+<script>
+  const lightDark = (el) => {
+    let html = document.querySelector("html");
+    if (html.classList.contains("dark")) {
+      html.classList.remove("dark");
+      el.classList.add("bi-moon-fill");
+      el.classList.remove("bi-brightness-high");
+      window.localStorage.setItem("theme", "light");
+    } else {
+      html.classList.add("dark");
+      el.classList.add("bi-brightness-high");
+      el.classList.remove("bi-moon-fill");
+      window.localStorage.setItem("theme", "dark");
+    }
+  };
+</script>

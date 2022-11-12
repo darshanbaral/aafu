@@ -1,0 +1,88 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .nav {
+    @apply text-3xl text-blue-500 hover:text-blue-700;
+  }
+  .panel {
+    max-height: 0;
+    transition: 0.3s ease-out;
+  }
+  h2.accordion {
+    @apply text-indigo-800 dark:text-yellow-700;
+  }
+  a {
+    @apply text-indigo-500 hover:text-indigo-700 hover:underline dark:text-yellow-400 dark:hover:text-yellow-700;
+  }
+  .active {
+    @apply overflow-visible;
+  }
+  h1 {
+    @apply text-4xl mb-5 mt-1;
+  }
+  h2 {
+    @apply text-3xl mb-4 mt-1;
+  }
+  h3 {
+    @apply text-2xl mb-3 mt-1;
+  }
+  h4 {
+    @apply text-xl mb-2 mt-1;
+  }
+  body {
+    @apply text-base bg-stone-50 dark:text-stone-50 dark:bg-stone-900;
+  }
+  html {
+    touch-action: manipulation;
+    scroll-behavior: smooth;
+  }
+  p {
+    @apply mt-2 mb-2;
+  }
+  summary {
+    @apply block text-sm;
+  }
+  mark {
+    @apply bg-green-200 italic;
+  }
+  blockquote {
+    @apply bg-gray-100 dark:bg-dark3;
+  }
+  .menu,
+  .social-icon {
+    @apply text-gray-500 dark:text-gray-200 cursor-pointer hover:text-gray-700 dark:hover:text-gray-100 hover:bg-gray-400 dark:hover:bg-dark3 hover:shadow;
+  }
+  .menu {
+    @apply p-2 rounded w-full sm:w-auto justify-center flex;
+  }
+  .social-icon {
+    @apply py-1 px-2 text-lg rounded;
+  }
+  .menu-container {
+    @apply flex flex-col sm:flex-row sm:items-center fixed top-0 left-0 h-screen sm:h-auto sm:static bg-gray-200 dark:bg-dark2 rounded-none sm:rounded duration-500;
+  }
+  .tags,
+  .categories {
+    @apply p-1 mr-2 mb-2 text-sm rounded hover:shadow;
+  }
+  .categories {
+    @apply text-green-800 bg-green-100 hover:bg-green-200 border border-green-600 dark:border-green-100 !important;
+  }
+  .tags {
+    @apply text-gray-800 bg-gray-200 hover:bg-gray-300 border border-gray-600 dark:border-gray-100 !important;
+  }
+  .pagination {
+    @apply flex flex-row justify-center;
+  }
+  .page-link {
+    @apply px-2 sm:px-4 py-2 border border-gray-200 flex justify-center items-center text-gray-500 hover:text-gray-800 hover:bg-gray-200;
+  }
+  .page-item.disabled > .page-link {
+    @apply text-gray-300 bg-white;
+  }
+  .page-item.active > .page-link {
+    @apply bg-gray-300 pointer-events-none text-gray-800;
+  }
+}

@@ -1,7 +1,6 @@
-<footer class="{{ if .IsHome }} mt-2 mb-2 {{ else }} mt-2 mb-4 text-center {{ end }}">
-  <span class="markdownify">{{ .Site.Params.copyright | markdownify }}</span>
-  <span {{ if not .Site.Params.theme.showAttribute }}style="font-size:0px;"{{ end }}>
-    &middot;
+<footer class="text-sm {{ if .IsHome }} mt-2 mb-2 {{ else }} mt-2 mb-4 text-center {{ end }}">
+  <p class="markdownify">{{ .Site.Params.copyright | markdownify }}</p>
+  <p {{ if not .Site.Params.theme.showAttribute }}style="font-size:0px;"{{ end }}>
     <i>
       <a href="https://github.com/darshanbaral/aafu">
         aafu
@@ -11,5 +10,5 @@
     <a href="https://www.darshanbaral.com/">
       darshan
     </a>
-  </span>
+  </p>
 </footer>

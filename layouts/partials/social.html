@@ -1,11 +1,11 @@
 <h1 class="mb-0">{{ .Site.Params.profile.name }}</h1>
 <h2 class="mb-0">{{ .Site.Params.profile.tagline }}</h2>
 <h3 class="mb-0">{{ .Site.Params.profile.location }}</h3>
-<div class="mt-2 d-flex flex-wrap justify-content-center">
+<div class="mt-2 flex flex-wrap justify-center">
   {{ range.Site.Params.social.list }}
-  <div style="height:45px; width:45px;">
-    <a href="{{ .url }}">
-      <i class="zoomlink mt-1 {{ .icon }}"></i>
+  <div class="mx-2">
+    <a class="text-2xl" href="{{ .url }}">
+      <i class="mt-1 {{ .icon }}"></i>
     </a>
   </div>
   {{ end }}
