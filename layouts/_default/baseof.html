@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="{{ .Site.LanguageCode }}" style="max-width: 900px; margin: auto;">
+<html lang="{{ .Site.LanguageCode }}" style="max-width: 900px; margin: auto;" class="dark">
   {{- partial "head.html" . -}}
-  <body class="container">
+  <body class="container p-2">
     <main style="min-height: calc(100vh - 60px)">
-      {{ if not .Site.Params.theme.singlepage }}
+      {{ if and (not .Site.Params.theme.singlepage) (not .IsHome) }}
       {{ partial "header" . }}
       {{ end }}
       {{- block "main" . }}

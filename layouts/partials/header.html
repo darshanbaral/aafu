@@ -1,9 +1,15 @@
-<div class="nav flex flex-row row py-2 w-full">
-  <a class="mr-4 no-underline" href="{{ .Site.BaseURL }}">Home</a>
-  <a class="mr-4 no-underline" href="{{ `blog` | relURL }}">Blog</a>
-  <a class="theme-toggle cursor-pointer no-underline" onclick="lightDark(this)"
-    >a</a
-  >
+<div
+  class="nav flex flex-row row p-2 mb-6 w-full border-b border-gray-300 dark:border-gray-700 justify-between"
+>
+  <div>
+    <a class="mr-4 no-underline" href="{{ .Site.BaseURL }}">Home</a>    
+    <a class="mr-4 no-underline" href="{{ `blog` | relURL }}">Blog</a>
+  </div>
+  
+  <i
+    class="fas fa-sun theme-toggle text-gray-600 hover:text-gray-900 dark:text-yellow-500 dark:hover:text-yellow-200 cursor-pointer text-lg mr-9 sm:mr-0"
+    onclick="lightDark(this)"
+  ></i>
 </div>
 
 <script>
@@ -11,13 +17,13 @@
     let html = document.querySelector("html");
     if (html.classList.contains("dark")) {
       html.classList.remove("dark");
-      el.classList.add("bi-moon-fill");
-      el.classList.remove("bi-brightness-high");
+      el.classList.add("fa-moon");
+      el.classList.remove("fa-sun");
       window.localStorage.setItem("theme", "light");
     } else {
       html.classList.add("dark");
-      el.classList.add("bi-brightness-high");
-      el.classList.remove("bi-moon-fill");
+      el.classList.add("fa-sun");
+      el.classList.remove("fa-moon");
       window.localStorage.setItem("theme", "dark");
     }
   };

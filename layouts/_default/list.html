@@ -1,14 +1,14 @@
 {{ define "main" }}
-<div class="prose max-w-none">
+<div class="prose dark:prose-invert max-w-none">
 <h1 class="standard {{ if eq .Kind "term" }}font-italic{{ end }}">{{ if eq .Kind "term" }}#{{ end }}{{- .Title -}}</h1>
 {{ range $key, $val := (.Paginator 10).Pages }}
-<div class="mb-2">
-<h3 class="flex flex-row align-start accordion mt-0 mb-1 {{ if eq $key 0 }}active{{ end }}">
+<div>
+<h3 class="hover:bg-gray-400 dark:hover:bg-gray-800 flex flex-row align-start accordion mt-0 mb-0 p-2 rounded {{ if eq $key 0 }}active{{ end }}">
   <span onclick="expandAccordion(this)" class="expand-metadata">a</span><span>-</span>
   <a href="{{ .Permalink | relURL }}"> {{- .Title -}} </a>
 </h3>
-<div id="panel-item-{{ $key }}" class="panel metadata-panel overflow-hidden">
-  <div class="metadata">{{- partial "metadata" . -}}</div>
+<div id="panel-item-{{ $key }}" class="rounded shadow panel metadata-panel overflow-hidden bg-gray-200 dark:bg-gray-700">
+  <div class="metadata p-2">{{- partial "metadata" . -}}</div>
 </div>
 </div>
 {{ end }}
