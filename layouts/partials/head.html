@@ -14,14 +14,43 @@
     rel="stylesheet"
     href="//fonts.googleapis.com/css?family=Didact+Gothic%7CRoboto:400%7CRoboto+Mono"
   />
-  {{/*  <link rel="stylesheet" href="{{ print "/css/aafu_" .Site.Params.theme.mainTheme ".css" | relURL }}" />
-  <link rel="stylesheet" href="{{ `/css/aafu.css` | relURL }}" />  */}}
+  <link rel="stylesheet" href="{{ `/css/aafu.css` | relURL }}" />
   {{ $css := resources.Get "style.css" }}
   {{ $style := $css | resources.Minify }}
   <link rel="stylesheet" href="{{ $style.Permalink }}"> 
 
   <script>
-    var themeColor = document.querySelector("meta[name=theme-color]");
+    let html = document.querySelector("html");
+    let theme = window.localStorage.getItem("theme");
+    if (theme) {
+      theme === "dark"
+        ? html.classList.add("dark")
+        : html.classList.remove("dark");
+    } else if (html.classList.contains("dark")) {
+      window.localStorage.setItem("theme", "dark");
+    } else {
+      html.classList.remove("dark");
+      window.localStorage.setItem("theme", "light");
+    }
+
+    window.onload = () => {
+      let themeToggle = document.querySelector(".theme-toggle");
+      if (window.localStorage.getItem("theme") === "dark") {
+        themeToggle.classList.remove("bi-moon-fill");
+        themeToggle.classList.add("bi-brightness-high");
+      } else {
+        themeToggle.classList.add("bi-moon-fill");
+        themeToggle.classList.remove("bi-brightness-high");
+      }
+
+      let defaultActivePanel = document.querySelector(".accordion.active");
+      if (defaultActivePanel) {
+        defaultActivePanel.nextElementSibling.style.maxHeight =
+          defaultActivePanel.nextElementSibling.scrollHeight + "px";
+      }
+    };
+
+    {{/*  var themeColor = document.querySelector("meta[name=theme-color]");
     window.onload = () => {
       themeColor.content = getComputedStyle(document.body)["background-color"];
       let defaultActivePanel = document.querySelector(".accordion.active");
@@ -29,7 +58,7 @@
         defaultActivePanel.nextElementSibling.style.maxHeight =
           defaultActivePanel.nextElementSibling.scrollHeight + "px";
       }
-    };
+    };  */}}
     window.onresize = () => {
       let defaultActivePanel = document.querySelector(".accordion.active");
       if (defaultActivePanel) {
