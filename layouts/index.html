@@ -1,7 +1,7 @@
 {{ define "main" }}
 <div class="grid grid-cols-1 md:grid-cols-5 gap-2 sm py-2">
   <div class="col-span-2">
-    <div class="bg-gray-300 dark:bg-gray-800 rounded drop-shadow-md p-2">
+    <div class="bg-gray-300 dark:bg-darker rounded drop-shadow-md p-2">
       <div class="flex flex-col justify-center">
         <div class="">{{ partial "profilePhoto" . }}</div>
         <div class="p-2 text-center">
@@ -16,7 +16,7 @@
       <h2 class="my-0 accordion {{- if .expand }} active {{- end }}">
         {{ $current := index $.Site.Params .item }}
         <p
-          class="hover:bg-gray-300 dark:hover:bg-gray-800 m-0 p-2"
+          class="hover:bg-gray-300 rounded dark:hover:bg-darker m-0 p-2"
           onclick="expandAccordion(this)"
           style="cursor: pointer"
         >
@@ -26,7 +26,7 @@
       </h2>
 
       <div
-        class="panel overflow-hidden"
+        class="panel overflow-hidden px-2 ml-2"
         {{if $current.panelid}}
         id="{{ $current.panelid }}"
         {{ end }}

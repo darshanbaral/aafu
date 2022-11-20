@@ -1,51 +1,60 @@
-//const theme = require("tailwindcss/defaultTheme");
+const theme = require("tailwindcss/defaultTheme");
 
 module.exports = {
   important: true,
   content: ["content/**/*.md", "layouts/**/*.html"],
-  darkMode: "class", // or 'media' or 'class'
+  darkMode: "class", // 'media' or 'class'
   theme: {
     extend: {
       backgroundColor: (theme) => ({
-        dark: "#202124",
-        dark2: "#2a2b2e",
-        dark3: "#3c4043",
+        darkest: theme(`colors.stone.900`),
+        darker: theme(`colors.stone.800`),
+        dark: theme(`colors.stone.700`),
       }),
       typography: (theme) => ({
         DEFAULT: {
           css: {
+            "code::before": false,
+            "code::after": false,
             a: {
-              color: theme(`colors.indigo.500`),
+              color: theme(`colors.blue.600`),
               textDecoration: "none",
               "&:hover": {
-                color: theme(`colors.indigo.700`),
+                color: theme(`colors.blue.800`),
                 textDecoration: "underline",
               },
             },
+            code: { color: theme(`colors.gray.700`) },
+            pre: {
+              backgroundColor: theme(`colors.stone.200`),
+            },
           },
         },
-        dark: {
+        invert: {
           css: {
             color: theme(`colors.gray.200`),
+            a: {
+              color: theme(`colors.yellow.300`),
+              "&:hover": { color: theme(`colors.yellow.500`) },
+            },
             h1: { color: theme(`colors.gray.200`) },
             h2: { color: theme(`colors.gray.200`) },
             h3: { color: theme(`colors.gray.200`) },
             h4: { color: theme(`colors.gray.200`) },
             h5: { color: theme(`colors.gray.200`) },
             h6: { color: theme(`colors.gray.200`) },
-            code: { color: theme(`colors.gray.200`) },
             strong: { color: theme(`colors.gray.200`) },
             td: { color: theme(`colors.gray.200`) },
             blockquote: { color: theme(`colors.gray.200`) },
-            a: {
-              color: theme(`colors.yellow.200`),
-              "&:hover": { color: theme(`colors.yellow.400`) },
+            pre: {
+              backgroundColor: theme(`colors.stone.700`),
             },
+            code: { color: theme(`colors.gray.200`) },
           },
         },
       }),
     },
   },
-  variants: { typography: ["dark"], extend: {} },
+  variants: { typography: ["invert"], extend: {} },
   plugins: [require("@tailwindcss/typography")],
 };

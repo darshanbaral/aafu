@@ -5,7 +5,7 @@
 {{- range $.Site.Params.publication.list -}}
 {{ if eq $type .type }}
 {{- $this_publication := . -}}
-<p>
+<p class="foo indent-8">
   {{- range $.Site.Params.publication.format -}}
   {{- partial "accordion/supportingPartials/addTitle" (dict "all" $this_publication "ind" .) -}}
   {{- end -}}
@@ -18,7 +18,7 @@
 
 {{- range $.Site.Params.publication.list -}}
 {{- $this_publication := . -}}
-<p>
+<p class="bar -indent-8">
   {{- range $.Site.Params.publication.format -}}
   {{- partial "accordion/supportingPartials/addTitle" (dict "all" $this_publication "ind" .) -}}
   {{- end -}}

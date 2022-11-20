@@ -1,4 +1,6 @@
+.chevron {
+  transition: 300ms linear rotate;
+}
 .active > .chevron {
-  transition: 300ms linear all;
   transform: rotate(90deg);
 }
