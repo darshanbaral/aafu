@@ -1,15 +1,15 @@
-<p class="mb-1">{{ .Date.Format "January 2, 2006" }}</p>
-<p class="mb-1">Reading Time: {{ .ReadingTime }} minutes</p>
+<p class="mt-0 mb-0 text-sm">{{ .Date.Format "January 2, 2006" }}</p>
+<p class="mt-1 mb-0 text-sm">Reading Time: {{ .ReadingTime }} minutes</p>
 {{ $params := .Params }} {{ range $name, $value := .Site.Taxonomies }}
 {{ if index $params $name }}
-<p class="metadata-value mb-1 taxa taxa-container-div list-{{- $name -}}">
+<p class="metadata-value mt-1 mb-0 text-sm taxa taxa-container-div list-{{- $name -}}">
   {{ $name | humanize }}: {{ range index $params $name }}
   <a
-    class="metadata-tags"
+    class="metadata-tags hover:no-underline"
     href="{{ $name | relURL }}/{{ . | urlize }}"
     title="{{ $name }}"
   >
-    {{- . -}}
+    #{{- . -}}
   </a>
   {{ end }}
 </p>
