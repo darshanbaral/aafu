@@ -15,9 +15,16 @@
     href="//fonts.googleapis.com/css?family=Didact+Gothic%7CRoboto:400%7CRoboto+Mono"
   />
   <link rel="stylesheet" href="{{ `/css/aafu.css` | relURL }}" />
-  {{ $css := resources.Get "style.css" }}
-  {{ $style := $css | resources.Minify }}
-  <link rel="stylesheet" href="{{ $style.Permalink }}"> 
+  
+  {{- if .Site.IsServer }}
+  {{ $css := resources.Get "style.css" | postCSS (dict "config" "./assets/postcss.config.js") }}
+    {{ $style := $css | resources.Minify }}
+    <link rel="stylesheet" href="{{ $style.Permalink }}"> 
+  {{ else }}
+    {{ $style := resources.Get "style.css" }}
+    <link rel="stylesheet" href="{{ $style.Permalink }}"> 
+  {{ end }}
+  
 
   <script>
     let html = document.querySelector("html");
