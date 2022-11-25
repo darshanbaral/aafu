@@ -2,6 +2,9 @@ baseURL = "https://www.example.org/"
 languageCode = "en-us"
 theme = "aafu"
 
+[build]
+  writeStats = true
+
 [params]
     title = "Aafu theme"
     author = "Darshan Baral"
