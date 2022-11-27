@@ -1,13 +1,25 @@
+const themeDir = __dirname + './../';
+
 const purgecss = require('@fullhuman/postcss-purgecss')({
-  content: ['./hugo_stats.json'],
-  defaultExtractor: (content) => {
-    let els = JSON.parse(content).htmlElements
-    return els.tags.concat(els.classes, els.ids)
-  },
+    // see https://gohugo.io/hugo-pipes/postprocess/#css-purging-with-postcss
+    content: [
+        './hugo_stats.json',
+        themeDir + '/hugo_stats.json',
+        'exampleSite/hugo_stats.json',
+    ],
+    safelist : [ /type/ ],
+    defaultExtractor: (content) => {
+        let els = JSON.parse(content).htmlElements;
+        return els.tags.concat(els.classes, els.ids);
+    }
 })
 
-module.exports = {
-  plugins: [
-    ...(process.env.HUGO_ENVIRONMENT === 'production' ? [purgecss] : []),
-  ],
+module.exports = {    
+    plugins: [
+        require('tailwindcss')(themeDir + '/assets/tailwind.config.js'),
+        require('autoprefixer')({
+            path: [themeDir]
+        }),
+        ...(process.env.HUGO_ENVIRONMENT === 'production' ? [purgecss] : [])
+    ]
 }

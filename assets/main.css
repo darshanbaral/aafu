@@ -1,6 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@tailwind variants;
 
 @layer components {
   .nav {
@@ -37,9 +38,6 @@
   h5 {
     @apply text-lg mb-2 mt-1;
   }
-  code {
-    @apply text-gray-700 dark:text-gray-200;
-  }
   body {
     @apply text-base bg-stone-50 dark:text-stone-50 dark:bg-darkest;
   }
@@ -55,12 +53,6 @@
   }
   blockquote {
     @apply bg-gray-100 dark:bg-dark;
-  }
-  .social-icon {
-    @apply py-1 px-2 text-lg rounded;
-  }
-  .menu-container {
-    @apply flex flex-col sm:flex-row sm:items-center fixed top-0 left-0 h-screen sm:h-auto sm:static bg-gray-200 dark:bg-darker rounded-none sm:rounded duration-500;
   }
   .tags,
   .categories {

@@ -2,7 +2,14 @@ const theme = require("tailwindcss/defaultTheme");
 
 module.exports = {
   important: true,
-  content: ["content/**/*.md", "layouts/**/*.html"],
+  content: [
+    "content/**/*.md",
+    "layouts/**/*.html",
+    "./themes/**/layouts/**/*.html",
+    "./content/**/layouts/**/*.html",
+    "./layouts/**/*.html",
+    "./content/**/*.html",
+  ],
   darkMode: "class", // 'media' or 'class'
   theme: {
     extend: {
@@ -24,10 +31,11 @@ module.exports = {
                 textDecoration: "underline",
               },
             },
-            code: { color: theme(`colors.gray.700`) },
             pre: {
               backgroundColor: theme(`colors.stone.200`),
+              color: theme(`colors.gray.700`),
             },
+            code: { color: theme(`colors.gray.700`) },
           },
         },
         invert: {

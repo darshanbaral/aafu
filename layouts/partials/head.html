@@ -16,13 +16,12 @@
   />
   <link rel="stylesheet" href="{{ `/css/aafu.css` | relURL }}" />
   
-  {{- if .Site.IsServer }}
-  {{ $css := resources.Get "style.css" | postCSS (dict "config" "./assets/postcss.config.js") }}
-    {{ $style := $css | resources.Minify }}
-    <link rel="stylesheet" href="{{ $style.Permalink }}"> 
+  {{ $styles := resources.Get "main.css" | postCSS (dict "config" "./assets/postcss.config.js") }}
+  {{ if .Site.IsServer }}
+      <link rel="stylesheet" href="{{ $styles.RelPermalink }}">
   {{ else }}
-    {{ $style := resources.Get "style.css" }}
-    <link rel="stylesheet" href="{{ $style.Permalink }}"> 
+      {{ $styles := $styles| minify | fingerprint | resources.PostProcess }}
+      <link rel="stylesheet" href="{{ $styles.Permalink }}" integrity="{{ $styles.Data.Integrity }}">
   {{ end }}
   
 
