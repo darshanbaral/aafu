@@ -1315,6 +1315,10 @@ blockquote {
   --tw-bg-opacity: 1 !important;
   background-color: rgb(68 64 60 / var(--tw-bg-opacity)) !important;
 }
+.dark .dark\:bg-yellow-700 {
+  --tw-bg-opacity: 1 !important;
+  background-color: rgb(161 98 7 / var(--tw-bg-opacity)) !important;
+}
 .dark .dark\:prose-invert {
   --tw-prose-body: var(--tw-prose-invert-body);
   --tw-prose-headings: var(--tw-prose-invert-headings);
