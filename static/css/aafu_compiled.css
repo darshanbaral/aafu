@@ -1151,6 +1151,12 @@ blockquote {
 .flex-wrap {
   flex-wrap: wrap !important;
 }
+.items-center {
+  align-items: center !important;
+}
+.justify-start {
+  justify-content: flex-start !important;
+}
 .justify-center {
   justify-content: center !important;
 }
