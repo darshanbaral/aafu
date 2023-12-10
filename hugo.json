@@ -1,0 +1,30 @@
+{
+  "build": {
+    "buildStats": {
+      "disableClasses": false,
+      "disableIDs": false,
+      "disableTags": false,
+      "enable": false
+    },
+    "cacheBusters": [
+      {
+        "source": "assets/.*\\.(js|ts|jsx|tsx)",
+        "target": "(js|scripts|javascript)"
+      },
+      {
+        "source": "assets/.*\\.(css|sass|scss)$",
+        "target": "(css|styles|scss|sass)"
+      },
+      {
+        "source": "(postcss|tailwind)\\.config\\.js",
+        "target": "(css|styles|scss|sass)"
+      },
+      {
+        "source": "assets/.*\\.(.*)$",
+        "target": "$1"
+      }
+    ],
+    "noJSConfigInAssets": false,
+    "useResourceCacheWhen": "fallback"
+  }
+}

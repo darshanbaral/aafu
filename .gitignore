@@ -1,2 +1,5 @@
 .idea
 node_modules/
+resources
+assets/style.css
+*.toml_

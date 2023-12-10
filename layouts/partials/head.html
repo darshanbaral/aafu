@@ -15,14 +15,18 @@
     href="//fonts.googleapis.com/css?family=Didact+Gothic%7CRoboto:400%7CRoboto+Mono"
   />
   <link rel="stylesheet" href="{{ `/css/aafu.css` | relURL }}" />
-  
-  {{ if .Site.IsServer }}
-      {{ $styles := resources.Get "main.css" | postCSS (dict "config" "./assets/postcss.config.js") }}
-      <link rel="stylesheet" href="{{ $styles.RelPermalink }}">
-  {{ else }}
-      <link rel="stylesheet" href="{{ `/css/aafu_compiled.css` | relURL }}" />
-  {{ end }}
-  
+
+{{ $css := resources.Get "main.css" }}
+{{ $css = $css | resources.PostCSS }}
+{{ if hugo.IsProduction }}
+{{ $css = $css | minify | fingerprint | resources.PostProcess }}
+{{ end }}
+<link href="{{ $css.RelPermalink }}" rel="stylesheet" />
+
+
+  {{/*  {{ with resources.Get "../assets/style.css" }}
+  <link rel="stylesheet" href="{{ .RelPermalink }}" />
+  {{ end }}  */}}
 
   <script>
     let html = document.querySelector("html");
@@ -55,15 +59,6 @@
       }
     };
 
-    {{/*  var themeColor = document.querySelector("meta[name=theme-color]");
-    window.onload = () => {
-      themeColor.content = getComputedStyle(document.body)["background-color"];
-      let defaultActivePanel = document.querySelector(".accordion.active");
-      if (defaultActivePanel) {
-        defaultActivePanel.nextElementSibling.style.maxHeight =
-          defaultActivePanel.nextElementSibling.scrollHeight + "px";
-      }
-    };  */}}
     window.onresize = () => {
       let defaultActivePanel = document.querySelector(".accordion.active");
       if (defaultActivePanel) {
