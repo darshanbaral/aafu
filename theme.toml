@@ -6,6 +6,7 @@ homepage = "https://github.com/darshanbaral/aafu"
 tags = ["portfolio", "accordion", "resume", "blog", "tailwind"]
 features = ["responsive", "dark", "clean"]
 min_version = "0.121.1"
+theme_version = "2023.12.12"
 
 [author]
   name = "Darshan Baral"
