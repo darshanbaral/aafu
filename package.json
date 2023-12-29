@@ -1,16 +1,12 @@
 {
   "name": "aafu",
-  "version": "1.0.0",
+  "version": "2023.12.12",
   "description": "The aafu theme is a responsive portfolio with blog.",
   "main": "index.js",
-  "scripts": {
-    "build-tw": "npx tailwindcss -i ./assets/main.css -o ./assets/style.css",
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "scriptComments": {
-    "build-tw": "Run everytime CSS changes"
-  },
-  "keywords": [],
+  "keywords": [
+    "hugo",
+    "portfolio"
+  ],
   "author": "Darshan Baral",
   "license": "MIT",
   "devDependencies": {
@@ -22,6 +18,5 @@
     "autoprefixer": "^10.4.16",
     "postcss": "^8.4.31",
     "postcss-cli": "^10.1.0"
-  },
-  "dependencies": {}
+  }
 }
