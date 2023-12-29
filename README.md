@@ -15,7 +15,7 @@ hugo server
 
 ## Getting started
 
-After cloning the aafu repo, modify the `config.toml` as you wish to generate your online resume.
+After cloning the aafu repo, modify the `config.toml` as you wish.
 
 ### The config file
 
