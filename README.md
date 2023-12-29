@@ -7,16 +7,15 @@ The aafu Theme is a responsive portfolio with blog.
 
 ## Installation
 
-Inside the folder of your Hugo site run:
-
-    $ cd themes
-    $ git clone https://github.com/darshanbaral/aafu.git
-
-For more information read the official [setup guide](//gohugo.io/overview/installing/) of Hugo.
+```shell
+git clone https://github.com/darshanbaral/aafu.git
+cd aafu
+hugo server
+```
 
 ## Getting started
 
-After installing the aafu Theme successfully, modify the `config.toml` as you wish to generate your online resume.
+After cloning the aafu repo, modify the `config.toml` as you wish.
 
 ### The config file
 
@@ -30,13 +29,7 @@ Go to `static/images` and replace the `profile.jpg` with your own file.
 
 ### Theme Colors
 
-The `aafu` theme provides four different theme colors - `light`, `dark`, `ocean`, and `pinkish`. These can be specified in the `config.toml`
-
-```
-    [params.theme]
-        # Available themes are 'light', 'dark', `ocean`, and 'pinkish'
-        mainTheme = "light"
-```    
+The `aafu` theme provides `light` and `dark` theme.
 
 ## Reporting Issues
 

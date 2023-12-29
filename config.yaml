@@ -1,0 +1,168 @@
+baseURL: /
+languageCode: en-us
+build:
+  writeStats: true
+params:
+  title: aafu theme
+  author: Darshan Baral
+  description: Website title
+  copyright: >-
+    powered by [hugo](https://gohugo.io/) & deployed on
+    [netlify](https://www.netlify.com/)
+  theme:
+    mainTheme: dark
+    showAttribute: true
+    singlePage: false
+  favicons:
+    use: true
+    metas: |2-
+              <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+              <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+              <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+              <link rel="manifest" href="site.webmanifest">
+              <link rel="mask-icon" href="safari-pinned-tab.svg" color="#252627">
+              <link rel="shortcut icon" href="favicon.ico">
+
+  profile:
+    name: "First Last, Abbr."
+    tagline: Title
+    location: "City Name, ST"
+    photo: profile.jpg
+  social:
+    title: Links
+    list:
+      - icon: fab fa-linkedin-in
+        url: "#"
+        title: LinkedIn
+      - icon: fab fa-stack-overflow
+        url: "#"
+        title: StackOverflow
+      - icon: fab fa-github
+        url: "#"
+        title: GitHub
+      - icon: fab fa-twitter
+        url: "#"
+        title: Twitter
+      - icon: fab fa-orcid
+        url: "#"
+        title: Orcid
+      - icon: ai ai-google-scholar
+        url: "#"
+        title: Google Scholar
+      - icon: fab fa-researchgate
+        url: "#"
+        title: ResearchGate
+  showInAccordion:
+    - item: aboutme
+      expand: true
+    - item: experience
+    - item: education
+    - item: publication
+    - item: project
+    - item: skill
+    - item: hobby
+  aboutme:
+    title: About Me
+    icon: fas fa-user
+    description: This is a demo of the `aafu` theme. It has `light` and `dark` theme.
+  experience:
+    title: Experiences
+    icon: fas fa-briefcase
+    list:
+      - position: Job Title
+        dates: 2019 - *Present*
+        company: Company Name
+        details: >-
+          Printed from desktop. Sent [emails](#). Called people using telephone.
+          Drank water from office cooler. Ate donuts on people's birthdays.
+      - position: Job Title
+        dates: 2018 - 2019
+        url: "#"
+        company: Company Name
+  education:
+    title: Education
+    icon: fas fa-graduation-cap
+    list:
+      - degree: Ph.D. in Subject
+        college: University of State-City
+        dates: 2013 - 2018
+        thesis_title: "Effect of humans on other humans: a study of human behavior."
+        thesis_url: "#"
+      - degree: M.S. in Subject
+        college: University of State-City
+        dates: 2013 - 2018
+        thesis_title: "Effect of humans on other humans: a study of human behavior."
+        thesis_url: "#"
+      - degree: B.S. in Subject
+        college: University of State-City
+        dates: 2004 - 2009
+  publication:
+    title: Publications
+    icon: fas fa-book
+    format:
+      - date
+      - title
+      - authors
+      - journal
+    types:
+      - Journal Articles
+      - Proceedings
+    list:
+      - title: >-
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        authors: "F Last, F Second, P secondary"
+        date: "2018"
+        journal: "Journal of Field 52 (16), 9033-9044"
+        url: "#"
+        type: Journal Articles
+      - title: >-
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        authors: "F Last, F Second, P secondary"
+        date: "2018"
+        journal: "Journal of Field 52 (16), 9033-9044"
+        url: "#"
+        type: Journal Articles
+      - title: >-
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        authors: "F Last, F Second, P secondary"
+        date: "2018"
+        journal: "Journal of Field 52 (16), 9033-9044"
+        url: "#"
+        type: Proceedings
+  project:
+    title: Projects
+    icon: fas fa-project-diagram
+    list:
+      - title: Project 1
+        url: "#"
+        description: Description of the project
+      - title: Project 2
+        url: "#"
+        description: Description of the project
+      - title: Project 3
+        url: "#"
+        description: Description of the project
+      - title: Project 4
+        url: "#"
+        description: Description of the project
+  skill:
+    title: Skills
+    panelId: skill-panel
+    icon: fas fa-cogs
+    list:
+      - skill: "Skill 1, Skill 2"
+        skillrating: 90
+      - skill: Skill 3
+        skillrating: 80
+      - skill: Skill 4
+        skillrating: 50
+  hobby:
+    title: Hobbies
+    icon: fas fa-gamepad
+    list:
+      - hobby: Cooking
+      - hobby: Hiking
+      - hobby: Baking
