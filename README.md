@@ -12,7 +12,7 @@ hugo server
 
 ## Getting started
 
-After cloning the aafu repo, modify the `config.toml` as you wish.
+After cloning the aafu repo, modify the `config.yaml` as you wish.
 
 ### The config file
 
