@@ -1,9 +1,6 @@
 # aafu Theme
 
-The aafu Theme is a responsive portfolio with blog.
-
-## Live Demo
-[Click here](https://aafudemo.netlify.com/) for live demo.
+The aafu Theme is a responsive portfolio with blog. [Click here](https://aafudemo.netlify.com/) for live demo.
 
 ## Installation
 
