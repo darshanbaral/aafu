@@ -7,7 +7,7 @@ demosite = "https://aafudemo.netlify.app/"
 tags = ["portfolio", "accordion", "resume", "blog", "tailwind"]
 features = ["responsive", "dark", "clean"]
 min_version = "0.121.1"
-theme_version = "2023.12.12"
+theme_version = "2024.01.25"
 
 [author]
   name = "Darshan Baral"
