@@ -7,6 +7,7 @@ The aafu Theme is a responsive portfolio with blog. [Click here](https://aafudem
 ```shell
 git clone https://github.com/darshanbaral/aafu.git
 cd aafu
+npm install
 hugo server
 ```
 
