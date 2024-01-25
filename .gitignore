@@ -4,3 +4,4 @@ resources
 assets/style.css
 *.toml_
 hugo_stats.json
+.hugo_build.lock
