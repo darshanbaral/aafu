@@ -8,7 +8,7 @@ params:
   description: Website title
   copyright: >-
     powered by [hugo](https://gohugo.io/) & deployed on
-    [netlify](https://www.netlify.com/)
+    [Cloudflare](https://www.cloudflare.com/)
   theme:
     mainTheme: dark
     showAttribute: true
