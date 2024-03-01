@@ -38,6 +38,14 @@
   h5 {
     @apply text-lg mb-2 mt-1;
   }
+
+  .prose ul,
+  .prose ol {
+    li::marker {
+      @apply text-gray-700 dark:text-gray-200;
+    }
+  }
+
   body {
     @apply text-base bg-stone-50 dark:text-stone-50 dark:bg-darkest;
   }

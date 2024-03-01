@@ -5,6 +5,10 @@
   <a href="{{ .url }}">{{ .company }}</a>
   {{ else }} {{ .company }} {{ end }}
 </p>
-<p>{{ .details | markdownify }}</p>
+{{ if .details }}
+<div class="prose prose-stone dark:prose-invert max-w-none">
+{{ .details | markdownify }}
+</div>
+{{ end }}
 
 {{ end }}

@@ -1,4 +1,4 @@
-baseURL: /
+baseURL: aafu.pages.dev
 languageCode: en-us
 build:
   writeStats: true
@@ -72,9 +72,11 @@ params:
       - position: Job Title
         dates: 2019 - *Present*
         company: Company Name
-        details: >-
-          Printed from desktop. Sent [emails](#). Called people using telephone.
-          Drank water from office cooler. Ate donuts on people's birthdays.
+        details: |1-
+          - Printed from desktop. Sent [emails](#).
+              - Called people *using* telephone.
+          - Drank water from office cooler.
+          - Ate donuts on people's birthdays.
       - position: Job Title
         dates: 2018 - 2019
         url: "#"
