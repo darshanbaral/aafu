@@ -1,4 +1,4 @@
-baseURL: aafu.pages.dev
+baseURL: https://aafu.pages.dev/
 languageCode: en-us
 build:
   writeStats: true
