@@ -5,11 +5,13 @@
     <a class="no-underline p-2 rounded hover:bg-gray-200 dark:hover:bg-gray-800" href="{{ .Site.BaseURL }}">Home</a>    
     <a class="no-underline p-2 rounded hover:bg-gray-200 dark:hover:bg-gray-800" href="{{ `blog` | relURL }}">Blog</a>
   </div>
-  
+  <div>
+  <a class="mr-4" href="{{ `search` | relURL }}"><i class="fas fa-search"></i></i></a>
   <i
     class="fas fa-sun theme-toggle text-blue-500 hover:text-blue-700 dark:text-yellow-300 dark:hover:text-yellow-500 cursor-pointer text-lg mr-9 sm:mr-0"
     onclick="lightDark(this)"
   ></i>
+</div>
 </header>
 
 <script>
