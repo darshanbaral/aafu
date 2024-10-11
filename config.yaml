@@ -24,7 +24,7 @@ params:
               <link rel="shortcut icon" href="favicon.ico">
 
   profile:
-    name: "First Last, Abbr."
+    name: "សេង មុន្នីរតនៈ"
     tagline: Title
     location: "City Name, ST"
     photo: profile.jpg
