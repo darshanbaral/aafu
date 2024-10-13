@@ -60,7 +60,7 @@
     @apply block text-sm;
   }
   blockquote {
-    @apply bg-gray-100 dark:bg-dark;
+    @apply bg-gray-100 dark:bg-dark rounded;
   }
   .tags,
   .categories {

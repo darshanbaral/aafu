@@ -4,11 +4,22 @@ The aafu Theme is a responsive portfolio with blog. [Click here](https://aafu.pa
 
 ## Installation
 
+### Development
+
 ```shell
 git clone https://github.com/darshanbaral/aafu.git
 cd aafu
 npm install
 hugo server
+```
+
+### Add search
+
+This theme employs earch using [Pagefind](https://pagefind.app/). Run following commands to index content when deploying.
+
+```shell
+hugo
+npx -y pagefind --site public
 ```
 
 ## Getting started
