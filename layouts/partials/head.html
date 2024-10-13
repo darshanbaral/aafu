@@ -13,20 +13,16 @@
   <link
     rel="stylesheet"
     href="//fonts.googleapis.com/css?family=Didact+Gothic%7CRoboto:400%7CRoboto+Mono"
-  />
-  <link rel="stylesheet" href="{{ `/css/aafu.css` | relURL }}" />
+  />  
 
+  {{ $css := resources.Get "main.css" | css.PostCSS }}
+  
 {{ $css := resources.Get "main.css" }}
 {{ $css = $css | css.PostCSS }}
 {{ if hugo.IsProduction }}
 {{ $css = $css | minify | fingerprint | resources.PostProcess }}
 {{ end }}
-<link href="{{ $css.RelPermalink }}" rel="stylesheet" />
-
-
-  {{/*  {{ with resources.Get "../assets/style.css" }}
-  <link rel="stylesheet" href="{{ .RelPermalink }}" />
-  {{ end }}  */}}
+  <link href="{{ $css.RelPermalink }}" rel="stylesheet" />
 
   <script>
     let html = document.querySelector("html");
