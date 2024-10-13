@@ -37,8 +37,5 @@ const purgecss = {
 module.exports = {
   plugins: {
     tailwindcss: {},
-    "@fullhuman/postcss-purgecss":
-      process.env.HUGO_ENVIRONMENT === "production" ? purgecss : false,
-    autoprefixer: process.env.HUGO_ENVIRONMENT === "production" ? {} : false,
   },
 };
