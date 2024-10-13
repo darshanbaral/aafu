@@ -1,13 +1,13 @@
 name = "aafu"
 license = "MIT"
 licenselink = "https://github.com/darshanbaral/aafu/blob/master/LICENSE"
-description = "Portfolio and blog theme with multiple theme colors"
+description = "Portfolio and blog theme with search and dark/light theme."
 homepage = "https://github.com/darshanbaral/aafu"
 demosite = "https://aafu.pages.dev/"
 tags = ["portfolio", "accordion", "resume", "blog", "tailwind"]
 features = ["responsive", "dark", "clean"]
 min_version = "0.134.3"
-theme_version = "2024.01.25"
+theme_version = "2024.10.13"
 
 [author]
   name = "Darshan Baral"
