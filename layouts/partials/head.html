@@ -13,15 +13,12 @@
   <link
     rel="stylesheet"
     href="//fonts.googleapis.com/css?family=Didact+Gothic%7CRoboto:400%7CRoboto+Mono"
-  />  
+  />
 
-  {{ $css := resources.Get "main.css" | css.PostCSS }}
-  
-{{ $css := resources.Get "main.css" }}
-{{ $css = $css | css.PostCSS }}
-{{ if hugo.IsProduction }}
-{{ $css = $css | minify | fingerprint | resources.PostProcess }}
-{{ end }}
+  {{ $css := resources.Get "main.css" | postCSS }}
+  {{ if hugo.IsProduction }}
+    {{ $css = $css | minify | fingerprint | resources.PostProcess }}
+  {{ end }}
   <link href="{{ $css.RelPermalink }}" rel="stylesheet" />
 
   <script>
