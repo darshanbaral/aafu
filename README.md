@@ -13,6 +13,12 @@ npm install
 hugo server
 ```
 
+### Deployment
+
+```shell
+hugo; npx -y pagefind --site public
+```
+
 ### Add search
 
 This theme employs earch using [Pagefind](https://pagefind.app/). Run following commands to index content when deploying.
