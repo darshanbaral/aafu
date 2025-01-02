@@ -10,6 +10,7 @@ module.exports = {
     "./layouts/**/*.html",
     "./content/**/*.html",
   ],
+  safelist: ['pagination', 'page-item'],
   darkMode: "class", // 'media' or 'class'
   theme: {
     extend: {
