@@ -26,7 +26,7 @@
   {{ end }}
 </div>
 <script src="{{ `js/accordion.js` | relURL }}"></script>
-<div class="mt-4 d-flex justify-content-center">
-  {{ template "_internal/pagination.html" . }}
+<div class="my-6 flex justify-center pagination-links">
+  {{ template "_internal/pagination.html" (dict "page" . "format" "terse") }}
 </div>
 {{ end }}
