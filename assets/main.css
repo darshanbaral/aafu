@@ -7,34 +7,44 @@
   .nav {
     @apply text-lg text-blue-500 dark:text-gray-300 font-semibold;
   }
+
   .nav > a {
     @apply hover:text-blue-700;
   }
+
   .panel {
     max-height: 0;
     transition: 0.3s ease-out;
   }
+
   h2.accordion {
     @apply text-blue-600 dark:text-yellow-500;
   }
+
   a {
     @apply text-blue-500 hover:text-blue-700 hover:underline dark:text-yellow-300 dark:hover:text-yellow-500;
   }
+
   .active {
     @apply overflow-visible;
   }
+
   h1 {
     @apply text-4xl mb-5 mt-1;
   }
+
   h2 {
     @apply text-3xl mb-4 mt-1;
   }
+
   h3 {
     @apply text-2xl mb-3 mt-1;
   }
+
   h4 {
     @apply text-xl mb-2 mt-1;
   }
+
   h5 {
     @apply text-lg mb-2 mt-1;
   }
@@ -49,37 +59,48 @@
   body {
     @apply text-base bg-stone-50 dark:text-stone-50 dark:bg-darkest;
   }
+
   html {
     touch-action: manipulation;
     scroll-behavior: smooth;
   }
+
   p {
     @apply mt-2 mb-2;
   }
+
   summary {
     @apply block text-sm;
   }
+
   blockquote {
     @apply bg-gray-100 dark:bg-dark rounded;
   }
+
   .tags,
   .categories {
     @apply p-1 mr-2 mb-2 text-sm rounded hover:shadow;
   }
+
   .categories {
     @apply text-green-800 bg-green-100 hover:bg-green-200 border border-green-600 dark:border-green-100 !important;
   }
+
   .tags {
     @apply text-gray-800 bg-gray-200 hover:bg-gray-300 border border-gray-600 dark:border-gray-100 !important;
   }
+
   ul.pagination {
     @apply flex flex-row justify-center;
+
     li {
       @apply border border-gray-500 dark:border-yellow-300 flex justify-center items-center;
     }
+
     .page-link {
       @apply px-2 sm:px-4 py-1 hover:text-gray-200 dark:hover:text-gray-800 hover:bg-blue-500  dark:hover:bg-yellow-300;
     }
+
     .active {
       @apply bg-blue-500 pointer-events-none  dark:bg-yellow-300;
       .page-link {
@@ -87,32 +108,4 @@
       }
     }
   }
-}
-
-.pagefind-ui__search-input {
-  color: black;
-  width: 100%;
-  padding: 0.5em;
-  border-radius: 0.25em;
-  border: 1px solid gray;
-}
-.pagefind-ui__search-clear {
-  display: none;
-}
-.dark .pagefind-ui__search-input {
-  color: white;
-  background-color: #322d2d;
-  width: 100%;
-  padding: 0.5em;
-  border-radius: 0.25em;
-  border: 1px solid gray;
-}
-.dark .pagefind-ui__search-input::placeholder {
-  color: #8f8f8f;
-}
-.chevron {
-  transition: 300ms linear rotate;
-}
-.active > .chevron {
-  transform: rotate(90deg);
 }

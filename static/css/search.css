@@ -1,0 +1,27 @@
+.pagefind-ui__search-input {
+  color: black;
+  width: 100%;
+  padding: 0.5em;
+  border-radius: 0.25em;
+  border: 1px solid gray;
+}
+.pagefind-ui__search-clear {
+  display: none;
+}
+.dark .pagefind-ui__search-input {
+  color: white;
+  background-color: #322d2d;
+  width: 100%;
+  padding: 0.5em;
+  border-radius: 0.25em;
+  border: 1px solid gray;
+}
+.dark .pagefind-ui__search-input::placeholder {
+  color: #8f8f8f;
+}
+.chevron {
+  transition: 300ms linear rotate;
+}
+.active > .chevron {
+  transform: rotate(90deg);
+}
