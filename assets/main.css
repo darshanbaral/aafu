@@ -72,19 +72,23 @@
   .tags {
     @apply text-gray-800 bg-gray-200 hover:bg-gray-300 border border-gray-600 dark:border-gray-100 !important;
   }
-  .pagination {
+  ul.pagination {
     @apply flex flex-row justify-center;
-  }
-  .page-link {
-    @apply px-2 sm:px-4 py-2 border border-gray-200 flex justify-center items-center text-gray-500 hover:text-gray-800 hover:bg-gray-200;
-  }
-  .page-item.disabled > .page-link {
-    @apply text-gray-300 bg-white;
-  }
-  .page-item.active > .page-link {
-    @apply bg-gray-300 pointer-events-none text-gray-800;
+    li {
+      @apply border border-gray-500 dark:border-yellow-300 flex justify-center items-center;
+    }
+    .page-link {
+      @apply px-2 sm:px-4 py-1 hover:text-gray-200 dark:hover:text-gray-800 hover:bg-blue-500  dark:hover:bg-yellow-300;
+    }
+    .active {
+      @apply bg-blue-500 pointer-events-none  dark:bg-yellow-300;
+      .page-link {
+        @apply text-gray-200 dark:text-gray-800;
+      }
+    }
   }
 }
+
 .pagefind-ui__search-input {
   color: black;
   width: 100%;
