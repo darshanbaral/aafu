@@ -6,3 +6,4 @@ assets/style.css
 hugo_stats.json
 .hugo_build.lock
 public/*
+build.ps1
