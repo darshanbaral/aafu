@@ -4,8 +4,9 @@
     <div class="bg-gray-300 dark:bg-darker rounded drop-shadow-md p-2">
       <div class="flex flex-col justify-center">
         <div class="">{{ partial "profilePhoto" . }}</div>
-        <div class="p-2 text-center">
-          {{ partial "social" . }} {{ partial "footer" . }}
+        <div class="px-2 text-center">
+          {{ partial "social" . }}
+          {{ partial "footer" . }}
         </div>
       </div>
     </div>
@@ -13,10 +14,10 @@
   <div class="col-span-3 relative">
     {{ range .Site.Params.showInAccordion }}
     <div class="px-2">
-      <h2 class="my-0 accordion {{- if .expand }} active {{- end }}">
+      <h2 class="accordion {{- if .expand }} active {{- end }}">
         {{ $current := index $.Site.Params .item }}
         <p
-          class="hover:bg-gray-300 rounded dark:hover:bg-darker m-0 p-2"
+         
           onclick="expandAccordion(this)"
           style="cursor: pointer"
         >

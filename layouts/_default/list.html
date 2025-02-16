@@ -6,11 +6,11 @@
   {{ range $key, $val := (.Paginator 10).Pages }}
   <div class="">
     <div
-      class="rounded hover:bg-gray-400 dark:hover:bg-darker flex flex-row items-center justify-start accordion mt-0 mb-0 p-2 {{ if eq $key 0 }}active{{ end }}"
+      class="rounded-sm hover:bg-gray-400 dark:hover:bg-darker flex flex-row items-center justify-start accordion mt-0 mb-0 p-2 {{ if eq $key 0 }}active{{ end }}"
     >
       <i
         onclick="expandAccordion(this)"
-        class="cursor-pointer chevron p-2 mr-4 fas fa-chevron-right rounded text-blue-500 dark:text-gray-400 hover:bg-gray-300 dark:hover:bg-gray-700"
+        class="cursor-pointer chevron p-2 mr-4 fas fa-chevron-right rounded-sm text-blue-500 dark:text-gray-400 hover:bg-gray-300 dark:hover:bg-gray-700"
       ></i>
       <a href="{{ .Permalink | relURL }}"
         ><h2 class="accordion m-0">{{- .Title -}}</h2></a

@@ -2,8 +2,8 @@
   class="nav flex flex-row row py-2 mb-6 w-full border-b border-gray-300 dark:border-gray-700 justify-between"
 >
   <div>
-    <a class="no-underline p-2 rounded hover:bg-gray-200 dark:hover:bg-gray-800" href="{{ .Site.BaseURL }}">Home</a>    
-    <a class="no-underline p-2 rounded hover:bg-gray-200 dark:hover:bg-gray-800" href="{{ `blog` | relURL }}">Blog</a>
+    <a class="nav-menu-item" href="{{ .Site.BaseURL }}">Home</a>    
+    <a class="nav-menu-item" href="{{ `blog` | relURL }}">Blog</a>
   </div>
   <div>
   <a class="mr-4" href="{{ `search` | relURL }}"><i class="fas fa-search"></i></i></a>

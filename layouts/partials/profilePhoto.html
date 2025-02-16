@@ -1,8 +1,9 @@
-<div class="w-100 h-100 flex justify-center p-4">
+<div
+  class="w-full p-2 flex justify-center align-middle profile-photo-container"
+>
   <img
-    class="rounded rounded-full"
+    class="rounded-sm"
     src="{{ `images` | relURL }}/{{ .Site.Params.profile.photo }}"
     alt="{{ .Site.Params.author }}"
-    style="max-width: 250px"
   />
 </div>
