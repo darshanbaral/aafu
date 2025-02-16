@@ -1,6 +1,6 @@
 # aafu Theme
 
-The aafu Theme is a responsive portfolio with blog. [Click here](https://aafu.pages.dev/) for live demo.
+The aafu Theme is a responsive portfolio with blog based on [Tailwind 4.x](https://tailwindcss.com/). [Click here](https://aafu.pages.dev/) for live demo.
 
 ## Installation
 
