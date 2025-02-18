@@ -20,6 +20,8 @@
     {{ $css = $css | minify | fingerprint | resources.PostProcess }}
   {{ end }}
   <link href="{{ $css.RelPermalink }}" rel="stylesheet" />
+  <link rel="stylesheet" href="{{ `/css/general.css` | relURL }}" />
+  <link rel="stylesheet" href="{{ `/css/search.css` | relURL }}" />
 
   <script>
     let html = document.querySelector("html");

@@ -1,4 +1,4 @@
-<footer class="text-sm text-center border-t border-gray-300 dark:border-gray-700 {{ if .IsHome }} pt-2 {{ else }} py-6 {{ end }}">
+<footer class="text-xs text-center border-t border-gray-500 {{ if .IsHome }} pt-2 {{ else }} py-6 {{ end }}">
   <p class="markdownify">{{ .Site.Params.copyright | markdownify }}</p>
   <p {{ if not .Site.Params.theme.showAttribute }}style="font-size:0px;"{{ end }}>
     <i>

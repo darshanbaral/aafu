@@ -1,6 +1,6 @@
 # aafu Theme
 
-The aafu Theme is a responsive portfolio with blog. [Click here](https://aafu.pages.dev/) for live demo.
+The aafu Theme is a responsive portfolio with blog based on [Tailwind 4.x](https://tailwindcss.com/). [Click here](https://aafu.pages.dev/) for live demo.
 
 ## Installation
 
@@ -15,17 +15,10 @@ hugo server
 
 ### Deployment
 
-```shell
-hugo; npx -y pagefind --site public
-```
-
-### Add search
-
 This theme employs earch using [Pagefind](https://pagefind.app/). Run following commands to index content when deploying.
 
 ```shell
-hugo
-npx -y pagefind --site public
+hugo; npx -y pagefind --site public
 ```
 
 ## Getting started
