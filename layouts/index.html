@@ -1,15 +1,16 @@
 {{ define "main" }}
 <div class="grid grid-cols-1 md:grid-cols-5 gap-2 sm py-2">
   <div class="col-span-2">
-    <div class="bg-gray-300 dark:bg-darker rounded drop-shadow-md p-2">
+    <div class="bg-gray-300 dark:bg-darker drop-shadow-md p-2 rounded-t-lg">
       <div class="flex flex-col justify-center">
-        <div class="">{{ partial "profilePhoto" . }}</div>
+        {{ partial "profilePhoto" . }}
         <div class="px-2 text-center">
           {{ partial "social" . }}
-          {{ partial "footer" . }}
+          
         </div>
       </div>
     </div>
+    {{ partial "footer" . }}
   </div>
   <div class="col-span-3 relative">
     {{ range .Site.Params.showInAccordion }}
