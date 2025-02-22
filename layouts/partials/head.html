@@ -15,10 +15,8 @@
     href="//fonts.googleapis.com/css?family=Didact+Gothic%7CRoboto:400%7CRoboto+Mono"
   />
 
-  {{ $css := resources.Get "main.css" | postCSS }}
-  {{ if hugo.IsProduction }}
-    {{ $css = $css | minify | fingerprint | resources.PostProcess }}
-  {{ end }}
+  {{ $css := resources.Get "main.css" | postCSS }} {{ if hugo.IsProduction }} {{
+  $css = $css | minify | fingerprint | resources.PostProcess }} {{ end }}
   <link href="{{ $css.RelPermalink }}" rel="stylesheet" />
   <link rel="stylesheet" href="{{ `/css/general.css` | relURL }}" />
   <link rel="stylesheet" href="{{ `/css/search.css` | relURL }}" />
@@ -26,26 +24,58 @@
   <script>
     let html = document.querySelector("html");
     let theme = window.localStorage.getItem("theme");
-    if (theme) {
-      theme === "dark"
-        ? html.classList.add("dark")
-        : html.classList.remove("dark");
-    } else if (html.classList.contains("dark")) {
-      window.localStorage.setItem("theme", "dark");
-    } else {
-      html.classList.remove("dark");
-      window.localStorage.setItem("theme", "light");
+
+    const setTheme = (theme) => {
+      html.classList.remove("light");
+      if (theme === "dark") {
+        html.classList.add("dark");
+        window.localStorage.setItem("theme", "dark");
+      } else {
+        html.classList.remove("dark");
+        window.localStorage.setItem("theme", "light");
+      }
+      fixThemeToggleIcon(theme);
+    };
+
+    const fixThemeToggleIcon = (theme) => {
+      let themeToggle = document.querySelector(".theme-toggle");
+      if (themeToggle) {
+        if (theme === "dark") {
+          themeToggle.classList.add("fa-moon");
+          themeToggle.classList.remove("fa-sun");
+        } else {
+          themeToggle.classList.remove("fa-moon");
+          themeToggle.classList.add("fa-sun");
+        }
+      }
+    };
+
+    if (theme == null) {
+      if (html.classList.contains("dark")) {
+        theme = "dark";
+      } else if (html.classList.contains("light")) {
+        theme = "light";
+      } else {
+        // console.log("will use device theme");
+        const prefersDark = window.matchMedia(
+          "(prefers-color-scheme: dark)"
+        ).matches;
+        if (prefersDark) {
+          theme = "dark";
+        } else {
+          theme = "light";
+        }
+      }
     }
 
+    setTheme(theme);
+
+    const toggleTheme = () => {
+      html.classList.contains("dark") ? setTheme("light") : setTheme("dark");
+    };
+
     window.onload = () => {
-      let themeToggle = document.querySelector(".theme-toggle");
-      if (window.localStorage.getItem("theme") === "dark") {
-        themeToggle.classList.remove("bi-moon-fill");
-        themeToggle.classList.add("bi-brightness-high");
-      } else {
-        themeToggle.classList.add("bi-moon-fill");
-        themeToggle.classList.remove("bi-brightness-high");
-      }
+      fixThemeToggleIcon(theme);
 
       let defaultActivePanel = document.querySelector(".accordion.active");
       if (defaultActivePanel) {

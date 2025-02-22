@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="{{ .Site.LanguageCode }}" class="m-auto {{ .Site.Params.theme.mainTheme }}">
+<html lang="{{ .Site.LanguageCode }}" class="m-auto {{ if .Site.Params.theme.mainTheme }} {{ .Site.Params.theme.mainTheme }} {{ end }}">
   {{- partial "head.html" . -}}
   <body class="h-screen p-2 m-auto max-w-4xl flex flex-col">
     {{ if not .Site.Params.theme.singlePage }}
