@@ -41,7 +41,7 @@ Go to `static/images` and replace the `profile.jpg` with your own file.
 
 ### Theme Colors
 
-The `aafu` theme provides `light` and `dark` theme.
+The `aafu` theme can be set to `light`, `dark`, or `null` mode by using `params.theme.mainTheme` attribute. When `null` is chosen, either `light` or `dark` will be chosen based on device settings.
 
 ## Reporting Issues
 
