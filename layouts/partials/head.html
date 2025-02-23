@@ -43,11 +43,11 @@
       let themeToggle = document.querySelector(".theme-toggle");
       if (themeToggle) {
         if (theme === "dark") {
-          themeToggle.classList.add("fa-moon");
-          themeToggle.classList.remove("fa-sun");
-        } else {
           themeToggle.classList.remove("fa-moon");
           themeToggle.classList.add("fa-sun");
+        } else {
+          themeToggle.classList.remove("fa-sun");
+          themeToggle.classList.add("fa-moon");
         }
       }
     };
