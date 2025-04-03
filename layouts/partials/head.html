@@ -15,10 +15,19 @@
     href="//fonts.googleapis.com/css?family=Didact+Gothic%7CRoboto:400%7CRoboto+Mono"
   />
 
-  {{ $css := resources.Get "main.css" | postCSS }}
+  {{ $css := resources.Get "main.css" | css.TailwindCSS }}
   {{ if hugo.IsProduction }}
-  {{ $css = $css | minify | fingerprint | resources.PostProcess }}
+  {{ with $css | minify | fingerprint }}
+  <link
+    rel="stylesheet"
+    href="{{ .RelPermalink }}"
+    integrity="{{ .Data.Integrity }}"
+    crossorigin="anonymous"
+  />
   {{ end }}
+{{ else}}
+  <link href="{{ $css.RelPermalink }}" rel="stylesheet" />
+{{ end }}
   <link href="{{ $css.RelPermalink }}" rel="stylesheet" />
   <link rel="stylesheet" href="{{ `/css/general.css` | relURL }}" />
   <link rel="stylesheet" href="{{ `/css/search.css` | relURL }}" />
