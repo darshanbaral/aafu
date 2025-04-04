@@ -1,48 +1,76 @@
 # aafu Theme
 
-The aafu Theme is a responsive portfolio with blog based on [Tailwind 4.x](https://tailwindcss.com/).
+**aafu** is a modern, responsive portfolio and blog theme built with [Hugo](https://gohugo.io/) and powered by [Tailwind CSS 4.x](https://tailwindcss.com/).
 
-## Demo
+## 🌍 Live Demo
 
-[Click here](https://aafu.pages.dev/) for live demo.
+Experience the theme in action: [aafu.pages.dev](https://aafu.pages.dev/)
 
-## Installation
+---
 
-### Development
+## 🚀 Installation
 
-```shell
+### Development Setup
+
+To set up the theme locally for development:
+
+```sh
+# Clone the repository
 git clone https://github.com/darshanbaral/aafu.git
 cd aafu
+
+# Install dependencies
 npm install
+
+# Start the development server
 hugo server
 ```
 
 ### Deployment
 
-This theme employs earch using [Pagefind](https://pagefind.app/). Run following commands to index content when deploying.
+This theme supports search functionality using [Pagefind](https://pagefind.app/). Before deploying, index your content using the following command:
 
-```shell
-hugo; npx -y pagefind --site public
+```sh
+hugo && npx -y pagefind --site public
 ```
 
-## Getting started
+---
 
-After cloning the aafu repo, modify the `config.yaml` as you wish.
+## 🔧 Getting Started
 
-### The config file
+After cloning the repository, customize the theme by modifying the configuration file.
 
-You'll find a file called [`config.yaml`](//github.com/darshanbaral/aafu/blob/master/config.yaml). Customize it per your need.
+### Configuration (`config.yaml`)
 
-Note that the sections to be displayed in the accordion, the order of the sections, and the section that should be expanded at the beginning can be specifed in the `config.yaml`.
+The main configuration file is [`config.yaml`](https://github.com/darshanbaral/aafu/blob/master/config.yaml). Update it according to your preferences.
 
-### Add your photo
+Key customization options:
 
-Go to `static/images` and replace the `profile.jpg` with your own file.
+- Define which sections appear in the accordion.
+- Control the order of sections.
+- Choose which section should be expanded by default.
 
-### Theme Colors
+### Customize Profile Image
 
-The `aafu` theme can be set to `light`, `dark`, or `null` mode by using `params.theme.mainTheme` attribute. When `null` is chosen, either `light` or `dark` will be chosen based on device settings.
+Replace `profile.jpg` in `static/images` with your own profile picture.
 
-## Reporting Issues
+### Theme Modes
 
-If you have discovered a bug or have a feature request, [create an issue](https://github.com/darshanbaral/aafu/issues/new).
+The `aafu` theme supports multiple color modes:
+
+- **Light Mode** (`light`)
+- **Dark Mode** (`dark`)
+- **Auto Mode** (`null` - adjusts based on user’s device settings)
+
+To configure the theme mode, modify the `params.theme.mainTheme` attribute in `config.yaml`.
+
+---
+
+## 🐞 Reporting Issues & Feature Requests
+
+If you encounter any bugs or have feature suggestions, please [open an issue](https://github.com/darshanbaral/aafu/issues/new).
+
+---
+
+Enjoy using **aafu**! 🚀
+
