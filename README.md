@@ -6,13 +6,13 @@
 
 Experience the theme in action: [aafu.pages.dev](https://aafu.pages.dev/)
 
----
-
 ## 🚀 Installation
 
-### Development Setup
+### 🧪 Local Development
 
-To set up the theme locally for development:
+#### Option 1: Standalone Project
+
+The repository functions as a complete Hugo site out of the box. To run it locally:
 
 ```sh
 # Clone the repository
@@ -26,23 +26,58 @@ npm install
 hugo server
 ```
 
-### Deployment
+#### Option 2: Use as a Hugo Theme
 
-This theme supports search functionality using [Pagefind](https://pagefind.app/). Before deploying, index your content using the following command:
+To use `aafu` as a theme within your own Hugo project:
 
-```sh
-hugo && npx -y pagefind --site public
-```
+1. Add the theme:
 
----
+   ```bash
+   git submodule add https://github.com/darshanbaral/aafu.git themes/aafu
+   ```
 
-## 🔧 Getting Started
+2. Copy the following files/folders from `aafu/` to your project root:
 
-After cloning the repository, customize the theme by modifying the configuration file.
+   - Files:
+     - `config.yaml`
+     - `package.json`
+     - `tailwind.config.js`
+   - Folders:
+     - `assets/`
+     - `static/`
 
-### Configuration (`config.yaml`)
+    The project structure should look something like:
 
-The main configuration file is [`config.yaml`](https://github.com/darshanbaral/aafu/blob/master/config.yaml). Update it according to your preferences.
+    ```
+    your-hugo-project/
+    ├── config.yaml
+    ├── package.json
+    ├── tailwind.config.js    
+    ├── assets/
+    ├── content/
+    ├── static/
+    ├── themes/
+    │   └── aafu/
+    ```
+
+3. Enable the theme by setting the theme in `config.yaml`:
+
+   ```yaml
+   theme: aafu
+   ```
+
+4. Install dependencies and start development server:
+
+   ```bash
+   npm install
+   hugo server
+   ```
+
+### 🔧 Getting Started
+
+#### Configuration (`config.yaml`)
+
+Customize the theme by modifying the [`config.yaml`](https://github.com/darshanbaral/aafu/blob/master/config.yaml).
 
 Key customization options:
 
@@ -50,21 +85,25 @@ Key customization options:
 - Control the order of sections.
 - Choose which section should be expanded by default.
 
-### Customize Profile Image
+#### Profile Image
 
 Replace `profile.jpg` in `static/images` with your own profile picture.
 
-### Theme Modes
+#### Theme Modes
 
-The `aafu` theme supports multiple color modes:
+To configure the theme mode, modify the `params.theme.mainTheme` attribute in `config.yaml`.
 
 - **Light Mode** (`light`)
 - **Dark Mode** (`dark`)
 - **Auto Mode** (`null` - adjusts based on user’s device settings)
 
-To configure the theme mode, modify the `params.theme.mainTheme` attribute in `config.yaml`.
+### 📦 Deployment
 
----
+This theme supports search functionality using [Pagefind](https://pagefind.app/). Before deploying, index your content using the following command:
+
+```sh
+hugo && npx -y pagefind --site public
+```
 
 ## 🐞 Reporting Issues & Feature Requests
 
@@ -73,4 +112,3 @@ If you encounter any bugs or have feature suggestions, please [open an issue](ht
 ---
 
 Enjoy using **aafu**! 🚀
-

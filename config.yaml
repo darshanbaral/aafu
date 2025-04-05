@@ -1,4 +1,6 @@
 baseURL: https://aafu.pages.dev/
+# Uncomment below to use aafu as hugo theme. See instructions in README.md
+# theme: aafu
 languageCode: en-us
 build:
   writeStats: true
