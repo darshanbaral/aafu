@@ -12,7 +12,7 @@ params:
     powered by [hugo](https://gohugo.io/) & deployed on
     [Cloudflare](https://www.cloudflare.com/)
   theme:
-    mainTheme: dark
+    mainTheme: light
     showAttribute: true
     singlePage: false
   favicons:
