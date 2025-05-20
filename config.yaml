@@ -6,7 +6,7 @@ build:
   writeStats: true
 params:
   title: aafu theme
-  author: Darshan Baral
+  author: narumiki
   description: Website title
   copyright: >-
     powered by [hugo](https://gohugo.io/) & deployed on
