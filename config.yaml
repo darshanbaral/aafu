@@ -1,4 +1,4 @@
-baseURL: https://aafu.pages.dev/
+baseURL: https://prof-naru.pages.dev/
 # Uncomment below to use aafu as hugo theme. See instructions in README.md
 # theme: aafu
 languageCode: en-us
@@ -69,7 +69,7 @@ params:
         details: |1-
           - 同僚追加お気軽にどうぞ！
       - position: イベント実績(一部)
-        details: |1-
+        details: 
           - 2023/10/18 - 10/25 · 解夏傀儡 [1771位]
           - 2023/12/16 - 12/24 · ＃年末上々★はぴやばギャルPARTY↑↑～ [1506位]
           - 2024/2/1 - 2/28 · バトンタッチ [1012位]
@@ -203,7 +203,8 @@ params:
     title: その他趣味
     icon: fas fa-gamepad
     list:
-      - hobby: <details><summary>写真撮影(機材情報等はクリック)</summary>
+      - hobby: <details>
+              <summary>写真撮影(機材情報等はクリック)</summary>
                 
                 - LUMIX G100D
                 </details>
