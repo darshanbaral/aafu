@@ -15,7 +15,7 @@
     href="//fonts.googleapis.com/css?family=Didact+Gothic%7CRoboto:400%7CRoboto+Mono"
   />
 
-  {{ $css := resources.Get "main.css" | css.TailwindCSS }}
+{{ $css := resources.Get "main.css" | resources.PostCSS }}
   {{ if hugo.IsProduction }}
   {{ with $css | minify | fingerprint }}
   <link
