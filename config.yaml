@@ -65,7 +65,7 @@ params:
     list:
       - position: ID・名刺
         dates: 2023/9/20 - *なるみき 8RLKRF8Q*
-        photo: images/ml_meishi.jpg
+        photo: "images/ml_meishi.jpg"
         details: |1-
           - 同僚追加お気軽にどうぞ！
       - position: イベント実績(一部)
@@ -203,13 +203,7 @@ params:
     title: その他趣味
     icon: fas fa-gamepad
     list:
-      - hobby: <details>
-          <summary>タイトル</summary>
-
-          内容を
-          ここに記載する
-          </details>
-    
+      - hobby: 写真撮影(夕焼け・電柱・人物等)
       - hobby: 散歩
       - hobby: 読書
-      - hobby: ポルノグラフィティ(LoveUp!会員 2024/9/7～)
+      - hobby: ポルノグラフィティ(LoveUp!会員 2024/9/8～)
