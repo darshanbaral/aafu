@@ -27,23 +27,15 @@ params:
 
   profile:
     name: "なるみき/さぽにん"
-    tagline: Title
-    location: "City Name, ST"
+    #tagline: Title
+    #location: "City Name, ST"
     photo: profile.png
   social:
     title: Links
     list:
-      - icon: fab fa-linkedin-in
-        url: "#"
-        title: LinkedIn
-      - icon: fab fa-stack-overflow
-        url: "#"
-        title: StackOverflow
-      - icon: fab fa-github
-        url: "#"
-        title: GitHub
+      
       - icon: fab fa-twitter
-        url: "#"
+        url: "https://x.com/saponin9000"
         title: Twitter
       - icon: fab fa-orcid
         url: "#"
@@ -101,7 +93,7 @@ params:
   #       college: University of State-City
   #       dates: 2004 - 2009
   publication:
-    title: Publications
+    title: 参加したライブ・イベント
     icon: fas fa-book
     format:
       - date
@@ -109,25 +101,26 @@ params:
       - authors
       - journal
     types:
-      - Journal Articles
+      - ライブ
+      - ライブ(2024年)
+      - イベント
+      - イベント(2024年)
       - Proceedings
     list:
       - title: >-
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          THE IDOLM@STER 765 MILLIONSTARS HOTCHPOTCH FESTIV@L!! 2
         authors: "F Last, F Second, P secondary"
-        date: "2018"
-        journal: "Journal of Field 52 (16), 9033-9044"
-        url: "#"
-        type: Journal Articles
+        date: "2025/3/29・3/30"
+        journal: "さいたまスーパーアリーナ"
+        url: "https://idolmaster-official.jp/live_event/hpf2/"
+        type: ライブ
       - title: >-
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          THE IDOLM@STER MILLION LIVE! 10thLIVE TOUR Act-4 MILLION THE@TER!!!! 
         authors: "F Last, F Second, P secondary"
         date: "2018"
         journal: "Journal of Field 52 (16), 9033-9044"
-        url: "#"
-        type: Journal Articles
+        url: "https://idolmaster-official.jp/live_event/million10th/information/act4.php"
+        type: ライブ(2024年)
       - title: >-
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua.
