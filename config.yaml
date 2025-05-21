@@ -33,19 +33,12 @@ params:
   social:
     title: Links
     list:
-      
       - icon: fab fa-twitter
         url: "https://x.com/saponin9000"
         title: Twitter
-      - icon: fab fa-orcid
-        url: "#"
-        title: Orcid
-      - icon: ai ai-google-scholar
-        url: "#"
-        title: Google Scholar
-      - icon: fab fa-researchgate
-        url: "#"
-        title: ResearchGate
+      - icon: fa-solid fa-m
+        url: "https://live-theater.net/@narumiki"
+        title: LTN
   showInAccordion:
     - item: aboutme
       expand: true
@@ -64,7 +57,7 @@ params:
     icon: far fa-address-card
     list:
       - position: ID・名刺
-        dates: 2023/9/20 - *なるみき 8RLKRF8Q* ![名刺](static/ml_meishi.jpg)
+        dates: 2023/9/20 - *なるみき 8RLKRF8Q* ![名刺]static/ml_meishi.jpg
         details: |1-
           - 同僚追加お気軽にどうぞ！
       - position: イベント実績(一部)
@@ -127,12 +120,12 @@ params:
         type: ライブ(2024年)
         at: 両日参加
       - title: >-
-          M@STER EXPO LIVE SHOWCASE MILLION STAGE
+          M@STER EXPO LIVE SHOWCASE
         date: "2024/12/15"
         Venue: "幕張メッセ 国際展示場 展示ホール 3"
         url: "https://idolmaster-official.jp/live_event/master_expo/area/live.php"
         type: ライブ(2024年)
-        at: 
+        at: MILLION STAGE 観覧
       - title: >-
           THE IDOLM@STER MILLION RADIO! SPECIAL PARTY 06
         date: "2025/6/15"
