@@ -64,7 +64,7 @@ params:
     icon: far fa-address-card
     list:
       - position: ID・名刺
-        dates: 2023/9/20 - *なるみき 8RLKRF8Q* ![名刺](ml_meishi.jpg)
+        dates: 2023/9/20 - *なるみき 8RLKRF8Q* ![名刺](static/ml_meishi.jpg)
         details: |1-
           - 同僚追加お気軽にどうぞ！
       - position: イベント実績(一部)
