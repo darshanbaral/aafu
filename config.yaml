@@ -29,7 +29,7 @@ params:
     name: "なるみき/さぽにん"
     #tagline: Title
     #location: "City Name, ST"
-    photo: "![profile](images/profile.png)"
+    photo: profile.png
   social:
     title: Links
     list:
