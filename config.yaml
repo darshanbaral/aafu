@@ -29,7 +29,7 @@ params:
     name: "なるみき/さぽにん"
     #tagline: Title
     #location: "City Name, ST"
-    photo: (images/profile.png)
+    photo: "![profile](images/profile.png)"
   social:
     title: Links
     list:
@@ -67,14 +67,10 @@ params:
         dates: 2023/9/20 - *なるみき 8RLKRF8Q*
         company: Company Name
         details: |1-
-          - Printed from desktop. Sent [emails](#).
-              - Called people *using* telephone.
-          - Drank water from office cooler.
-          - Ate donuts on people's birthdays.
+          - 同僚追加お気軽にどうぞ！
       - position: イベント実績(一部)
-        dates: 2018 - 2019
-        url: "#"
-        company: Company Name
+        details: |1-
+          - 2023/10/18 - 10/25 · 解夏傀儡 [1771位]
   # education:
   #   title: Education
   #   icon: fas fa-graduation-cap
