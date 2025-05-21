@@ -204,10 +204,11 @@ params:
     icon: fas fa-gamepad
     list:
       - hobby: <details>
-              <summary>写真撮影(機材情報等はクリック)</summary>
-                
-                - LUMIX G100D
-                </details>
+          <summary>タイトル</summary>
+
+          内容を
+          ここに記載する
+          </details>
     
       - hobby: 散歩
       - hobby: 読書
