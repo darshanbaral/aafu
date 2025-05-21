@@ -203,7 +203,11 @@ params:
     title: その他趣味
     icon: fas fa-gamepad
     list:
-      - hobby: 写真撮影(LUMIX G100D)
+      - hobby: <details><summary>写真撮影(機材情報等はクリック)</summary>
+                
+                - LUMIX G100D
+                </details>
+    
       - hobby: 散歩
       - hobby: 読書
       - hobby: ポルノグラフィティ(LoveUp!会員 2024/9/7～)
