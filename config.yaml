@@ -94,7 +94,6 @@ params:
     format:
       - date
       - title
-      #- authors
       - Venue
       - at
     types:
@@ -109,23 +108,26 @@ params:
         date: "2025/3/29・3/30"
         Venue: "さいたまスーパーアリーナ"
         url: "https://idolmaster-official.jp/live_event/hpf2/"
-        at: 両日
+        at: 両日参加
         type: ライブ
       - title: >-
           THE IDOLM@STER MILLION LIVE! 10thLIVE TOUR Act-4 MILLION THE@TER!!!! 
-        authors: "F Last, F Second, P secondary"
         date: "2024/2/24・2/25"
-        journal: "Journal of Field 52 (16), 9033-9044"
+        Venue: "Kアリーナ横浜"
         url: "https://idolmaster-official.jp/live_event/million10th/information/act4.php"
         type: ライブ(2024年)
+        at: 両日参加
       - title: >-
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua.
-        authors: "F Last, F Second, P secondary"
-        date: "2018"
-        journal: "Journal of Field 52 (16), 9033-9044"
+          THE IDOLM@STER MILLION RADIO! SPECIAL PARTY 06
+        date: "2025/6/15"
+        Venue: "立川ステージガーデン"
+        type: イベント
+      - title: >-
+          THE IDOLM@STER MILLION RADIO! SPECIAL PARTY 05
+        date: "2024/5/12"
+        Venue: "森のホール21(松戸市文化会館)大ホール"
         url: "#"
-        type: Proceedings
+        type: イベント(2024年)
   # project:
   #   title: Projects
   #   icon: fas fa-project-diagram
@@ -154,7 +156,7 @@ params:
   #     - skill: Skill 4
   #       skillrating: 50
   hobby:
-    title: その多趣味
+    title: その他趣味
     icon: fas fa-gamepad
     list:
       - hobby: 写真撮影()
