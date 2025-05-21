@@ -29,7 +29,7 @@ params:
     name: "なるみき/さぽにん"
     #tagline: Title
     #location: "City Name, ST"
-    photo: profile.png
+    photo: images/profile.png
   social:
     title: Links
     list:
@@ -60,11 +60,11 @@ params:
     icon: fas fa-user
     description: ミリアニ先行上映第2幕からの新人プロデューサーです。よろしくお願いします！
   experience:
-    title: Experiences
+    title: ミリシタ
     icon: fas fa-briefcase
     list:
-      - position: Job Title
-        dates: 2019 - *Present*
+      - position: ID・名刺等
+        dates: 2023/9/20 - *なるみき 8RLKRF8Q*
         company: Company Name
         details: |1-
           - Printed from desktop. Sent [emails](#).
