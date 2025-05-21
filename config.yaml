@@ -58,10 +58,10 @@ params:
     - item: aboutme
       expand: true
     - item: experience
-    - item: education
+    #- item: education
     - item: publication
-    - item: project
-    - item: skill
+    #- item: project
+    #- item: skill
     - item: hobby
   aboutme:
     title: 自己紹介
@@ -83,23 +83,23 @@ params:
         dates: 2018 - 2019
         url: "#"
         company: Company Name
-  education:
-    title: Education
-    icon: fas fa-graduation-cap
-    list:
-      - degree: Ph.D. in Subject
-        college: University of State-City
-        dates: 2013 - 2018
-        thesis_title: "Effect of humans on other humans: a study of human behavior."
-        thesis_url: "#"
-      - degree: M.S. in Subject
-        college: University of State-City
-        dates: 2013 - 2018
-        thesis_title: "Effect of humans on other humans: a study of human behavior."
-        thesis_url: "#"
-      - degree: B.S. in Subject
-        college: University of State-City
-        dates: 2004 - 2009
+  # education:
+  #   title: Education
+  #   icon: fas fa-graduation-cap
+  #   list:
+  #     - degree: Ph.D. in Subject
+  #       college: University of State-City
+  #       dates: 2013 - 2018
+  #       thesis_title: "Effect of humans on other humans: a study of human behavior."
+  #       thesis_url: "#"
+  #     - degree: M.S. in Subject
+  #       college: University of State-City
+  #       dates: 2013 - 2018
+  #       thesis_title: "Effect of humans on other humans: a study of human behavior."
+  #       thesis_url: "#"
+  #     - degree: B.S. in Subject
+  #       college: University of State-City
+  #       dates: 2004 - 2009
   publication:
     title: Publications
     icon: fas fa-book
@@ -164,9 +164,10 @@ params:
   #     - skill: Skill 4
   #       skillrating: 50
   hobby:
-    title: Hobbies
+    title: その多趣味
     icon: fas fa-gamepad
     list:
-      - hobby: Cooking
-      - hobby: Hiking
-      - hobby: Baking
+      - hobby: 写真撮影()
+      - hobby: 散歩
+      - hobby: 読書
+      - hobby: ポルノグラフィティ(LoveUp!会員 2024/9/7～)
