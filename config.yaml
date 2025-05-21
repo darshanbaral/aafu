@@ -36,7 +36,7 @@ params:
       - icon: fab fa-twitter
         url: "https://x.com/saponin9000"
         title: Twitter
-      - icon: fa-solid fa-m
+      - icon: fas fa-external-link-alt
         url: "https://live-theater.net/@narumiki"
         title: LTN
   showInAccordion:
