@@ -122,12 +122,14 @@ params:
         date: "2025/6/15"
         Venue: "立川ステージガーデン"
         type: イベント
+        at: 昼の部・夜の部
       - title: >-
           THE IDOLM@STER MILLION RADIO! SPECIAL PARTY 05
         date: "2024/5/12"
         Venue: "森のホール21(松戸市文化会館)大ホール"
         url: "#"
         type: イベント(2024年)
+        at: 昼の部・夜の部
   # project:
   #   title: Projects
   #   icon: fas fa-project-diagram
