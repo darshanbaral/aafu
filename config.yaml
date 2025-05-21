@@ -129,18 +129,50 @@ params:
         type: ライブ(2024年)
         at: 両日参加
       - title: >-
+          M@STER EXPO LIVE SHOWCASE MILLION STAGE
+        date: "2024/12/15"
+        Venue: "幕張メッセ 国際展示場 展示ホール 3"
+        url: "https://idolmaster-official.jp/live_event/master_expo/area/live.php"
+        type: ライブ(2024年)
+        at: 
+      - title: >-
           THE IDOLM@STER MILLION RADIO! SPECIAL PARTY 06
         date: "2025/6/15"
         Venue: "立川ステージガーデン"
         type: イベント
         at: 昼の部・夜の部
       - title: >-
+          THE IDOLM@STER MILLION C@STING 01 解夏傀儡 & 02 エンダーエンダー購入者限定合同朗読イベント
+        date: "2024/5/5"
+        Venue: "都内某所"
+        type: イベント(2024年)
+        at: 夜の部
+      - title: >-
           THE IDOLM@STER MILLION RADIO! SPECIAL PARTY 05
         date: "2024/5/12"
         Venue: "森のホール21(松戸市文化会館)大ホール"
-        url: "#"
         type: イベント(2024年)
         at: 昼の部・夜の部
+      - title: >-
+          アイドルマスターミリオンライブ！展 〜Crossing Our MILLION LIKE!〜
+        date: "2024/8/23～8/25"
+        Venue: "横浜産貿ホール マリネリア"
+        url: "https://idolmaster-official.jp/live_events/millionlike_1"
+        type: イベント(2024年)
+        at: 全日
+      - title: >-
+          THE IDOLM@STER MILLION C@STING 03 ミステイク・マーダー！＆04 銀のテーブル木苺ジャム 購入者限定合同朗読イベント
+        date: "2024/9/22"
+        Venue: 関東某所
+        type: イベント(2024年)
+        at: 昼の部・夜の部
+      - title: >-
+          THE IDOLM@STER M@STER EXPO
+        date: "2024/12/14・12/15"
+        Venue: "幕張メッセ 国際展示場 展示ホール 1～2"
+        url: "https://idolmaster-official.jp/live_event/master_expo/"
+        type: イベント(2024年)
+        at: 全日
   # project:
   #   title: Projects
   #   icon: fas fa-project-diagram
@@ -172,7 +204,7 @@ params:
     title: その他趣味
     icon: fas fa-gamepad
     list:
-      - hobby: 写真撮影()
+      - hobby: 写真撮影(LUMIX G100D)
       - hobby: 散歩
       - hobby: 読書
       - hobby: ポルノグラフィティ(LoveUp!会員 2024/9/7～)
