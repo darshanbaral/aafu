@@ -5,7 +5,7 @@ languageCode: en-us
 build:
   writeStats: true
 params:
-  title: aafu theme
+  title: なるみき-Profile-
   author: narumiki
   description: Website title
   copyright: >-
@@ -26,7 +26,7 @@ params:
               <link rel="shortcut icon" href="favicon.ico">
 
   profile:
-    name: "First Last, Abbr."
+    name: "なるみき/さぽにん"
     tagline: Title
     location: "City Name, ST"
     photo: profile.jpg
@@ -64,9 +64,9 @@ params:
     - item: skill
     - item: hobby
   aboutme:
-    title: About Me
+    title: 自己紹介
     icon: fas fa-user
-    description: This is a demo of the `aafu` theme. It has `light` and `dark` theme.
+    description: ミリアニ先行上映第2幕からの新人プロデューサーです。よろしくお願いします！
   experience:
     title: Experiences
     icon: fas fa-briefcase
@@ -136,33 +136,33 @@ params:
         journal: "Journal of Field 52 (16), 9033-9044"
         url: "#"
         type: Proceedings
-  project:
-    title: Projects
-    icon: fas fa-project-diagram
-    list:
-      - title: Project 1
-        url: "#"
-        description: Description of the project
-      - title: Project 2
-        url: "#"
-        description: Description of the project
-      - title: Project 3
-        url: "#"
-        description: Description of the project
-      - title: Project 4
-        url: "#"
-        description: Description of the project
-  skill:
-    title: Skills
-    panelId: skill-panel
-    icon: fas fa-cogs
-    list:
-      - skill: "Skill 1, Skill 2"
-        skillrating: 90
-      - skill: Skill 3
-        skillrating: 80
-      - skill: Skill 4
-        skillrating: 50
+  # project:
+  #   title: Projects
+  #   icon: fas fa-project-diagram
+  #   list:
+  #     - title: Project 1
+  #       url: "#"
+  #       description: Description of the project
+  #     - title: Project 2
+  #       url: "#"
+  #       description: Description of the project
+  #     - title: Project 3
+  #       url: "#"
+  #       description: Description of the project
+  #     - title: Project 4
+  #       url: "#"
+  #       description: Description of the project
+  # skill:
+  #   title: Skills
+  #   panelId: skill-panel
+  #   icon: fas fa-cogs
+  #   list:
+  #     - skill: "Skill 1, Skill 2"
+  #       skillrating: 90
+  #     - skill: Skill 3
+  #       skillrating: 80
+  #     - skill: Skill 4
+  #       skillrating: 50
   hobby:
     title: Hobbies
     icon: fas fa-gamepad
