@@ -28,7 +28,7 @@ params:
   profile:
     name: "なるみき/さぽにん"
     #tagline: Title
-    location: "アイコンは青羽美咲さんです。"
+    location: <small>"アイコンは青羽美咲さんです。"</small>
     photo: profile.png
   social:
     title: Links
