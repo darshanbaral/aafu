@@ -3,14 +3,14 @@ name: Deploy Hugo site with Pagefind to GitHub Pages
 on:
   push:
     branches: [main, master]
-
-permissions:
-  pages: write
-  contents: read
+  workflow_dispatch:
 
 jobs:
   deploy:
     runs-on: ubuntu-latest
+    permissions:
+      pages: write
+      contents: read
 
     steps:
       - name: Checkout code
@@ -40,7 +40,8 @@ jobs:
         run: npx -y pagefind --site public
 
       - name: Deploy to GitHub Pages
-        uses: peaceiris/actions-gh-pages@v3
+        uses: peaceiris/actions-gh-pages@v4
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./public
+          publish_branch: gh-pages
