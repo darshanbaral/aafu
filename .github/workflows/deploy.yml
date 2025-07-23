@@ -10,7 +10,7 @@ jobs:
     runs-on: ubuntu-latest
     permissions:
       pages: write
-      contents: read
+      contents: write
 
     steps:
       - name: Checkout code
