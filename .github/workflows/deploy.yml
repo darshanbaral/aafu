@@ -2,7 +2,7 @@ name: Deploy Hugo site with Pagefind to GitHub Pages
 
 on:
   push:
-    branches: [main]
+    branches: [main, master]
 
 permissions:
   pages: write
