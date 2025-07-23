@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Themes on </title>
+    <link>https://darshanbaral.github.io/aafu/tags/themes/</link>
+    <description>Recent content in Themes on </description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 19 Nov 2022 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://darshanbaral.github.io/aafu/tags/themes/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Demo Page</title>
+      <link>https://darshanbaral.github.io/aafu/blog/markdown_syntax/</link>
+      <pubDate>Sat, 19 Nov 2022 00:00:00 +0000</pubDate>
+      <guid>https://darshanbaral.github.io/aafu/blog/markdown_syntax/</guid>
+      <description>&lt;p&gt;This article offers a sample of basic Markdown syntax that can be used in Hugo content files, also it shows whether basic HTML elements are decorated with CSS in a Hugo theme.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

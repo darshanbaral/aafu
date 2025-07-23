@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html lang="en-us" class="m-auto  dark "><head>
+  <title>aafu theme</title>
+
+<meta name="theme-color" content="" />
+<meta charset="utf-8" />
+<meta content="width=device-width, initial-scale=1.0" name="viewport" />
+<meta name="description" content="Website title" />
+<meta name="author" content="Darshan Baral" />
+<meta name="generator" content="aafu theme by Darshan in Hugo 0.147.9" />
+
+        <link rel="apple-touch-icon" sizes="180x180" href="/aafu/apple-touch-icon.png">        <link rel="icon" type="image/png" sizes="32x32" href="/aafu/favicon-32x32.png">        <link rel="icon" type="image/png" sizes="16x16" href="/aafu/favicon-16x16.png">        <link rel="manifest" href="/aafu/site.webmanifest">        <link rel="mask-icon" href="/aafu/safari-pinned-tab.svg" color="#252627">        <link rel="shortcut icon" href="/aafu/favicon.ico">
+  <link
+    rel="stylesheet"
+    href="https://use.fontawesome.com/releases/v5.15.2/css/all.css"
+    integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu"
+    crossorigin="anonymous"
+  />
+  <link
+    rel="stylesheet"
+    href="https://cdn.rawgit.com/jpswalsh/academicons/master/css/academicons.min.css"
+  />
+  <link
+    rel="stylesheet"
+    href="//fonts.googleapis.com/css?family=Didact+Gothic%7CRoboto:400%7CRoboto+Mono"
+  />
+
+  
+  
+  
+  <link
+    rel="stylesheet"
+    href="/aafu/main.min.5993fe7fd934808b9eb1f1fb8a12d743a123e58f1764ba441e5a21c6a9680588.css"
+    integrity="sha256-WZP&#43;f9k0gIuesfH7ihLXQ6Ej5Y8XZLpEHlohxqloBYg="
+    crossorigin="anonymous"
+  />
+  
+
+  <link href="/aafu/main.css" rel="stylesheet" />
+  <link rel="stylesheet" href="/css/general.css" />
+  <link rel="stylesheet" href="/css/search.css" />
+
+  <script>
+    let html = document.querySelector("html");
+    let theme = window.localStorage.getItem("theme");
+
+    const setTheme = (theme) => {
+      html.classList.remove("light");
+      if (theme === "dark") {
+        html.classList.add("dark");
+        window.localStorage.setItem("theme", "dark");
+      } else {
+        html.classList.remove("dark");
+        window.localStorage.setItem("theme", "light");
+      }
+      fixThemeToggleIcon(theme);
+    };
+
+    const fixThemeToggleIcon = (theme) => {
+      let themeToggle = document.querySelector(".theme-toggle");
+      if (themeToggle) {
+        if (theme === "dark") {
+          themeToggle.classList.remove("fa-moon");
+          themeToggle.classList.add("fa-sun");
+        } else {
+          themeToggle.classList.remove("fa-sun");
+          themeToggle.classList.add("fa-moon");
+        }
+      }
+    };
+
+    if (theme == null) {
+      if (html.classList.contains("dark")) {
+        theme = "dark";
+      } else if (html.classList.contains("light")) {
+        theme = "light";
+      } else {
+        
+        const prefersDark = window.matchMedia(
+          "(prefers-color-scheme: dark)"
+        ).matches;
+        if (prefersDark) {
+          theme = "dark";
+        } else {
+          theme = "light";
+        }
+      }
+    }
+
+    setTheme(theme);
+
+    const toggleTheme = () => {
+      html.classList.contains("dark") ? setTheme("light") : setTheme("dark");
+    };
+
+    window.onload = () => {
+      fixThemeToggleIcon(theme);
+
+      let defaultActivePanel = document.querySelector(".accordion.active");
+      if (defaultActivePanel) {
+        defaultActivePanel.nextElementSibling.style.maxHeight =
+          defaultActivePanel.nextElementSibling.scrollHeight + "px";
+      }
+    };
+
+    window.onresize = () => {
+      let defaultActivePanel = document.querySelector(".accordion.active");
+      if (defaultActivePanel) {
+        defaultActivePanel.nextElementSibling.style.maxHeight =
+          defaultActivePanel.nextElementSibling.scrollHeight + "px";
+      }
+    };
+  </script>
+</head>
+<body class="h-screen p-2 m-auto max-w-4xl flex flex-col">
+    
+    <header
+  class="nav flex flex-row row py-2 mb-6 w-full border-b border-gray-700 dark:border-gray-300 justify-between"
+>
+  <div>
+    <a class="nav-menu-item" href="https://darshanbaral.github.io/aafu/">Home</a>
+    <a class="nav-menu-item" href="/aafu/blog">Blog</a>
+  </div>
+  <div>
+    <a class="mr-4" href="/aafu/search">
+      <i class="fas fa-search"></i>
+    </a>
+    <i
+      class="fas fa-sun theme-toggle text-blue-500 hover:text-blue-700 dark:text-yellow-300 dark:hover:text-yellow-500 cursor-pointer text-lg mr-9 sm:mr-0"
+      onclick="toggleTheme()"
+    ></i>
+  </div>
+</header>
+
+
+
+    
+    <main class="grow">
+<div class="grid grid-cols-1 md:grid-cols-5 gap-2 sm py-2">
+  <div class="col-span-2">
+    <div class="bg-gray-300 dark:bg-darker drop-shadow-md p-2 rounded-t-lg">
+      <div class="flex flex-col justify-center">
+        <div
+  class="w-full p-2 flex justify-center align-middle profile-photo-container"
+>
+  <img
+    class="rounded-sm"
+    src="/aafu/images/profile.jpg"
+    alt="Darshan Baral"
+  />
+</div>
+
+        <div class="px-2 text-center">
+          <h1 class="mb-0">First Last, Abbr.</h1>
+<h2 class="mb-0">Title</h2>
+<h3 class="mb-4">City Name, ST</h3>
+<div class="mb-4 flex flex-wrap justify-center">
+  
+  <div class="mx-2">
+    <a class="text-2xl" href="#">
+      <i class="mt-1 fab fa-linkedin-in"></i>
+    </a>
+  </div>
+  
+  <div class="mx-2">
+    <a class="text-2xl" href="#">
+      <i class="mt-1 fab fa-stack-overflow"></i>
+    </a>
+  </div>
+  
+  <div class="mx-2">
+    <a class="text-2xl" href="#">
+      <i class="mt-1 fab fa-github"></i>
+    </a>
+  </div>
+  
+  <div class="mx-2">
+    <a class="text-2xl" href="#">
+      <i class="mt-1 fab fa-twitter"></i>
+    </a>
+  </div>
+  
+  <div class="mx-2">
+    <a class="text-2xl" href="#">
+      <i class="mt-1 fab fa-orcid"></i>
+    </a>
+  </div>
+  
+  <div class="mx-2">
+    <a class="text-2xl" href="#">
+      <i class="mt-1 ai ai-google-scholar"></i>
+    </a>
+  </div>
+  
+  <div class="mx-2">
+    <a class="text-2xl" href="#">
+      <i class="mt-1 fab fa-researchgate"></i>
+    </a>
+  </div>
+  
+</div>
+
+          
+        </div>
+      </div>
+    </div>
+    <footer class="text-sm text-center border-t border-gray-500  bg-gray-200 dark:bg-dark rounded-b-lg py-2 ">
+  <p class="markdownify">powered by <a href="https://gohugo.io/">hugo</a> &amp; deployed on <a href="https://www.cloudflare.com/">Cloudflare</a></p>
+  <p >
+    <i>
+      <a href="https://github.com/darshanbaral/aafu">
+        aafu
+      </a>
+    </i>
+    by
+    <a href="https://www.darshanbaral.com/">
+      darshan
+    </a>
+  </p>
+
+  
+</footer>
+
+  </div>
+  <div class="col-span-3 relative">
+    
+    <div class="px-2">
+      <h2 class="accordion active">
+        
+        <p
+         
+          onclick="expandAccordion(this)"
+          style="cursor: pointer"
+        >
+          <i class="fas fa-user"></i>
+          About Me</p>
+      </h2>
+
+      <div
+        class="panel overflow-hidden px-2 ml-2"
+        
+      >
+        <div class=""><p class="markdownify">
+  This is a demo of the <code>aafu</code> theme. It has <code>light</code> and <code>dark</code> theme.
+</p>
+</div>
+      </div>
+    </div>
+    
+    <div class="px-2">
+      <h2 class="accordion">
+        
+        <p
+         
+          onclick="expandAccordion(this)"
+          style="cursor: pointer"
+        >
+          <i class="fas fa-briefcase"></i>
+          Experiences</p>
+      </h2>
+
+      <div
+        class="panel overflow-hidden px-2 ml-2"
+        
+      >
+        <div class="">
+<h4 style="text-decoration: underline;">Job Title</h4>
+<p class="mb-0">
+  2019 - <em>Present</em> &middot;  Company Name 
+</p>
+
+<div class="prose prose-stone dark:prose-invert max-w-none">
+<ul>
+<li>Printed from desktop. Sent <a href="#">emails</a>.
+<ul>
+<li>Called people <em>using</em> telephone.</li>
+</ul>
+</li>
+<li>Drank water from office cooler.</li>
+<li>Ate donuts on people&rsquo;s birthdays.</li>
+</ul>
+
+</div>
+
+
+
+<h4 style="text-decoration: underline;">Job Title</h4>
+<p >
+  2018 - 2019 &middot; 
+  <a href="#">Company Name</a>
+  
+</p>
+
+
+
+</div>
+      </div>
+    </div>
+    
+    <div class="px-2">
+      <h2 class="accordion">
+        
+        <p
+         
+          onclick="expandAccordion(this)"
+          style="cursor: pointer"
+        >
+          <i class="fas fa-graduation-cap"></i>
+          Education</p>
+      </h2>
+
+      <div
+        class="panel overflow-hidden px-2 ml-2"
+        
+      >
+        <div class="">
+
+<h4 style="text-decoration: underline;">Ph.D. in Subject</h4>
+<p class="mb-0" >2013 - 2018 &middot; University of State-City</p>
+
+
+<p>
+  Thesis:
+  <a href="#"><i>Effect of humans on other humans: a study of human behavior.</i></a>
+</p>
+
+
+
+
+<h4 style="text-decoration: underline;">M.S. in Subject</h4>
+<p class="mb-0" >2013 - 2018 &middot; University of State-City</p>
+
+
+<p>
+  Thesis:
+  <a href="#"><i>Effect of humans on other humans: a study of human behavior.</i></a>
+</p>
+
+
+
+
+<h4 style="text-decoration: underline;">B.S. in Subject</h4>
+<p >2004 - 2009 &middot; University of State-City</p>
+
+
+</div>
+      </div>
+    </div>
+    
+    <div class="px-2">
+      <h2 class="accordion">
+        
+        <p
+         
+          onclick="expandAccordion(this)"
+          style="cursor: pointer"
+        >
+          <i class="fas fa-book"></i>
+          Publications</p>
+      </h2>
+
+      <div
+        class="panel overflow-hidden px-2 ml-2"
+        
+      >
+        <div class="">
+
+
+<h4 style="text-decoration: underline;">Journal Articles</h4><p class="foo indent-8">2018.
+
+
+<a href="#">
+  <em>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</em>
+</a>
+
+
+F Last, F Second, P secondary.
+Journal of Field 52 (16), 9033-9044.
+</p>
+<p class="foo indent-8">2018.
+
+
+<a href="#">
+  <em>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</em>
+</a>
+
+
+F Last, F Second, P secondary.
+Journal of Field 52 (16), 9033-9044.
+</p>
+
+
+<h4 style="text-decoration: underline;">Proceedings</h4><p class="foo indent-8">2018.
+
+
+<a href="#">
+  <em>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</em>
+</a>
+
+
+F Last, F Second, P secondary.
+Journal of Field 52 (16), 9033-9044.
+</p>
+
+
+
+</div>
+      </div>
+    </div>
+    
+    <div class="px-2">
+      <h2 class="accordion">
+        
+        <p
+         
+          onclick="expandAccordion(this)"
+          style="cursor: pointer"
+        >
+          <i class="fas fa-project-diagram"></i>
+          Projects</p>
+      </h2>
+
+      <div
+        class="panel overflow-hidden px-2 ml-2"
+        
+      >
+        <div class="">
+<h4>
+  <a href="#">Project 1</a>
+</h4>
+<p class="markdownify indent-8">Description of the project</p>
+
+<h4>
+  <a href="#">Project 2</a>
+</h4>
+<p class="markdownify indent-8">Description of the project</p>
+
+<h4>
+  <a href="#">Project 3</a>
+</h4>
+<p class="markdownify indent-8">Description of the project</p>
+
+<h4>
+  <a href="#">Project 4</a>
+</h4>
+<p class="markdownify indent-8">Description of the project</p>
+
+</div>
+      </div>
+    </div>
+    
+    <div class="px-2">
+      <h2 class="accordion">
+        
+        <p
+         
+          onclick="expandAccordion(this)"
+          style="cursor: pointer"
+        >
+          <i class="fas fa-cogs"></i>
+          Skills</p>
+      </h2>
+
+      <div
+        class="panel overflow-hidden px-2 ml-2"
+        
+        id="skill-panel"
+        
+      >
+        <div class=""><script>
+  let skillPanel = document.querySelector("#skill-panel")
+    .previousElementSibling;
+  skillPanel.addEventListener("click", function() {
+    let skillBars = document.querySelectorAll("#skill-percent");
+    skillBars.forEach(elem => {
+      elem.style.width = elem.classList[0];
+    });
+  });
+</script>
+
+<code>Skill 1, Skill 2</code>
+<div class="w-100 mt-1 mb-3 border border-black dark:border-gray-300 rounded-sm" style="height: 1.25rem;">
+  <div id="skill-percent" class="90% bg-blue-500 dark:bg-yellow-700 h-full rounded-sm" style="width: 0; transition: all 0.5s;"></div>
+</div>
+
+<code>Skill 3</code>
+<div class="w-100 mt-1 mb-3 border border-black dark:border-gray-300 rounded-sm" style="height: 1.25rem;">
+  <div id="skill-percent" class="80% bg-blue-500 dark:bg-yellow-700 h-full rounded-sm" style="width: 0; transition: all 0.5s;"></div>
+</div>
+
+<code>Skill 4</code>
+<div class="w-100 mt-1 mb-3 border border-black dark:border-gray-300 rounded-sm" style="height: 1.25rem;">
+  <div id="skill-percent" class="50% bg-blue-500 dark:bg-yellow-700 h-full rounded-sm" style="width: 0; transition: all 0.5s;"></div>
+</div>
+
+</div>
+      </div>
+    </div>
+    
+    <div class="px-2">
+      <h2 class="accordion">
+        
+        <p
+         
+          onclick="expandAccordion(this)"
+          style="cursor: pointer"
+        >
+          <i class="fas fa-gamepad"></i>
+          Hobbies</p>
+      </h2>
+
+      <div
+        class="panel overflow-hidden px-2 ml-2"
+        
+      >
+        <div class=""><ul class="pl-0">
+  
+  <li class="list-unstyled mb-2">Cooking</li>
+  
+  <li class="list-unstyled mb-2">Hiking</li>
+  
+  <li class="list-unstyled mb-2">Baking</li>
+  
+</ul>
+</div>
+      </div>
+    </div>
+    
+
+    <script src="/aafu/js/accordion.js"></script>
+  </div>
+</div>
+
+    </main>
+    
+  </body>
+</html>

@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en-us" class="m-auto  dark "><head>
+  <title>aafu theme</title>
+
+<meta name="theme-color" content="" />
+<meta charset="utf-8" />
+<meta content="width=device-width, initial-scale=1.0" name="viewport" />
+<meta name="description" content="Website title" />
+<meta name="author" content="Darshan Baral" />
+<meta name="generator" content="aafu theme by Darshan in Hugo 0.147.9" />
+
+        <link rel="apple-touch-icon" sizes="180x180" href="/aafu/apple-touch-icon.png">        <link rel="icon" type="image/png" sizes="32x32" href="/aafu/favicon-32x32.png">        <link rel="icon" type="image/png" sizes="16x16" href="/aafu/favicon-16x16.png">        <link rel="manifest" href="/aafu/site.webmanifest">        <link rel="mask-icon" href="/aafu/safari-pinned-tab.svg" color="#252627">        <link rel="shortcut icon" href="/aafu/favicon.ico">
+  <link
+    rel="stylesheet"
+    href="https://use.fontawesome.com/releases/v5.15.2/css/all.css"
+    integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu"
+    crossorigin="anonymous"
+  />
+  <link
+    rel="stylesheet"
+    href="https://cdn.rawgit.com/jpswalsh/academicons/master/css/academicons.min.css"
+  />
+  <link
+    rel="stylesheet"
+    href="//fonts.googleapis.com/css?family=Didact+Gothic%7CRoboto:400%7CRoboto+Mono"
+  />
+
+  
+  
+  
+  <link
+    rel="stylesheet"
+    href="/aafu/main.min.5993fe7fd934808b9eb1f1fb8a12d743a123e58f1764ba441e5a21c6a9680588.css"
+    integrity="sha256-WZP&#43;f9k0gIuesfH7ihLXQ6Ej5Y8XZLpEHlohxqloBYg="
+    crossorigin="anonymous"
+  />
+  
+
+  <link href="/aafu/main.css" rel="stylesheet" />
+  <link rel="stylesheet" href="/css/general.css" />
+  <link rel="stylesheet" href="/css/search.css" />
+
+  <script>
+    let html = document.querySelector("html");
+    let theme = window.localStorage.getItem("theme");
+
+    const setTheme = (theme) => {
+      html.classList.remove("light");
+      if (theme === "dark") {
+        html.classList.add("dark");
+        window.localStorage.setItem("theme", "dark");
+      } else {
+        html.classList.remove("dark");
+        window.localStorage.setItem("theme", "light");
+      }
+      fixThemeToggleIcon(theme);
+    };
+
+    const fixThemeToggleIcon = (theme) => {
+      let themeToggle = document.querySelector(".theme-toggle");
+      if (themeToggle) {
+        if (theme === "dark") {
+          themeToggle.classList.remove("fa-moon");
+          themeToggle.classList.add("fa-sun");
+        } else {
+          themeToggle.classList.remove("fa-sun");
+          themeToggle.classList.add("fa-moon");
+        }
+      }
+    };
+
+    if (theme == null) {
+      if (html.classList.contains("dark")) {
+        theme = "dark";
+      } else if (html.classList.contains("light")) {
+        theme = "light";
+      } else {
+        
+        const prefersDark = window.matchMedia(
+          "(prefers-color-scheme: dark)"
+        ).matches;
+        if (prefersDark) {
+          theme = "dark";
+        } else {
+          theme = "light";
+        }
+      }
+    }
+
+    setTheme(theme);
+
+    const toggleTheme = () => {
+      html.classList.contains("dark") ? setTheme("light") : setTheme("dark");
+    };
+
+    window.onload = () => {
+      fixThemeToggleIcon(theme);
+
+      let defaultActivePanel = document.querySelector(".accordion.active");
+      if (defaultActivePanel) {
+        defaultActivePanel.nextElementSibling.style.maxHeight =
+          defaultActivePanel.nextElementSibling.scrollHeight + "px";
+      }
+    };
+
+    window.onresize = () => {
+      let defaultActivePanel = document.querySelector(".accordion.active");
+      if (defaultActivePanel) {
+        defaultActivePanel.nextElementSibling.style.maxHeight =
+          defaultActivePanel.nextElementSibling.scrollHeight + "px";
+      }
+    };
+  </script>
+</head>
+<body class="h-screen p-2 m-auto max-w-4xl flex flex-col">
+    
+    <header
+  class="nav flex flex-row row py-2 mb-6 w-full border-b border-gray-700 dark:border-gray-300 justify-between"
+>
+  <div>
+    <a class="nav-menu-item" href="https://darshanbaral.github.io/aafu/">Home</a>
+    <a class="nav-menu-item" href="/aafu/blog">Blog</a>
+  </div>
+  <div>
+    <a class="mr-4" href="/aafu/search">
+      <i class="fas fa-search"></i>
+    </a>
+    <i
+      class="fas fa-sun theme-toggle text-blue-500 hover:text-blue-700 dark:text-yellow-300 dark:hover:text-yellow-500 cursor-pointer text-lg mr-9 sm:mr-0"
+      onclick="toggleTheme()"
+    ></i>
+  </div>
+</header>
+
+
+
+    
+    <main class="grow">
+<div class="prose dark:prose-invert max-w-none">
+  <h1 class="standard font-italic">
+    #Css</h1>
+  
+  <div class="">
+    <div
+      class="rounded-sm hover:bg-gray-400 dark:hover:bg-darker flex flex-row items-center justify-start accordion mt-0 mb-0 p-2 active"
+    >
+      <i
+        onclick="expandAccordion(this)"
+        class="cursor-pointer chevron p-2 mr-4 fas fa-chevron-right rounded-sm text-blue-500 dark:text-gray-400 hover:bg-gray-300 dark:hover:bg-gray-700"
+      ></i>
+      <a href="/aafu/blog/markdown_syntax/"
+        ><h2 class="accordion m-0">Demo Page</h2></a
+      >
+    </div>
+    <div
+      id="panel-item-0"
+      class="panel metadata-panel overflow-hidden bg-gray-200 dark:bg-dark"
+    >
+      <div class="metadata p-2"><p class="mt-0 mb-0 text-sm">November 19, 2022</p>
+<p class="mt-1 mb-0 text-sm">Reading Time: 3 minutes</p>
+ 
+
+<p class="metadata-value mt-1 mb-0 text-sm taxa taxa-container-div list-categories">
+  Categories: 
+  <a
+    class="metadata-tags hover:no-underline"
+    href="/aafu/categories/themes"
+    title="categories"
+  >
+    #themes</a>
+  
+  <a
+    class="metadata-tags hover:no-underline"
+    href="/aafu/categories/syntax"
+    title="categories"
+  >
+    #syntax</a>
+  
+</p>
+
+
+
+<p class="metadata-value mt-1 mb-0 text-sm taxa taxa-container-div list-tags">
+  Tags: 
+  <a
+    class="metadata-tags hover:no-underline"
+    href="/aafu/tags/markdown"
+    title="tags"
+  >
+    #markdown</a>
+  
+  <a
+    class="metadata-tags hover:no-underline"
+    href="/aafu/tags/css"
+    title="tags"
+  >
+    #css</a>
+  
+  <a
+    class="metadata-tags hover:no-underline"
+    href="/aafu/tags/html"
+    title="tags"
+  >
+    #html</a>
+  
+  <a
+    class="metadata-tags hover:no-underline"
+    href="/aafu/tags/themes"
+    title="tags"
+  >
+    #themes</a>
+  
+</p>
+
+
+</div>
+    </div>
+  </div>
+  
+</div>
+<script src="/aafu/js/accordion.js"></script>
+<div class="my-6 flex justify-center pagination-links">
+  
+</div>
+
+    </main>
+    
+    <footer class="text-sm text-center border-t border-gray-500  py-6 ">
+  <p class="markdownify">powered by <a href="https://gohugo.io/">hugo</a> &amp; deployed on <a href="https://www.cloudflare.com/">Cloudflare</a></p>
+  <p >
+    <i>
+      <a href="https://github.com/darshanbaral/aafu">
+        aafu
+      </a>
+    </i>
+    by
+    <a href="https://www.darshanbaral.com/">
+      darshan
+    </a>
+  </p>
+
+  
+</footer>
+
+    
+  </body>
+</html>
