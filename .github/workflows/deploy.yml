@@ -34,8 +34,7 @@ jobs:
         run: npm ci
 
       - name: Build Hugo site
-        run: hugo --minify \
-          --baseURL "https://darshanbaral.github.io/aafu/"
+        run: hugo -b "https://darshanbaral.github.io/aafu/"
 
       - name: Run Pagefind
         run: npx -y pagefind --site public
