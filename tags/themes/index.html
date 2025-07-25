@@ -1,15 +1,5 @@
 <!DOCTYPE html>
 <html lang="en-us" class="m-auto  dark "><head>
-  <title>aafu theme</title>
-
-<meta name="theme-color" content="" />
-<meta charset="utf-8" />
-<meta content="width=device-width, initial-scale=1.0" name="viewport" />
-<meta name="description" content="Website title" />
-<meta name="author" content="Darshan Baral" />
-<meta name="generator" content="aafu theme by Darshan in Hugo 0.147.9" />
-
-        <link rel="apple-touch-icon" sizes="180x180" href="/aafu/apple-touch-icon.png">        <link rel="icon" type="image/png" sizes="32x32" href="/aafu/favicon-32x32.png">        <link rel="icon" type="image/png" sizes="16x16" href="/aafu/favicon-16x16.png">        <link rel="manifest" href="/aafu/site.webmanifest">        <link rel="mask-icon" href="/aafu/safari-pinned-tab.svg" color="#252627">        <link rel="shortcut icon" href="/aafu/favicon.ico">
   <link
     rel="stylesheet"
     href="https://use.fontawesome.com/releases/v5.15.2/css/all.css"
@@ -84,7 +74,35 @@
     }
   </style>
 
-  <script src="/aafu/js/accordion.js"></script>
+  <script>
+    const allPanels = Array.from(document.querySelectorAll(".panel"));
+    const allAccordion = Array.from(document.querySelectorAll(".accordion"));
+    const expandAccordion = (elem) => {
+      if (!elem.parentElement.classList.contains("active")) {
+        allAccordion.forEach((acc) => {
+          acc.classList.remove("active");
+        });
+        elem.parentElement.classList.add("active");
+        allPanels.forEach(function (elem) {
+          elem.style.maxHeight = null;
+        });
+        let activePanel = elem.parentElement.nextElementSibling;
+        if (
+          activePanel.id != "skill-panel" &&
+          document.querySelector("#skill-panel")
+        ) {
+          let skillBars = Array.from(
+            document.querySelectorAll("#skill-percent")
+          );
+          skillBars.forEach((elem) => {
+            elem.style.width = "0";
+          });
+        }
+        activePanel.style.maxHeight = activePanel.scrollHeight + "px";
+      }
+    };
+  </script>
+
   <script>
     let html = document.querySelector("html");
     let theme = window.localStorage.getItem("theme");
