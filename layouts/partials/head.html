@@ -21,7 +21,7 @@
   <link
     rel="stylesheet"
     href="{{ .RelPermalink }}"
-    integrity="{{ .Data.Integrity }}"
+    integrity="{{ .Data.Integrity | safeHTMLAttr }}"
     crossorigin="anonymous"
   />
   {{ end }}
