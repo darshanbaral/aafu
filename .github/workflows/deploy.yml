@@ -2,7 +2,7 @@ name: Deploy Hugo site with Pagefind to GitHub Pages
 
 on:
   push:
-    branches: [main, master]
+    branches: [main]
   workflow_dispatch:
 
 jobs:
@@ -34,10 +34,7 @@ jobs:
         run: npm ci
 
       - name: Build Hugo site
-        run: hugo -b "https://darshanbaral.github.io/aafu/"
-
-      - name: Run Pagefind
-        run: npx -y pagefind --site public
+        run: hugo -b https://darshanbaral.github.io/aafu/; npx -y pagefind --site public
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v4
