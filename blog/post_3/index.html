@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en-us" class="m-auto  dark "><head>
+  <link rel="icon" href="/aafu/favicon.ico" type="image/x-icon" />
   <link
     rel="stylesheet"
     href="https://use.fontawesome.com/releases/v5.15.2/css/all.css"
@@ -75,9 +76,10 @@
   </style>
 
   <script>
-    const allPanels = Array.from(document.querySelectorAll(".panel"));
-    const allAccordion = Array.from(document.querySelectorAll(".accordion"));
     const expandAccordion = (elem) => {
+      const allPanels = Array.from(document.querySelectorAll(".panel"));
+      const allAccordion = Array.from(document.querySelectorAll(".accordion"));
+
       if (!elem.parentElement.classList.contains("active")) {
         allAccordion.forEach((acc) => {
           acc.classList.remove("active");
