@@ -102,7 +102,7 @@ To configure the theme mode, modify the `params.theme.mainTheme` attribute in `c
 This theme supports search functionality using [Pagefind](https://pagefind.app/). Before deploying, index your content using the following command:
 
 ```sh
-hugo && npx -y pagefind --site public
+hugo -b https://your_base_url/; npx -y pagefind --site public
 ```
 
 ## 🐞 Reporting Issues & Feature Requests
