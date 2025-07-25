@@ -1,5 +1,5 @@
 {{ define "main" }}
-<script src="/pagefind/pagefind-ui.js"></script>
+<script src="{{ `pagefind/pagefind-ui.js` | relURL }}"></script>
 <div id="search"></div>
 <script>
   window.addEventListener("DOMContentLoaded", (event) => {
