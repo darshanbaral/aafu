@@ -1,0 +1,44 @@
+name: Deploy Hugo site with Pagefind to GitHub Pages
+
+on:
+  push:
+    branches: [test_gh_pages]
+  workflow_dispatch:
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    permissions:
+      pages: write
+      contents: write
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+        with:
+          submodules: true
+          fetch-depth: 0
+
+      - name: Setup Hugo
+        uses: peaceiris/actions-hugo@v2
+        with:
+          hugo-version: "0.147.9"
+          extended: true
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "24.3.0"
+
+      - name: Install npm dependencies
+        run: npm ci
+
+      - name: Build Hugo site
+        run: hugo -b https://darshanbaral.github.io/aafu/; npx -y pagefind --site public
+
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./public
+          publish_branch: gh-pages

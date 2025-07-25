@@ -15,7 +15,7 @@
   {{ if .Site.Params.theme.singlePage }}
   <i
 class="fas fa-sun theme-toggle text-blue-500 hover:text-blue-700 dark:text-yellow-300 dark:hover:text-yellow-500 cursor-pointer text-lg mr-9 sm:mr-0"
-onclick="lightDark(this)"
+onclick="toggleTheme()"
 ></i>
 {{ partial "toggleTheme.html" . }}
 {{ end }}
