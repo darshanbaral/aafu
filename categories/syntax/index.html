@@ -30,16 +30,62 @@
   
   <link
     rel="stylesheet"
-    href="https://darshanbaral.github.io/aafu/main.css"
+    href="/aafu/main.min.5993fe7fd934808b9eb1f1fb8a12d743a123e58f1764ba441e5a21c6a9680588.css"
+    integrity="sha256-WZP&#43;f9k0gIuesfH7ihLXQ6Ej5Y8XZLpEHlohxqloBYg="
+    crossorigin="anonymous"
   />
   
-
   
-  <link rel="stylesheet" href="/css/general.css" />
-  <link rel="stylesheet" href="/css/search.css" />
+
+  <style>
+     
+    html {
+      touch-action: manipulation;
+      scroll-behavior: smooth;
+    }
+
+    .panel {
+      max-height: 0;
+      transition: 0.3s ease-out;
+    }
+
+    .profile-photo-container {
+      img {
+        max-width: 100%;
+      }
+    }
+     
+    .pagefind-ui__search-input {
+      color: black;
+      width: 100%;
+      padding: 0.5em;
+      border-radius: 0.25em;
+      border: 1px solid gray;
+    }
+    .pagefind-ui__search-clear {
+      display: none;
+    }
+    .dark .pagefind-ui__search-input {
+      color: white;
+      background-color: #322d2d;
+      width: 100%;
+      padding: 0.5em;
+      border-radius: 0.25em;
+      border: 1px solid gray;
+    }
+    .dark .pagefind-ui__search-input::placeholder {
+      color: #8f8f8f;
+    }
+    .chevron {
+      transition: 300ms linear rotate;
+    }
+    .active > .chevron {
+      transform: rotate(90deg);
+    }
+  </style>
 
   <script src="/aafu/js/accordion.js"></script>
-  <script>    
+  <script>
     let html = document.querySelector("html");
     let theme = window.localStorage.getItem("theme");
 
@@ -74,7 +120,6 @@
       } else if (html.classList.contains("light")) {
         theme = "light";
       } else {
-        
         const prefersDark = window.matchMedia(
           "(prefers-color-scheme: dark)"
         ).matches;
