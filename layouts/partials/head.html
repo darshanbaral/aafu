@@ -1,5 +1,5 @@
 <head>
-  {{ partial "meta" . }}
+  <link rel="icon" href="{{ `favicon.ico` | relURL }}" type="image/x-icon" />
   <link
     rel="stylesheet"
     href="https://use.fontawesome.com/releases/v5.15.2/css/all.css"
@@ -15,37 +15,151 @@
     href="//fonts.googleapis.com/css?family=Didact+Gothic%7CRoboto:400%7CRoboto+Mono"
   />
 
-  {{ $css := resources.Get "main.css" | postCSS }}
+  {{ $css := resources.Get "main.css" | css.TailwindCSS }}
   {{ if hugo.IsProduction }}
-    {{ $css = $css | minify | fingerprint | resources.PostProcess }}
+  {{ with $css | minify | fingerprint }}
+  <link
+    rel="stylesheet"
+    href="{{ .RelPermalink }}"
+    integrity="{{ .Data.Integrity }}"
+    crossorigin="anonymous"
+  />
   {{ end }}
+  {{ else}}
   <link href="{{ $css.RelPermalink }}" rel="stylesheet" />
-  <link rel="stylesheet" href="{{ `/css/general.css` | relURL }}" />
-  <link rel="stylesheet" href="{{ `/css/search.css` | relURL }}" />
+  {{ end }}
+
+  <style>
+    /* General */
+    html {
+      touch-action: manipulation;
+      scroll-behavior: smooth;
+    }
+
+    .panel {
+      max-height: 0;
+      transition: 0.3s ease-out;
+    }
+
+    .profile-photo-container {
+      img {
+        max-width: 100%;
+      }
+    }
+    /* Search */
+    .pagefind-ui__search-input {
+      color: black;
+      width: 100%;
+      padding: 0.5em;
+      border-radius: 0.25em;
+      border: 1px solid gray;
+    }
+    .pagefind-ui__search-clear {
+      display: none;
+    }
+    .dark .pagefind-ui__search-input {
+      color: white;
+      background-color: #322d2d;
+      width: 100%;
+      padding: 0.5em;
+      border-radius: 0.25em;
+      border: 1px solid gray;
+    }
+    .dark .pagefind-ui__search-input::placeholder {
+      color: #8f8f8f;
+    }
+    .chevron {
+      transition: 300ms linear rotate;
+    }
+    .active > .chevron {
+      transform: rotate(90deg);
+    }
+  </style>
+
+  <script>
+    const expandAccordion = (elem) => {
+      const allPanels = Array.from(document.querySelectorAll(".panel"));
+      const allAccordion = Array.from(document.querySelectorAll(".accordion"));
+
+      if (!elem.parentElement.classList.contains("active")) {
+        allAccordion.forEach((acc) => {
+          acc.classList.remove("active");
+        });
+        elem.parentElement.classList.add("active");
+        allPanels.forEach(function (elem) {
+          elem.style.maxHeight = null;
+        });
+        let activePanel = elem.parentElement.nextElementSibling;
+        if (
+          activePanel.id != "skill-panel" &&
+          document.querySelector("#skill-panel")
+        ) {
+          let skillBars = Array.from(
+            document.querySelectorAll("#skill-percent")
+          );
+          skillBars.forEach((elem) => {
+            elem.style.width = "0";
+          });
+        }
+        activePanel.style.maxHeight = activePanel.scrollHeight + "px";
+      }
+    };
+  </script>
 
   <script>
     let html = document.querySelector("html");
     let theme = window.localStorage.getItem("theme");
-    if (theme) {
-      theme === "dark"
-        ? html.classList.add("dark")
-        : html.classList.remove("dark");
-    } else if (html.classList.contains("dark")) {
-      window.localStorage.setItem("theme", "dark");
-    } else {
-      html.classList.remove("dark");
-      window.localStorage.setItem("theme", "light");
+
+    const setTheme = (theme) => {
+      html.classList.remove("light");
+      if (theme === "dark") {
+        html.classList.add("dark");
+        window.localStorage.setItem("theme", "dark");
+      } else {
+        html.classList.remove("dark");
+        window.localStorage.setItem("theme", "light");
+      }
+      fixThemeToggleIcon(theme);
+    };
+
+    const fixThemeToggleIcon = (theme) => {
+      let themeToggle = document.querySelector(".theme-toggle");
+      if (themeToggle) {
+        if (theme === "dark") {
+          themeToggle.classList.remove("fa-moon");
+          themeToggle.classList.add("fa-sun");
+        } else {
+          themeToggle.classList.remove("fa-sun");
+          themeToggle.classList.add("fa-moon");
+        }
+      }
+    };
+
+    if (theme == null) {
+      if (html.classList.contains("dark")) {
+        theme = "dark";
+      } else if (html.classList.contains("light")) {
+        theme = "light";
+      } else {
+        const prefersDark = window.matchMedia(
+          "(prefers-color-scheme: dark)"
+        ).matches;
+        if (prefersDark) {
+          theme = "dark";
+        } else {
+          theme = "light";
+        }
+      }
     }
 
+    setTheme(theme);
+
+    const toggleTheme = () => {
+      html.classList.contains("dark") ? setTheme("light") : setTheme("dark");
+    };
+
     window.onload = () => {
-      let themeToggle = document.querySelector(".theme-toggle");
-      if (window.localStorage.getItem("theme") === "dark") {
-        themeToggle.classList.remove("bi-moon-fill");
-        themeToggle.classList.add("bi-brightness-high");
-      } else {
-        themeToggle.classList.add("bi-moon-fill");
-        themeToggle.classList.remove("bi-brightness-high");
-      }
+      fixThemeToggleIcon(theme);
 
       let defaultActivePanel = document.querySelector(".accordion.active");
       if (defaultActivePanel) {

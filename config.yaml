@@ -1,4 +1,6 @@
-baseURL: https://aafu.pages.dev/
+baseURL: https://darshanbaral.github.io/aafu/
+# Uncomment below to use aafu as hugo theme. See instructions in README.md
+# theme: aafu
 languageCode: en-us
 build:
   writeStats: true
@@ -12,16 +14,7 @@ params:
   theme:
     mainTheme: dark
     showAttribute: true
-    singlePage: false
-  favicons:
-    use: true
-    metas: |2-
-              <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
-              <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
-              <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
-              <link rel="manifest" href="site.webmanifest">
-              <link rel="mask-icon" href="safari-pinned-tab.svg" color="#252627">
-              <link rel="shortcut icon" href="favicon.ico">
+    singlePage: false  
 
   profile:
     name: "First Last, Abbr."

@@ -1,4 +1,4 @@
-<footer class="text-xs text-center border-t border-gray-500 {{ if .IsHome }} pt-2 {{ else }} py-6 {{ end }}">
+<footer class="text-sm text-center border-t border-gray-500 {{ if .IsHome }} bg-gray-200 dark:bg-dark rounded-b-lg py-2 {{ else }} py-6 {{ end }}">
   <p class="markdownify">{{ .Site.Params.copyright | markdownify }}</p>
   <p {{ if not .Site.Params.theme.showAttribute }}style="font-size:0px;"{{ end }}>
     <i>
@@ -11,4 +11,12 @@
       darshan
     </a>
   </p>
+
+  {{ if .Site.Params.theme.singlePage }}
+  <i
+class="fas fa-sun theme-toggle text-blue-500 hover:text-blue-700 dark:text-yellow-300 dark:hover:text-yellow-500 cursor-pointer text-lg mr-9 sm:mr-0"
+onclick="toggleTheme()"
+></i>
+{{ partial "toggleTheme.html" . }}
+{{ end }}
 </footer>
