@@ -34,6 +34,10 @@ Xerum, quo qui aut unt expliquam qui dolut labo. Aque venitatiusda cum, voluptio
 
 Itatur? Quiatae cullecum rem ent aut odis in re eossequodi nonsequ idebis ne sapicia is sinveli squiatum, core et que aut hariosam ex eat.
 
+## Photos
+
+{{< figure src="pexels-vojtech-okenka-127162-1055272.jpg" alt="Cake" caption="Cake" >}}
+
 ## Blockquotes
 
 The blockquote element represents content that is quoted from another source, optionally with a citation which must be within a `footer` or `cite` element, and optionally with in-line changes such as annotations and abbreviations.
@@ -135,13 +139,25 @@ html
 
 ## Other Elements — abbr, sub, sup, kbd, mark
 
+{{< raw_html >}}
+
+<p>
 <abbr title="Graphics Interchange Format">GIF</abbr> is a bitmap image format.
+</p>
 
+<p>
 H<sub>2</sub>O
+</p>
 
+<p>
 X<sup>n</sup> + Y<sup>n</sup> = Z<sup>n</sup>
+</p>
 
+<p>
 Press <kbd>CTRL</kbd>+<kbd>ALT</kbd>+<kbd>Delete</kbd> to end the session.
+</p>
 
+<p>
 Most <mark>salamanders</mark> are nocturnal, and hunt for insects, worms, and other small creatures.
-
+</p>
+{{< /raw_html >}}

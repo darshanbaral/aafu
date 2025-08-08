@@ -1,0 +1,11 @@
+{{ $count := .Page.Scratch.Get "figcount" | default 1 }}
+{{ .Page.Scratch.Set "figure_count" (add $count 1) }}
+
+<figure id="figure- {{- $count -}}" class="mt-4 pt-2 text-center">
+  <img class="mw-100 rounded" src="{{ (.Get `src`) }}" alt="{{ .Get `alt` }}" />
+  {{ if .Get "caption" }}
+  <figcaption class="mt-2">
+    Figure {{ $count }}: <em>{{ .Get `caption` }}</em>
+  </figcaption>
+  {{ end }}
+</figure>

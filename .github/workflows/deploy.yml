@@ -2,7 +2,7 @@ name: Deploy Hugo site with Pagefind to GitHub Pages
 
 on:
   push:
-    branches: [test_gh_pages]
+    branches: [main]
   workflow_dispatch:
 
 jobs:
