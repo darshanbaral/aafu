@@ -777,9 +777,6 @@
   .overflow-hidden {
     overflow: hidden !important;
   }
-  .rounded {
-    border-radius: 0.25rem !important;
-  }
   .rounded-sm {
     border-radius: var(--radius-sm) !important;
   }
