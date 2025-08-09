@@ -1,4 +1,9 @@
 <head>
+  <meta charset="UTF-8" />
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+  />
   <link rel="icon" href="{{ `favicon.ico` | relURL }}" type="image/x-icon" />
   <link
     rel="stylesheet"
@@ -16,16 +21,14 @@
   />
 
   {{ $css := resources.Get "main.css" | css.TailwindCSS }}
-  {{ if hugo.IsProduction }}
-  {{ with $css | minify | fingerprint }}
+  {{ if hugo.IsProduction }} {{ with $css | minify | fingerprint }}
   <link
     rel="stylesheet"
     href="{{ .RelPermalink }}"
     integrity="{{ .Data.Integrity | safeHTMLAttr }}"
     crossorigin="anonymous"
   />
-  {{ end }}
-  {{ else}}
+  {{ end }} {{ else}}
   <link href="{{ $css.RelPermalink }}" rel="stylesheet" />
   {{ end }}
 
