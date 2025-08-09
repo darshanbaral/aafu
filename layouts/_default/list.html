@@ -1,7 +1,7 @@
 {{ define "main" }}
 <div class="prose dark:prose-invert max-w-none">
   <h1 class="standard {{ if eq .Kind `term` }}font-italic{{ end }}">
-    {{ if eq .Kind "term" }}#{{ end }}{{- .Title -}}
+    {{ if eq .Kind "term" }}#{{ .Data.Term }}{{ else }}{{- .Title -}}{{ end }}
   </h1>
   {{ range $key, $val := (.Paginator 10).Pages }}
   <div class="">

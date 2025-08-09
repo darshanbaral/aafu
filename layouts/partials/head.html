@@ -1,9 +1,17 @@
 <head>
+  {{ if .IsHome }}
+  <title>{{ .Site.Title }}</title>
+  {{ else }}
+  <title>{{ .Title }} - {{ .Site.Title }}</title>
+  {{ end }}
   <meta charset="UTF-8" />
   <meta
     name="viewport"
     content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
   />
+  <meta name="theme-color" content="" />
+  <meta name="description" content="{{ .Site.Params.description }}" />
+  <meta name="author" content="{{ .Site.Params.author }}" />
   <link rel="icon" href="{{ `favicon.ico` | relURL }}" type="image/x-icon" />
   <link
     rel="stylesheet"
@@ -21,7 +29,8 @@
   />
 
   {{ $css := resources.Get "main.css" | css.TailwindCSS }}
-  {{ if hugo.IsProduction }} {{ with $css | minify | fingerprint }}
+  {{ if hugo.IsProduction }}
+  {{ with $css | minify | fingerprint }}
   <link
     rel="stylesheet"
     href="{{ .RelPermalink }}"

@@ -1,4 +1,4 @@
 ---
-title: "aafu theme"
+title: "Blog"
 weight: 100
 ---

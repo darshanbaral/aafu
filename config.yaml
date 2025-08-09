@@ -1,11 +1,12 @@
 baseURL: /
-# Uncomment below to use aafu as hugo theme. See instructions in README.md
-# theme: aafu
 languageCode: en-us
 build:
   writeStats: true
+title: aafu theme
+# Uncomment below to use aafu as hugo theme. See instructions in README.md
+# theme: aafu
+
 params:
-  title: aafu theme
   author: Darshan Baral
   description: Website title
   copyright: >-
