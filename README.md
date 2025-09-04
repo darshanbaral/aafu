@@ -4,7 +4,7 @@
 
 ## 🌍 Live Demo
 
-Experience the theme in action: [aafu.pages.dev](https://aafu.pages.dev/)
+Experience the theme in action: https://aafu.darshanbaral.com
 
 ## 🚀 Installation
 
