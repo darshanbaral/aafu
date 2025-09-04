@@ -34,7 +34,7 @@ jobs:
         run: npm ci
 
       - name: Build Hugo site
-        run: hugo -b https://darshanbaral.github.io/aafu/; npx -y pagefind --site public
+        run: hugo -b https://aafu.darshanbaral.com/; npx -y pagefind --site public
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v4

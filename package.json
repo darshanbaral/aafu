@@ -10,9 +10,8 @@
   "author": "Darshan Baral",
   "license": "MIT",
   "devDependencies": {
-    "@tailwindcss/cli": "^4.1.0",
-    "@tailwindcss/forms": "^0.5.9",
-    "@tailwindcss/typography": "^0.5.15",
-    "tailwindcss": "^4.1.0"
+    "@tailwindcss/typography": "^0.5.16",
+    "tailwindcss": "^4.1.11",
+    "@tailwindcss/cli": "^4.1.11"
   }
 }
