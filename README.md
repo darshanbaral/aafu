@@ -87,7 +87,9 @@ Key customization options:
 
 #### Profile Image
 
-Replace `profile.jpg` in `static/images` with your own profile picture.
+Customize the profile image by placing an image in `static/images`.
+In the `config.yaml` file, set the `file` attribute under `params.profile.photo` to specify the image file name.
+The `roundedPhoto` attribute in `config.yaml` under `params.profile.photo` controls the border radius of the profile image.
 
 #### Theme Modes
 

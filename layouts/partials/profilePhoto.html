@@ -2,8 +2,8 @@
   class="w-full p-2 flex justify-center align-middle profile-photo-container"
 >
   <img
-    class="rounded-sm"
-    src="{{ `images` | relURL }}/{{ .Site.Params.profile.photo }}"
+    class="{{ if .Site.Params.profile.photo.roundedPhoto }}rounded-full{{else}}rounded-sm{{ end }}"
+    src="{{ `images` | relURL }}/{{ .Site.Params.profile.photo.file }}"
     alt="{{ .Site.Params.author }}"
   />
 </div>
