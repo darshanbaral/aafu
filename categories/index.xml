@@ -2,38 +2,38 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Categories on aafu theme</title>
-    <link>https://darshanbaral.github.io/aafu/categories/</link>
+    <link>https://aafu.darshanbaral.com/categories/</link>
     <description>Recent content in Categories on aafu theme</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Sat, 19 Nov 2022 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://darshanbaral.github.io/aafu/categories/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://aafu.darshanbaral.com/categories/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Syntax</title>
-      <link>https://darshanbaral.github.io/aafu/categories/syntax/</link>
+      <link>https://aafu.darshanbaral.com/categories/syntax/</link>
       <pubDate>Sat, 19 Nov 2022 00:00:00 +0000</pubDate>
-      <guid>https://darshanbaral.github.io/aafu/categories/syntax/</guid>
+      <guid>https://aafu.darshanbaral.com/categories/syntax/</guid>
       <description></description>
     </item>
     <item>
       <title>Themes</title>
-      <link>https://darshanbaral.github.io/aafu/categories/themes/</link>
+      <link>https://aafu.darshanbaral.com/categories/themes/</link>
       <pubDate>Sat, 19 Nov 2022 00:00:00 +0000</pubDate>
-      <guid>https://darshanbaral.github.io/aafu/categories/themes/</guid>
+      <guid>https://aafu.darshanbaral.com/categories/themes/</guid>
       <description></description>
     </item>
     <item>
       <title>Diam Aliqua</title>
-      <link>https://darshanbaral.github.io/aafu/categories/diam-aliqua/</link>
+      <link>https://aafu.darshanbaral.com/categories/diam-aliqua/</link>
       <pubDate>Sat, 06 Jan 2018 00:00:00 +0000</pubDate>
-      <guid>https://darshanbaral.github.io/aafu/categories/diam-aliqua/</guid>
+      <guid>https://aafu.darshanbaral.com/categories/diam-aliqua/</guid>
       <description></description>
     </item>
     <item>
       <title>Fringilla</title>
-      <link>https://darshanbaral.github.io/aafu/categories/fringilla/</link>
+      <link>https://aafu.darshanbaral.com/categories/fringilla/</link>
       <pubDate>Sat, 06 Jan 2018 00:00:00 +0000</pubDate>
-      <guid>https://darshanbaral.github.io/aafu/categories/fringilla/</guid>
+      <guid>https://aafu.darshanbaral.com/categories/fringilla/</guid>
       <description></description>
     </item>
   </channel>
