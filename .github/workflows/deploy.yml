@@ -34,7 +34,12 @@ jobs:
         run: npm ci
 
       - name: Build Hugo site
-        run: hugo -b https://aafu.darshanbaral.com/; npx -y pagefind --site public
+        run: |
+          hugo -b https://aafu.darshanbaral.com/
+          npx -y pagefind --site public
+
+      - name: Add CNAME file for custom domain
+        run: echo "aafu.darshanbaral.com" > public/CNAME
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v4

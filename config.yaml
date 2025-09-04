@@ -10,8 +10,7 @@ params:
   author: Darshan Baral
   description: Website title
   copyright: >-
-    powered by [hugo](https://gohugo.io/) & deployed on
-    [Cloudflare](https://www.cloudflare.com/)
+    powered by [hugo](https://gohugo.io/)
   theme:
     mainTheme: dark
     showAttribute: true
