@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en-us" class="m-auto  dark "><head>
-	<meta name="generator" content="Hugo 0.147.9">
+	<meta name="generator" content="Hugo 0.152.2">
   
   <title>aafu theme</title>
   
@@ -15,13 +15,11 @@
   <link rel="icon" href="/favicon.ico" type="image/x-icon" />
   <link
     rel="stylesheet"
-    href="https://use.fontawesome.com/releases/v5.15.2/css/all.css"
-    integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu"
-    crossorigin="anonymous"
+    href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
   />
   <link
     rel="stylesheet"
-    href="https://cdn.rawgit.com/jpswalsh/academicons/master/css/academicons.min.css"
+    href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css"
   />
   <link
     rel="stylesheet"
@@ -33,8 +31,8 @@
   
   <link
     rel="stylesheet"
-    href="/main.min.5b23718a7a43dcf567816bc78a9696474e8908f1cc08b3f48fb494f9b6c72713.css"
-    integrity="sha256-WyNxinpD3PVngWvHipaWR06JCPHMCLP0j7SU&#43;bbHJxM="
+    href="/main.min.d757ae291ce1ae8cb321c30400454c674a40a43d4a46c8072df2acc01505595e.css"
+    integrity="sha256-11euKRzhroyzIcMEAEVMZ0pApD1KRsgHLfKswBUFWV4="
     crossorigin="anonymous"
   />
    
@@ -136,11 +134,11 @@
       let themeToggle = document.querySelector(".theme-toggle");
       if (themeToggle) {
         if (theme === "dark") {
-          themeToggle.classList.remove("fa-moon");
-          themeToggle.classList.add("fa-sun");
+          themeToggle.classList.remove("bi-moon");
+          themeToggle.classList.add("bi-brightness-high");
         } else {
-          themeToggle.classList.remove("fa-sun");
-          themeToggle.classList.add("fa-moon");
+          themeToggle.classList.remove("bi-brightness-high");
+          themeToggle.classList.add("bi-moon");
         }
       }
     };
@@ -198,10 +196,10 @@
   </div>
   <div>
     <a class="mr-4" href="/search">
-      <i class="fas fa-search"></i>
+      <i class="bi bi-search"></i>
     </a>
     <i
-      class="fas fa-sun theme-toggle text-blue-500 hover:text-blue-700 dark:text-yellow-300 dark:hover:text-yellow-500 cursor-pointer text-lg mr-9 sm:mr-0"
+      class="bi bi-brightness-high theme-toggle text-blue-500 hover:text-blue-700 dark:text-yellow-300 dark:hover:text-yellow-500 cursor-pointer text-lg mr-9 sm:mr-0"
       onclick="toggleTheme()"
     ></i>
   </div>
@@ -221,43 +219,42 @@
   <img
     class="rounded-sm"
     src="/images/profile.jpg"
-    alt="Darshan Baral"
+    alt="First Last, Abbr."
   />
 </div>
 
-        <div class="px-2 text-center">
-          <h1 class="mb-0">First Last, Abbr.</h1>
+        <div class="px-2 text-center"><h1 class="mb-0">First Last, Abbr.</h1>
 <h2 class="mb-0">Title</h2>
 <h3 class="mb-4">City Name, ST</h3>
 <div class="mb-4 flex flex-wrap justify-center">
   
   <div class="mx-2">
     <a class="text-2xl" href="#">
-      <i class="mt-1 fab fa-linkedin-in"></i>
+      <i class="mt-1 bi bi-linkedin"></i>
     </a>
   </div>
   
   <div class="mx-2">
     <a class="text-2xl" href="#">
-      <i class="mt-1 fab fa-stack-overflow"></i>
+      <i class="mt-1 bi bi-stack-overflow"></i>
     </a>
   </div>
   
   <div class="mx-2">
     <a class="text-2xl" href="#">
-      <i class="mt-1 fab fa-github"></i>
+      <i class="mt-1 bi bi-github"></i>
     </a>
   </div>
   
   <div class="mx-2">
     <a class="text-2xl" href="#">
-      <i class="mt-1 fab fa-twitter"></i>
+      <i class="mt-1 bi bi-twitter"></i>
     </a>
   </div>
   
   <div class="mx-2">
     <a class="text-2xl" href="#">
-      <i class="mt-1 fab fa-orcid"></i>
+      <i class="mt-1 ai ai-orcid"></i>
     </a>
   </div>
   
@@ -269,14 +266,12 @@
   
   <div class="mx-2">
     <a class="text-2xl" href="#">
-      <i class="mt-1 fab fa-researchgate"></i>
+      <i class="mt-1 ai ai-researchgate"></i>
     </a>
   </div>
   
 </div>
-
-          
-        </div>
+</div>
       </div>
     </div>
     <footer class="text-sm text-center border-t border-gray-500  bg-gray-200 dark:bg-dark rounded-b-lg py-2 ">
@@ -299,20 +294,19 @@
   </div>
   <div class="col-span-3 relative">
     
+    
     <div class="px-2">
       <h2 class="accordion active">
         
-        <p
-         
-          onclick="expandAccordion(this)"
-          style="cursor: pointer"
-        >
-          <i class="fas fa-user"></i>
+        <p onclick="expandAccordion(this)" style="cursor: pointer">
+          <i class="bi bi-person"></i>
           About Me</p>
       </h2>
 
       <div
         class="panel overflow-hidden px-2 ml-2"
+        
+        
         
       >
         <div class=""><p class="markdownify">
@@ -325,49 +319,54 @@
     <div class="px-2">
       <h2 class="accordion">
         
-        <p
-         
-          onclick="expandAccordion(this)"
-          style="cursor: pointer"
-        >
-          <i class="fas fa-briefcase"></i>
+        <p onclick="expandAccordion(this)" style="cursor: pointer">
+          <i class="bi bi-briefcase"></i>
           Experiences</p>
       </h2>
 
       <div
         class="panel overflow-hidden px-2 ml-2"
         
+        
       >
         <div class="">
-<h4 style="text-decoration: underline;">Job Title</h4>
-<p class="mb-0">
-  2019 - <em>Present</em> &middot;  Company Name 
-</p>
-
-<div class="prose prose-stone dark:prose-invert max-w-none">
-<ul>
-<li>Printed from desktop. Sent <a href="#">emails</a>.
-<ul>
-<li>Called people <em>using</em> telephone.</li>
-</ul>
-</li>
-<li>Drank water from office cooler.</li>
-<li>Ate donuts on people&rsquo;s birthdays.</li>
-</ul>
-
-</div>
-
-
-
-<h4 style="text-decoration: underline;">Job Title</h4>
+<h4 style="text-decoration: underline">Job Title</h4>
 <p >
-  2018 - 2019 &middot; 
+  2022 - <em>Present</em> &middot;
+  
   <a href="#">Company Name</a>
   
 </p>
 
+ 
+<h4 style="text-decoration: underline">Job Title</h4>
+<p class="mb-0">
+  2019 - 2022 &middot;
+  
+  Company Name
+  
+</p>
 
 
+<ul class="my-2 ms-4 prose prose-stone dark:prose-invert max-w-none list-disc list-outside pl-6">
+  
+  <li class="marker:text-gray-700 dark:marker:text-gray-200">Printed from desktop. Sent <a href="#">emails</a>. Called people <em>using</em> telephone.</li>
+  
+  <li class="marker:text-gray-700 dark:marker:text-gray-200">Drank water from office cooler.</li>
+  
+  <li class="marker:text-gray-700 dark:marker:text-gray-200">Ate donuts on people&rsquo;s birthdays.</li>
+  
+</ul>
+ 
+<h4 style="text-decoration: underline">Job Title</h4>
+<p >
+  2018 - 2019 &middot;
+  
+  <a href="#">Company Name</a>
+  
+</p>
+
+ 
 </div>
       </div>
     </div>
@@ -375,17 +374,14 @@
     <div class="px-2">
       <h2 class="accordion">
         
-        <p
-         
-          onclick="expandAccordion(this)"
-          style="cursor: pointer"
-        >
-          <i class="fas fa-graduation-cap"></i>
+        <p onclick="expandAccordion(this)" style="cursor: pointer">
+          <i class="bi bi-mortarboard"></i>
           Education</p>
       </h2>
 
       <div
         class="panel overflow-hidden px-2 ml-2"
+        
         
       >
         <div class="">
@@ -394,7 +390,7 @@
 <p class="mb-0" >2013 - 2018 &middot; University of State-City</p>
 
 
-<p>
+<p class="ms-2">
   Thesis:
   <a href="#"><i>Effect of humans on other humans: a study of human behavior.</i></a>
 </p>
@@ -406,7 +402,7 @@
 <p class="mb-0" >2013 - 2018 &middot; University of State-City</p>
 
 
-<p>
+<p class="ms-2">
   Thesis:
   <a href="#"><i>Effect of humans on other humans: a study of human behavior.</i></a>
 </p>
@@ -425,57 +421,35 @@
     <div class="px-2">
       <h2 class="accordion">
         
-        <p
-         
-          onclick="expandAccordion(this)"
-          style="cursor: pointer"
-        >
-          <i class="fas fa-book"></i>
+        <p onclick="expandAccordion(this)" style="cursor: pointer">
+          <i class="bi bi-book"></i>
           Publications</p>
       </h2>
 
       <div
         class="panel overflow-hidden px-2 ml-2"
         
+        
       >
         <div class="">
 
 
-<h4 style="text-decoration: underline;">Journal Articles</h4><p class="foo indent-8">2018.
 
 
-<a href="#">
-  <em>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</em>
-</a>
+<h4 style="text-decoration: underline;">Journal Articles</h4><p class="foo indent-8">2018; 
+  F Last, <em>F Second</em>, P secondary; 
+  <a href="#"><em>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</em></a>; 
+  Journal of Field 52 (16), 9033-9044</p>
+<p class="foo indent-8">2018; 
+  F Last, F Second, P secondary; 
+  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua; 
+  <a href="#">Journal of Field 52 (16), 9033-9044</a></p>
 
 
-F Last, F Second, P secondary.
-Journal of Field 52 (16), 9033-9044.
-</p>
-<p class="foo indent-8">2018.
-
-
-<a href="#">
-  <em>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</em>
-</a>
-
-
-F Last, F Second, P secondary.
-Journal of Field 52 (16), 9033-9044.
-</p>
-
-
-<h4 style="text-decoration: underline;">Proceedings</h4><p class="foo indent-8">2018.
-
-
-<a href="#">
-  <em>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</em>
-</a>
-
-
-F Last, F Second, P secondary.
-Journal of Field 52 (16), 9033-9044.
-</p>
+<h4 style="text-decoration: underline;">Proceedings</h4><p class="foo indent-8">2018; 
+  F Last, F Second, P secondary; 
+  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua; 
+  Journal of Field 52 (16), 9033-9044</p>
 
 
 
@@ -486,17 +460,14 @@ Journal of Field 52 (16), 9033-9044.
     <div class="px-2">
       <h2 class="accordion">
         
-        <p
-         
-          onclick="expandAccordion(this)"
-          style="cursor: pointer"
-        >
-          <i class="fas fa-project-diagram"></i>
+        <p onclick="expandAccordion(this)" style="cursor: pointer">
+          <i class="bi bi-kanban"></i>
           Projects</p>
       </h2>
 
       <div
         class="panel overflow-hidden px-2 ml-2"
+        
         
       >
         <div class="">
@@ -527,12 +498,8 @@ Journal of Field 52 (16), 9033-9044.
     <div class="px-2">
       <h2 class="accordion">
         
-        <p
-         
-          onclick="expandAccordion(this)"
-          style="cursor: pointer"
-        >
-          <i class="fas fa-cogs"></i>
+        <p onclick="expandAccordion(this)" style="cursor: pointer">
+          <i class="bi bi-list-check"></i>
           Skills</p>
       </h2>
 
@@ -541,16 +508,19 @@ Journal of Field 52 (16), 9033-9044.
         
         id="skill-panel"
         
+        
       >
         <div class=""><script>
-  let skillPanel = document.querySelector("#skill-panel")
-    .previousElementSibling;
+  let elem = document.querySelector("#skill-panel");
+  if (elem) {
+  let skillPanel = elem.previousElementSibling;
   skillPanel.addEventListener("click", function() {
     let skillBars = document.querySelectorAll("#skill-percent");
     skillBars.forEach(elem => {
       elem.style.width = elem.classList[0];
     });
   });
+}
 </script>
 
 <code>Skill 1, Skill 2</code>
@@ -575,17 +545,14 @@ Journal of Field 52 (16), 9033-9044.
     <div class="px-2">
       <h2 class="accordion">
         
-        <p
-         
-          onclick="expandAccordion(this)"
-          style="cursor: pointer"
-        >
-          <i class="fas fa-gamepad"></i>
+        <p onclick="expandAccordion(this)" style="cursor: pointer">
+          <i class="bi bi-controller"></i>
           Hobbies</p>
       </h2>
 
       <div
         class="panel overflow-hidden px-2 ml-2"
+        
         
       >
         <div class=""><ul class="pl-0">
@@ -600,7 +567,7 @@ Journal of Field 52 (16), 9033-9044.
 </div>
       </div>
     </div>
-        
+    
   </div>
 </div>
 
