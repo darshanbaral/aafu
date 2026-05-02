@@ -1,5 +1,8 @@
-<!DOCTYPE html>
-<html lang="en-us" class="m-auto  dark "><head>
+<!doctype html>
+<html
+    lang="en-us"
+    class="m-auto  dark "
+><head>
   
   <title>Demo Page - aafu theme</title>
   
@@ -25,63 +28,14 @@
     href="//fonts.googleapis.com/css?family=Didact+Gothic%7CRoboto:400%7CRoboto+Mono"
   />
 
-  
-  
-  
+    
   <link
     rel="stylesheet"
-    href="/main.min.d757ae291ce1ae8cb321c30400454c674a40a43d4a46c8072df2acc01505595e.css"
-    integrity="sha256-11euKRzhroyzIcMEAEVMZ0pApD1KRsgHLfKswBUFWV4="
+    href="/main.min.2b41ad80c5737cbf902b4287d377b02e59063874bd04232e1af1f15d745e190e.css"
+    integrity="sha256-K0GtgMVzfL&#43;QK0KH03ewLlkGOHS9BCMuGvHxXXReGQ4="
     crossorigin="anonymous"
   />
    
-
-  <style>
-     
-    html {
-      touch-action: manipulation;
-      scroll-behavior: smooth;
-    }
-
-    .panel {
-      max-height: 0;
-      transition: 0.3s ease-out;
-    }
-
-    .profile-photo-container {
-      img {
-        max-width: 100%;
-      }
-    }
-     
-    .pagefind-ui__search-input {
-      color: black;
-      width: 100%;
-      padding: 0.5em;
-      border-radius: 0.25em;
-      border: 1px solid gray;
-    }
-    .pagefind-ui__search-clear {
-      display: none;
-    }
-    .dark .pagefind-ui__search-input {
-      color: white;
-      background-color: #322d2d;
-      width: 100%;
-      padding: 0.5em;
-      border-radius: 0.25em;
-      border: 1px solid gray;
-    }
-    .dark .pagefind-ui__search-input::placeholder {
-      color: #8f8f8f;
-    }
-    .chevron {
-      transition: 300ms linear rotate;
-    }
-    .active > .chevron {
-      transform: rotate(90deg);
-    }
-  </style>
 
   <script>
     const expandAccordion = (elem) => {
@@ -102,7 +56,7 @@
           document.querySelector("#skill-panel")
         ) {
           let skillBars = Array.from(
-            document.querySelectorAll("#skill-percent")
+            document.querySelectorAll("#skill-percent"),
           );
           skillBars.forEach((elem) => {
             elem.style.width = "0";
@@ -149,7 +103,7 @@
         theme = "light";
       } else {
         const prefersDark = window.matchMedia(
-          "(prefers-color-scheme: dark)"
+          "(prefers-color-scheme: dark)",
         ).matches;
         if (prefersDark) {
           theme = "dark";
@@ -194,7 +148,7 @@
     <a class="nav-menu-item" href="/blog">Blog</a>
   </div>
   <div>
-    <a class="mr-4" href="/search">
+    <a class="mr-4 no-underline" href="/search">
       <i class="bi bi-search"></i>
     </a>
     <i
@@ -209,7 +163,7 @@
     
     <main class="grow">
 
-<div class="prose prose-stone dark:prose-invert max-w-none">
+<div class="prose dark:prose-invert m-auto">
 <div class="mb-3">
   <h1 class="top-h1">Demo Page</h1>
   <p class="mb-1">November 19, 2022</p>
@@ -226,7 +180,7 @@
 <h5 id="h5">H5</h5>
 <h2 id="paragraph">Paragraph</h2>
 <p>Xerum, quo qui aut unt expliquam qui dolut labo. Aque venitatiusda cum, voluptionse latur sitiae dolessi aut parist aut dollo enim qui voluptate ma dolestendit peritin re plis aut quas inctum laceat est volestemque commosa as cus endigna tectur, offic to cor sequas etum rerum idem sintibus eiur? Here is a <a href="#">hyperlink</a>. Quianimin porecus evelectur, cum que nis nust voloribus ratem aut omnimi, sitatur? Quiatem. Nam, omnis sum am facea corem alique molestrunt et eos evelece arcillit ut aut eos eos nus, sin conecerem erum fuga. Ri oditatquam, ad quibus unda veliamenimin cusam et facea ipsamus es exerum sitate dolores editium rerore eost, temped molorro ratiae volorro te reribus dolorer sperchicium faceata tiustia prat.</p>
-<p>Itatur? Quiatae cullecum rem ent aut odis in re eossequodi nonsequ idebis ne sapicia is sinveli squiatum, core et que aut hariosam ex eat.</p>
+<p>Itatur? Quiatae cullecum rem ent aut odis in re eossequodi nonsequ idebis ne sapicia is sinveli squiatum, core et que aut hariosam ex eat. <a href="#">Here</a> is a link.</p>
 <h2 id="photos">Photos</h2>
 
 
@@ -325,7 +279,7 @@
 &lt;/html&gt;
 </code></pre>
 <h4 id="code-block-with-hugos-internal-highlight-shortcode">Code block with Hugo&rsquo;s internal highlight shortcode</h4>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span><span style="color:#75715e">&lt;!DOCTYPE html&gt;</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-html" data-lang="html"><span style="display:flex;"><span><span style="color:#75715e">&lt;!DOCTYPE html&gt;</span>
 </span></span><span style="display:flex;"><span>&lt;<span style="color:#f92672">html</span> <span style="color:#a6e22e">lang</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;en&#34;</span>&gt;
 </span></span><span style="display:flex;"><span>&lt;<span style="color:#f92672">head</span>&gt;
 </span></span><span style="display:flex;"><span>  &lt;<span style="color:#f92672">meta</span> <span style="color:#a6e22e">charset</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;UTF-8&#34;</span>&gt;
@@ -364,7 +318,7 @@
 <li>Item 2</li>
 </ul>
 <h2 id="other-elements--abbr-sub-sup-kbd-mark">Other Elements — abbr, sub, sup, kbd, mark</h2>
-
+<p>You can add raw html using the <code>raw_html</code> shortcode. For e.g.:</p>
 
 <p>
 <abbr title="Graphics Interchange Format">GIF</abbr> is a bitmap image format.

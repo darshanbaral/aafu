@@ -1,6 +1,9 @@
-<!DOCTYPE html>
-<html lang="en-us" class="m-auto  dark "><head>
-	<meta name="generator" content="Hugo 0.152.2">
+<!doctype html>
+<html
+    lang="en-us"
+    class="m-auto  dark "
+><head>
+	<meta name="generator" content="Hugo 0.161.1">
   
   <title>aafu theme</title>
   
@@ -26,63 +29,14 @@
     href="//fonts.googleapis.com/css?family=Didact+Gothic%7CRoboto:400%7CRoboto+Mono"
   />
 
-  
-  
-  
+    
   <link
     rel="stylesheet"
-    href="/main.min.d757ae291ce1ae8cb321c30400454c674a40a43d4a46c8072df2acc01505595e.css"
-    integrity="sha256-11euKRzhroyzIcMEAEVMZ0pApD1KRsgHLfKswBUFWV4="
+    href="/main.min.2b41ad80c5737cbf902b4287d377b02e59063874bd04232e1af1f15d745e190e.css"
+    integrity="sha256-K0GtgMVzfL&#43;QK0KH03ewLlkGOHS9BCMuGvHxXXReGQ4="
     crossorigin="anonymous"
   />
    
-
-  <style>
-     
-    html {
-      touch-action: manipulation;
-      scroll-behavior: smooth;
-    }
-
-    .panel {
-      max-height: 0;
-      transition: 0.3s ease-out;
-    }
-
-    .profile-photo-container {
-      img {
-        max-width: 100%;
-      }
-    }
-     
-    .pagefind-ui__search-input {
-      color: black;
-      width: 100%;
-      padding: 0.5em;
-      border-radius: 0.25em;
-      border: 1px solid gray;
-    }
-    .pagefind-ui__search-clear {
-      display: none;
-    }
-    .dark .pagefind-ui__search-input {
-      color: white;
-      background-color: #322d2d;
-      width: 100%;
-      padding: 0.5em;
-      border-radius: 0.25em;
-      border: 1px solid gray;
-    }
-    .dark .pagefind-ui__search-input::placeholder {
-      color: #8f8f8f;
-    }
-    .chevron {
-      transition: 300ms linear rotate;
-    }
-    .active > .chevron {
-      transform: rotate(90deg);
-    }
-  </style>
 
   <script>
     const expandAccordion = (elem) => {
@@ -103,7 +57,7 @@
           document.querySelector("#skill-panel")
         ) {
           let skillBars = Array.from(
-            document.querySelectorAll("#skill-percent")
+            document.querySelectorAll("#skill-percent"),
           );
           skillBars.forEach((elem) => {
             elem.style.width = "0";
@@ -150,7 +104,7 @@
         theme = "light";
       } else {
         const prefersDark = window.matchMedia(
-          "(prefers-color-scheme: dark)"
+          "(prefers-color-scheme: dark)",
         ).matches;
         if (prefersDark) {
           theme = "dark";
@@ -195,7 +149,7 @@
     <a class="nav-menu-item" href="/blog">Blog</a>
   </div>
   <div>
-    <a class="mr-4" href="/search">
+    <a class="mr-4 no-underline" href="/search">
       <i class="bi bi-search"></i>
     </a>
     <i
@@ -223,8 +177,8 @@
   />
 </div>
 
-        <div class="px-2 text-center"><h1 class="mb-0">First Last, Abbr.</h1>
-<h2 class="mb-0">Title</h2>
+        <div class="px-2 text-center"><h1 class="mb-0 font-normal">First Last, Abbr.</h1>
+<h2 class="mb-0 font-normal">Title</h2>
 <h3 class="mb-4">City Name, ST</h3>
 <div class="mb-4 flex flex-wrap justify-center">
   
@@ -300,7 +254,7 @@
         
         <p onclick="expandAccordion(this)" style="cursor: pointer">
           <i class="bi bi-person"></i>
-          About Me</p>
+          About <strong><code>aafu</code></strong></p>
       </h2>
 
       <div
@@ -309,10 +263,17 @@
         
         
       >
-        <div class=""><p class="markdownify">
-  This is a demo of the <code>aafu</code> theme. It has <code>light</code> and <code>dark</code> theme.
-</p>
-</div>
+        <div class=""><div class="markdownify-container">
+  
+    <p class="mb-4">
+      This is a demo of the <strong><code>aafu</code></strong> theme. This theme has <code>light</code> and <code>dark</code> mode. You can switch between them using the toggle button in the top right corner. The theme is built using <a href="https://tailwindcss.com/">Tailwind CSS</a> and is fully responsive. It uses <a href="https://pagefind.app/">pagefind</a> for search functionality. You can use this theme for your personal website, portfolio, or blog. It is easy to customize and you can add your own content and style it as you like. This section also supports <strong>markdown</strong>.
+    </p>
+  
+    <p class="mb-4">
+      You can add multiple items to the description array and they will be rendered as separate paragraphs.
+    </p>
+  
+</div></div>
       </div>
     </div>
     
@@ -436,17 +397,17 @@
 
 
 
-<h4 style="text-decoration: underline;">Journal Articles</h4><p class="foo indent-8">2018; 
+<h4 style="text-decoration: underline;">Journal Articles</h4><p class="indent-8 mb-2">2018; 
   F Last, <em>F Second</em>, P secondary; 
   <a href="#"><em>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</em></a>; 
   Journal of Field 52 (16), 9033-9044</p>
-<p class="foo indent-8">2018; 
+<p class="indent-8 mb-2">2018; 
   F Last, F Second, P secondary; 
   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua; 
   <a href="#">Journal of Field 52 (16), 9033-9044</a></p>
 
 
-<h4 style="text-decoration: underline;">Proceedings</h4><p class="foo indent-8">2018; 
+<h4 style="text-decoration: underline;">Proceedings</h4><p class="indent-8 mb-2">2018; 
   F Last, F Second, P secondary; 
   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua; 
   Journal of Field 52 (16), 9033-9044</p>
@@ -474,22 +435,22 @@
 <h4>
   <a href="#">Project 1</a>
 </h4>
-<p class="markdownify indent-8">Description of the project</p>
+<p class="markdownify indent-8 mb-2">Description of the project</p>
 
 <h4>
   <a href="#">Project 2</a>
 </h4>
-<p class="markdownify indent-8">Description of the project</p>
+<p class="markdownify indent-8 mb-2">Description of the project</p>
 
 <h4>
   <a href="#">Project 3</a>
 </h4>
-<p class="markdownify indent-8">Description of the project</p>
+<p class="markdownify indent-8 mb-2">Description of the project</p>
 
 <h4>
   <a href="#">Project 4</a>
 </h4>
-<p class="markdownify indent-8">Description of the project</p>
+<p class="markdownify indent-8 mb-2">Description of the project</p>
 
 </div>
       </div>

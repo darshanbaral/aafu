@@ -1,5 +1,8 @@
-<!DOCTYPE html>
-<html lang="en-us" class="m-auto  dark "><head>
+<!doctype html>
+<html
+    lang="en-us"
+    class="m-auto  dark "
+><head>
   
   <title>Tags - aafu theme</title>
   
@@ -25,63 +28,14 @@
     href="//fonts.googleapis.com/css?family=Didact+Gothic%7CRoboto:400%7CRoboto+Mono"
   />
 
-  
-  
-  
+    
   <link
     rel="stylesheet"
-    href="/main.min.d757ae291ce1ae8cb321c30400454c674a40a43d4a46c8072df2acc01505595e.css"
-    integrity="sha256-11euKRzhroyzIcMEAEVMZ0pApD1KRsgHLfKswBUFWV4="
+    href="/main.min.2b41ad80c5737cbf902b4287d377b02e59063874bd04232e1af1f15d745e190e.css"
+    integrity="sha256-K0GtgMVzfL&#43;QK0KH03ewLlkGOHS9BCMuGvHxXXReGQ4="
     crossorigin="anonymous"
   />
    
-
-  <style>
-     
-    html {
-      touch-action: manipulation;
-      scroll-behavior: smooth;
-    }
-
-    .panel {
-      max-height: 0;
-      transition: 0.3s ease-out;
-    }
-
-    .profile-photo-container {
-      img {
-        max-width: 100%;
-      }
-    }
-     
-    .pagefind-ui__search-input {
-      color: black;
-      width: 100%;
-      padding: 0.5em;
-      border-radius: 0.25em;
-      border: 1px solid gray;
-    }
-    .pagefind-ui__search-clear {
-      display: none;
-    }
-    .dark .pagefind-ui__search-input {
-      color: white;
-      background-color: #322d2d;
-      width: 100%;
-      padding: 0.5em;
-      border-radius: 0.25em;
-      border: 1px solid gray;
-    }
-    .dark .pagefind-ui__search-input::placeholder {
-      color: #8f8f8f;
-    }
-    .chevron {
-      transition: 300ms linear rotate;
-    }
-    .active > .chevron {
-      transform: rotate(90deg);
-    }
-  </style>
 
   <script>
     const expandAccordion = (elem) => {
@@ -102,7 +56,7 @@
           document.querySelector("#skill-panel")
         ) {
           let skillBars = Array.from(
-            document.querySelectorAll("#skill-percent")
+            document.querySelectorAll("#skill-percent"),
           );
           skillBars.forEach((elem) => {
             elem.style.width = "0";
@@ -149,7 +103,7 @@
         theme = "light";
       } else {
         const prefersDark = window.matchMedia(
-          "(prefers-color-scheme: dark)"
+          "(prefers-color-scheme: dark)",
         ).matches;
         if (prefersDark) {
           theme = "dark";
@@ -194,7 +148,7 @@
     <a class="nav-menu-item" href="/blog">Blog</a>
   </div>
   <div>
-    <a class="mr-4" href="/search">
+    <a class="mr-4 no-underline" href="/search">
       <i class="bi bi-search"></i>
     </a>
     <i
@@ -208,28 +162,28 @@
 
     
     <main class="grow">
-<div class="prose dark:prose-invert max-w-none">
-  <h1 class="standard ">
+<div>
+  <h1 class="standard font-bold ">
     Tags
   </h1>
+
   
-  <div class="">
-    <div
-      class="rounded-sm hover:bg-gray-400 dark:hover:bg-darker flex flex-row items-center justify-start accordion mt-0 mb-0 p-2 active"
+  <div
+    class="rounded-sm hover:bg-gray-400 dark:hover:bg-darker flex flex-row items-center justify-start accordion mt-4 mb-0 p-2 active"
+  >
+    <i
+      onclick="expandAccordion(this)"
+      class="cursor-pointer chevron p-2 mr-4 bi bi-caret-right rounded-sm text-blue-500 dark:text-gray-400 hover:bg-gray-300 dark:hover:bg-gray-700"
+    ></i>
+    <a href="/tags/css/"
+      ><h2 class="accordion m-0 font-bold">Css</h2></a
     >
-      <i
-        onclick="expandAccordion(this)"
-        class="cursor-pointer chevron p-2 mr-4 bi bi-caret-right rounded-sm text-blue-500 dark:text-gray-400 hover:bg-gray-300 dark:hover:bg-gray-700"
-      ></i>
-      <a href="/tags/css/"
-        ><h2 class="accordion m-0">Css</h2></a
-      >
-    </div>
-    <div
-      id="panel-item-0"
-      class="panel metadata-panel overflow-hidden bg-gray-200 dark:bg-dark"
-    >
-      <div class="metadata p-2"><p class="mt-0 mb-0 text-sm">November 19, 2022</p>
+  </div>
+  <div
+    id="panel-item-0"
+    class="panel metadata-panel overflow-hidden bg-gray-200 dark:bg-dark"
+  >
+    <div class="metadata p-2"><p class="mt-0 mb-0 text-sm">November 19, 2022</p>
 <p class="mt-1 mb-0 text-sm">Reading Time: 0 minutes</p>
  
 
@@ -237,26 +191,25 @@
 
 
 </div>
-    </div>
   </div>
+
   
-  <div class="">
-    <div
-      class="rounded-sm hover:bg-gray-400 dark:hover:bg-darker flex flex-row items-center justify-start accordion mt-0 mb-0 p-2 "
+  <div
+    class="rounded-sm hover:bg-gray-400 dark:hover:bg-darker flex flex-row items-center justify-start accordion mt-4 mb-0 p-2 "
+  >
+    <i
+      onclick="expandAccordion(this)"
+      class="cursor-pointer chevron p-2 mr-4 bi bi-caret-right rounded-sm text-blue-500 dark:text-gray-400 hover:bg-gray-300 dark:hover:bg-gray-700"
+    ></i>
+    <a href="/tags/html/"
+      ><h2 class="accordion m-0 font-bold">Html</h2></a
     >
-      <i
-        onclick="expandAccordion(this)"
-        class="cursor-pointer chevron p-2 mr-4 bi bi-caret-right rounded-sm text-blue-500 dark:text-gray-400 hover:bg-gray-300 dark:hover:bg-gray-700"
-      ></i>
-      <a href="/tags/html/"
-        ><h2 class="accordion m-0">Html</h2></a
-      >
-    </div>
-    <div
-      id="panel-item-1"
-      class="panel metadata-panel overflow-hidden bg-gray-200 dark:bg-dark"
-    >
-      <div class="metadata p-2"><p class="mt-0 mb-0 text-sm">November 19, 2022</p>
+  </div>
+  <div
+    id="panel-item-1"
+    class="panel metadata-panel overflow-hidden bg-gray-200 dark:bg-dark"
+  >
+    <div class="metadata p-2"><p class="mt-0 mb-0 text-sm">November 19, 2022</p>
 <p class="mt-1 mb-0 text-sm">Reading Time: 0 minutes</p>
  
 
@@ -264,26 +217,25 @@
 
 
 </div>
-    </div>
   </div>
+
   
-  <div class="">
-    <div
-      class="rounded-sm hover:bg-gray-400 dark:hover:bg-darker flex flex-row items-center justify-start accordion mt-0 mb-0 p-2 "
+  <div
+    class="rounded-sm hover:bg-gray-400 dark:hover:bg-darker flex flex-row items-center justify-start accordion mt-4 mb-0 p-2 "
+  >
+    <i
+      onclick="expandAccordion(this)"
+      class="cursor-pointer chevron p-2 mr-4 bi bi-caret-right rounded-sm text-blue-500 dark:text-gray-400 hover:bg-gray-300 dark:hover:bg-gray-700"
+    ></i>
+    <a href="/tags/markdown/"
+      ><h2 class="accordion m-0 font-bold">Markdown</h2></a
     >
-      <i
-        onclick="expandAccordion(this)"
-        class="cursor-pointer chevron p-2 mr-4 bi bi-caret-right rounded-sm text-blue-500 dark:text-gray-400 hover:bg-gray-300 dark:hover:bg-gray-700"
-      ></i>
-      <a href="/tags/markdown/"
-        ><h2 class="accordion m-0">Markdown</h2></a
-      >
-    </div>
-    <div
-      id="panel-item-2"
-      class="panel metadata-panel overflow-hidden bg-gray-200 dark:bg-dark"
-    >
-      <div class="metadata p-2"><p class="mt-0 mb-0 text-sm">November 19, 2022</p>
+  </div>
+  <div
+    id="panel-item-2"
+    class="panel metadata-panel overflow-hidden bg-gray-200 dark:bg-dark"
+  >
+    <div class="metadata p-2"><p class="mt-0 mb-0 text-sm">November 19, 2022</p>
 <p class="mt-1 mb-0 text-sm">Reading Time: 0 minutes</p>
  
 
@@ -291,26 +243,25 @@
 
 
 </div>
-    </div>
   </div>
+
   
-  <div class="">
-    <div
-      class="rounded-sm hover:bg-gray-400 dark:hover:bg-darker flex flex-row items-center justify-start accordion mt-0 mb-0 p-2 "
+  <div
+    class="rounded-sm hover:bg-gray-400 dark:hover:bg-darker flex flex-row items-center justify-start accordion mt-4 mb-0 p-2 "
+  >
+    <i
+      onclick="expandAccordion(this)"
+      class="cursor-pointer chevron p-2 mr-4 bi bi-caret-right rounded-sm text-blue-500 dark:text-gray-400 hover:bg-gray-300 dark:hover:bg-gray-700"
+    ></i>
+    <a href="/tags/themes/"
+      ><h2 class="accordion m-0 font-bold">Themes</h2></a
     >
-      <i
-        onclick="expandAccordion(this)"
-        class="cursor-pointer chevron p-2 mr-4 bi bi-caret-right rounded-sm text-blue-500 dark:text-gray-400 hover:bg-gray-300 dark:hover:bg-gray-700"
-      ></i>
-      <a href="/tags/themes/"
-        ><h2 class="accordion m-0">Themes</h2></a
-      >
-    </div>
-    <div
-      id="panel-item-3"
-      class="panel metadata-panel overflow-hidden bg-gray-200 dark:bg-dark"
-    >
-      <div class="metadata p-2"><p class="mt-0 mb-0 text-sm">November 19, 2022</p>
+  </div>
+  <div
+    id="panel-item-3"
+    class="panel metadata-panel overflow-hidden bg-gray-200 dark:bg-dark"
+  >
+    <div class="metadata p-2"><p class="mt-0 mb-0 text-sm">November 19, 2022</p>
 <p class="mt-1 mb-0 text-sm">Reading Time: 0 minutes</p>
  
 
@@ -318,26 +269,25 @@
 
 
 </div>
-    </div>
   </div>
+
   
-  <div class="">
-    <div
-      class="rounded-sm hover:bg-gray-400 dark:hover:bg-darker flex flex-row items-center justify-start accordion mt-0 mb-0 p-2 "
+  <div
+    class="rounded-sm hover:bg-gray-400 dark:hover:bg-darker flex flex-row items-center justify-start accordion mt-4 mb-0 p-2 "
+  >
+    <i
+      onclick="expandAccordion(this)"
+      class="cursor-pointer chevron p-2 mr-4 bi bi-caret-right rounded-sm text-blue-500 dark:text-gray-400 hover:bg-gray-300 dark:hover:bg-gray-700"
+    ></i>
+    <a href="/tags/laoreet/"
+      ><h2 class="accordion m-0 font-bold">Laoreet</h2></a
     >
-      <i
-        onclick="expandAccordion(this)"
-        class="cursor-pointer chevron p-2 mr-4 bi bi-caret-right rounded-sm text-blue-500 dark:text-gray-400 hover:bg-gray-300 dark:hover:bg-gray-700"
-      ></i>
-      <a href="/tags/laoreet/"
-        ><h2 class="accordion m-0">Laoreet</h2></a
-      >
-    </div>
-    <div
-      id="panel-item-4"
-      class="panel metadata-panel overflow-hidden bg-gray-200 dark:bg-dark"
-    >
-      <div class="metadata p-2"><p class="mt-0 mb-0 text-sm">January 6, 2018</p>
+  </div>
+  <div
+    id="panel-item-4"
+    class="panel metadata-panel overflow-hidden bg-gray-200 dark:bg-dark"
+  >
+    <div class="metadata p-2"><p class="mt-0 mb-0 text-sm">January 6, 2018</p>
 <p class="mt-1 mb-0 text-sm">Reading Time: 0 minutes</p>
  
 
@@ -345,26 +295,25 @@
 
 
 </div>
-    </div>
   </div>
+
   
-  <div class="">
-    <div
-      class="rounded-sm hover:bg-gray-400 dark:hover:bg-darker flex flex-row items-center justify-start accordion mt-0 mb-0 p-2 "
+  <div
+    class="rounded-sm hover:bg-gray-400 dark:hover:bg-darker flex flex-row items-center justify-start accordion mt-4 mb-0 p-2 "
+  >
+    <i
+      onclick="expandAccordion(this)"
+      class="cursor-pointer chevron p-2 mr-4 bi bi-caret-right rounded-sm text-blue-500 dark:text-gray-400 hover:bg-gray-300 dark:hover:bg-gray-700"
+    ></i>
+    <a href="/tags/mollis-urna/"
+      ><h2 class="accordion m-0 font-bold">Mollis Urna</h2></a
     >
-      <i
-        onclick="expandAccordion(this)"
-        class="cursor-pointer chevron p-2 mr-4 bi bi-caret-right rounded-sm text-blue-500 dark:text-gray-400 hover:bg-gray-300 dark:hover:bg-gray-700"
-      ></i>
-      <a href="/tags/mollis-urna/"
-        ><h2 class="accordion m-0">Mollis Urna</h2></a
-      >
-    </div>
-    <div
-      id="panel-item-5"
-      class="panel metadata-panel overflow-hidden bg-gray-200 dark:bg-dark"
-    >
-      <div class="metadata p-2"><p class="mt-0 mb-0 text-sm">January 6, 2018</p>
+  </div>
+  <div
+    id="panel-item-5"
+    class="panel metadata-panel overflow-hidden bg-gray-200 dark:bg-dark"
+  >
+    <div class="metadata p-2"><p class="mt-0 mb-0 text-sm">January 6, 2018</p>
 <p class="mt-1 mb-0 text-sm">Reading Time: 0 minutes</p>
  
 
@@ -372,26 +321,25 @@
 
 
 </div>
-    </div>
   </div>
+
   
-  <div class="">
-    <div
-      class="rounded-sm hover:bg-gray-400 dark:hover:bg-darker flex flex-row items-center justify-start accordion mt-0 mb-0 p-2 "
+  <div
+    class="rounded-sm hover:bg-gray-400 dark:hover:bg-darker flex flex-row items-center justify-start accordion mt-4 mb-0 p-2 "
+  >
+    <i
+      onclick="expandAccordion(this)"
+      class="cursor-pointer chevron p-2 mr-4 bi bi-caret-right rounded-sm text-blue-500 dark:text-gray-400 hover:bg-gray-300 dark:hover:bg-gray-700"
+    ></i>
+    <a href="/tags/notes/"
+      ><h2 class="accordion m-0 font-bold">Notes</h2></a
     >
-      <i
-        onclick="expandAccordion(this)"
-        class="cursor-pointer chevron p-2 mr-4 bi bi-caret-right rounded-sm text-blue-500 dark:text-gray-400 hover:bg-gray-300 dark:hover:bg-gray-700"
-      ></i>
-      <a href="/tags/notes/"
-        ><h2 class="accordion m-0">Notes</h2></a
-      >
-    </div>
-    <div
-      id="panel-item-6"
-      class="panel metadata-panel overflow-hidden bg-gray-200 dark:bg-dark"
-    >
-      <div class="metadata p-2"><p class="mt-0 mb-0 text-sm">January 6, 2018</p>
+  </div>
+  <div
+    id="panel-item-6"
+    class="panel metadata-panel overflow-hidden bg-gray-200 dark:bg-dark"
+  >
+    <div class="metadata p-2"><p class="mt-0 mb-0 text-sm">January 6, 2018</p>
 <p class="mt-1 mb-0 text-sm">Reading Time: 0 minutes</p>
  
 
@@ -399,8 +347,8 @@
 
 
 </div>
-    </div>
   </div>
+
   
 </div>
 
