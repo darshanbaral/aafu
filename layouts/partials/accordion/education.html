@@ -1,4 +1,4 @@
-{{ range .Site.Data.education.list }}
+{{ range hugo.Data.education.list }}
 
 <h4 style="text-decoration: underline;">{{ .degree }}</h4>
 <p {{ if .thesis_title }}class="mb-0" {{ end }}>

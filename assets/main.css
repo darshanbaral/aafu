@@ -132,7 +132,7 @@
     @apply font-normal;
   }
   .accordion {
-    @apply text-blue-600 dark:text-yellow-500 my-1;
+    @apply text-blue-600 dark:text-yellow-500 mt-0;
     > p {
       @apply my-0 p-2 hover:bg-gray-300 rounded-sm dark:hover:bg-darker;
     }

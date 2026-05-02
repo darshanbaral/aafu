@@ -1,6 +1,6 @@
 <div class="markdownify-container">
-  {{ range .Site.Data.about_me.description }}
-    <p class="mb-4">
+  {{ range hugo.Data.about_me.description }}
+    <p class="my-2">
       {{ . | markdownify }}
     </p>
   {{ end }}

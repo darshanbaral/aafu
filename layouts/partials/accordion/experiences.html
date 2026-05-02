@@ -1,4 +1,4 @@
-{{ range .Site.Data.experiences.list }}
+{{ range hugo.Data.experiences.list }}
 <h4 style="text-decoration: underline">{{ .position }}</h4>
 <p {{if .details }}class="mb-0"{{ end }}>
   {{ .dates | markdownify }} &middot;

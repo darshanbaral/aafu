@@ -1,15 +1,15 @@
-{{ $delimiter := .Site.Data.publications.delimiter | default ". " }}
+{{ $delimiter := hugo.Data.publications.delimiter | default ". " }}
 
-{{ if .Site.Data.publications.types }}
-{{ range .Site.Data.publications.types }}
+{{ if hugo.Data.publications.types }}
+{{ range hugo.Data.publications.types }}
 {{ $type := . }}
 <h4 style="text-decoration: underline;">{{ $type }}</h4>
-{{- range $.Site.Data.publications.list -}}
+{{- range hugo.Data.publications.list -}}
 {{ if eq $type .type }}
 {{- $this_publication := . -}}
 <p class="indent-8 mb-2">
-  {{- $n_format := len $.Site.Data.publications.format -}}
-  {{- range $ind, $val := $.Site.Data.publications.format -}}
+  {{- $n_format := len hugo.Data.publications.format -}}
+  {{- range $ind, $val := hugo.Data.publications.format -}}
   {{- index $this_publication $val | markdownify -}}
   {{- if (ne (add $ind 1) $n_format) -}}
   {{ $delimiter }}
@@ -22,11 +22,11 @@
 
 {{ else }}
 
-{{- range $.Site.Data.publications.list -}}
+{{- range hugo.Data.publications.list -}}
 {{- $this_publication := . -}}
 <p class="indent-8 mb-2">
-  {{- $n_format := len $.Site.Data.publications.format -}}
-  {{- range $ind, $val := $.Site.Data.publications.format -}}
+  {{- $n_format := len hugo.Data.publications.format -}}
+  {{- range $ind, $val := hugo.Data.publications.format -}}
   {{- index $this_publication $val | markdownify -}}
   {{- if (ne (add $ind 1) $n_format) -}}
   {{ $delimiter }}
