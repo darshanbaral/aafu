@@ -1,5 +1,8 @@
 {
-  "title": "About Me",
+  "title": "About **`aafu`**",
   "icon": "bi bi-person",
-  "description": "This is a demo of the `aafu` theme. It has `light` and `dark` theme."
+  "description": [
+    "This is a demo of the **`aafu`** theme. This theme has `light` and `dark` mode. You can switch between them using the toggle button in the top right corner. The theme is built using [Tailwind CSS](https://tailwindcss.com/) and is fully responsive. It uses [pagefind](https://pagefind.app/) for search functionality. You can use this theme for your personal website, portfolio, or blog. It is easy to customize and you can add your own content and style it as you like. This section also supports **markdown**.",
+    "You can add multiple items to the description array and they will be rendered as separate paragraphs."
+  ]
 }

@@ -1,3 +1,7 @@
-<p class="markdownify">
-  {{ .Site.Data.about_me.description | markdownify }}
-</p>
+<div class="markdownify-container">
+  {{ range .Site.Data.about_me.description }}
+    <p class="mb-4">
+      {{ . | markdownify }}
+    </p>
+  {{ end }}
+</div>

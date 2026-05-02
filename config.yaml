@@ -1,5 +1,5 @@
 baseURL: /
-languageCode: en-us
+locale: en-us
 build:
   writeStats: true
 title: aafu theme

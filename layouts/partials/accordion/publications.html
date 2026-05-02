@@ -7,7 +7,7 @@
 {{- range $.Site.Data.publications.list -}}
 {{ if eq $type .type }}
 {{- $this_publication := . -}}
-<p class="foo indent-8">
+<p class="indent-8 mb-2">
   {{- $n_format := len $.Site.Data.publications.format -}}
   {{- range $ind, $val := $.Site.Data.publications.format -}}
   {{- index $this_publication $val | markdownify -}}
@@ -24,7 +24,7 @@
 
 {{- range $.Site.Data.publications.list -}}
 {{- $this_publication := . -}}
-<p class="bar indent-8">
+<p class="indent-8 mb-2">
   {{- $n_format := len $.Site.Data.publications.format -}}
   {{- range $ind, $val := $.Site.Data.publications.format -}}
   {{- index $this_publication $val | markdownify -}}

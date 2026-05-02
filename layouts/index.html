@@ -17,7 +17,7 @@
         {{ $current := index $.Site.Data .item }}
         <p onclick="expandAccordion(this)" style="cursor: pointer">
           <i class="{{ $current.icon }}"></i>
-          {{ $current.title -}}
+          {{ $current.title | markdownify -}}
         </p>
       </h2>
 
