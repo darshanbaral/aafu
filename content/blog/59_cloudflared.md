@@ -6,9 +6,9 @@ categories: ["software", "applications", "tools"]
 description: "Cloudflared"
 draft: false
 hero_images:
-  - src: "https://developers.cloudflare.com/_astro/logo.DAG2yejx.svg"
+  - src: "https://upload.wikimedia.org/wikipedia/commons/4/4b/Cloudflare_Logo.svg"
     alt: "cloudflared"
-    width: "40"
+    width: "121"
     height: "40"
 ---
 

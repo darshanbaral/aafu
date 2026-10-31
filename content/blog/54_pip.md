@@ -6,10 +6,10 @@ categories: ["software", "applications", "tools"]
 description: "PIP Upgrade Packages"
 draft: false
 hero_images:
-  - src: "https://pypi.org/static/images/logo-small.8998e9d1.svg"
+  - src: "https://upload.wikimedia.org/wikipedia/commons/6/64/PyPI_logo.svg"
     alt: "pip"
     width: "200"
-    height: "100"
+    height: "150"
 ---
 
 **PIP Upgrade Packages**.

@@ -6,7 +6,7 @@ categories: ["linux", "software", "applications", "tools"]
 description: "HomeAssistant"
 draft: false
 hero_images:
-  - src: "https://design.home-assistant.io/images/brand/logo.png"
+  - src: "https://brands.home-assistant.io/homeassistant/logo.png"
     alt: "homeassistant"
     width: "200"
     height: "200"

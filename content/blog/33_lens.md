@@ -19,7 +19,7 @@ https://github.com/freelensapp/freelens
 
 
 <h2>Lens</h2>
-{{< img src="https://k8slens.dev/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2F67awagrd%2Fproduction%2Fe345de5fb756590c2c60ef75413579b82cc718b2-1792x1024.png&w=1080&q=90" alt="lens" width="300px" height="300px" >}}
+{{< img src="https://cdn.sanity.io/images/67awagrd/production/e345de5fb756590c2c60ef75413579b82cc718b2-1792x1024.png" alt="lens" width="300px" height="300px" >}}
 
 The Way The World Runs Kubernetes.
 
