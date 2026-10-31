@@ -1,12 +1,11 @@
 ---
-title: "AI Code Editors - Warp and Void"
+title: "AI Code Editors"
 date: 2024-03-06
 lastmod: 2025-05-09
 tags: ["terminal", "editor", "code", "ai"]
 categories: ["linux", "software", "applications", "tools"]
-description: "AI Code Editors - Warp and Void"
+description: "AI Code Editors"
 draft: false
-aliases: ["/blog/10_warp/", "/blog/49_voideditor/"]
 ---
 
 AI powered tools for the terminal and the code editor.
