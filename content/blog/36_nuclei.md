@@ -1,7 +1,7 @@
 ---
 title: "Nuclei - Vulnerability Scanner"
 date: 2025-01-05
-tags: ["security", "scanner", "vulnerabilities", "python"]
+tags: ["security", "scanner", "vulnerabilities", "python", "cli"]
 categories: ["linux", "software", "applications", "tools"]
 description: "Nuclei - Vulnerability Scanner"
 draft: false

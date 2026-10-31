@@ -1,7 +1,7 @@
 ---
 title: "Cloudflared"
 date: 2026-04-20
-tags: ["cloudflared", "cloudflare", "tunnel"]
+tags: ["cloudflared", "cloudflare", "tunnel", "networking"]
 categories: ["software", "applications", "tools"]
 description: "Cloudflared"
 draft: false

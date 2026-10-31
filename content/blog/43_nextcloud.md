@@ -1,7 +1,7 @@
 ---
 title: "NextCloud"
 date: 2025-02-12
-tags: ["nextcloud", "cloud"]
+tags: ["nextcloud", "cloud", "selfhosted"]
 categories: ["linux", "software", "applications", "tools"]
 description: "NextCloud"
 draft: false

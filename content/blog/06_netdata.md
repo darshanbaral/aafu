@@ -1,7 +1,7 @@
 ---
 title: "NetData - Monitor your servers"
 date: 2024-02-27
-tags: ["NetData", "monitoring"]
+tags: ["netdata", "monitoring", "selfhosted"]
 categories: ["linux", "software", "applications", "tools"]
 description: "NetData - Monitor your servers"
 draft: false

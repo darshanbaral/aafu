@@ -1,7 +1,7 @@
 ---
 title: "Local LLM with Ollama"
 date: 2026-10-31
-tags: ["llm", "ollama", "qwen", "ai"]
+tags: ["llm", "ollama", "qwen", "ai", "open-webui"]
 categories: ["software", "applications", "tools", "ai"]
 description: "Local LLM with Ollama"
 draft: false

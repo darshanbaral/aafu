@@ -1,7 +1,7 @@
 ---
 title: "Old but Gold - Applications"
 date: 2025-01-05
-tags: ["old"]
+tags: ["old", "irc"]
 categories: ["linux", "software", "applications", "tools"]
 description: "Old but Gold - Applications"
 draft: false

@@ -1,7 +1,7 @@
 ---
 title: "GTK Theme"
 date: 2025-08-13
-tags: ["gnome", "gtk", "nautilus"]
+tags: ["gnome", "gtk", "nautilus", "theme"]
 categories: ["software", "applications", "tools"]
 description: "GTK Theme"
 draft: false

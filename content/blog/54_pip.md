@@ -1,7 +1,7 @@
 ---
 title: "PIP Upgrade Packages"
 date: 2025-11-05
-tags: ["python", "pip", "packages"]
+tags: ["python", "pip", "packages", "cli"]
 categories: ["software", "applications", "tools"]
 description: "PIP Upgrade Packages"
 draft: false

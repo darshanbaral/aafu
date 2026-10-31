@@ -1,7 +1,7 @@
 ---
 title: "Gitlab - Job Log Viewer"
 date: 2024-02-26
-tags: ["gitlab", "extensions"]
+tags: ["gitlab", "extensions", "chrome", "browser"]
 categories: ["linux", "software", "applications", "tools"]
 description: "Gitlab - Job Log Viewer"
 draft: false

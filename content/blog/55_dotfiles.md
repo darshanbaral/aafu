@@ -1,7 +1,7 @@
 ---
 title: "Dotfiles"
 date: 2025-11-19
-tags: ["dotfiles", "configurations"]
+tags: ["dotfiles", "configurations", "shell"]
 categories: ["software", "applications", "tools"]
 description: "Dotfiles"
 draft: false

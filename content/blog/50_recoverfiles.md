@@ -1,7 +1,7 @@
 ---
 title: "Recover Files"
 date: 2025-05-16
-tags: ["deleted-files", "recover", "data"]
+tags: ["deleted-files", "recover", "data", "storage"]
 categories: ["software", "applications", "tools"]
 description: "Recover Files"
 draft: false

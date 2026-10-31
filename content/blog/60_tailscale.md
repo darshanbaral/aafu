@@ -1,7 +1,7 @@
 ---
 title: "Tailscale"
 date: 2026-04-27
-tags: ["Tailscale", "tunnel"]
+tags: ["tailscale", "tunnel", "vpn", "wireguard", "networking"]
 categories: ["software", "applications", "tools"]
 description: "Tailscale"
 draft: false

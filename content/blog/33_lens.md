@@ -1,7 +1,7 @@
 ---
 title: "Lens - K8s IDE"
 date: 2025-01-02
-tags: ["k8s", "editor"]
+tags: ["k8s", "kubernetes", "editor", "ide"]
 categories: ["linux", "software", "applications", "tools"]
 description: "Lens - K8s IDE"
 draft: false

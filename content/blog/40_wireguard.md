@@ -1,7 +1,7 @@
 ---
 title: "Wireguard - VPN"
 date: 2025-01-26
-tags: ["security", "vpn"]
+tags: ["security", "vpn", "wireguard", "networking"]
 categories: ["linux", "software", "applications", "tools", "raspberrypi"]
 description: "Wireguard - VPN"
 draft: false

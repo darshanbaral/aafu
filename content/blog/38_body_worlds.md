@@ -1,7 +1,7 @@
 ---
 title: "Body Worlds - Museum"
 date: 2025-01-05
-tags: ["body worlds", "fun"]
+tags: ["body-worlds", "fun", "science", "museum"]
 categories: ["museum", "science"]
 description: "Body Worlds - Museum"
 draft: false

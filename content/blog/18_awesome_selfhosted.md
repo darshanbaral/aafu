@@ -1,7 +1,7 @@
 ---
 title: "Awesome-Selfhosted"
 date: 2024-04-03
-tags: ["selfhosted", "prem"]
+tags: ["selfhosted", "on-prem", "awesome"]
 categories: ["linux", "software", "applications", "tools"]
 description: "Awesome-Selfhosted"
 draft: false

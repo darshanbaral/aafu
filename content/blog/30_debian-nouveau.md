@@ -1,7 +1,7 @@
 ---
 title: "Debian Nouveau Driver"
 date: 2024-11-03
-tags: ["Debian", "nouveau", "drivers", "troubleshooting"]
+tags: ["debian", "nouveau", "drivers", "troubleshooting", "linux", "nvidia"]
 categories: ["linux", "software", "applications", "tools"]
 description: "Debian Nouveau Driver"
 draft: false

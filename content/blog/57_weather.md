@@ -1,7 +1,7 @@
 ---
 title: "Weather"
 date: 2026-04-13
-tags: ["wttr", "weather"]
+tags: ["wttr", "weather", "cli"]
 categories: ["software", "applications", "tools"]
 description: "Weather - wttr.in"
 draft: false

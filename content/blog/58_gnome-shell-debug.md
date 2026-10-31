@@ -1,7 +1,7 @@
 ---
 title: "GNOME Shell Debugging"
 date: 2026-04-17
-tags: ["gnome", "gnome-shell"]
+tags: ["gnome", "gnome-shell", "debugging"]
 categories: ["software", "applications", "tools", "gnome", "gnome-shell", "extensions"]
 description: "GNOME Shell Debugging"
 draft: false

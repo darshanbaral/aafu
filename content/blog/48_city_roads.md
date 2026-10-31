@@ -1,7 +1,7 @@
 ---
 title: "City Roads"
 date: 2025-03-10
-tags: ["city", "town", "roads"]
+tags: ["city", "town", "roads", "maps", "fun"]
 categories: ["software", "applications", "tools"]
 description: "City Roads"
 draft: false

@@ -1,7 +1,7 @@
 ---
 title: "Sablier - Scale to Zero"
 date: 2025-03-08
-tags: ["sablier", "docker", "k8s"]
+tags: ["sablier", "docker", "k8s", "kubernetes"]
 categories: ["linux", "software", "applications", "tools"]
 description: "Sablier"
 draft: false

@@ -1,7 +1,7 @@
 ---
 title: "Git Pulls"
 date: 2025-06-11
-tags: ["git", "cvs"]
+tags: ["git", "vcs"]
 categories: ["software", "applications", "tools"]
 description: "Git Pulls"
 draft: false

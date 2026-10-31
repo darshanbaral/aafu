@@ -1,7 +1,7 @@
 ---
 title: "Renovatebot"
 date: 2025-01-06
-tags: ["security", "renovatebot", "updates"]
+tags: ["security", "renovatebot", "updates", "dependencies", "automation"]
 categories: ["linux", "software", "applications", "tools"]
 description: "Renovatebot"
 draft: false

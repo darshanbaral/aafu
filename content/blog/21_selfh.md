@@ -1,7 +1,7 @@
 ---
 title: "Selfh"
 date: 2024-05-20
-tags: ["selfhosted", "prem"]
+tags: ["selfhosted", "on-prem"]
 categories: ["linux", "software", "applications", "tools"]
 description: "Browse Self-Hosted Software"
 draft: false

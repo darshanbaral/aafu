@@ -1,7 +1,7 @@
 ---
 title: "Boot Charts"
 date: 2025-06-11
-tags: ["systemd", "bootchart"]
+tags: ["systemd", "bootchart", "boot", "linux"]
 categories: ["software", "applications", "tools"]
 description: "Boot Charts"
 draft: false

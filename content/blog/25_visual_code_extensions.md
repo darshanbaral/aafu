@@ -1,7 +1,7 @@
 ---
 title: "Visual Code - Extensions"
 date: 2024-09-12
-tags: ["vscode", "code", "utils", "extensions"]
+tags: ["vscode", "code", "utils", "extensions", "editor"]
 categories: ["linux", "software", "applications", "tools"]
 description: "Visual Code - Extensions"
 draft: false

@@ -1,7 +1,7 @@
 ---
 title: "Multiples sh"
 date: 2025-02-11
-tags: ["ssh", "bash", "dsh", "pdsh"]
+tags: ["ssh", "bash", "dsh", "pdsh", "cli"]
 categories: ["linux", "software", "applications", "tools"]
 description: "Multiples sh"
 draft: false

@@ -1,7 +1,7 @@
 ---
 title: "Nautilus Custom Icon File"
 date: 2024-04-15
-tags: ["GNOME", "nautilus", "file-manager", "custom-icon"]
+tags: ["gnome", "nautilus", "file-manager", "custom-icon"]
 categories: ["linux", "software", "applications", "tools"]
 description: "Nautilus Custom Icon File"
 draft: false

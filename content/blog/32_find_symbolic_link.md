@@ -1,7 +1,7 @@
 ---
 title: "Find symbolic links"
 date: 2025-01-02
-tags: ["shell", "find"]
+tags: ["shell", "find", "cli"]
 categories: ["linux", "software", "applications", "tools"]
 description: "Find symbolic links"
 draft: false

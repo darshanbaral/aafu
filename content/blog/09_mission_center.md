@@ -1,7 +1,7 @@
 ---
 title: "Mission Center - Monitor system resource usage"
 date: 2024-03-06
-tags: ["system-info", "monitoring"]
+tags: ["system-info", "monitoring", "linux"]
 categories: ["linux", "software", "applications", "tools"]
 description: "Mission Center - Monitor system resource usage"
 draft: false
