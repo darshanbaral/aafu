@@ -148,3 +148,27 @@ $ ollama run my-chat
 `~/.ollama/history` only keeps the lines you typed (up/down arrows in the prompt), not the model's answers, and the model never sees it.
 
 For a chat history UI like ChatGPT's, put [Open WebUI](https://openwebui.com) in front of Ollama: it runs locally in the browser, keeps your chats on your own disk and talks to Ollama.
+
+## Open WebUI
+
+Ollama only listens on `127.0.0.1:11434`, so run Open WebUI with the host network and keep it local too (`HOST`/`PORT`):
+
+```shell
+$ docker run -d --name open-webui --restart unless-stopped \
+    --network=host \
+    -e OLLAMA_BASE_URL=http://127.0.0.1:11434 \
+    -e HOST=127.0.0.1 -e PORT=3000 \
+    -v open-webui:/app/backend/data \
+    ghcr.io/open-webui/open-webui:0.12.5
+```
+
+Open http://localhost:3000 and create the first (admin) account, stored only on your machine. Models from `ollama list` show up in the model picker.
+
+Chats and settings live in the `open-webui` Docker volume, so they survive restarts and upgrades:
+
+```shell
+$ docker logs -f open-webui     # first start takes a minute or two
+$ docker stop open-webui
+$ docker start open-webui
+$ docker rm -f open-webui       # upgrade: remove, then run again with the new tag
+```
