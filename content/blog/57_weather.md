@@ -5,6 +5,11 @@ tags: ["wttr", "weather"]
 categories: ["software", "applications", "tools"]
 description: "Weather - wttr.in"
 draft: false
+hero_images:
+  - src: "https://upload.wikimedia.org/wikipedia/commons/5/52/Weather-few-clouds.svg"
+    alt: "weather"
+    width: "64"
+    height: "64"
 ---
 
 ⛅ **Weather** https://wttr.in .

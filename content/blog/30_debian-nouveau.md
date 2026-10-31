@@ -1,10 +1,15 @@
 ---
 title: "Debian Nouveau Driver"
 date: 2024-11-03
-tags: [dDebian", "nouveau", "drivers", "troubleshooting"]
+tags: ["Debian", "nouveau", "drivers", "troubleshooting"]
 categories: ["linux", "software", "applications", "tools"]
 description: "Debian Nouveau Driver"
 draft: false
+hero_images:
+  - src: "https://upload.wikimedia.org/wikipedia/commons/4/4a/Debian-OpenLogo.svg"
+    alt: "debian"
+    width: "82"
+    height: "108"
 ---
 
 **Problem**:

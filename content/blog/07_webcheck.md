@@ -5,6 +5,11 @@ tags: ["WebCheck", "monitoring"]
 categories: ["linux", "software", "applications", "tools"]
 description: "WebCheck - Intelligence for any Website"
 draft: false
+hero_images:
+  - src: "https://upload.wikimedia.org/wikipedia/commons/1/17/System-search.svg"
+    alt: "webcheck"
+    width: "64"
+    height: "64"
 ---
 
 🕵️‍♂️
