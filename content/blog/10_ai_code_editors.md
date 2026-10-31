@@ -10,6 +10,8 @@ draft: false
 
 AI powered tools for the terminal and the code editor.
 
+{{< toc >}}
+
 ## Warp
 
 {{< img src="https://assets-global.website-files.com/64b6f3636f598299028e8577/65a6ee1dfad0ee04bccb5086_Logo%20(1).svg" alt="warp" width="100" height="100" >}}
