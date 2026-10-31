@@ -9,13 +9,14 @@
   </div>
   {{ with .Params.hero_images }}
   <div class="content">
-    {{ range . }}
+    {{ range $i, $img := . }}
     {{ $width := .width | default "" | strings.TrimSuffix "px" }}
     {{ $height := .height | default "" | strings.TrimSuffix "px" }}
     <img
       src="{{ .src }}"
       alt="{{ .alt | default `Article image` }}"
       class="content-inline-image"
+      {{ if eq $i 0 }}data-pagefind-meta="image[src], image_alt[alt]"{{ end }}
       loading="lazy"
       decoding="async"
       {{ with $width }}width="{{ . }}"{{ end }}
