@@ -1,7 +1,7 @@
 ---
 title: "AI Code Editors"
 date: 2024-03-06
-lastmod: 2025-05-09
+lastmod: 2026-10-31
 tags: ["terminal", "editor", "code", "ai"]
 categories: ["linux", "software", "applications", "tools"]
 description: "AI Code Editors"
@@ -29,3 +29,11 @@ https://www.warp.dev/
 https://voideditor.com
 
 https://github.com/voideditor/void
+
+## Cursor
+
+{{< img src="https://cursor.com/marketing-static/icon-192x192-light.png" alt="cursor" width="100" height="100" >}}
+
+**Cursor** The AI code editor and coding agent, built on VS Code.
+
+https://cursor.com/
