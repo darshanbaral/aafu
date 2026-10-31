@@ -3,7 +3,7 @@
 <div class="prose prose-stone dark:prose-invert max-w-none">
   {{ partial "prevnext" . }}
   <div class="mb-3">
-    <h1 class="top-h1">{{- .Title -}}</h1>
+    <h1 class="top-h1" data-pagefind-meta="title">{{- .Title -}}</h1>
     <p class="mb-1">{{ .Date.Format "January 2, 2006" }}</p>
     <p>&mdash;</p>
   </div>
@@ -24,7 +24,7 @@
     {{ end }}
   </div>
   {{ end }}
-  <div class="content">
+  <div class="content" data-pagefind-body>
     {{ .Content }}
   </div>
 </div>

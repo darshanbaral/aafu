@@ -114,7 +114,7 @@ const initializeSearch = () => {
   const searchElement = document.querySelector("#search");
 
   if (searchElement && window.PagefindUI) {
-    new window.PagefindUI({ element: "#search", showSubResults: true });
+    new window.PagefindUI({ element: "#search", showSubResults: false });
   }
 };
 
