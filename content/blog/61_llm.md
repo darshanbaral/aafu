@@ -14,7 +14,11 @@ hero_images:
 
 Run an LLM locally on Linux with [Ollama](https://ollama.com). Everything runs on your machine: once the model is downloaded, nothing leaves it.
 
-## Install
+**Contents**
+
+{{< toc >}}
+
+## Deployment
 
 ```shell
 $ curl -fsSL https://ollama.com/install.sh | sh
@@ -22,7 +26,7 @@ $ curl -fsSL https://ollama.com/install.sh | sh
 
 The installer sets up `ollama` as a systemd service and uses an NVIDIA GPU automatically if one is present (no CUDA toolkit needed).
 
-## AI Models
+## Models
 
 - Ollama library: https://ollama.com/library, run them by name (e.g. `qwen3.5:4b`)
 - Hugging Face: https://huggingface.co/models (Qwen: https://huggingface.co/Qwen). Ollama runs them directly only in GGUF format:
@@ -40,7 +44,7 @@ The Ollama library only sorts by popularity or date, not quality. To compare mod
 
 Then check the model's size on `https://ollama.com/library/<model>/tags` to see if it fits your GPU.
 
-### Run Qwen3.5 4B
+### Qwen3.5:4B
 
 ```shell
 $ ollama run qwen3.5:4b
