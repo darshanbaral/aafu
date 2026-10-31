@@ -6,7 +6,6 @@ tags: ["ghostty", "starship", "terminal", "shell"]
 categories: ["linux", "software", "applications", "tools"]
 description: "Terminals"
 draft: false
-aliases: ["/blog/46_ghostty/", "/blog/47_starship/"]
 ---
 
 The terminal emulator and the shell prompt.

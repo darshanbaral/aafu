@@ -5,7 +5,6 @@ tags: ["k8s", "kubernetes", "editor", "ide"]
 categories: ["linux", "software", "applications", "tools"]
 description: "FreeLens"
 draft: false
-aliases: ["/blog/33_lens/"]
 ---
 
 <h2>FreeLens</h2>
