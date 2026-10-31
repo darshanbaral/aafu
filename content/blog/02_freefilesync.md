@@ -1,5 +1,5 @@
 ---
-title: "FreeFileSync - Open Source File Synchronization"
+title: "FreeFileSync"
 date: 2024-02-20
 tags: ["backup", "sync", "storage"]
 categories: ["linux", "software", "applications", "tools", "backup"]

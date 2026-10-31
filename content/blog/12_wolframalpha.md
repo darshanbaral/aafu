@@ -1,9 +1,9 @@
 ---
-title: "WolframAlpha - Mathematics"
+title: "WolframAlpha"
 date: 2024-03-09
-tags: ["math", "fun"]
+tags: ["math", "fun", "mathematics"]
 categories: ["science"]
-description: "WolframAlpha - Mathematics"
+description: "WolframAlpha"
 draft: false
 hero_images:
   - src: "https://upload.wikimedia.org/wikipedia/commons/1/16/Wolfram_Alpha_logo.svg"

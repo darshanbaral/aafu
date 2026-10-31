@@ -1,9 +1,9 @@
 ---
-title: "Wireguard - VPN"
+title: "Wireguard"
 date: 2025-01-26
 tags: ["security", "vpn", "wireguard", "networking"]
 categories: ["linux", "software", "applications", "tools", "raspberrypi"]
-description: "Wireguard - VPN"
+description: "Wireguard"
 draft: false
 hero_images:
   - src: "https://www.wireguard.com/img/wireguard.svg"

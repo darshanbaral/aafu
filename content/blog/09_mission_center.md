@@ -1,9 +1,9 @@
 ---
-title: "Mission Center - Monitor system resource usage"
+title: "Mission Center"
 date: 2024-03-06
 tags: ["system-info", "monitoring", "linux"]
 categories: ["linux", "software", "applications", "tools"]
-description: "Mission Center - Monitor system resource usage"
+description: "Mission Center"
 draft: false
 hero_images:
   - src: "https://dl.flathub.org/repo/appstream/x86_64/icons/128x128/io.missioncenter.MissionCenter.png"

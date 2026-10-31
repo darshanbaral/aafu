@@ -1,10 +1,11 @@
 ---
-title: "Lens - K8s IDE"
+title: "FreeLens"
 date: 2025-01-02
 tags: ["k8s", "kubernetes", "editor", "ide"]
 categories: ["linux", "software", "applications", "tools"]
-description: "Lens - K8s IDE"
+description: "FreeLens"
 draft: false
+aliases: ["/blog/33_lens/"]
 ---
 
 <h2>FreeLens</h2>

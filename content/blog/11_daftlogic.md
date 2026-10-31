@@ -1,9 +1,9 @@
 ---
-title: "DaftLogic - Multiple Projects"
+title: "DaftLogic"
 date: 2024-03-08
-tags: ["fun"]
+tags: ["fun", "projects"]
 categories: ["science"]
-description: "DaftLogic - Multiple Projects"
+description: "DaftLogic"
 draft: false
 hero_images:
   - src: "https://www.daftlogic.com/images/daft-logic-logo.png"

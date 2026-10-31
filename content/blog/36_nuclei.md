@@ -1,9 +1,9 @@
 ---
-title: "Nuclei - Vulnerability Scanner"
+title: "Nuclei"
 date: 2025-01-05
 tags: ["security", "scanner", "vulnerabilities", "python", "cli"]
 categories: ["linux", "software", "applications", "tools"]
-description: "Nuclei - Vulnerability Scanner"
+description: "Nuclei"
 draft: false
 hero_images:
   - src: "https://github.com/projectdiscovery/nuclei/raw/dev/static/nuclei-cover-image.png"

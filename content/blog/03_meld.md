@@ -1,5 +1,5 @@
 ---
-title: "Meld - Visual Diff And Merge Tool"
+title: "Meld"
 date: 2024-02-20
 tags: ["diff", "compare", "git"]
 categories: ["linux", "software", "applications", "tools"]

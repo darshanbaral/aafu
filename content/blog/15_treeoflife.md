@@ -1,9 +1,9 @@
 ---
-title: "Micropia: Tree of Life - Museum"
+title: "Micropia: Tree of Life"
 date: 2024-03-11
 tags: ["fun", "treeoflife", "science", "museum"]
 categories: ["museum", "science"]
-description: "Micropia: Tree of Life - Museum"
+description: "Micropia: Tree of Life"
 draft: false
 hero_images:
   - src: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/Micropia_Museum_Amsterdam_1.jpg/500px-Micropia_Museum_Amsterdam_1.jpg"
