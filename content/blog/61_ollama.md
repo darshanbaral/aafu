@@ -1,9 +1,9 @@
 ---
-title: "Local LLM with Ollama"
+title: "Ollama"
 date: 2026-10-31
 tags: ["llm", "ollama", "qwen", "ai", "open-webui"]
 categories: ["software", "applications", "tools", "ai"]
-description: "Local LLM with Ollama"
+description: "Ollama"
 draft: false
 hero_images:
   - src: "https://ollama.com/public/ollama.png"
@@ -12,7 +12,7 @@ hero_images:
     height: "40"
 ---
 
-Run an LLM locally on Linux with [Ollama](https://ollama.com). Everything runs on your machine: once the model is downloaded, nothing leaves it.
+Run a LLM locally on Linux with [Ollama](https://ollama.com). Everything runs on your machine: once the model is downloaded, nothing leaves it.
 
 {{< toc >}}
 

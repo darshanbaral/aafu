@@ -1,7 +1,7 @@
 ---
 title: "Loto"
 date: 2026-10-31
-tags: ["loto", "game", "fun"]
+tags: ["loto", "game", "fun", "bingo"]
 categories: ["games"]
 description: "Loto"
 draft: false
