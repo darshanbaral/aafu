@@ -14,8 +14,6 @@ hero_images:
 
 Run an LLM locally on Linux with [Ollama](https://ollama.com). Everything runs on your machine: once the model is downloaded, nothing leaves it.
 
-**Contents**
-
 {{< toc >}}
 
 ## Deployment
@@ -166,7 +164,7 @@ $ docker run -d --name open-webui --restart unless-stopped \
     ghcr.io/open-webui/open-webui:0.12.5
 ```
 
-Open http://localhost:3000 and create the first (admin) account, stored only on your machine. Models from `ollama list` show up in the model picker.
+Open <http://localhost:3000> and create the first (admin) account, stored only on your machine. Models from `ollama list` show up in the model picker.
 
 Chats and settings live in the `open-webui` Docker volume, so they survive restarts and upgrades:
 
