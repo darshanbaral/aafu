@@ -6,10 +6,10 @@ categories: ["quotes"]
 description: "Awesome Quotes"
 draft: false
 hero_images:
-  - src: "https://img.freepik.com/free-vector/6-quotation-marks-signs_78370-917.jpg?w=1380&t=st=1716246528~exp=1716247128~hmac=ddf355ee31df61c160ba95ee98fd3d317b13da50f930a4d73fdbaf44e6c60d98"
+  - src: "https://upload.wikimedia.org/wikipedia/commons/9/9c/NotoSans_-_Sans-Serif_Heavy_Double_Turned_Comma_Quotation_Mark_Ornament_-_1F676.svg"
     alt: "quotes"
-    width: "250"
-    height: "250"
+    width: "150"
+    height: "120"
 ---
 
 > #### ''

@@ -14,7 +14,7 @@ The terminal emulator, the shell prompt and the color schemes.
 
 ## Ghostty
 
-{{< img src="https://ghostty.org/_next/static/media/ghostty-wordmark.815bf882.svg" alt="ghostty" width="200" height="48" >}}
+{{< img src="https://avatars.githubusercontent.com/u/169223740?s=200&v=4" alt="ghostty" width="100" height="100" >}}
 
 **Ghostty** is a fast, feature-rich, and cross-platform terminal emulator that uses platform-native UI and GPU acceleration.
 

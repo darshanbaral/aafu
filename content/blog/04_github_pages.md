@@ -10,10 +10,10 @@ hero_images:
     alt: "GitHub"
     width: "70"
     height: "70"
-  - src: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQmG0sTTujYLYv0fIIepY8CGiS6fY6rlvNlTA&s"
+  - src: "https://upload.wikimedia.org/wikipedia/commons/a/af/Logo_of_Hugo_the_static_website_generator.svg"
     alt: "Hugo"
-    width: "140"
-    height: "140"
+    width: "200"
+    height: "55"
 ---
 
 #### GitHub Pages -> Custom Domain

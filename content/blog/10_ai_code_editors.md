@@ -14,7 +14,7 @@ AI powered tools for the terminal and the code editor.
 
 ## Warp
 
-{{< img src="https://assets-global.website-files.com/64b6f3636f598299028e8577/65a6ee1dfad0ee04bccb5086_Logo%20(1).svg" alt="warp" width="100" height="100" >}}
+{{< img src="https://avatars.githubusercontent.com/u/71840468?s=200&v=4" alt="warp" width="100" height="100" >}}
 
 **Warp** is the terminal reimagined with AI and collaborative tools for better productivity.
 

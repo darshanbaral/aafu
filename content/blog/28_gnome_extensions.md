@@ -19,5 +19,5 @@ Favourite **GNOME Shell Extensions**:
 {{< linkcard href="https://gitlab.gnome.org/GNOME/gnome-shell-extensions" src="https://extensions.gnome.org/extension-data/icons/icon_10.png" alt="windowNavigator" label="Window Navigator" >}}
 {{< linkcard href="https://github.com/neffo/bing-wallpaper-gnome-extension" src="https://extensions.gnome.org/extension-data/icons/icon_1262_qXt2a7I.png" alt="bingWallpaper" label="Bing Wallpaper" >}}
 {{< linkcard href="https://github.com/ifl0w/RandomWallpaperGnome3" src="https://extensions.gnome.org/extension-data/icons/icon_1040_99yazJQ.png" alt="randomwallpaper" label="Random Wallpaper" >}}
-{{< linkcard href="https://framagit.org/razer/bubblemail" src="http://bubblemail.free.fr/img/Icon.61c4563e.svg" alt="bubblemail" label="BubbleMail" >}}
+{{< linkcard href="https://framagit.org/razer/bubblemail" src="https://framagit.org/uploads/-/system/project/avatar/49237/bubblemail.png" alt="bubblemail" label="BubbleMail" >}}
 </div>

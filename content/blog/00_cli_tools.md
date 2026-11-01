@@ -22,7 +22,7 @@ https://github.com/pauldreik/rdfind
 
 ## Command Line Fu
 
-{{< img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR0EZRnJ18Bhrrlvn_vjr2e6gwOmJAjFiNigQ&s" alt="commandlinefu" width="100" height="100" >}}
+{{< img src="https://upload.wikimedia.org/wikipedia/commons/6/66/Utilities-terminal.svg" alt="commandlinefu" width="100" height="100" >}}
 
 **Command Line Fu** The place to record those command-line gems that you return to again and again. That way others can gain from your CLI wisdom and you from theirs too. All commands can be commented on, discussed and voted up or down.
 
