@@ -20,7 +20,19 @@ A collection of applications and tools I use or recommend.
 
 https://freefilesync.org
 
-## FreeLens
+## HomeAssistant
+
+{{< img src="https://brands.home-assistant.io/homeassistant/logo.png" alt="homeassistant" width="300" height="42" >}}
+
+**HomeAssistant** Open source home automation that puts local control and privacy first.
+
+https://www.home-assistant.io
+
+https://github.com/home-assistant
+
+## Lens
+
+### FreeLens
 
 {{< img src="https://freelensapp.github.io/images/freelens-logo.png" alt="freelens" width="100" height="100" >}}
 
@@ -39,16 +51,6 @@ https://github.com/freelensapp/freelens
 https://k8slens.dev
 
 https://github.com/lensapp/lens
-
-## HomeAssistant
-
-{{< img src="https://brands.home-assistant.io/homeassistant/logo.png" alt="homeassistant" width="300" height="42" >}}
-
-**HomeAssistant** Open source home automation that puts local control and privacy first.
-
-https://www.home-assistant.io
-
-https://github.com/home-assistant
 
 ## Meld
 
