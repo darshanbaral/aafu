@@ -6,7 +6,6 @@ tags: ["cli", "utils", "linux", "storage", "cleanup", "deduplication", "jless", 
 categories: ["linux", "software", "applications", "tools"]
 description: "CLI Tools"
 draft: false
-aliases: ["/blog/00_rdfind/", "/blog/14_commandlinefu/", "/blog/24_alternatives_linux_utils/", "/blog/35_jless/"]
 ---
 
 Command line tools and resources.
@@ -20,14 +19,6 @@ Command line tools and resources.
 **Rdfind** is a command line tool that finds duplicate files. It is useful for compressing backup directories or just finding duplicate files. It compares files based on their content, NOT on their file names.
 
 https://github.com/pauldreik/rdfind
-
-## Command Line Fu
-
-{{< img src="https://upload.wikimedia.org/wikipedia/commons/6/66/Utilities-terminal.svg" alt="commandlinefu" width="100" height="100" >}}
-
-**Command Line Fu** The place to record those command-line gems that you return to again and again. That way others can gain from your CLI wisdom and you from theirs too. All commands can be commented on, discussed and voted up or down.
-
-https://www.commandlinefu.com
 
 ## Alternative Linux Utils
 

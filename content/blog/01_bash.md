@@ -6,7 +6,6 @@ tags: ["bash", "shell", "branch", "git", "configurations"]
 categories: ["linux", "software", "applications", "tools"]
 description: "Bash"
 draft: false
-aliases: ["/blog/01_bash_prompt_branch/", "/blog/17_bashrc/"]
 hero_images:
   - src: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/Bash_Logo_Colored.svg/1280px-Bash_Logo_Colored.svg.png"
     alt: "bash"

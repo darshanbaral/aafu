@@ -6,7 +6,6 @@ tags: ["gnome", "gnome-shell", "nautilus", "gtk", "theme", "file-manager", "cust
 categories: ["linux", "software", "applications", "tools"]
 description: "Customize and Debug GNOME"
 draft: false
-aliases: ["/blog/20_nautilus_custom_icon/", "/blog/53_gtk_dark/", "/blog/58_gnome-shell-debug/"]
 ---
 
 Tweaks for Nautilus and the GTK theme, and how to debug GNOME Shell.

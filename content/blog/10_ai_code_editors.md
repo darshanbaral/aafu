@@ -6,7 +6,6 @@ tags: ["terminal", "editor", "code", "ai"]
 categories: ["linux", "software", "applications", "tools"]
 description: "AI Code Editors"
 draft: false
-aliases: ["/blog/10_warp/", "/blog/49_voideditor/"]
 ---
 
 AI powered tools for the terminal and the code editor.

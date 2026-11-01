@@ -6,7 +6,6 @@ tags: ["headscale", "tailscale", "cloudflared", "cloudflare", "tunnel", "vpn", "
 categories: ["software", "applications", "tools"]
 description: "Tunnels and VPN"
 draft: false
-aliases: ["/blog/60_tailscale/", "/blog/59_cloudflared/"]
 ---
 
 {{< toc >}}

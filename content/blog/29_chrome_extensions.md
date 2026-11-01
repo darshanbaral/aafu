@@ -6,7 +6,6 @@ tags: ["chrome", "browser", "extensions", "gitlab"]
 categories: ["linux", "software", "applications", "tools"]
 description: "Chrome Extensions"
 draft: false
-aliases: ["/blog/05_gitlab_job_log_viewer/"]
 ---
 
 Favourite **Chrome Extensions**.

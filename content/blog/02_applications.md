@@ -6,7 +6,6 @@ tags: ["applications", "backup", "sync", "storage", "diff", "compare", "git", "k
 categories: ["linux", "software", "applications", "tools", "backup"]
 description: "Applications"
 draft: false
-aliases: ["/blog/02_freefilesync/", "/blog/03_meld/", "/blog/06_netdata/", "/blog/07_webcheck/", "/blog/09_mission_center/", "/blog/19_remote_smartphone/", "/blog/33_freelens/", "/blog/33_lens/", "/blog/36_nuclei/", "/blog/39_renovatebot/", "/blog/43_nextcloud/", "/blog/44_homeassistant/", "/blog/50_recoverfiles/", "/blog/57_weather/"]
 ---
 
 A collection of applications and tools I use or recommend.

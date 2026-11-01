@@ -6,7 +6,6 @@ tags: ["fun", "science", "museum", "treeoflife", "body-worlds"]
 categories: ["museum", "science"]
 description: "Museums"
 draft: false
-aliases: ["/blog/15_treeoflife/", "/blog/38_body_worlds/"]
 ---
 
 Science museums worth a visit.
