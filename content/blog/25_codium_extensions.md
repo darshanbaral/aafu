@@ -1,13 +1,13 @@
 ---
-title: "Visual Code - Extensions"
+title: "Codium Extensions"
 date: 2024-09-12
-tags: ["vscode", "code", "utils", "extensions", "editor"]
+tags: ["codium", "vscodium", "vscode", "code", "utils", "extensions", "editor"]
 categories: ["linux", "software", "applications", "tools"]
-description: "Visual Code - Extensions"
+description: "Codium Extensions"
 draft: false
 ---
 
-Favourite **Visual Code Extensions**:
+Favourite **Codium Extensions**:
 
 <div class="link-card-grid">
 {{< linkcard href="https://github.com/gitkraken/vscode-gitlens" src="https://avatars.githubusercontent.com/u/92606490?s=48&v=4" alt="gitlens" label="GitLens" >}}
