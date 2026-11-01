@@ -6,6 +6,7 @@ tags: ["selfhosted", "on-prem", "awesome"]
 categories: ["linux", "software", "applications", "tools"]
 description: "Selfhosted"
 draft: false
+aliases: ["/blog/18_awesome_selfhosted/", "/blog/21_selfh/"]
 ---
 
 Self-hosting is the practice of hosting and managing applications on your own server(s) instead of consuming from SaaSS providers.

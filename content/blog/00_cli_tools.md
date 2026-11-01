@@ -6,6 +6,7 @@ tags: ["cli", "utils", "linux", "storage", "cleanup", "deduplication", "jless", 
 categories: ["linux", "software", "applications", "tools"]
 description: "CLI Tools"
 draft: false
+aliases: ["/blog/00_rdfind/", "/blog/14_commandlinefu/", "/blog/24_alternatives_linux_utils/", "/blog/35_jless/"]
 ---
 
 Command line tools and resources.

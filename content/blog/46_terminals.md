@@ -6,6 +6,7 @@ tags: ["ghostty", "starship", "gogh", "terminal", "shell", "colors"]
 categories: ["linux", "software", "applications", "tools"]
 description: "Terminals"
 draft: false
+aliases: ["/blog/46_ghostty/", "/blog/47_starship/", "/blog/08_gogh/"]
 ---
 
 The terminal emulator, the shell prompt and the color schemes.

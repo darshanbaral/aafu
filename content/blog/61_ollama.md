@@ -5,6 +5,7 @@ tags: ["llm", "ollama", "qwen", "ai", "open-webui"]
 categories: ["software", "applications", "tools", "ai"]
 description: "Ollama"
 draft: false
+aliases: ["/blog/61_llm/"]
 hero_images:
   - src: "https://ollama.com/public/ollama.png"
     alt: "ollama"

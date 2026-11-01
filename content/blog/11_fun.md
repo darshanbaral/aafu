@@ -6,6 +6,7 @@ tags: ["fun", "science", "math", "maps", "projects", "awesome"]
 categories: ["science", "universe", "software", "applications", "tools"]
 description: "Fun"
 draft: false
+aliases: ["/blog/11_daftlogic/", "/blog/12_wolframalpha/", "/blog/13_scaleofuniverse/", "/blog/23_neal_fun/", "/blog/48_city_roads/"]
 ---
 
 Interactive websites to learn and play with.
