@@ -1,13 +1,18 @@
 ---
 title: "Chrome Extensions"
 date: 2024-10-30
-tags: ["chrome", "browser", "extensions"]
+lastmod: 2026-11-01
+tags: ["chrome", "browser", "extensions", "gitlab"]
 categories: ["linux", "software", "applications", "tools"]
 description: "Chrome Extensions"
 draft: false
 ---
 
-Favourite **Chrome Extensions**:
+Favourite **Chrome Extensions**.
+
+{{< toc >}}
+
+## Favourites
 
 <div class="link-card-grid">
 {{< linkcard href="https://chromewebstore.google.com/detail/authenticator/bhghoamapcdpbohphigoooaddinpkbai" src="https://authenticator.cc/assets/logo/logo.svg" alt="authenticator" label="Authenticator" >}}
@@ -18,3 +23,16 @@ Favourite **Chrome Extensions**:
 {{< linkcard href="https://chromewebstore.google.com/detail/ublock-origin-lite/ddkjiahejlhfcafbddmgiahcphecmpfh" src="https://raw.githubusercontent.com/gorhill/uBlock/2a0842f177f29b43a182e90727bd4e59e33c7ae9/src/img/ublock.svg" alt="ublock-origin-lite" label="uBlock Origin Lite" >}}
 {{< linkcard href="https://chromewebstore.google.com/detail/keepa-amazon-price-tracke/neebplgakaahbhdphmkckjjcegoiijjo?hl=en" src="https://play-lh.googleusercontent.com/KE4gCbA598c48NUu7g-HcuZwZYH_m9BwlyhA8rzQ82rUK6xaghXy6pdb2C0dRZUuWrE=w240-h480-rw" alt="keepa" label="Keepa - Amazon Price Tracker" >}}
 </div>
+
+## Gitlab Job Log Viewer
+
+{{< img src="https://github.com/7rulnik/gtlb-job-log-viewer/raw/master/media/logo.svg" alt="gitlab-job-log-viewer" width="100" height="92" >}}
+
+**Gitlab Job Log Viewer** Chrome extension to view GitLab CI job logs.
+
+https://github.com/7rulnik/gtlb-job-log-viewer
+
+Download full log file and execute:
+```shell
+$ less -r job.txt
+```
