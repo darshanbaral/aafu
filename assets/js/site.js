@@ -113,9 +113,37 @@ const expandAccordion = (element) => {
 const initializeSearch = () => {
   const searchElement = document.querySelector("#search");
 
-  if (searchElement && window.PagefindUI) {
-    new window.PagefindUI({ element: "#search", showSubResults: false });
+  if (!searchElement || !window.PagefindUI) {
+    return;
   }
+
+  const search = new window.PagefindUI({ element: "#search", showSubResults: false });
+  const query = new URLSearchParams(window.location.search).get("q");
+
+  if (query) {
+    search.triggerSearch(query);
+  }
+
+  const syncQueryToUrl = () => {
+    const input = searchElement.querySelector(".pagefind-ui__search-input");
+    const url = new URL(window.location.href);
+    const term = input?.value.trim() ?? "";
+
+    if (term) {
+      url.searchParams.set("q", term);
+    } else {
+      url.searchParams.delete("q");
+    }
+
+    window.history.replaceState(null, "", url);
+  };
+
+  searchElement.addEventListener("input", syncQueryToUrl);
+  searchElement.addEventListener("click", (event) => {
+    if (event.target.closest(".pagefind-ui__search-clear")) {
+      window.setTimeout(syncQueryToUrl);
+    }
+  });
 };
 
 const initializePostNavigation = () => {
