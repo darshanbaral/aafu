@@ -1,5 +1,5 @@
 ---
-title: "Hugo - Deploy and Set Custom Domain on GitHub Pages"
+title: "Hugo"
 date: 2024-02-21
 tags: ["hugo", "domain", "static", "website", "github"]
 categories: ["linux", "software", "applications", "tools"]

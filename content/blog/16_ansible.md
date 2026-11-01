@@ -1,9 +1,9 @@
 ---
-title: "Ansible - Callbacks"
+title: "Ansible Callbacks"
 date: 2024-03-12
 tags: ["ansible", "python", "automation"]
 categories: ["linux", "software", "applications", "tools"]
-description: "Ansible - Callbacks"
+description: "Ansible Callbacks"
 draft: false
 hero_images:
   - src: "https://upload.wikimedia.org/wikipedia/commons/2/24/Ansible_logo.svg"
