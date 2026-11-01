@@ -5,11 +5,11 @@
 <p class="metadata-value mt-1 mb-0 text-sm taxa taxa-container-div list-{{- $name -}}">
   {{ $name | humanize }}: {{ range index $params $name }}
   <a
-    class="metadata-tags hover:no-underline"
+    class="metadata-tags {{ $name }} inline-block hover:no-underline"
     href="{{ $name | relURL }}/{{ . | urlize }}"
     title="{{ $name }}"
   >
-    #{{- . -}}
+    {{- . -}}
   </a>
   {{ end }}
 </p>
