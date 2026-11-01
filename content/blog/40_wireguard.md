@@ -14,9 +14,11 @@ hero_images:
 
 **WireGuard** is a simple, fast and modern VPN implementation. It is widely deployed and can be used cross-platform.
 
-# Setup WireGuard
+{{< toc >}}
 
-## Server - Raspberry Pi
+## Setup WireGuard
+
+### Server - Raspberry Pi
 {{< img src="https://www.raspberrypi.com/app/uploads/2020/06/raspberrry_pi_logo.png" alt="raspberypi" width="50px" height="50px" >}}
 
 1. **Enable Port Fowarding** via **systctl.conf** setting up the following
@@ -204,7 +206,7 @@ root@raspberrypi:~# sudo tree /etc/wireguard/
 3 directories, 5 files
 ```
 
-## Client - Laptop
+### Client - Laptop
 {{< img src="https://static.thenounproject.com/png/1388614-200.png" alt="laptop" width="80px" height="80px" >}}
 
 1. Install **WireGuard**.
@@ -339,7 +341,7 @@ pbeja@cspt0060:~ $ nmcli connection modify wg-elara connection.autoconnect no
 
 8. done :)
 
-## Reference links
+### Reference links
 - https://wiki.debian.org/WireGuard
 - https://www.howtoforge.com/guide-to-install-wireguard-vpn-on-debian-12/
 - https://documentation.ubuntu.com/server/explanation/intro-to/wireguard-vpn

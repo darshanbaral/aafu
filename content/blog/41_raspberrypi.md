@@ -14,22 +14,9 @@ hero_images:
 
 **Raspberry Pi** Micro Computing or single-board computer (SBC).
 
-# Table of Contents
-1.  [Lock Screen](#Lock_Screen)
-2.  [Update Firmware and BIOS](#Update_Firmware)
-3.  [Disable IPv6 via UFW](#Disable_IPv6_via_UFWufw)
-4.  [Systemd: Node Exporter](#Systemd_Node_Exporter)
-5.  [Docker Swarm](#Docker_Swarm)
-6.  [Deploy Docker Swarm Services](#Deploy_Docker_Swarm_Services)
-7.  [Docker Prune](#Docker_Prune)
-8.  [PI Hole](#PI_Hole)
-9.  [NOIP](#NOIP)
-10. [SSH via VPN](#SSH_via_VPN)
-11. [Troubleshooting](#Troubleshooting)
+{{< toc >}}
 
-
-
-# Lock_Screen
+## Lock Screen
 1. Use command below:
 ```shell
 althaser@raspberrypi:~ $ dm-tool lock
@@ -37,7 +24,7 @@ althaser@raspberrypi:~ $ dm-tool lock
 
 
 
-# Update_Firmware
+## Update Firmware and BIOS
 1. Check Raspberry Pi firmware.
 
 https://linuxconfig.org/how-to-check-firmware-version-on-raspberry-pi
@@ -113,7 +100,7 @@ version a7753063 (release) (embedded)
 
 
 
-# Disable_IPv6_via_UFW
+## Disable IPv6 via UFW
 1. Check commands below:
 ```shell
 althaser@raspberrypi:~ $ sudo ufw status
@@ -148,7 +135,7 @@ Anywhere on wlan0          ALLOW FWD   Anywhere on wg-rasp
 
 
 
-# Systemd_Node_Exporter
+## Systemd: Node Exporter
 1. Download **Node Exporter**.
 ```shell
 althaser@raspberrypi:~ $ wget https://github.com/prometheus/node_exporter/releases/download/v1.8.2/node_exporter-1.8.2.linux-arm64.tar.gz
@@ -261,7 +248,7 @@ promhttp_metric_handler_requests_total{code="503"} 0
 
 
 
-# Docker_Swarm
+## Docker Swarm
 https://docs.docker.com/engine/swarm/swarm-tutorial/create-swarm/
 
 1. Setup Docker Swarm Cluster
@@ -282,7 +269,7 @@ pltcacgj7aydgsi5tmkqp8nzb *   raspberrypi   Ready     Active         Leader     
 
 
 
-# Deploy_Docker_Swarm_Services
+## Deploy Docker Swarm Services
 https://docs.docker.com/engine/swarm/swarm-tutorial/deploy-service/
 
 1. There is a private gitlab repository https://gitlab.com/althaser/raspberry-pi-server with some stack files:
@@ -402,7 +389,7 @@ Access Grafana UI: http://192.168.1.13:3000
 
 
 
-# Docker_Prune
+## Docker Prune
 ```shell
 althaser@raspberrypi:~ $ docker system prune
 WARNING! This will remove:
@@ -420,7 +407,7 @@ f8f22df75f1a24a7f590de1f1f68414aa5b05bc73b1a8dd2e974c84b61aefabf
 
 
 
-# PI_Hole
+## Pi-hole
 https://github.com/pi-hole/pi-hole
 
 https://github.com/pi-hole/docker-pi-hole
@@ -438,12 +425,12 @@ Access PI Hole UI: http://192.168.1.13/admin/
 
 
 
-# NOIP
+## NOIP
 https://www.noip.com/download?page=linux
 
 
 
-# SSH_via_VPN
+## SSH via VPN
 ### UFW: SSH
 ```shell
 althaser@raspberrypi:~ $ ip -4 a show wg-rasp
@@ -513,7 +500,7 @@ To                         Action      From
 22 on wg-rasp              ALLOW IN    Anywhere
 22                         DENY IN     Anywhere
 Anywhere on wlan0          ALLOW FWD   Anywhere on wg-rasp
-```shell
+```
 
 ### SSH
 ```shell
@@ -528,7 +515,7 @@ VPN IP is 10.20.0.1
 
 
 
-# Troubleshooting
+## Troubleshooting
 - Prometheus Target for Docker instances
 
 Make docker available: http://192.168.1.13:9090/targets

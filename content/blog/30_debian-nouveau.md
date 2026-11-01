@@ -12,7 +12,9 @@ hero_images:
     height: "108"
 ---
 
-**Problem**:
+{{< toc >}}
+
+## Problem
 
 **Nouveau** driver not running in Debian:
 ```shell
@@ -32,7 +34,7 @@ althaser@Sirius:~ $ sudo less /var/log/syslog
 
 This is an old graphical card (from around 2010) and it is not maintained anymore. Nvidia firmware is not shipped by any debian packages nowadays.
 
-**Solution**:
+## Solution
 
 **Nouveau website**: https://nouveau.freedesktop.org/VideoAcceleration.html
 
@@ -53,7 +55,7 @@ This is an old graphical card (from around 2010) and it is not maintained anymor
 
 It didn't work! I had to install via `nvidia-driver` and after reboot manually load the driver `modprobe nouveau`.
 
-**Status**:
+## Status
 
 **nouveau** module is loaded and running:
 
