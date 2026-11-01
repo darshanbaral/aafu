@@ -2,13 +2,15 @@
   class="nav flex flex-row items-center row py-2 mb-6 w-full border-b border-gray-700 dark:border-gray-300 justify-between"
 >
   <div>
-    <a class="nav-menu-item {{ if .IsHome }} active {{ end }}" href="{{ `/` | relURL }}">Home</a>
+    <a class="nav-menu-item {{ if .IsHome }} active {{ end }}" href="{{ `/` | relURL }}" aria-label="Home" title="Home">
+      <i class="fas fa-house" aria-hidden="true"></i>
+    </a>
     <a class="nav-menu-item {{ if eq .Section "blog" }} active {{ end }}" href="{{ "blog" | relURL }}">Blog</a>
     <a class="nav-menu-item {{ if eq .Section "archive" }} active {{ end }}" href="{{ "archive" | relURL }}">Archive</a>
   </div>
 
   <div class="flex items-center gap-1">
-    <a class="nav-menu-item inline-flex items-center justify-center" href="{{ `search` | relURL }}" aria-label="Search">
+    <a class="nav-menu-item inline-flex items-center justify-center" href="{{ `search` | relURL }}" aria-label="Search" title="Search">
       <i class="fas fa-search" aria-hidden="true"></i>
     </a>
 
