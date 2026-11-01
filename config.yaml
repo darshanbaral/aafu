@@ -32,7 +32,7 @@ params:
       url: https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css
       integrity: sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==
     academiconsUrl: https://cdn.rawgit.com/jpswalsh/academicons/master/css/academicons.min.css
-    googleFontsUrl: https://fonts.googleapis.com/css?family=Didact+Gothic%7CRoboto:400%7CRoboto+Mono
+    googleFontsUrl: https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap
   theme:
     mainTheme: dark
     showAttribute: true
