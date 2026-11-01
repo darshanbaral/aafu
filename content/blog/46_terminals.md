@@ -1,14 +1,14 @@
 ---
 title: "Terminals"
 date: 2025-03-09
-lastmod: 2026-10-31
-tags: ["ghostty", "starship", "terminal", "shell"]
+lastmod: 2026-11-01
+tags: ["ghostty", "starship", "gogh", "terminal", "shell", "colors"]
 categories: ["linux", "software", "applications", "tools"]
 description: "Terminals"
 draft: false
 ---
 
-The terminal emulator and the shell prompt.
+The terminal emulator, the shell prompt and the color schemes.
 
 {{< toc >}}
 
@@ -31,3 +31,13 @@ https://github.com/ghostty-org/ghostty
 https://starship.rs
 
 https://github.com/starship/starship
+
+## Gogh
+
+{{< img src="https://raw.githubusercontent.com/Gogh-Co/Gogh/master/.images/gogh/Gogh-logo-dark.png" alt="gogh" width="200" height="85" >}}
+
+**Gogh** Color Schemes For Ubuntu, Linux Mint, Elementary OS and all distributions that use Gnome Terminal, Pantheon Terminal, Tilix, or XFCE4 Terminal; initially inspired by Elementary OS Luna. Also works on iTerm for macOS.
+
+https://gogh-co.github.io/Gogh/
+
+https://github.com/Gogh-Co/Gogh
