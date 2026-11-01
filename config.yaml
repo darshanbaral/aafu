@@ -26,6 +26,7 @@ params:
   copyright: >-
     Powered by [hugo](https://gohugo.io/)
   analytics:
+    googleTagId: G-GL1PZQ4MJH
     goatcounterCode: althaser
   assets:
     fontAwesome:
