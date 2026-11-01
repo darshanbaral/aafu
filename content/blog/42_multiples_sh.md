@@ -12,6 +12,8 @@ hero_images:
     height: "70"
 ---
 
+Tools to run the same shell command on many machines at once over SSH, and collect the output of each host in a single terminal.
+
 {{< toc >}}
 
 ## pdsh

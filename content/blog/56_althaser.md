@@ -12,6 +12,8 @@ hero_images:
     height: "200"
 ---
 
+The name **althaser** was born as a nickname, first registered on IRC at [PTnet](https://www.ptnet.org) back in 2003.
+
 ```shell
 [(status)] /quote nickserv info althaser
 13:27 -NickServ(services@services.ptnet.org)- althaser é beja

@@ -12,7 +12,7 @@ hero_images:
     height: "200"
 ---
 
-**Dotfiles**.
+**Dotfiles** are the hidden configuration files in a Linux user's home directory. They hold each user's settings for the shell, editors, terminal and other tools.
 
 ```shell
 $ grep -v "^#" .config/ghostty/config

@@ -12,4 +12,8 @@ hero_images:
     height: "199"
 ---
 
-Loto (1–90), the classic number drawing game played with cards: https://althaser.gitlab.io/loto
+Loto (1–90), the classic number drawing game played with cards.
+
+A web page that draws the numbers at random and reads each one aloud automatically, so nobody needs to be the caller. Just open it, press start and play with your cards.
+
+https://althaser.gitlab.io/loto

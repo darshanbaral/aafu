@@ -6,10 +6,10 @@ categories: ["linux", "software", "applications", "tools"]
 description: "Sablier"
 draft: false
 hero_images:
-  - src: "https://avatars.githubusercontent.com/u/183561550?s=48&v=4"
+  - src: "https://raw.githubusercontent.com/sablierapp/artwork/b203cf1509329ca044340ce68e2712c10e679b6e/icon/sablier-icon-color.png"
     alt: "sablier"
-    width: "80"
-    height: "80"
+    width: "100"
+    height: "100"
 ---
 
 **Sablier** is a free and open-source software that can scale your workloads on demand.

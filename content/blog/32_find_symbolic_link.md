@@ -12,7 +12,7 @@ hero_images:
     height: "70px"
 ---
 
-**Find symbolic links**
+**Find symbolic links** that point to a given file. `ls -lR` lists every file recursively, `grep "^l"` keeps only the symbolic links (their permissions start with `l`) and the second `grep` filters the ones pointing to the target. Then `find` shows in which directories those links live.
 
 ```shell
 $ ls -lR |grep "^l" |grep backend-swarm.yml

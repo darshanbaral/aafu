@@ -16,6 +16,8 @@ hero_images:
     height: "55"
 ---
 
+**Hugo** is a fast static site generator written in Go. This page shows how this website is deployed on GitHub Pages with a custom domain: the custom domain setting in GitHub, the matching `baseURL` in the Hugo config, the DNS records at the domain registrar (the GitHub Pages `A` records and the `www` `CNAME`), and how to check them with `dig`.
+
 {{< toc >}}
 
 ## GitHub Pages -> Custom Domain
@@ -86,10 +88,8 @@ This one can only be activated once it is propagated on most DNS Servers. Check 
 
 
 ## Related links
-https://gohugo.io/hosting-and-deployment/hosting-on-github/
 
-https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site/managing-a-custom-domain-for-your-github-pages-site
-
-https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site/verifying-your-custom-domain-for-github-pages
-
-https://medium.com/@isphinxs/using-a-custom-domain-name-with-github-pages-c9cdc2084d54
+- https://gohugo.io/hosting-and-deployment/hosting-on-github/
+- https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site/managing-a-custom-domain-for-your-github-pages-site
+- https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site/verifying-your-custom-domain-for-github-pages
+- https://medium.com/@isphinxs/using-a-custom-domain-name-with-github-pages-c9cdc2084d54

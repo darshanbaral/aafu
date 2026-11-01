@@ -12,7 +12,7 @@ Science museums worth a visit.
 
 {{< toc >}}
 
-## Micropia: Tree of Life
+## Micropia
 
 {{< img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/Micropia_Museum_Amsterdam_1.jpg/500px-Micropia_Museum_Amsterdam_1.jpg" alt="micropia" width="300" height="225" >}}
 

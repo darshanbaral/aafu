@@ -12,6 +12,8 @@ hero_images:
     height: "100"
 ---
 
+**Callback plugins** change what Ansible does with the events of a playbook run, such as the output it prints. Two built-in ones are handy to find slow steps: `timer` prints how long the whole playbook took, and `profile_roles` adds a timestamp to each task and a summary of the time spent per role at the end. They are enabled in `ansible.cfg`.
+
 Calculate **timers** for each task and **timers by each role** at the end of ansible run:
 
 ```shell

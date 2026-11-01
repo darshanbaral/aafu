@@ -12,7 +12,7 @@ hero_images:
     height: "100"
 ---
 
-**Systemd - BootCharts**.
+**systemd-analyze** shows where the boot time goes on a systemd based Linux system: the total time split by firmware, boot loader, kernel and userspace, the chain of units that delayed reaching the graphical target (`critical-chain`), the units sorted by how long they took to start (`blame`), and a full timeline of every unit drawn as an SVG chart (`plot`) that you can open in a browser or in Inkscape.
 
 ```shell
 $ systemd-analyze

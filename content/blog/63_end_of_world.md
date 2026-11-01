@@ -7,7 +7,7 @@ description: "End of World"
 draft: false
 ---
 
-Websites to keep an eye on the end of the world, from my [#EoW](https://mastodon.social/@Althaser/tagged/eow) posts on Mastodon.
+Websites to keep an eye on the end of the world. More posts on Mastodon [#EoW](https://mastodon.social/@Althaser/tagged/eow).
 
 {{< toc >}}
 
@@ -43,10 +43,10 @@ https://hasthelargehadroncolliderdestroyedtheworldyet.com/
 
 https://www.pizzint.watch/
 
-## NUKEMAP
+## Nukemap
 
 {{< img src="https://img.nuclearsecrecy.com/apple-icon-180x180.png" alt="nukemap" width="100" height="100" >}}
 
-**NUKEMAP** Visualize the effects of nuclear detonations on any city on the map.
+**Nukemap** Visualize the effects of nuclear detonations on any city on the map.
 
 https://nuclearsecrecy.com/nukemap/

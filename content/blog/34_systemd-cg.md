@@ -12,7 +12,7 @@ hero_images:
     height: "300px"
 ---
 
-Systemd CGroups.
+**Control groups (cgroups)** are the Linux kernel feature that systemd uses to organize every process into a tree of slices, services and scopes, and to account and limit their CPU, memory and I/O. `systemd-cgls` shows that tree (which process belongs to which user session or service), and `systemd-cgtop` shows live resource usage per cgroup, like `top` but grouped by service.
 
 https://systemd.io/
 

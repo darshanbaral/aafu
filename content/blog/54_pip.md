@@ -12,7 +12,7 @@ hero_images:
     height: "150"
 ---
 
-**PIP Upgrade Packages**.
+**pip** is the package installer for Python. It has no command to upgrade every package at once, so the one-liner below lists the outdated packages as JSON, extracts their names with `jq` and upgrades them one by one. On recent distributions the system Python is marked as externally managed (PEP 668), hence `--break-system-packages`; inside a virtual environment that flag is not needed.
 
 Update outdated pip packages:
 

@@ -14,6 +14,8 @@ hero_images:
 
 **Raspberry Pi** Micro Computing or single-board computer (SBC).
 
+Setting up and maintaining a Raspberry Pi as a home server: locking the screen, keeping the firmware up to date, hardening the firewall with UFW, monitoring with Node Exporter, running services on Docker Swarm, blocking ads with Pi-hole, dynamic DNS with No-IP, SSH access only through the VPN, and some troubleshooting.
+
 {{< toc >}}
 
 ## Lock Screen

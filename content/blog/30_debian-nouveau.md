@@ -12,6 +12,8 @@ hero_images:
     height: "108"
 ---
 
+Troubleshooting the open source **Nouveau** driver on Debian with an old NVIDIA GeForce GT 330M (around 2010): the driver failed to load because the card firmware is no longer shipped by any Debian package. The page shows the errors, the attempt to extract the firmware from the NVIDIA installer, and what finally worked.
+
 {{< toc >}}
 
 ## Problem

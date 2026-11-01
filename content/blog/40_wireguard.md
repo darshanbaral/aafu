@@ -14,6 +14,8 @@ hero_images:
 
 **WireGuard** is a simple, fast and modern VPN implementation. It is widely deployed and can be used cross-platform.
 
+Step by step guide to set up a WireGuard VPN with a Raspberry Pi as the server: enabling IP forwarding, the UFW firewall, generating the server and client keys, the NAT configuration and running it as a systemd service. Then the client side on a Linux laptop, from connecting and checking the tunnel to importing it into GNOME NetworkManager.
+
 {{< toc >}}
 
 ## Setup WireGuard

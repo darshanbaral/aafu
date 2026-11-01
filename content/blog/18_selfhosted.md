@@ -8,7 +8,7 @@ description: "Selfhosted"
 draft: false
 ---
 
-Self-hosting is the practice of hosting and managing applications on your own server(s) instead of consuming from SaaSS providers.
+Self-hosting is the practice of hosting and managing applications on your own server(s) instead of consuming from SaaS providers.
 
 {{< toc >}}
 

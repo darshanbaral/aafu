@@ -44,6 +44,8 @@ Then check the model's size on `https://ollama.com/library/<model>/tags` to see 
 
 ### Qwen3.5:4B
 
+{{< img src="https://avatars.githubusercontent.com/u/141221163?s=200&v=4" alt="qwen" width="100" height="100" >}}
+
 ```shell
 $ ollama run qwen3.5:4b
 ```
@@ -152,6 +154,8 @@ $ ollama run my-chat
 For a chat history UI like ChatGPT's, put [Open WebUI](https://openwebui.com) in front of Ollama: it runs locally in the browser, keeps your chats on your own disk and talks to Ollama.
 
 ## Open WebUI
+
+{{< img src="https://avatars.githubusercontent.com/u/158137808?s=200&v=4" alt="open-webui" width="100" height="100" >}}
 
 Ollama only listens on `127.0.0.1:11434`, so run Open WebUI with the host network and keep it local too (`HOST`/`PORT`):
 

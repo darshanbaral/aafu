@@ -8,7 +8,7 @@ description: "Applications"
 draft: false
 ---
 
-A collection of applications and tools I use or recommend.
+A collection of applications and tools I use/recommend.
 
 {{< toc >}}
 

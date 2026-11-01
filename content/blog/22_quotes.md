@@ -12,6 +12,8 @@ hero_images:
     height: "120"
 ---
 
+A personal collection of favourite quotes and sayings, in English and Portuguese, some wise, some funny and some that only make sense to whoever was there.
+
 > #### ''
 > - I Couldn't Care Less.
 > - Hoje, Fazia Tudo Igual.

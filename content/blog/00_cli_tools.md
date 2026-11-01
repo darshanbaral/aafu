@@ -20,14 +20,6 @@ Command line tools and resources.
 
 https://github.com/pauldreik/rdfind
 
-## Alternative Linux Utils
-
-{{< img src="https://static1.howtogeekimages.com/wordpress/wp-content/uploads/2024/08/a-linux-terminal-with-some-commands.jpg" alt="alternative linux utils" width="300" height="200" >}}
-
-**Alternative Linux Utils** Replace default linux commands with these alternatives.
-
-https://www.howtogeek.com/replace-default-linux-commands-with-these-alternatives/
-
 ## JLess
 
 {{< img src="https://raw.githubusercontent.com/PaulJuliusMartinez/jless/e6cdef719c7319020391d6bbf838ab272ce44cf0/logo/mascot.svg" alt="jless" width="110" height="100" >}}

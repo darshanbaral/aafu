@@ -12,7 +12,7 @@ hero_images:
     height: "100"
 ---
 
-**Git Pulls**.
+**Git Pulls** A shell one-liner to update many git repositories at once: it loops over every directory under a folder, prints its path in bold blue and runs `git pull` inside it. Directories that are not repositories just print an error and the loop moves on, as with `docker-swarm` below, which is a folder of repositories and gets its own loop.
 
 ```shell
 $ for dir in ~/Development/gitlab.com/elara-raspberrypi/*; do cd $dir && echo -e "\e[1;34m$PWD\e[0m" && git pull && cd; done
