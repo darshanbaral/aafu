@@ -6,5 +6,6 @@ assets/style.css
 hugo_stats.json
 .hugo_build.lock
 public/*
+content/**/public/
 build.ps1
 .zed/

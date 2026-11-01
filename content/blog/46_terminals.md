@@ -34,7 +34,7 @@ https://github.com/starship/starship
 
 ## Gogh
 
-{{< img src="https://raw.githubusercontent.com/Gogh-Co/Gogh/master/.images/gogh/Gogh-logo-dark.png" alt="gogh" width="200" height="85" >}}
+{{< img src="https://raw.githubusercontent.com/Gogh-Co/Gogh/3277da1a295142cd8664e0657c5a3c2a44cc520a/.images/gogh/Gogh-logo-dark.png" alt="gogh" width="200" height="85" >}}
 
 **Gogh** Color Schemes For Ubuntu, Linux Mint, Elementary OS and all distributions that use Gnome Terminal, Pantheon Terminal, Tilix, or XFCE4 Terminal; initially inspired by Elementary OS Luna. Also works on iTerm for macOS.
 

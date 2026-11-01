@@ -6,7 +6,7 @@ categories: ["linux", "software", "applications", "tools"]
 description: "SCC - Sloc Cloc and Code"
 draft: false
 hero_images:
-  - src: "https://github.com/boyter/scc/raw/master/scc.jpg"
+  - src: "https://raw.githubusercontent.com/boyter/scc/c46cc64756b450f29ec55ac1a1e3674a4a5f5166/scc.jpg"
     alt: "scc"
     width: "300px"
     height: "100px"

@@ -38,7 +38,7 @@ https://www.howtogeek.com/replace-default-linux-commands-with-these-alternatives
 
 ## JLess
 
-{{< img src="https://raw.githubusercontent.com/PaulJuliusMartinez/jless/master/logo/mascot.svg" alt="jless" width="110" height="100" >}}
+{{< img src="https://raw.githubusercontent.com/PaulJuliusMartinez/jless/e6cdef719c7319020391d6bbf838ab272ce44cf0/logo/mascot.svg" alt="jless" width="110" height="100" >}}
 
 **jless** is a command-line JSON viewer. Use it as a replacement for whatever combination of less, jq, cat and your editor you currently use for viewing JSON files. It is written in Rust and can be installed as a single standalone binary.
 
