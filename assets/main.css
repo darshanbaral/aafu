@@ -235,7 +235,7 @@
     @apply rounded-sm border border-transparent px-2 py-1 transition-colors;
   }
   .pagefind-ui__result:hover {
-    @apply border-gray-300 bg-gray-100 dark:border-gray-700 dark:bg-dark;
+    @apply border-gray-300 bg-gray-300 dark:border-gray-700 dark:bg-dark;
   }
   .pagefind-ui__result {
     @apply flex items-start gap-3;
