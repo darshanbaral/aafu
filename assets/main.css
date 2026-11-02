@@ -145,7 +145,7 @@
     @apply hover:border-gray-300 hover:bg-gray-200 dark:hover:border-gray-700 dark:hover:bg-darker;
   }
   .accordion-item.active .blog-list-item {
-    @apply border-gray-300 bg-gray-200 dark:border-gray-700 dark:bg-darker;
+    @apply border-gray-300 bg-gray-300 dark:border-gray-700 dark:bg-darker;
   }
   .blog-list-heading {
     @apply mb-0 text-[1.65rem];
