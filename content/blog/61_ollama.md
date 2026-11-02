@@ -178,3 +178,17 @@ $ docker stop open-webui
 $ docker start open-webui
 $ docker rm -f open-webui       # upgrade: remove, then run again with the new tag
 ```
+
+Check how much disk Docker and the `open-webui` volume are using:
+
+```shell
+$ docker system df
+TYPE            TOTAL     ACTIVE    SIZE      RECLAIMABLE
+Images          132       1         83.2GB    66.44GB (79%)
+Containers      3         1         58.73MB   3.953MB (6%)
+Local Volumes   1         1         1.118GB   0B (0%)
+Build Cache     95        0         5.609GB   5.495GB
+
+$ sudo du -sh /var/lib/docker/volumes/open-webui
+1,1G    /var/lib/docker/volumes/open-webui
+```
