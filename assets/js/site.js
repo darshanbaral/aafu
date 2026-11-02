@@ -117,7 +117,7 @@ const initializeSearch = () => {
     return;
   }
 
-  const search = new window.PagefindUI({ element: "#search", showSubResults: false });
+  const search = new window.PagefindUI({ element: "#search", showSubResults: false, autofocus: true });
   const query = new URLSearchParams(window.location.search).get("q");
 
   if (query) {
