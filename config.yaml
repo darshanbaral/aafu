@@ -24,7 +24,7 @@ params:
   author: Pedro Beja
   description: althaser's website
   copyright: >-
-    Powered by [hugo](https://gohugo.io/)
+    powered by [hugo](https://gohugo.io/)
   analytics:
     googleTagId: G-GL1PZQ4MJH
     goatcounterCode: althaser

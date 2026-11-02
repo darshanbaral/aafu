@@ -313,9 +313,6 @@
   .accordion p {
     @apply my-0 p-2 hover:bg-gray-300 rounded-sm dark:hover:bg-darker;
   }
-  .footer-link-list {
-    @apply flex flex-wrap items-center justify-center gap-2;
-  }
   .social-link {
     @apply text-2xl;
   }
