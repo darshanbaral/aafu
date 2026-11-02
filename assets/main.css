@@ -201,7 +201,7 @@
   }
   .link-card {
     @apply flex min-h-32 flex-col items-center justify-center gap-3 rounded-lg border border-gray-300 bg-white/80 p-4 text-center shadow-sm transition-colors;
-    @apply hover:border-blue-400 hover:bg-gray-100 hover:no-underline dark:border-gray-700 dark:bg-gray-900/60 dark:hover:border-yellow-300 dark:hover:bg-dark;
+    @apply hover:border-blue-400 hover:bg-gray-300 hover:no-underline dark:border-gray-700 dark:bg-gray-900/60 dark:hover:border-yellow-300 dark:hover:bg-dark;
   }
   .link-card-image {
     @apply h-20 w-20 rounded-sm object-contain;
