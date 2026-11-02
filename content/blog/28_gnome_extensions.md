@@ -9,7 +9,7 @@ draft: false
 
 Favourite **GNOME Shell Extensions**:
 
-<div class="link-card-grid">
+{{< linkcards >}}
 {{< linkcard href="https://github.com/Fire-man-x/Public-IP-address---Gnome-shell-extension" src="https://avatars.githubusercontent.com/u/102694121?s=48&v=4" alt="public-ip-address" label="Public IP address" >}}
 {{< linkcard href="https://github.com/Tudmotu/gnome-shell-extension-clipboard-indicator" src="https://extensions.gnome.org/extension-data/icons/icon_779_cGrEoF7.png" alt="clipboard-indicator" label="Clipboard Indicator" >}}
 {{< linkcard href="https://gitlab.com/LinxGem33/IP-Finder" src="https://extensions.gnome.org/extension-data/icons/icon_2983_CLeDYLk.png" alt="ip-finder" label="IP Finder" >}}
@@ -20,4 +20,4 @@ Favourite **GNOME Shell Extensions**:
 {{< linkcard href="https://github.com/neffo/bing-wallpaper-gnome-extension" src="https://extensions.gnome.org/extension-data/icons/icon_1262_qXt2a7I.png" alt="bingWallpaper" label="Bing Wallpaper" >}}
 {{< linkcard href="https://github.com/ifl0w/RandomWallpaperGnome3" src="https://extensions.gnome.org/extension-data/icons/icon_1040_99yazJQ.png" alt="randomwallpaper" label="Random Wallpaper" >}}
 {{< linkcard href="https://framagit.org/razer/bubblemail" src="https://framagit.org/uploads/-/system/project/avatar/49237/bubblemail.png" alt="bubblemail" label="BubbleMail" >}}
-</div>
+{{< /linkcards >}}

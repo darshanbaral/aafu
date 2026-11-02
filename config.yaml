@@ -16,7 +16,7 @@ security:
 markup:
   goldmark:
     renderer:
-      unsafe: true
+      unsafe: false
 title: "althaser's website"
 # Uncomment below to use aafu as hugo theme. See instructions in README.md
 # theme: aafu
