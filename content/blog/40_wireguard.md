@@ -86,10 +86,10 @@ root@raspberrypi:~# tree /etc/wireguard/
 3 directories, 2 files
 
 root@raspberrypi:~# wg genkey | tee /etc/wireguard/clients/beja/beja.key
-ekHeweGbOqDxzaPg1lKMwGAxpmh6zKhjSDZUoe2H2uQLNQyAC7zhRrVGeMtkwCTi
+<client-private-key>
 
 root@raspberrypi:~# cat /etc/wireguard/clients/beja/beja.key | wg pubkey | tee /etc/wireguard/clients/beja/beja.pub
-sdrUDZLQ1S2mNP4J4xlE86GCo17zwkOy2z3an6AfQnn7xVu7BlhXIYeorZUnTpLG
+<client-public-key>
 
 root@raspberrypi:~# chmod 400 /etc/wireguard/{privatekey,publickey} /etc/wireguard/clients/beja/beja.{key,pub}
 ```
@@ -118,11 +118,11 @@ PreDown = ip6tables -t nat -D POSTROUTING -o <wlan0> -j MASQUERADE
 # Clients will connect to UDP port 51820
 ListenPort = 51820
 # WireGuard Server private key
-PrivateKey = 3eLT3XeFcTtviajcaXHEQMlMYM7j0PGY2SHNLX22YBOJwqrLzEiVmPsBui8qK90R
+PrivateKey = <server-private-key>
 
 [Peer]
 # WireGuard client public key - beja.pub
-PublicKey = sdrUDZLQ1S2mNP4J4xlE86GCo17zwkOy2z3an6AfQnn7xVu7BlhXIYeorZUnTpLG
+PublicKey = <client-public-key>
 
 # clients VPN IP address you allow to connect
 # Possible to specify subnet -> [10.20.0.0/24]
@@ -227,11 +227,11 @@ Address = 10.20.0.2/24
 DNS = 1.1.1.1
 
 # Private key for the client - alice.key
-PrivateKey = ekHeweGbOqDxzaPg1lKMwGAxpmh6zKhjSDZUoe2H2uQLNQyAC7zhRrVGeMtkwCTi
+PrivateKey = <client-private-key>
 
 [Peer]
 # Public key of the Wireguard server - server.pub
-PublicKey = JRKg8QbQqYMTMwDjHHw4Lba5ZfdsUjIQQMuOyQwHCMsJKGpFuduaVnnnhQy14rmI
+PublicKey = <server-public-key>
 
 # Allow all traffic to be routed via Wireguard VPN
 AllowedIPs = 0.0.0.0/0
@@ -305,12 +305,12 @@ rtt min/avg/max/mdev = 24.318/27.749/29.713/2.434 ms
 
 root@laptop:~# sudo wg show
 interface: wg-rasp-beja
-  public key: sdrUDZLQ1S2mNP4J4xlE86GCo17zwkOy2z3an6AfQnn7xVu7BlhXIYeorZUnTpLG
+  public key: <client-public-key>
   private key: (hidden)
   listening port: 42869
   fwmark: 0xca6c
 
-peer: JRKg8QbQqYMTMwDjHHw4Lba5ZfdsUjIQQMuOyQwHCMsJKGpFuduaVnnnhQy14rmI
+peer: <server-public-key>
   endpoint: 192.168.1.13:51820
   allowed ips: 0.0.0.0/0
   latest handshake: 1 minute, 12 seconds ago
