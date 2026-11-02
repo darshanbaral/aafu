@@ -1,8 +1,8 @@
 ---
 title: "Fun"
 date: 2024-03-08
-lastmod: 2026-11-01
-tags: ["fun", "science", "math", "maps", "projects", "awesome"]
+lastmod: 2026-11-02
+tags: ["fun", "science", "math", "maps", "earth", "travel", "projects", "awesome"]
 categories: ["science", "universe", "software", "applications", "tools"]
 description: "Fun"
 draft: false
@@ -53,3 +53,29 @@ https://neal.fun
 https://anvaka.github.io/city-roads/
 
 https://github.com/anvaka/city-roads
+
+## Earth
+
+{{< img src="https://earth.nullschool.net/apple-touch-icon-192x192.png" alt="earth" width="100" height="100" >}}
+
+**Earth** A global map of wind, weather, ocean and pollution conditions, as forecast by supercomputers, on an interactive animated globe. Updated every three hours.
+
+https://earth.nullschool.net
+
+## ADS-B Exposed
+
+{{< img src="https://adsb.exposed/favicon.png" alt="adsb-exposed" width="64" height="64" >}}
+
+**ADS-B Exposed** Interactive visualization and analytics of ADS-B flight data on a world map, powered by ClickHouse.
+
+https://adsb.exposed
+
+https://github.com/ClickHouse/adsb.exposed
+
+## Visited Places
+
+{{< img src="https://visitedplaces.com/lib/og-visited-places.jpg" alt="visited-places" width="300" height="158" >}}
+
+**Visited Places** Make a free travel map of the countries you've been to. Mark them in a click, see how many you've visited, animate your trips and share it. No signup.
+
+https://visitedplaces.com
