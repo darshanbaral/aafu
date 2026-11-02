@@ -8,8 +8,8 @@ draft: false
 hero_images:
   - src: "https://raw.githubusercontent.com/boyter/scc/c46cc64756b450f29ec55ac1a1e3674a4a5f5166/scc.jpg"
     alt: "scc"
-    width: "300px"
-    height: "100px"
+    width: "300"
+    height: "110"
 ---
 
 **Sloc, Cloc and Code**: **scc** is a very fast accurate code counter with complexity calculations and COCOMO estimates written in pure Go

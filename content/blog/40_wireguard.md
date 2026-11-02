@@ -8,8 +8,8 @@ draft: false
 hero_images:
   - src: "https://www.wireguard.com/img/wireguard.svg"
     alt: "wireguard"
-    width: "800px"
-    height: "800px"
+    width: "400"
+    height: "71"
 ---
 
 **WireGuard** is a simple, fast and modern VPN implementation. It is widely deployed and can be used cross-platform.
@@ -21,7 +21,7 @@ Step by step guide to set up a WireGuard VPN with a Raspberry Pi as the server: 
 ## Setup WireGuard
 
 ### Server - Raspberry Pi
-{{< img src="https://www.raspberrypi.com/app/uploads/2020/06/raspberrry_pi_logo.png" alt="raspberypi" width="50px" height="50px" >}}
+{{< img src="https://www.raspberrypi.com/app/uploads/2020/06/raspberrry_pi_logo.png" alt="raspberypi" width="50" height="50" >}}
 
 1. **Enable Port Fowarding** via **systctl.conf** setting up the following
 ```shell
@@ -209,7 +209,7 @@ root@raspberrypi:~# sudo tree /etc/wireguard/
 ```
 
 ### Client - Laptop
-{{< img src="https://static.thenounproject.com/png/1388614-200.png" alt="laptop" width="80px" height="80px" >}}
+{{< img src="https://static.thenounproject.com/png/1388614-200.png" alt="laptop" width="80" height="80" >}}
 
 1. Install **WireGuard**.
 ```shell

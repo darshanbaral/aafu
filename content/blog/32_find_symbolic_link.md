@@ -8,8 +8,8 @@ draft: false
 hero_images:
   - src: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/Bash_Logo_Colored.svg/1280px-Bash_Logo_Colored.svg.png"
     alt: "ls"
-    width: "70px"
-    height: "70px"
+    width: "70"
+    height: "70"
 ---
 
 **Find symbolic links** that point to a given file. `ls -lR` lists every file recursively, `grep "^l"` keeps only the symbolic links (their permissions start with `l`) and the second `grep` filters the ones pointing to the target. Then `find` shows in which directories those links live.

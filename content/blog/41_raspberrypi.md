@@ -8,8 +8,8 @@ draft: false
 hero_images:
   - src: "https://www.raspberrypi.com/app/uploads/2020/06/raspberrry_pi_logo.png"
     alt: "raspberypi"
-    width: "150px"
-    height: "150px"
+    width: "150"
+    height: "150"
 ---
 
 **Raspberry Pi** Micro Computing or single-board computer (SBC).
