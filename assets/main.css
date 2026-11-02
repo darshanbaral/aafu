@@ -287,6 +287,9 @@
   .profile-tagline {
     @apply mb-0 text-blue-500;
   }
+  .content[data-pagefind-body] > h2:not(#contents) {
+    @apply border-t border-gray-300 pt-8 dark:border-gray-700;
+  }
   .nav {
     @apply text-lg text-blue-500 dark:text-gray-300 font-semibold;
   }
