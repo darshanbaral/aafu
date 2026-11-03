@@ -3,9 +3,10 @@
 @theme {
   --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   --color-darkest: var(--color-stone-900);
-  --color-darker: var(--color-stone-800);
-  --color-dark: var(--color-stone-700);
+  --color-darker: var(--color-gray-800);
+  --color-dark: var(--color-gray-700);
   --color-gray-350: #c4c9d1;
+  --color-gray-650: oklch(41% 0.032 258);
 }
 
 @custom-variant dark (&:where(.dark, .dark *));
@@ -101,7 +102,7 @@
     @apply block text-sm;
   }
   blockquote {
-    @apply bg-gray-200 dark:bg-dark rounded-sm;
+    @apply bg-gray-100 dark:bg-dark rounded-sm;
   }
   mark {
     @apply bg-yellow-300 text-gray-800 dark:bg-yellow-500 dark:text-gray-900;
@@ -127,7 +128,7 @@
     }
 
     blockquote {
-      @apply p-1 m-0 bg-gray-200 dark:bg-dark rounded-sm;
+      @apply p-1 m-0 bg-gray-100 dark:bg-dark rounded-sm;
 
       p {
         @apply m-0! p-1;
@@ -140,24 +141,24 @@
   }
   .accordion-trigger {
     @apply mt-2 mb-2 flex w-full items-center justify-between rounded-sm px-2 py-[8px] text-left transition-colors;
-    @apply text-blue-600 hover:bg-gray-350 dark:text-yellow-500 dark:hover:bg-darker;
+    @apply text-blue-600 hover:bg-gray-200 dark:text-yellow-500 dark:hover:bg-gray-800;
   }
   .accordion-trigger:focus-visible {
     @apply outline-2 outline-offset-2 outline-blue-500 dark:outline-yellow-300;
   }
   .accordion-item.active > h2 > .accordion-trigger,
   .accordion-item.active > .accordion-trigger {
-    @apply bg-gray-350 dark:bg-darker;
+    @apply bg-gray-200 dark:bg-gray-800;
   }
   .blog-list-toggle {
     @apply mt-0 mb-0 w-auto shrink-0 bg-transparent px-2 py-2 text-blue-500 hover:bg-gray-350 dark:text-gray-400 dark:hover:bg-gray-700;
   }
   .blog-list-item {
     @apply mt-0 mb-0 flex flex-row items-center justify-start rounded-sm border border-transparent p-2 transition-colors;
-    @apply hover:border-gray-300 hover:bg-gray-200 dark:hover:border-gray-700 dark:hover:bg-darker;
+    @apply hover:border-gray-300 hover:bg-gray-200 dark:hover:border-gray-700 dark:hover:bg-gray-800;
   }
   .accordion-item.active .blog-list-item {
-    @apply border-gray-300 bg-gray-350 dark:border-gray-700 dark:bg-darker;
+    @apply border-gray-300 bg-gray-200 dark:border-gray-700 dark:bg-gray-800;
   }
   .blog-list-heading {
     @apply mb-0 text-[1.65rem];
@@ -306,7 +307,7 @@
     @apply text-lg text-blue-500 dark:text-gray-300 font-semibold;
   }
   .nav-menu-item {
-    @apply hover:no-underline p-2 rounded-sm hover:bg-gray-200 dark:hover:bg-gray-800;
+    @apply hover:no-underline p-2 rounded-sm hover:bg-gray-300 dark:hover:bg-gray-700;
   }
   .nav-links {
     @apply flex items-center gap-5;
@@ -322,11 +323,11 @@
     @apply pointer-events-none absolute top-1/2 -left-2.5 -translate-x-1/2 -translate-y-1/2 font-normal text-gray-400 dark:text-gray-600;
   }
   .nav-menu-item.active {
-    background-color: rgb(229 231 235); /* Similar to bg-gray-200 */
+    background-color: var(--color-gray-350);
     text-decoration-line: none;
   }
   .dark .nav-menu-item.active {
-    background-color: rgb(31 41 55); /* Similar to bg-gray-800 */
+    background-color: var(--color-gray-700);
   }
   .active {
     @apply overflow-visible;
