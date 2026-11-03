@@ -181,6 +181,7 @@ const initializeEventBindings = () => {
   });
 
   document.querySelectorAll("[data-theme-toggle]").forEach((toggle) => {
+    toggle.addEventListener("mousedown", (event) => event.preventDefault());
     toggle.addEventListener("click", () => {
       window.toggleTheme();
     });
