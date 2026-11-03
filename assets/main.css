@@ -5,6 +5,8 @@
   --color-darkest: var(--color-stone-900);
   --color-darker: var(--color-stone-800);
   --color-dark: var(--color-stone-700);
+  --color-gray-250: #d6d9df;
+  --color-gray-350: #c4c9d1;
 }
 
 @custom-variant dark (&:where(.dark, .dark *));
@@ -100,7 +102,7 @@
     @apply block text-sm;
   }
   blockquote {
-    @apply bg-gray-100 dark:bg-dark rounded-sm;
+    @apply bg-gray-200 dark:bg-dark rounded-sm;
   }
   mark {
     @apply bg-yellow-300 text-gray-800 dark:bg-yellow-500 dark:text-gray-900;
@@ -126,7 +128,7 @@
     }
 
     blockquote {
-      @apply p-1 m-0 bg-gray-100 dark:bg-dark rounded-sm;
+      @apply p-1 m-0 bg-gray-200 dark:bg-dark rounded-sm;
 
       p {
         @apply m-0! p-1;
@@ -139,24 +141,24 @@
   }
   .accordion-trigger {
     @apply mt-2 mb-2 flex w-full items-center justify-between rounded-sm px-2 py-[8px] text-left transition-colors;
-    @apply text-blue-600 hover:bg-gray-300 dark:text-yellow-500 dark:hover:bg-darker;
+    @apply text-blue-600 hover:bg-gray-350 dark:text-yellow-500 dark:hover:bg-darker;
   }
   .accordion-trigger:focus-visible {
     @apply outline-2 outline-offset-2 outline-blue-500 dark:outline-yellow-300;
   }
   .accordion-item.active > h2 > .accordion-trigger,
   .accordion-item.active > .accordion-trigger {
-    @apply bg-gray-300 dark:bg-darker;
+    @apply bg-gray-350 dark:bg-darker;
   }
   .blog-list-toggle {
-    @apply mt-0 mb-0 w-auto shrink-0 bg-transparent px-2 py-2 text-blue-500 hover:bg-gray-300 dark:text-gray-400 dark:hover:bg-gray-700;
+    @apply mt-0 mb-0 w-auto shrink-0 bg-transparent px-2 py-2 text-blue-500 hover:bg-gray-350 dark:text-gray-400 dark:hover:bg-gray-700;
   }
   .blog-list-item {
     @apply mt-0 mb-0 flex flex-row items-center justify-start rounded-sm border border-transparent p-2 transition-colors;
-    @apply hover:border-gray-300 hover:bg-gray-200 dark:hover:border-gray-700 dark:hover:bg-darker;
+    @apply hover:border-gray-300 hover:bg-gray-250 dark:hover:border-gray-700 dark:hover:bg-darker;
   }
   .accordion-item.active .blog-list-item {
-    @apply border-gray-300 bg-gray-300 dark:border-gray-700 dark:bg-darker;
+    @apply border-gray-300 bg-gray-350 dark:border-gray-700 dark:bg-darker;
   }
   .blog-list-heading {
     @apply mb-0 text-[1.65rem];
@@ -212,7 +214,7 @@
   }
   .link-card {
     @apply flex min-h-32 flex-col items-center justify-center gap-3 rounded-lg border border-gray-300 bg-white/80 p-4 text-center shadow-sm transition-colors;
-    @apply hover:border-blue-400 hover:bg-gray-300 hover:no-underline dark:border-gray-700 dark:bg-gray-900/60 dark:hover:border-yellow-300 dark:hover:bg-dark;
+    @apply hover:border-blue-400 hover:bg-gray-350 hover:no-underline dark:border-gray-700 dark:bg-gray-900/60 dark:hover:border-yellow-300 dark:hover:bg-dark;
   }
   .link-card-image {
     @apply h-20 w-20 rounded-sm object-contain;
@@ -246,7 +248,7 @@
     @apply rounded-sm border border-transparent px-2 py-1 transition-colors;
   }
   .pagefind-ui__result:hover {
-    @apply border-gray-300 bg-gray-300 dark:border-gray-700 dark:bg-dark;
+    @apply border-gray-300 bg-gray-350 dark:border-gray-700 dark:bg-dark;
   }
   .pagefind-ui__result {
     @apply flex items-start gap-3;
@@ -305,10 +307,10 @@
     @apply text-lg text-blue-500 dark:text-gray-300 font-semibold;
   }
   .nav-menu-item {
-    @apply hover:no-underline p-2 rounded-sm hover:bg-gray-200 dark:hover:bg-gray-800;
+    @apply hover:no-underline p-2 rounded-sm hover:bg-gray-250 dark:hover:bg-gray-800;
   }
   .nav-menu-item.active {
-    background-color: rgb(229 231 235); /* Similar to bg-gray-200 */
+    background-color: var(--color-gray-250);
     text-decoration-line: none;
   }
   .dark .nav-menu-item.active {
@@ -325,7 +327,7 @@
     @apply my-0;
   }
   .accordion p {
-    @apply my-0 p-2 hover:bg-gray-300 rounded-sm dark:hover:bg-darker;
+    @apply my-0 p-2 hover:bg-gray-350 rounded-sm dark:hover:bg-darker;
   }
   .social-link {
     @apply text-2xl;
