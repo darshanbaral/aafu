@@ -311,6 +311,9 @@
   .nav-links {
     @apply flex items-center gap-5;
   }
+  .nav-links > a {
+    @apply py-[3px];
+  }
   .nav-links > a + a {
     @apply relative;
   }
