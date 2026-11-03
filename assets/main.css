@@ -5,6 +5,7 @@
   --color-darkest: var(--color-stone-900);
   --color-darker: var(--color-gray-800);
   --color-dark: var(--color-gray-700);
+  --color-gray-250: #d6d9df;
   --color-gray-350: #c4c9d1;
   --color-gray-650: oklch(41% 0.032 258);
 }
@@ -102,7 +103,7 @@
     @apply block text-sm;
   }
   blockquote {
-    @apply bg-gray-100 dark:bg-dark rounded-sm;
+    @apply bg-gray-300 dark:bg-dark rounded-sm;
   }
   mark {
     @apply bg-yellow-300 text-gray-800 dark:bg-yellow-500 dark:text-gray-900;
@@ -128,7 +129,7 @@
     }
 
     blockquote {
-      @apply p-1 m-0 bg-gray-100 dark:bg-dark rounded-sm;
+      @apply p-1 m-0 bg-gray-300 dark:bg-dark rounded-sm;
 
       p {
         @apply m-0! p-1;
@@ -141,24 +142,24 @@
   }
   .accordion-trigger {
     @apply mt-2 mb-2 flex w-full items-center justify-between rounded-sm px-2 py-[8px] text-left transition-colors;
-    @apply text-blue-600 hover:bg-gray-200 dark:text-yellow-500 dark:hover:bg-gray-800;
+    @apply text-blue-600 hover:bg-gray-200 dark:text-yellow-500 dark:hover:bg-gray-900/60;
   }
   .accordion-trigger:focus-visible {
     @apply outline-2 outline-offset-2 outline-blue-500 dark:outline-yellow-300;
   }
   .accordion-item.active > h2 > .accordion-trigger,
   .accordion-item.active > .accordion-trigger {
-    @apply bg-gray-200 dark:bg-gray-800;
+    @apply bg-gray-200 dark:bg-gray-900/60;
   }
   .blog-list-toggle {
     @apply mt-0 mb-0 w-auto shrink-0 bg-transparent px-2 py-2 text-blue-500 hover:bg-gray-350 dark:text-gray-400 dark:hover:bg-gray-700;
   }
   .blog-list-item {
     @apply mt-0 mb-0 flex flex-row items-center justify-start rounded-sm border border-transparent p-2 transition-colors;
-    @apply hover:border-gray-300 hover:bg-gray-200 dark:hover:border-gray-700 dark:hover:bg-gray-800;
+    @apply hover:border-gray-300 hover:bg-gray-200 dark:hover:border-gray-700 dark:hover:bg-gray-900/60;
   }
   .accordion-item.active .blog-list-item {
-    @apply border-gray-300 bg-gray-200 dark:border-gray-700 dark:bg-gray-800;
+    @apply border-gray-300 bg-gray-200 dark:border-gray-700 dark:bg-gray-900/60;
   }
   .blog-list-heading {
     @apply mb-0 text-[1.65rem];
@@ -232,7 +233,7 @@
     display: none;
   }
   .dark .pagefind-ui__search-input {
-    @apply border-gray-500 bg-[#322d2d] text-white;
+    @apply border-gray-500 bg-dark text-white;
   }
   .dark .pagefind-ui__search-input::placeholder {
     color: #8f8f8f;
@@ -323,7 +324,7 @@
     @apply pointer-events-none absolute top-1/2 -left-2.5 -translate-x-1/2 -translate-y-1/2 font-normal text-gray-400 dark:text-gray-600;
   }
   .nav-menu-item.active {
-    background-color: var(--color-gray-350);
+    background-color: var(--color-gray-300);
     text-decoration-line: none;
   }
   .dark .nav-menu-item.active {
@@ -351,4 +352,8 @@
   .link-image-anchor {
     @apply inline-flex items-center gap-1;
   }
+}
+
+.dark header.nav {
+  background-color: #1f242d;
 }
