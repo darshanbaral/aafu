@@ -85,42 +85,10 @@
   body {
     @apply text-base bg-stone-50 text-stone-900 dark:text-stone-50 dark:bg-darkest;
     background-attachment: fixed;
-    background-image:
-      linear-gradient(
-        to right,
-        transparent 0%,
-        rgb(250 250 249 / 0.1) calc((50% - 28rem) * 0.3),
-        rgb(250 250 249 / 0.3) calc((50% - 28rem) * 0.55),
-        rgb(250 250 249 / 0.55) calc((50% - 28rem) * 0.75),
-        rgb(250 250 249 / 0.8) calc((50% - 28rem) * 0.9),
-        rgb(250 250 249) calc((50% - 28rem) * 1),
-        rgb(250 250 249) calc(100% - (50% - 28rem) * 1),
-        rgb(250 250 249 / 0.8) calc(100% - (50% - 28rem) * 0.9),
-        rgb(250 250 249 / 0.55) calc(100% - (50% - 28rem) * 0.75),
-        rgb(250 250 249 / 0.3) calc(100% - (50% - 28rem) * 0.55),
-        rgb(250 250 249 / 0.1) calc(100% - (50% - 28rem) * 0.3),
-        transparent 100%
-      ),
-      linear-gradient(to bottom, rgb(43 127 255 / 0.3), rgb(43 127 255 / 0.12));
+    background-image: linear-gradient(to bottom, rgb(43 127 255 / 0.3), rgb(43 127 255 / 0.12));
   }
   .dark body {
-    background-image:
-      linear-gradient(
-        to right,
-        transparent 0%,
-        rgb(28 25 23 / 0.1) calc((50% - 28rem) * 0.3),
-        rgb(28 25 23 / 0.3) calc((50% - 28rem) * 0.55),
-        rgb(28 25 23 / 0.55) calc((50% - 28rem) * 0.75),
-        rgb(28 25 23 / 0.8) calc((50% - 28rem) * 0.9),
-        rgb(28 25 23) calc((50% - 28rem) * 1),
-        rgb(28 25 23) calc(100% - (50% - 28rem) * 1),
-        rgb(28 25 23 / 0.8) calc(100% - (50% - 28rem) * 0.9),
-        rgb(28 25 23 / 0.55) calc(100% - (50% - 28rem) * 0.75),
-        rgb(28 25 23 / 0.3) calc(100% - (50% - 28rem) * 0.55),
-        rgb(28 25 23 / 0.1) calc(100% - (50% - 28rem) * 0.3),
-        transparent 100%
-      ),
-      linear-gradient(to bottom, rgb(43 127 255 / 0.25), rgb(43 127 255 / 0.1));
+    background-image: linear-gradient(to bottom, rgb(43 127 255 / 0.25), rgb(43 127 255 / 0.1));
   }
   summary {
     @apply block text-sm;
