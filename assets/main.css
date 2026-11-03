@@ -308,6 +308,16 @@
   .nav-menu-item {
     @apply hover:no-underline p-2 rounded-sm hover:bg-gray-200 dark:hover:bg-gray-800;
   }
+  .nav-links {
+    @apply flex items-center gap-5;
+  }
+  .nav-links > a + a {
+    @apply relative;
+  }
+  .nav-links > a + a::before {
+    content: "|";
+    @apply pointer-events-none absolute top-1/2 -left-2.5 -translate-x-1/2 -translate-y-1/2 font-normal text-gray-400 dark:text-gray-600;
+  }
   .nav-menu-item.active {
     background-color: rgb(229 231 235); /* Similar to bg-gray-200 */
     text-decoration-line: none;
