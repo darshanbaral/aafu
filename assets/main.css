@@ -7,7 +7,6 @@
   --color-dark: var(--color-gray-700);
   --color-gray-250: #d6d9df;
   --color-gray-350: #c4c9d1;
-  --color-gray-650: oklch(41% 0.032 258);
 }
 
 @custom-variant dark (&:where(.dark, .dark *));
@@ -233,7 +232,7 @@
     display: none;
   }
   .dark .pagefind-ui__search-input {
-    @apply border-gray-500 bg-dark text-white;
+    @apply border-gray-500 bg-gray-600 text-white;
   }
   .dark .pagefind-ui__search-input::placeholder {
     color: #8f8f8f;
@@ -249,7 +248,7 @@
     @apply rounded-sm border border-transparent px-2 py-1 transition-colors;
   }
   .pagefind-ui__result:hover {
-    @apply border-gray-300 bg-gray-350 dark:border-gray-700 dark:bg-dark;
+    @apply border-gray-300 bg-gray-200 dark:border-gray-700;
   }
   .pagefind-ui__result {
     @apply flex items-start gap-3;
@@ -356,4 +355,17 @@
 
 .dark header.nav {
   background-color: #1f242d;
+}
+
+.dark .accordion-item.active > .accordion-trigger,
+.dark .accordion-item.active > h2 > .accordion-trigger,
+.dark .accordion-trigger:hover,
+.dark .accordion-item.active .blog-list-item,
+.dark .blog-list-item:hover,
+.dark .pagefind-ui__result:hover {
+  background-color: #394354;
+}
+
+.dark .metadata-panel {
+  background-color: #4a5565;
 }
