@@ -1,4 +1,4 @@
-<footer class="text-sm text-center border-t border-gray-500 {{ if .IsHome }} bg-gray-250 dark:bg-dark rounded-b-lg py-2 {{ else }} py-6 {{ end }}">
+<footer class="text-sm text-center border-t border-gray-500 {{ if .IsHome }} bg-gray-200 dark:bg-dark rounded-b-lg py-2 {{ else }} py-6 {{ end }}">
   <p class="markdownify my-0">{{ .Site.Params.copyright | markdownify }} @ {{ now.Format "2006" }}</p>
   <p class="my-0 {{ if not .Site.Params.theme.showAttribute }}hidden{{ end }}">
     <a href="https://themes.gohugo.io/themes/aafu/">aafu</a> by <a href="https://www.darshanbaral.com/">darshan</a>

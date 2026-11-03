@@ -5,7 +5,6 @@
   --color-darkest: var(--color-stone-900);
   --color-darker: var(--color-stone-800);
   --color-dark: var(--color-stone-700);
-  --color-gray-250: #d6d9df;
   --color-gray-350: #c4c9d1;
 }
 
@@ -155,7 +154,7 @@
   }
   .blog-list-item {
     @apply mt-0 mb-0 flex flex-row items-center justify-start rounded-sm border border-transparent p-2 transition-colors;
-    @apply hover:border-gray-300 hover:bg-gray-250 dark:hover:border-gray-700 dark:hover:bg-darker;
+    @apply hover:border-gray-300 hover:bg-gray-200 dark:hover:border-gray-700 dark:hover:bg-darker;
   }
   .accordion-item.active .blog-list-item {
     @apply border-gray-300 bg-gray-350 dark:border-gray-700 dark:bg-darker;
@@ -307,10 +306,10 @@
     @apply text-lg text-blue-500 dark:text-gray-300 font-semibold;
   }
   .nav-menu-item {
-    @apply hover:no-underline p-2 rounded-sm hover:bg-gray-250 dark:hover:bg-gray-800;
+    @apply hover:no-underline p-2 rounded-sm hover:bg-gray-200 dark:hover:bg-gray-800;
   }
   .nav-menu-item.active {
-    background-color: var(--color-gray-250);
+    background-color: rgb(229 231 235); /* Similar to bg-gray-200 */
     text-decoration-line: none;
   }
   .dark .nav-menu-item.active {
