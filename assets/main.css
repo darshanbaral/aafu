@@ -84,10 +84,16 @@
   }
   body {
     @apply text-base bg-stone-50 text-stone-900 dark:text-stone-50 dark:bg-darkest;
-    background-attachment: fixed;
+  }
+  body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    z-index: -1;
+    pointer-events: none;
     background-image: linear-gradient(to bottom, rgb(43 127 255 / 0.3), rgb(43 127 255 / 0.12));
   }
-  .dark body {
+  .dark body::before {
     background-image: linear-gradient(to bottom, rgb(43 127 255 / 0.25), rgb(43 127 255 / 0.1));
   }
   summary {
