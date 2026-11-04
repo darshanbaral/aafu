@@ -9,6 +9,7 @@
   --color-gray-350: #c4c9d1;
   --color-nav-dark: #1f242d;
   --color-title-dark: #394354;
+  --color-link: var(--color-blue-600);
   --color-link-hover: #13315c;
   --color-link-dark: #f5d76e;
   --color-link-dark-hover: #fff3c4;
@@ -26,7 +27,7 @@
 @utility prose {
   --tw-prose-bullets: var(--color-stone-700);
   --tw-prose-counters: var(--color-stone-700);
-  --tw-prose-links: var(--color-blue-500);
+  --tw-prose-links: var(--color-link);
   --tw-prose-quote-borders: var(--color-stone-400);
 
   --tw-prose-invert-bullets: var(--color-stone-200);
@@ -82,11 +83,11 @@
     @apply text-lg mb-2 mt-1;
   }
   a {
-    @apply text-blue-500 hover:text-link-hover hover:underline dark:text-link-dark dark:hover:text-link-dark-hover;
+    @apply text-link hover:text-link-hover hover:underline dark:text-link-dark dark:hover:text-link-dark-hover;
   }
   a:focus-visible,
   button:focus-visible {
-    @apply outline-2 outline-offset-2 outline-blue-500 dark:outline-link-dark;
+    @apply outline-2 outline-offset-2 outline-link dark:outline-link-dark;
   }
   body {
     @apply text-base bg-stone-50 text-stone-900 dark:text-stone-50 dark:bg-darkest;
@@ -144,14 +145,14 @@
     @apply text-blue-600 hover:bg-gray-200 dark:text-heading-dark dark:hover:bg-title-dark;
   }
   .accordion-trigger:focus-visible {
-    @apply outline-2 outline-offset-2 outline-blue-500 dark:outline-link-dark;
+    @apply outline-2 outline-offset-2 outline-link dark:outline-link-dark;
   }
   .accordion-item.active > h2 > .accordion-trigger,
   .accordion-item.active > .accordion-trigger {
     @apply bg-gray-200 dark:bg-title-dark;
   }
   .blog-list-toggle {
-    @apply mt-0 mb-0 w-auto shrink-0 bg-transparent px-2 py-2 text-blue-500 hover:bg-gray-300 dark:text-gray-400 dark:hover:bg-title-dark;
+    @apply mt-0 mb-0 w-auto shrink-0 bg-transparent px-2 py-2 text-link hover:bg-gray-300 dark:text-gray-400 dark:hover:bg-title-dark;
   }
   .blog-list-item {
     @apply mt-0 mb-0 flex flex-row items-center justify-start rounded-sm border border-transparent p-2 transition-colors;
@@ -164,7 +165,7 @@
     @apply mb-0 text-[1.65rem];
   }
   .blog-list-heading a {
-    @apply text-blue-500 hover:no-underline hover:text-link-hover dark:text-link-dark dark:hover:text-link-dark-hover;
+    @apply text-link hover:no-underline hover:text-link-hover dark:text-link-dark dark:hover:text-link-dark-hover;
   }
   .metadata-panel {
     @apply rounded-b-sm border border-t-0 border-gray-300 dark:border-gray-700;
@@ -220,7 +221,7 @@
     @apply h-20 w-20 rounded-sm object-contain;
   }
   .link-card-label {
-    @apply text-sm font-semibold leading-snug text-blue-500 dark:text-link-dark;
+    @apply text-sm font-semibold leading-snug text-link dark:text-link-dark;
   }
   .pagefind-ui__form {
     @apply relative;
@@ -229,13 +230,13 @@
     @apply w-full rounded-sm border border-gray-500 bg-gray-300 p-2 pr-20 text-black dark:bg-gray-600 dark:text-white dark:placeholder:text-[#8f8f8f];
   }
   .pagefind-ui__search-input:focus-visible {
-    @apply outline-2 outline-offset-2 outline-blue-500 dark:outline-link-dark;
+    @apply outline-2 outline-offset-2 outline-link dark:outline-link-dark;
   }
   .pagefind-ui__search-clear {
-    @apply absolute top-1.5 right-1.5 rounded-sm px-2 py-1 text-sm font-semibold text-blue-500 hover:bg-gray-350 hover:text-link-hover dark:text-link-dark dark:hover:bg-gray-700 dark:hover:text-link-dark-hover;
+    @apply absolute top-1.5 right-1.5 rounded-sm px-2 py-1 text-sm font-semibold text-link hover:bg-gray-350 hover:text-link-hover dark:text-link-dark dark:hover:bg-gray-700 dark:hover:text-link-dark-hover;
   }
   .pagefind-ui__search-clear:focus-visible {
-    @apply outline-2 outline-offset-2 outline-blue-500 dark:outline-link-dark;
+    @apply outline-2 outline-offset-2 outline-link dark:outline-link-dark;
   }
   .pagefind-ui__search-clear.pagefind-ui__suppressed {
     @apply hidden;
@@ -280,10 +281,10 @@
   ul.pagination {
     @apply flex flex-row justify-center list-none;
     .page-link {
-      @apply px-2 sm:px-4 py-1 hover:text-gray-200 dark:hover:text-gray-800 hover:bg-blue-500 dark:hover:bg-link-dark;
+      @apply px-2 sm:px-4 py-1 hover:text-gray-200 dark:hover:text-gray-800 hover:bg-link dark:hover:bg-link-dark;
     }
     .active {
-      @apply bg-blue-500 pointer-events-none dark:bg-link-dark;
+      @apply bg-link pointer-events-none dark:bg-link-dark;
       .page-link {
         @apply text-gray-200 dark:text-gray-800;
       }
@@ -301,13 +302,13 @@
   }
   /* Same colour in both themes on purpose */
   .profile-tagline {
-    @apply mb-0 text-blue-500;
+    @apply mb-0 text-link dark:text-blue-500;
   }
   .content[data-pagefind-body] > h2:not(#contents) {
     @apply border-t border-gray-300 pt-8 dark:border-gray-700;
   }
   .nav {
-    @apply text-lg text-blue-500 dark:text-gray-300 font-semibold;
+    @apply text-lg text-link dark:text-gray-300 font-semibold;
   }
   .nav-menu-item {
     @apply hover:no-underline p-2 rounded-sm hover:bg-gray-300 dark:hover:bg-gray-700;
