@@ -5,6 +5,7 @@
   --color-darkest: var(--color-stone-900);
   --color-darker: var(--color-gray-800);
   --color-dark: var(--color-gray-700);
+  --color-gray-150: #eceef1;
   --color-gray-350: #c4c9d1;
   --color-nav-dark: #1f242d;
   --color-title-dark: #394354;
@@ -170,8 +171,8 @@
   .metadata-panel {
     @apply rounded-b-sm border border-t-0 border-gray-300 dark:border-gray-700;
   }
-  .search-shell {
-    @apply rounded-lg border border-gray-300 bg-white/80 p-4 shadow-sm backdrop-blur-sm dark:border-gray-700 dark:bg-gray-900/60;
+  .page-shell {
+    @apply rounded-lg border border-gray-300 bg-gray-150 p-4 shadow-sm backdrop-blur-sm dark:border-gray-700 dark:bg-gray-900/60;
   }
   .search-shell h1 {
     @apply mb-2 font-extrabold text-gray-900 dark:text-white;
@@ -227,13 +228,13 @@
     @apply relative;
   }
   .pagefind-ui__search-input {
-    @apply w-full rounded-sm border border-gray-500 bg-gray-200 p-2 pr-20 text-black dark:bg-gray-600 dark:text-white dark:placeholder:text-[#8f8f8f];
+    @apply w-full rounded-sm border border-gray-500 bg-gray-300 p-2 pr-20 text-black dark:bg-gray-600 dark:text-white dark:placeholder:text-[#8f8f8f];
   }
   .pagefind-ui__search-input:focus-visible {
     @apply outline-2 outline-offset-2 outline-blue-500 dark:outline-yellow-300;
   }
   .pagefind-ui__search-clear {
-    @apply absolute top-1.5 right-1.5 rounded-sm px-2 py-1 text-sm font-semibold text-blue-500 hover:bg-gray-300 hover:text-blue-700 dark:text-yellow-300 dark:hover:bg-gray-700 dark:hover:text-yellow-500;
+    @apply absolute top-1.5 right-1.5 rounded-sm px-2 py-1 text-sm font-semibold text-blue-500 hover:bg-gray-350 hover:text-blue-700 dark:text-yellow-300 dark:hover:bg-gray-700 dark:hover:text-yellow-500;
   }
   .pagefind-ui__search-clear:focus-visible {
     @apply outline-2 outline-offset-2 outline-blue-500 dark:outline-yellow-300;
@@ -252,7 +253,7 @@
     @apply rounded-sm border border-transparent px-2 py-1 transition-colors;
   }
   .pagefind-ui__result:hover {
-    @apply border-gray-300 bg-gray-200 dark:border-gray-700 dark:bg-title-dark;
+    @apply border-gray-300 bg-gray-300 dark:border-gray-700 dark:bg-title-dark;
   }
   .pagefind-ui__result {
     @apply flex items-start gap-3;

@@ -1,10 +1,10 @@
 {{ define "main" }}
-<div class="prose dark:prose-invert max-w-none">
-  <div class="flex items-center justify-between gap-4">
-    <h1 class="standard {{ if eq .Kind `term` }}font-italic{{ end }}">
+<div class="page-shell prose dark:prose-invert max-w-none">
+  <div class="flex items-center justify-between gap-4 mb-4">
+    <h1 class="standard mt-1 mb-0 {{ if eq .Kind `term` }}font-italic{{ end }}">
         {{ if eq .Kind "term" }}#{{ .Data.Term }}{{ else }}{{- .Title -}}{{ end }}
     </h1>
-    <a href="{{ `index.xml` | absURL }}" aria-label="RSS feed" title="RSS feed">
+    <a class="not-prose" href="{{ `index.xml` | absURL }}" aria-label="RSS feed" title="RSS feed">
         <img src="https://upload.wikimedia.org/wikipedia/commons/4/46/Generic_Feed-icon.svg" alt="blog-rss" class="h-[30px] w-[30px]">
     </a>
   </div>
