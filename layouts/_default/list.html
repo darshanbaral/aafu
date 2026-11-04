@@ -1,7 +1,7 @@
 {{ define "main" }}
 <div class="page-shell prose dark:prose-invert max-w-none">
   <div class="flex items-center justify-between gap-4 mb-4">
-    <h1 class="standard mt-1 mb-0 {{ if eq .Kind `term` }}font-italic{{ end }}">
+    <h1 class="mt-1 mb-0 {{ if eq .Kind `term` }}italic{{ end }}">
         {{ if eq .Kind "term" }}#{{ .Data.Term }}{{ else }}{{- .Title -}}{{ end }}
     </h1>
     <a class="not-prose" href="{{ `index.xml` | absURL }}" aria-label="RSS feed" title="RSS feed">
@@ -55,7 +55,7 @@
   {{ end }}
 </div>
 
-<div class="my-6 flex justify-center pagination-links">
+<div class="my-6 flex justify-center">
   {{ partial "pagination.html" . }}
 </div>
 {{ end }}

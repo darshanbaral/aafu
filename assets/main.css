@@ -3,7 +3,6 @@
 @theme {
   --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   --color-darkest: var(--color-stone-900);
-  --color-darker: var(--color-gray-800);
   --color-dark: var(--color-gray-700);
   --color-gray-150: #eceef1;
   --color-gray-350: #c4c9d1;
@@ -22,7 +21,6 @@
 
 @source "../../content/**/*.md";
 @source "../../layouts/**/*.html";
-@source "../../themes/**/layouts/**/*.html";
 
 @utility prose {
   --tw-prose-bullets: var(--color-stone-700);
@@ -62,9 +60,7 @@
 
 @layer utilities {
   html {
-    touch-action: manipulation;
-    scroll-behavior: smooth;
-    overflow-y: scroll;
+    @apply touch-manipulation scroll-smooth overflow-y-scroll;
     scrollbar-gutter: stable;
   }
   h1 {
@@ -94,11 +90,7 @@
   }
   body::before {
     content: "";
-    position: fixed;
-    inset: 0;
-    z-index: -1;
-    pointer-events: none;
-    @apply bg-linear-to-b from-blue-500/30 to-blue-500/12 dark:from-blue-500/25 dark:to-blue-500/10;
+    @apply pointer-events-none fixed inset-0 -z-1 bg-linear-to-b from-blue-500/30 to-blue-500/12 dark:from-blue-500/25 dark:to-blue-500/10;
   }
   summary {
     @apply block text-sm;
@@ -121,7 +113,7 @@
 
     code::before,
     code::after {
-      content: none !important;
+      @apply content-none!;
     }
 
     pre {
@@ -137,8 +129,7 @@
     }
   }
   .panel {
-    max-height: 0;
-    transition: 0.3s ease-out;
+    @apply max-h-0 transition-[max-height] duration-300 ease-out;
   }
   .accordion-item.active > .panel {
     @apply max-h-none;
@@ -146,9 +137,6 @@
   .accordion-trigger {
     @apply mt-2 mb-2 flex w-full items-center justify-between rounded-sm px-2 py-[8px] text-left transition-colors;
     @apply text-blue-600 hover:bg-gray-200 dark:text-heading-dark dark:hover:bg-title-dark;
-  }
-  .accordion-trigger:focus-visible {
-    @apply outline-2 outline-offset-2 outline-link dark:outline-link-dark;
   }
   .accordion-item.active > h2 > .accordion-trigger,
   .accordion-item.active > .accordion-trigger {
@@ -183,7 +171,7 @@
     @apply mt-0 text-sm text-gray-600 dark:text-gray-300;
   }
   .profile-photo-container img {
-    max-width: 100%;
+    @apply max-w-full;
   }
   .accordion-item-heading {
     @apply underline;
@@ -204,8 +192,7 @@
     @apply mt-1 mb-3 h-5 rounded-sm border border-black dark:border-gray-300;
   }
   .skill-progress {
-    @apply h-full rounded-sm bg-blue-500 transition-all duration-500 dark:bg-yellow-700;
-    width: 0;
+    @apply h-full w-0 rounded-sm bg-blue-500 transition-all duration-500 dark:bg-yellow-700;
   }
   .content-figure-image {
     @apply min-h-[250px] min-w-[250px] max-w-[90%] max-h-[95vh] rounded-sm;
@@ -238,9 +225,6 @@
   .pagefind-ui__search-clear {
     @apply absolute top-1.5 right-1.5 rounded-sm px-2 py-1 text-sm font-semibold text-link hover:bg-gray-350 hover:text-link-hover dark:text-link-dark dark:hover:bg-gray-700 dark:hover:text-link-dark-hover;
   }
-  .pagefind-ui__search-clear:focus-visible {
-    @apply outline-2 outline-offset-2 outline-link dark:outline-link-dark;
-  }
   .pagefind-ui__search-clear.pagefind-ui__suppressed {
     @apply hidden;
   }
@@ -252,13 +236,10 @@
     @apply font-semibold;
   }
   .pagefind-ui__result {
-    @apply rounded-sm border border-transparent px-2 py-1 transition-colors;
+    @apply flex items-start gap-3 rounded-sm border border-transparent px-2 py-1 transition-colors;
   }
   .pagefind-ui__result:hover {
     @apply border-gray-300 bg-gray-300 dark:border-gray-700 dark:bg-title-dark;
-  }
-  .pagefind-ui__result {
-    @apply flex items-start gap-3;
   }
   .pagefind-ui__result-thumb {
     @apply flex h-12 w-12 shrink-0 cursor-pointer items-center justify-center;
@@ -270,10 +251,10 @@
     @apply min-w-0 flex-1;
   }
   .chevron {
-    transition: 300ms linear rotate;
+    @apply transition-transform duration-300 ease-linear;
   }
   .accordion-item.active .chevron {
-    transform: rotate(90deg);
+    @apply rotate-90;
   }
   ul.pagination .page-item.active > .page-link {
     @apply text-white dark:text-gray-900;
@@ -338,9 +319,6 @@
   .nav-menu-item.active {
     @apply bg-gray-300 no-underline dark:bg-gray-700;
   }
-  .active {
-    @apply overflow-visible;
-  }
   .prose ul,
   .prose ol {
     @apply marker:text-gray-700 dark:marker:text-gray-200;
@@ -349,7 +327,7 @@
     @apply my-0;
   }
   .accordion p {
-    @apply my-0 p-2 hover:bg-gray-350 rounded-sm dark:hover:bg-darker;
+    @apply my-0 p-2 hover:bg-gray-350 rounded-sm dark:hover:bg-gray-800;
   }
   .social-link {
     @apply text-2xl;

@@ -2,7 +2,7 @@
 <p class="mt-1 mb-0 text-sm">Reading Time: {{ .ReadingTime }} minutes</p>
 {{ $params := .Params }} {{ range $name, $value := .Site.Taxonomies }}
 {{ if index $params $name }}
-<p class="metadata-value mt-1 mb-0 text-sm taxa taxa-container-div list-{{- $name -}}">
+<p class="mt-1 mb-0 text-sm list-{{- $name -}}">
   {{ $name | humanize }}: {{ range index $params $name }}
   <a
     class="metadata-tags {{ $name }} inline-block hover:no-underline"

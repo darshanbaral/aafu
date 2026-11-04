@@ -46,7 +46,30 @@ const getAccordionPanel = (item) => item?.querySelector(".panel");
 
 const getAccordionTrigger = (item) => item?.querySelector("[data-accordion-trigger]");
 
-const syncAccordionItem = (item) => {
+const pendingPanelTransitions = new WeakMap();
+
+const afterPanelTransition = (panel, done) => {
+  panel.removeEventListener("transitionend", pendingPanelTransitions.get(panel));
+
+  if (parseFloat(getComputedStyle(panel).transitionDuration) === 0) {
+    done();
+    return;
+  }
+
+  const handler = (event) => {
+    if (event.target !== panel || event.propertyName !== "max-height") {
+      return;
+    }
+
+    panel.removeEventListener("transitionend", handler);
+    done();
+  };
+
+  pendingPanelTransitions.set(panel, handler);
+  panel.addEventListener("transitionend", handler);
+};
+
+const syncAccordionItem = (item, animate = false) => {
   const panel = getAccordionPanel(item);
   const trigger = getAccordionTrigger(item);
   const isActive = item?.classList.contains("active");
@@ -57,18 +80,36 @@ const syncAccordionItem = (item) => {
 
   trigger.setAttribute("aria-expanded", isActive ? "true" : "false");
 
-  if (isActive) {
-    panel.hidden = false;
-    panel.style.maxHeight = `${panel.scrollHeight}px`;
-    initializeSkillBars(panel);
-  } else {
-    panel.style.maxHeight = null;
-    panel.hidden = true;
+  if (!isActive) {
+    if (!animate || panel.hidden) {
+      panel.style.maxHeight = "";
+      panel.hidden = true;
+      return;
+    }
+
+    panel.style.maxHeight = "0px";
+    afterPanelTransition(panel, () => {
+      panel.hidden = true;
+      panel.style.maxHeight = "";
+    });
+    return;
   }
+
+  panel.hidden = false;
+
+  if (animate) {
+    panel.style.maxHeight = "0px";
+    panel.style.maxHeight = `${panel.scrollHeight}px`;
+    afterPanelTransition(panel, () => {
+      panel.style.maxHeight = "";
+    });
+  }
+
+  initializeSkillBars(panel);
 };
 
-const syncActiveAccordionPanel = () => {
-  getAccordionItems().forEach(syncAccordionItem);
+const syncActiveAccordionPanel = (animate = false) => {
+  getAccordionItems().forEach((item) => syncAccordionItem(item, animate));
 };
 
 const initializeSkillBars = (root = document) => {
@@ -101,13 +142,22 @@ const expandAccordion = (element) => {
   const items = getAccordionItems();
   const isActive = item.classList.contains("active");
 
+  items.forEach((accordionItem) => {
+    const panel = getAccordionPanel(accordionItem);
+
+    if (panel && !panel.hidden && !panel.style.maxHeight) {
+      panel.style.maxHeight = `${panel.scrollHeight}px`;
+    }
+  });
+  void document.body.offsetHeight;
+
   items.forEach((accordionItem) => accordionItem.classList.remove("active"));
 
   if (!isActive) {
     item.classList.add("active");
   }
 
-  syncActiveAccordionPanel();
+  syncActiveAccordionPanel(true);
 };
 
 const initializeSearch = () => {
@@ -229,5 +279,3 @@ window.addEventListener("DOMContentLoaded", () => {
   initializeSkillBars();
   initializeSearch();
 });
-
-window.addEventListener("resize", syncActiveAccordionPanel);
