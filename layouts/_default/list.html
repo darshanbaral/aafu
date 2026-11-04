@@ -8,7 +8,8 @@
         <img src="https://upload.wikimedia.org/wikipedia/commons/4/46/Generic_Feed-icon.svg" alt="blog-rss" class="h-[30px] w-[30px]">
     </a>
   </div>
-  {{ range $key, $val := (.Paginator 10).Pages }}
+  {{ $paginator := .Paginator 10 }}
+  {{ range $key, $val := $paginator.Pages }}
   <div class="accordion-item {{ if eq $key 0 }}active{{ end }}" data-accordion-item>
     <div class="blog-list-item">
       <button
@@ -39,6 +40,18 @@
       <div class="metadata p-2">{{- partial "metadata" . -}}</div>
     </div>
   </div>
+  {{ end }}
+  {{ if gt $paginator.TotalPages 1 }}
+  {{ range seq (sub $paginator.PagerSize (len $paginator.Pages)) }}
+  <div class="accordion-item invisible" aria-hidden="true">
+    <div class="blog-list-item">
+      <button type="button" class="accordion-trigger blog-list-toggle" tabindex="-1" disabled>
+        <i class="chevron fas fa-chevron-right"></i>
+      </button>
+      <h2 class="not-prose accordion blog-list-heading m-0 font-bold">&nbsp;</h2>
+    </div>
+  </div>
+  {{ end }}
   {{ end }}
 </div>
 
