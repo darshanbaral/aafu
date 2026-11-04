@@ -256,6 +256,9 @@
   .accordion-item.active .chevron {
     @apply rotate-90;
   }
+  ul.pagination .page-link {
+    @apply hover:text-white hover:no-underline! dark:hover:text-gray-900;
+  }
   ul.pagination .page-item.active > .page-link {
     @apply text-white dark:text-gray-900;
   }
@@ -265,7 +268,7 @@
   ul.pagination {
     @apply flex flex-row justify-center list-none;
     .page-link {
-      @apply inline-flex h-9 w-10 items-center justify-center sm:w-12 hover:text-gray-200 dark:hover:text-gray-800 hover:bg-link dark:hover:bg-link-dark;
+      @apply inline-flex h-9 w-10 items-center justify-center sm:w-12 hover:bg-link dark:hover:bg-link-dark;
     }
     .disabled {
       @apply pointer-events-none;
@@ -275,9 +278,6 @@
     }
     .active {
       @apply bg-link pointer-events-none dark:bg-link-dark;
-      .page-link {
-        @apply text-gray-200 dark:text-gray-800;
-      }
     }
   }
   .categories {
