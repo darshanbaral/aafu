@@ -11,7 +11,7 @@
     {{- end }}
     {{- with .Prev }}
   <li class="page-item">
-    <a href="{{ .URL }}" aria-label="Previous" class="page-link" role="button"><span aria-hidden="true">&lsaquo;</span></a>
+    <a href="{{ .URL }}" aria-label="Previous" class="page-link" role="button" data-prev-page><span aria-hidden="true">&lsaquo;</span></a>
   </li>
     {{- end }}
     {{- $slots := 3 }}
@@ -34,7 +34,7 @@
     {{- end }}
     {{- with .Next }}
   <li class="page-item">
-    <a href="{{ .URL }}" aria-label="Next" class="page-link" role="button"><span aria-hidden="true">&rsaquo;</span></a>
+    <a href="{{ .URL }}" aria-label="Next" class="page-link" role="button" data-next-page><span aria-hidden="true">&rsaquo;</span></a>
   </li>
     {{- end }}
     {{- with .Last }}

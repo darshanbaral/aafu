@@ -186,11 +186,11 @@ const initializePostNavigation = () => {
     }
 
     if (event.key === "ArrowLeft") {
-      document.querySelector("[data-prev-post]")?.click();
+      document.querySelector("[data-prev-post], [data-prev-page]")?.click();
     }
 
     if (event.key === "ArrowRight") {
-      document.querySelector("[data-next-post]")?.click();
+      document.querySelector("[data-next-post], [data-next-page]")?.click();
     }
   });
 };
