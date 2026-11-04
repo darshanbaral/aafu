@@ -138,8 +138,32 @@ const initializeSearch = () => {
     window.history.replaceState(null, "", url);
   };
 
+  const getThumbLink = (event) =>
+    event.target
+      .closest(".pagefind-ui__result-thumb")
+      ?.closest(".pagefind-ui__result")
+      ?.querySelector(".pagefind-ui__result-link");
+
   searchElement.addEventListener("input", syncQueryToUrl);
+  searchElement.addEventListener("auxclick", (event) => {
+    const link = getThumbLink(event);
+
+    if (link && event.button === 1) {
+      window.open(link.href, "_blank", "noopener");
+    }
+  });
   searchElement.addEventListener("click", (event) => {
+    const link = getThumbLink(event);
+
+    if (link) {
+      if (event.ctrlKey || event.metaKey || event.shiftKey) {
+        window.open(link.href, "_blank", "noopener");
+      } else {
+        window.location.assign(link.href);
+      }
+      return;
+    }
+
     if (event.target.closest(".pagefind-ui__search-clear")) {
       window.setTimeout(() => {
         syncQueryToUrl();

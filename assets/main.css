@@ -258,7 +258,7 @@
     @apply flex items-start gap-3;
   }
   .pagefind-ui__result-thumb {
-    @apply flex h-12 w-12 shrink-0 items-center justify-center;
+    @apply flex h-12 w-12 shrink-0 cursor-pointer items-center justify-center;
   }
   .pagefind-ui__result-image {
     @apply max-h-full max-w-full object-contain;
