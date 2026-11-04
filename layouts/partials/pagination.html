@@ -1,18 +1,27 @@
 {{- with .Paginator }}
   {{- if gt .TotalPages 1 }}
     {{- $currentPageNumber := .PageNumber }}
-<ul class="pagination pagination-terse">
+<div class="flex flex-row items-center justify-center">
+  <span class="inline-flex w-10 justify-center text-xl leading-none sm:w-12">
+    {{- with .Prev }}
+    <a href="{{ .URL }}" aria-label="Previous" title="Page {{ .PageNumber }}" data-prev-page>
+      <i class="nav-menu fas fa-chevron-circle-left"></i>
+    </a>
+    {{- else }}
+    <i class="text-gray-400 dark:text-gray-600 fas fa-chevron-circle-left"></i>
+    {{- end }}
+  </span>
+  <ul class="pagination pagination-terse">
     {{- with .First }}
       {{- if ne $currentPageNumber .PageNumber }}
-  <li class="page-item">
-    <a href="{{ .URL }}" aria-label="First" class="page-link" role="button"><span aria-hidden="true">&laquo;</span></a>
-  </li>
+    <li class="page-item">
+      <a href="{{ .URL }}" aria-label="First" class="page-link" role="button"><i class="fas fa-angles-left" aria-hidden="true"></i></a>
+    </li>
+      {{- else }}
+    <li class="page-item disabled">
+      <span class="page-link"><i class="fas fa-angles-left" aria-hidden="true"></i></span>
+    </li>
       {{- end }}
-    {{- end }}
-    {{- with .Prev }}
-  <li class="page-item">
-    <a href="{{ .URL }}" aria-label="Previous" class="page-link" role="button" data-prev-page><span aria-hidden="true">&lsaquo;</span></a>
-  </li>
     {{- end }}
     {{- $slots := 3 }}
     {{- $start := math.Max 1 (sub .PageNumber (math.Floor (div $slots 2))) }}
@@ -23,27 +32,36 @@
     {{- $pagers := .Pagers }}
     {{- range $k := seq $start $end }}
       {{- if eq $currentPageNumber $k }}
-  <li class="page-item active">
-    <a aria-current="page" aria-label="Page {{ $k }}" class="page-link" role="button">{{ $k }}</a>
-  </li>
+    <li class="page-item active">
+      <a aria-current="page" aria-label="Page {{ $k }}" class="page-link" role="button">{{ $k }}</a>
+    </li>
       {{- else }}
-  <li class="page-item">
-    <a href="{{ (index $pagers (sub $k 1)).URL }}" aria-label="Page {{ $k }}" class="page-link" role="button">{{ $k }}</a>
-  </li>
+    <li class="page-item">
+      <a href="{{ (index $pagers (sub $k 1)).URL }}" aria-label="Page {{ $k }}" class="page-link" role="button">{{ $k }}</a>
+    </li>
       {{- end }}
-    {{- end }}
-    {{- with .Next }}
-  <li class="page-item">
-    <a href="{{ .URL }}" aria-label="Next" class="page-link" role="button" data-next-page><span aria-hidden="true">&rsaquo;</span></a>
-  </li>
     {{- end }}
     {{- with .Last }}
       {{- if ne $currentPageNumber .PageNumber }}
-  <li class="page-item">
-    <a href="{{ .URL }}" aria-label="Last" class="page-link" role="button"><span aria-hidden="true">&raquo;</span></a>
-  </li>
+    <li class="page-item">
+      <a href="{{ .URL }}" aria-label="Last" class="page-link" role="button"><i class="fas fa-angles-right" aria-hidden="true"></i></a>
+    </li>
+      {{- else }}
+    <li class="page-item disabled">
+      <span class="page-link"><i class="fas fa-angles-right" aria-hidden="true"></i></span>
+    </li>
       {{- end }}
     {{- end }}
-</ul>
+  </ul>
+  <span class="inline-flex w-10 justify-center text-xl leading-none sm:w-12">
+    {{- with .Next }}
+    <a href="{{ .URL }}" aria-label="Next" title="Page {{ .PageNumber }}" data-next-page>
+      <i class="nav-menu fas fa-chevron-circle-right"></i>
+    </a>
+    {{- else }}
+    <i class="text-gray-400 dark:text-gray-600 fas fa-chevron-circle-right"></i>
+    {{- end }}
+  </span>
+</div>
   {{- end }}
 {{- end }}
