@@ -140,6 +140,9 @@
     max-height: 0;
     transition: 0.3s ease-out;
   }
+  .accordion-item.active > .panel {
+    @apply max-h-none;
+  }
   .accordion-trigger {
     @apply mt-2 mb-2 flex w-full items-center justify-between rounded-sm px-2 py-[8px] text-left transition-colors;
     @apply text-blue-600 hover:bg-gray-200 dark:text-heading-dark dark:hover:bg-title-dark;
