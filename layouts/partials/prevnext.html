@@ -1,79 +1,13 @@
-<div class="flex flex-row items-center justify-center my-2">
-  <span class="inline-flex w-10 justify-center text-xl leading-none sm:w-12">
-    {{ if .PrevInSection }}
-    <a
-      href="{{ .PrevInSection.Permalink | relURL }}"
-      title="{{ .PrevInSection.Title }}"
-      data-prev-post
-    >
-      <i class="nav-menu fas fa-chevron-circle-left"></i>
-    </a>
-    {{ else }}
-    <i class="text-gray-400 dark:text-gray-600 fas fa-chevron-circle-left"></i>
-    {{ end }}
-  </span>
-  {{- $pages := .CurrentSection.RegularPages.Reverse }}
-  {{- $total := len $pages }}
-  {{- $current := 0 }}
-  {{- range $i, $p := $pages }}
-    {{- if eq $p.RelPermalink $.RelPermalink }}{{ $current = add $i 1 }}{{ end }}
-  {{- end }}
-  {{- if and (gt $total 1) (gt $current 0) }}
-    {{- $slots := 3 }}
-    {{- $start := math.Max 1 (sub $current (math.Floor (div $slots 2))) }}
-    {{- $end := math.Min $total (sub (add $start $slots) 1) }}
-    {{- if lt (add (sub $end $start) 1) $slots }}
-      {{- $start = math.Max 1 (add (sub $end $slots) 1) }}
-    {{- end }}
-  <ul class="pagination not-prose">
-    {{- if gt $current 1 }}
-    {{- with index $pages 0 }}
-    <li class="page-item">
-      <a href="{{ .RelPermalink }}" title="{{ .Title }}" aria-label="First" class="page-link" role="button"><i class="fas fa-angles-left" aria-hidden="true"></i></a>
-    </li>
-    {{- end }}
-    {{- else }}
-    <li class="page-item disabled">
-      <span class="page-link"><i class="fas fa-angles-left" aria-hidden="true"></i></span>
-    </li>
-    {{- end }}
-    {{- range $k := seq $start $end }}
-    {{- with index $pages (sub $k 1) }}
-    {{- if eq $k $current }}
-    <li class="page-item active">
-      <a aria-current="page" aria-label="Post {{ $k }} of {{ $total }}" class="page-link" role="button">{{ $k }}</a>
-    </li>
-    {{- else }}
-    <li class="page-item">
-      <a href="{{ .RelPermalink }}" title="{{ .Title }}" aria-label="Post {{ $k }} of {{ $total }}" class="page-link" role="button">{{ $k }}</a>
-    </li>
-    {{- end }}
-    {{- end }}
-    {{- end }}
-    {{- if lt $current $total }}
-    {{- with index $pages (sub $total 1) }}
-    <li class="page-item">
-      <a href="{{ .RelPermalink }}" title="{{ .Title }}" aria-label="Last" class="page-link" role="button"><i class="fas fa-angles-right" aria-hidden="true"></i></a>
-    </li>
-    {{- end }}
-    {{- else }}
-    <li class="page-item disabled">
-      <span class="page-link"><i class="fas fa-angles-right" aria-hidden="true"></i></span>
-    </li>
-    {{- end }}
-  </ul>
-  {{- end }}
-  <span class="inline-flex w-10 justify-center text-xl leading-none sm:w-12">
-    {{ if .NextInSection }}
-    <a
-      href="{{ .NextInSection.Permalink | relURL }}"
-      title="{{ .NextInSection.Title }}"
-      data-next-post
-    >
-      <i class="nav-menu fas fa-chevron-circle-right"></i>
-    </a>
-    {{ else }}
-    <i class="text-gray-400 dark:text-gray-600 fas fa-chevron-circle-right"></i>
-    {{ end }}
-  </span>
-</div>
+{{- $pages := .CurrentSection.RegularPages.Reverse }}
+{{- $total := len $pages }}
+{{- $items := slice }}
+{{- $current := 0 }}
+{{- range $i, $p := $pages }}
+  {{- $items = $items | append (dict "url" $p.RelPermalink "title" $p.Title "label" (printf "Post %d of %d" (add $i 1) $total)) }}
+  {{- if eq $p.RelPermalink $.RelPermalink }}{{ $current = add $i 1 }}{{ end }}
+{{- end }}
+{{- $prev := "" }}
+{{- with .PrevInSection }}{{ $prev = dict "url" (.Permalink | relURL) "title" .Title }}{{ end }}
+{{- $next := "" }}
+{{- with .NextInSection }}{{ $next = dict "url" (.Permalink | relURL) "title" .Title }}{{ end }}
+{{- partial "pager.html" (dict "class" "my-2" "items" $items "current" $current "prev" $prev "next" $next) }}
