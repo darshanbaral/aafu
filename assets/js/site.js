@@ -141,7 +141,10 @@ const initializeSearch = () => {
   searchElement.addEventListener("input", syncQueryToUrl);
   searchElement.addEventListener("click", (event) => {
     if (event.target.closest(".pagefind-ui__search-clear")) {
-      window.setTimeout(syncQueryToUrl);
+      window.setTimeout(() => {
+        syncQueryToUrl();
+        searchElement.querySelector(".pagefind-ui__search-input")?.focus();
+      });
     }
   });
 };

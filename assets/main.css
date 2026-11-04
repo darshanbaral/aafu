@@ -223,14 +223,23 @@
   .link-card-label {
     @apply text-sm font-semibold leading-snug text-blue-500 dark:text-yellow-300;
   }
+  .pagefind-ui__form {
+    @apply relative;
+  }
   .pagefind-ui__search-input {
-    @apply w-full rounded-sm border border-gray-500 bg-gray-200 p-2 text-black dark:bg-gray-600 dark:text-white dark:placeholder:text-[#8f8f8f];
+    @apply w-full rounded-sm border border-gray-500 bg-gray-200 p-2 pr-20 text-black dark:bg-gray-600 dark:text-white dark:placeholder:text-[#8f8f8f];
   }
   .pagefind-ui__search-input:focus-visible {
     @apply outline-2 outline-offset-2 outline-blue-500 dark:outline-yellow-300;
   }
   .pagefind-ui__search-clear {
-    display: none;
+    @apply absolute top-1.5 right-1.5 rounded-sm px-2 py-1 text-sm font-semibold text-blue-500 hover:bg-gray-300 hover:text-blue-700 dark:text-yellow-300 dark:hover:bg-gray-700 dark:hover:text-yellow-500;
+  }
+  .pagefind-ui__search-clear:focus-visible {
+    @apply outline-2 outline-offset-2 outline-blue-500 dark:outline-yellow-300;
+  }
+  .pagefind-ui__search-clear.pagefind-ui__suppressed {
+    @apply hidden;
   }
   .pagefind-ui__message,
   .pagefind-ui__result-excerpt {
