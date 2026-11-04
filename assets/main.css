@@ -9,6 +9,10 @@
   --color-gray-350: #c4c9d1;
   --color-nav-dark: #1f242d;
   --color-title-dark: #394354;
+  --color-link-hover: #13315c;
+  --color-link-dark: #f5d76e;
+  --color-link-dark-hover: #fff3c4;
+  --color-heading-dark: #e6c34a;
 }
 
 @custom-variant dark (&:where(.dark, .dark *));
@@ -27,7 +31,7 @@
 
   --tw-prose-invert-bullets: var(--color-stone-200);
   --tw-prose-invert-counters: var(--color-stone-200);
-  --tw-prose-invert-links: var(--color-yellow-300);
+  --tw-prose-invert-links: var(--color-link-dark);
   --tw-prose-invert-quote-borders: var(--color-stone-400);
 
   &:is(.prose-invert, .dark &) {
@@ -45,13 +49,7 @@
   ::backdrop,
   ::file-selector-button {
     border-color: var(--color-gray-700, currentColor);
-  }
-  @media (prefers-color-scheme: dark) {
-    *,
-    ::after,
-    ::before,
-    ::backdrop,
-    ::file-selector-button {
+    @variant dark {
       border-color: var(--color-gray-200, currentColor);
     }
   }
@@ -84,11 +82,11 @@
     @apply text-lg mb-2 mt-1;
   }
   a {
-    @apply text-blue-500 hover:text-blue-700 hover:underline dark:text-yellow-300 dark:hover:text-yellow-500;
+    @apply text-blue-500 hover:text-link-hover hover:underline dark:text-link-dark dark:hover:text-link-dark-hover;
   }
   a:focus-visible,
   button:focus-visible {
-    @apply outline-2 outline-offset-2 outline-blue-500 dark:outline-yellow-300;
+    @apply outline-2 outline-offset-2 outline-blue-500 dark:outline-link-dark;
   }
   body {
     @apply text-base bg-stone-50 text-stone-900 dark:text-stone-50 dark:bg-darkest;
@@ -143,10 +141,10 @@
   }
   .accordion-trigger {
     @apply mt-2 mb-2 flex w-full items-center justify-between rounded-sm px-2 py-[8px] text-left transition-colors;
-    @apply text-blue-600 hover:bg-gray-200 dark:text-yellow-500 dark:hover:bg-title-dark;
+    @apply text-blue-600 hover:bg-gray-200 dark:text-heading-dark dark:hover:bg-title-dark;
   }
   .accordion-trigger:focus-visible {
-    @apply outline-2 outline-offset-2 outline-blue-500 dark:outline-yellow-300;
+    @apply outline-2 outline-offset-2 outline-blue-500 dark:outline-link-dark;
   }
   .accordion-item.active > h2 > .accordion-trigger,
   .accordion-item.active > .accordion-trigger {
@@ -166,7 +164,7 @@
     @apply mb-0 text-[1.65rem];
   }
   .blog-list-heading a {
-    @apply text-blue-500 hover:no-underline hover:text-blue-700 dark:text-yellow-300 dark:hover:text-yellow-500;
+    @apply text-blue-500 hover:no-underline hover:text-link-hover dark:text-link-dark dark:hover:text-link-dark-hover;
   }
   .metadata-panel {
     @apply rounded-b-sm border border-t-0 border-gray-300 dark:border-gray-700;
@@ -216,13 +214,13 @@
   }
   .link-card {
     @apply flex min-h-32 flex-col items-center justify-center gap-3 rounded-lg border border-gray-300 bg-white/80 p-4 text-center shadow-sm transition-colors;
-    @apply hover:border-blue-400 hover:bg-gray-300 hover:no-underline dark:border-gray-700 dark:bg-gray-900/60 dark:hover:border-yellow-300 dark:hover:bg-dark;
+    @apply hover:border-blue-400 hover:bg-gray-300 hover:no-underline dark:border-gray-700 dark:bg-gray-900/60 dark:hover:border-link-dark dark:hover:bg-dark;
   }
   .link-card-image {
     @apply h-20 w-20 rounded-sm object-contain;
   }
   .link-card-label {
-    @apply text-sm font-semibold leading-snug text-blue-500 dark:text-yellow-300;
+    @apply text-sm font-semibold leading-snug text-blue-500 dark:text-link-dark;
   }
   .pagefind-ui__form {
     @apply relative;
@@ -231,13 +229,13 @@
     @apply w-full rounded-sm border border-gray-500 bg-gray-300 p-2 pr-20 text-black dark:bg-gray-600 dark:text-white dark:placeholder:text-[#8f8f8f];
   }
   .pagefind-ui__search-input:focus-visible {
-    @apply outline-2 outline-offset-2 outline-blue-500 dark:outline-yellow-300;
+    @apply outline-2 outline-offset-2 outline-blue-500 dark:outline-link-dark;
   }
   .pagefind-ui__search-clear {
-    @apply absolute top-1.5 right-1.5 rounded-sm px-2 py-1 text-sm font-semibold text-blue-500 hover:bg-gray-350 hover:text-blue-700 dark:text-yellow-300 dark:hover:bg-gray-700 dark:hover:text-yellow-500;
+    @apply absolute top-1.5 right-1.5 rounded-sm px-2 py-1 text-sm font-semibold text-blue-500 hover:bg-gray-350 hover:text-link-hover dark:text-link-dark dark:hover:bg-gray-700 dark:hover:text-link-dark-hover;
   }
   .pagefind-ui__search-clear:focus-visible {
-    @apply outline-2 outline-offset-2 outline-blue-500 dark:outline-yellow-300;
+    @apply outline-2 outline-offset-2 outline-blue-500 dark:outline-link-dark;
   }
   .pagefind-ui__search-clear.pagefind-ui__suppressed {
     @apply hidden;
@@ -282,10 +280,10 @@
   ul.pagination {
     @apply flex flex-row justify-center list-none;
     .page-link {
-      @apply px-2 sm:px-4 py-1 hover:text-gray-200 dark:hover:text-gray-800 hover:bg-blue-500 dark:hover:bg-yellow-300;
+      @apply px-2 sm:px-4 py-1 hover:text-gray-200 dark:hover:text-gray-800 hover:bg-blue-500 dark:hover:bg-link-dark;
     }
     .active {
-      @apply bg-blue-500 pointer-events-none dark:bg-yellow-300;
+      @apply bg-blue-500 pointer-events-none dark:bg-link-dark;
       .page-link {
         @apply text-gray-200 dark:text-gray-800;
       }
