@@ -1,4 +1,4 @@
-name: Deploy Hugo site with Pagefind to GitHub Pages
+name: Pipeline
 
 on:
   push:
