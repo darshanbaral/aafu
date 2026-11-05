@@ -2,11 +2,8 @@ const html = document.documentElement;
 let skillBarsInitialized = false;
 
 const fixThemeToggleIcon = (theme) => {
-  const toggles = document.querySelectorAll(".theme-toggle");
-
-  toggles.forEach((toggle) => {
-    toggle.classList.toggle("fa-sun", theme === "dark");
-    toggle.classList.toggle("fa-moon", theme !== "dark");
+  document.querySelectorAll("[data-theme-icon]").forEach((icon) => {
+    icon.toggleAttribute("hidden", icon.dataset.themeIcon !== theme);
   });
 };
 

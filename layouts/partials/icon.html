@@ -1,0 +1,10 @@
+{{- $opts := cond (reflect.IsMap .) . (dict "name" .) }}
+{{- with resources.Get (printf "icons/%s.svg" $opts.name) }}
+  {{- $class := "icon" }}
+  {{- with $opts.class }}{{ $class = printf "%s %s" $class . }}{{ end }}
+  {{- $attrs := printf `class="%s" aria-hidden="true" focusable="false"` $class }}
+  {{- with $opts.attrs }}{{ $attrs = printf "%s %s" $attrs . }}{{ end }}
+  {{- replace .Content "<svg " (printf "<svg %s " $attrs) | safeHTML }}
+{{- else }}
+  {{- errorf "icon not found: %s" $opts.name }}
+{{- end }}

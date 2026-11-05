@@ -1,16 +1,16 @@
 [
   {
-    "icon": "fas fa-envelope",
+    "icon": "solid/envelope",
     "url": "mailto:althaser at gmail dot com",
     "title": "E-Mail"
   },
   {
-    "icon": "fas fa-file",
+    "icon": "solid/file",
     "url": "#",
     "title": "CV"
   },
   {
-    "icon": "fa-brands fa-w3c",
+    "icon": "brands/w3c",
     "url": "https://validator.w3.org/nu/?doc=https%3A%2F%2Falthaser.me%2F",
     "title": "W3C"
   }

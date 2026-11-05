@@ -5,7 +5,7 @@
   {{ range $key, $value := hugo.Data.social }}
   <div class="mx-2">
     <a class="social-link" href="{{ .url }}" aria-label="{{ $value.title }}" title="{{ $value.title }}">
-      <i class="mt-1 {{ $value.icon }}" aria-hidden="true"></i>
+      {{ partial "icon.html" (dict "name" $value.icon "class" "mt-1") }}
     </a>
   </div>
   {{ end }}

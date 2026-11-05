@@ -5,10 +5,10 @@
   <span class="inline-flex w-10 justify-center text-xl leading-none sm:w-12">
     {{- with .prev }}
     <a href="{{ .url }}" aria-label="Previous" title="{{ .title }}" data-pager-prev>
-      <i class="nav-menu fas fa-chevron-circle-left"></i>
+      {{ partial "icon.html" "solid/circle-chevron-left" }}
     </a>
     {{- else }}
-    <i class="text-gray-400 dark:text-gray-600 fas fa-chevron-circle-left"></i>
+    {{ partial "icon.html" (dict "name" "solid/circle-chevron-left" "class" "text-gray-400 dark:text-gray-600") }}
     {{- end }}
   </span>
   {{- if and (gt $total 1) (gt $current 0) }}
@@ -22,12 +22,12 @@
     {{- if gt $current 1 }}
     {{- with index $items 0 }}
     <li class="page-item">
-      <a href="{{ .url }}" {{ with .title }}title="{{ . }}" {{ end }}aria-label="First" class="page-link" role="button"><i class="fas fa-angles-left" aria-hidden="true"></i></a>
+      <a href="{{ .url }}" {{ with .title }}title="{{ . }}" {{ end }}aria-label="First" class="page-link" role="button">{{ partial "icon.html" "solid/angles-left" }}</a>
     </li>
     {{- end }}
     {{- else }}
     <li class="page-item disabled">
-      <span class="page-link"><i class="fas fa-angles-left" aria-hidden="true"></i></span>
+      <span class="page-link">{{ partial "icon.html" "solid/angles-left" }}</span>
     </li>
     {{- end }}
     {{- range $k := seq $start $end }}
@@ -46,12 +46,12 @@
     {{- if lt $current $total }}
     {{- with index $items (sub $total 1) }}
     <li class="page-item">
-      <a href="{{ .url }}" {{ with .title }}title="{{ . }}" {{ end }}aria-label="Last" class="page-link" role="button"><i class="fas fa-angles-right" aria-hidden="true"></i></a>
+      <a href="{{ .url }}" {{ with .title }}title="{{ . }}" {{ end }}aria-label="Last" class="page-link" role="button">{{ partial "icon.html" "solid/angles-right" }}</a>
     </li>
     {{- end }}
     {{- else }}
     <li class="page-item disabled">
-      <span class="page-link"><i class="fas fa-angles-right" aria-hidden="true"></i></span>
+      <span class="page-link">{{ partial "icon.html" "solid/angles-right" }}</span>
     </li>
     {{- end }}
   </ul>
@@ -59,10 +59,10 @@
   <span class="inline-flex w-10 justify-center text-xl leading-none sm:w-12">
     {{- with .next }}
     <a href="{{ .url }}" aria-label="Next" title="{{ .title }}" data-pager-next>
-      <i class="nav-menu fas fa-chevron-circle-right"></i>
+      {{ partial "icon.html" "solid/circle-chevron-right" }}
     </a>
     {{- else }}
-    <i class="text-gray-400 dark:text-gray-600 fas fa-chevron-circle-right"></i>
+    {{ partial "icon.html" (dict "name" "solid/circle-chevron-right" "class" "text-gray-400 dark:text-gray-600") }}
     {{- end }}
   </span>
 </div>

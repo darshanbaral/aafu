@@ -1,56 +1,56 @@
 {
   "title": "Links",
-  "icon": "fas fa-link",
+  "icon": "solid/link",
   "list": [
     {
       "title": "GitHub",
       "url": "https://github.com/althaser",
-      "icon2": "https://cdn.iconscout.com/icon/free/png-256/free-github-logo-icon-download-in-svg-png-gif-file-formats--social-media-pack-logos-icons-3073768.png"
+      "icon2": "images/links/github.png"
     },
     {
       "title": "GitLab",
       "url": "https://gitlab.com/althaser",
-      "icon2": "https://upload.wikimedia.org/wikipedia/commons/3/35/GitLab_icon.svg"
+      "icon2": "images/links/gitlab.svg"
     },
     {
       "title": "IRC-OFTC",
       "url": "https://www.oftc.net",
-      "icon2": "https://upload.wikimedia.org/wikipedia/commons/2/28/OFTC_logo.svg"
+      "icon2": "images/links/oftc.svg"
     },
     {
       "title": "[matrix]",
       "url": "https://element.io/",
-      "icon2": "https://element.io/assets-32bb636196f91ed59d7a49190e26b42c/5ef25c0d30ee3108da4c25e9/5f365d3197194f8c73b00112_logo-mark-primary.svg"
+      "icon2": "images/links/matrix.svg"
     },
     {
       "title": "Mastodon",
       "url": "https://mastodon.social/@althaser",
-      "icon2": "https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/mastodon-icon.svg"
+      "icon2": "images/links/mastodon.svg"
     },
     {
       "title": "Mastodon RSS",
       "url": "https://mastodon.social/@althaser.rss",
-      "icon2": "https://upload.wikimedia.org/wikipedia/commons/4/46/Generic_Feed-icon.svg"
+      "icon2": "images/links/rss.svg"
     },
     {
       "title": "Debian BTS",
       "url": "https://bugs.debian.org/cgi-bin/pkgreport.cgi?correspondent=althaser%40gmail.com;correspondent=althaser%40hotmail.com;archive=both",
-      "icon2": "https://www.debian.org/logos/openlogo-nd.svg"
+      "icon2": "images/links/debian.svg"
     },
     {
       "title": "Debian Contributions",
       "url": "https://contributors.debian.org/contributor/althaser-guest%40alioth",
-      "icon2": "https://www.debian.org/logos/openlogo-nd.svg"
+      "icon2": "images/links/debian.svg"
     },
     {
       "title": "Debian GNOME Team Activity",
       "url": "https://salsa.debian.org/groups/gnome-team/-/activity",
-      "icon2": "https://www.debian.org/logos/openlogo-nd.svg"
+      "icon2": "images/links/debian.svg"
     },
     {
       "title": "TopDocs",
       "url": "https://www.youtube.com/playlist?list=PLufXXcyYWiXhlzS4jAkIxTQJsO8FVDzwT",
-      "icon2": "https://upload.wikimedia.org/wikipedia/commons/0/09/YouTube_full-color_icon_%282017%29.svg"
+      "icon2": "images/links/youtube.svg"
     }
   ]
 }

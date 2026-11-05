@@ -17,10 +17,10 @@
       data-accordion-trigger
     >
       <span class="flex items-center gap-2">
-        <i class="{{ $data.icon }}" aria-hidden="true"></i>
+        {{ partial "icon.html" $data.icon }}
         <span>{{ $data.title }}</span>
       </span>
-      <i class="chevron fas fa-chevron-right" aria-hidden="true"></i>
+      {{ partial "icon.html" (dict "name" "solid/chevron-right" "class" "chevron") }}
     </button>
   </h2>
 

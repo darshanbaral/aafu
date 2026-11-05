@@ -5,7 +5,7 @@
         {{ if eq .Kind "term" }}#{{ .Data.Term }}{{ else }}{{- .Title -}}{{ end }}
     </h1>
     <a class="not-prose" href="{{ `index.xml` | absURL }}" aria-label="RSS feed" title="RSS feed">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/4/46/Generic_Feed-icon.svg" alt="blog-rss" class="h-[30px] w-[30px]">
+        <img src="{{ `images/links/rss.svg` | relURL }}" alt="blog-rss" class="h-[30px] w-[30px]">
     </a>
   </div>
   {{ $paginator := .Paginator 10 }}
@@ -21,10 +21,7 @@
         aria-controls="panel-item-{{ $key }}"
         aria-label="Toggle metadata for {{ .Title }}"
       >
-        <i
-          class="chevron fas fa-chevron-right text-link dark:text-gray-400"
-          aria-hidden="true"
-        ></i>
+        {{ partial "icon.html" (dict "name" "solid/chevron-right" "class" "chevron text-link dark:text-gray-400") }}
       </button>
       <h2 class="not-prose accordion blog-list-heading m-0 font-bold">
         <a href="{{ .RelPermalink }}">{{- .Title -}}</a>
@@ -46,7 +43,7 @@
   <div class="accordion-item invisible" aria-hidden="true">
     <div class="blog-list-item">
       <button type="button" class="accordion-trigger blog-list-toggle" tabindex="-1" disabled>
-        <i class="chevron fas fa-chevron-right"></i>
+        {{ partial "icon.html" (dict "name" "solid/chevron-right" "class" "chevron") }}
       </button>
       <h2 class="not-prose accordion blog-list-heading m-0 font-bold">&nbsp;</h2>
     </div>
