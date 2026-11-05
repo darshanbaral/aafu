@@ -28,5 +28,5 @@ This site is built with [Hugo](https://gohugo.io/) and uses the following third-
 ## Trademarks
 
 - The [GitHub logo](https://github.com/logos) is a trademark of GitHub, Inc., used to link to GitHub.
-- The Matrix logo is the trademark of [The Matrix.org Foundation](https://matrix.org/). Use of this logo does not imply endorsement or affiliation.
-- GitLab, Debian, Mastodon and YouTube are trademarks of their respective owners. Their logos are used only to link to the corresponding services.
+- The [Matrix logo](https://matrix.org/branding/) is the trademark of [The Matrix.org Foundation](https://matrix.org/). Use of this logo does not imply endorsement or affiliation.
+- [GitLab](https://handbook.gitlab.com/handbook/marketing/brand-experience/trademark-guidelines/), [Debian](https://www.debian.org/trademark), [Mastodon](https://joinmastodon.org/trademark) and [YouTube](https://brand.youtube/) are trademarks of their respective owners. Their logos are used only to link to the corresponding services.
