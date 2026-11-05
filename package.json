@@ -1,13 +1,9 @@
 {
-  "name": "aafu",
+  "name": "althaser-website",
   "version": "2025.11.30",
-  "description": "The aafu theme is a responsive portfolio with blog.",
-  "main": "index.js",
-  "keywords": [
-    "hugo",
-    "portfolio"
-  ],
-  "author": "Darshan Baral",
+  "private": true,
+  "description": "althaser's website",
+  "author": "Pedro Beja",
   "license": "MIT",
   "devDependencies": {
     "@tailwindcss/cli": "4.3.3",

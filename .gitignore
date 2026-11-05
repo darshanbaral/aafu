@@ -1,11 +1,8 @@
 .idea
 node_modules/
 resources
-assets/style.css
-*.toml_
 hugo_stats.json
 .hugo_build.lock
 public/*
 content/**/public/
-build.ps1
 .zed/
