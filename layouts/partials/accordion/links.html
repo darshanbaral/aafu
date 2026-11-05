@@ -1,7 +1,12 @@
 {{ range hugo.Data.links.list }}
 <p class="link-row">
   <span class="link-icon">
+    {{- if .icon2Dark }}
+    <img src="{{ .icon2 | relURL }}" alt="{{ .title }}" class="dark:hidden">
+    <img src="{{ .icon2Dark | relURL }}" alt="{{ .title }}" class="hidden dark:block">
+    {{- else }}
     <img src="{{ .icon2 | relURL }}" alt="{{ .title }}">
+    {{- end }}
   </span>
   <span class="link-label">
     <a href="{{ .url }}" class="{{ .class }} {{ .icon }}">{{ .title }}</a> {{ .version }}

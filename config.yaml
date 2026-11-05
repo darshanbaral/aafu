@@ -28,14 +28,12 @@ title: "althaser's website"
 params:
   author: Pedro Beja
   description: althaser's website
-  copyright: >-
-    powered by [hugo](https://gohugo.io/)
+  copyright: althaser.me
   analytics:
     googleTagId: G-GL1PZQ4MJH
     goatcounterCode: althaser
   theme:
     mainTheme: dark
-    showAttribute: true
     singlePage: false
   accordion:
     - item: about_me

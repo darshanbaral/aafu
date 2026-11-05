@@ -5,7 +5,8 @@
     {
       "title": "GitHub",
       "url": "https://github.com/althaser",
-      "icon2": "images/links/github.png"
+      "icon2": "images/links/github.svg",
+      "icon2Dark": "images/links/github-white.svg"
     },
     {
       "title": "GitLab",
@@ -20,7 +21,8 @@
     {
       "title": "[matrix]",
       "url": "https://element.io/",
-      "icon2": "images/links/matrix.svg"
+      "icon2": "images/links/matrix.svg",
+      "icon2Dark": "images/links/matrix-white.svg"
     },
     {
       "title": "Mastodon",
