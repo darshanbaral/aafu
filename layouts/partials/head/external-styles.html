@@ -6,9 +6,4 @@
   referrerpolicy="no-referrer"
 />
 {{ end }}
-{{ with .Site.Params.assets.googleFontsUrl }}
-<link
-  rel="stylesheet"
-  href="{{ . }}"
-/>
-{{ end }}
+<link rel="preload" href="{{ `fonts/inter-latin.woff2` | relURL }}" as="font" type="font/woff2" crossorigin />
