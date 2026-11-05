@@ -243,6 +243,71 @@ const initializePostNavigation = () => {
       document.querySelector("[data-pager-next]")?.click();
     }
   });
+
+  if (!document.querySelector("[data-pager-prev], [data-pager-next]")) {
+    return;
+  }
+
+  const scrollsHorizontally = (element) => {
+    for (let node = element; node && node !== document.body; node = node.parentElement) {
+      const overflowX = getComputedStyle(node).overflowX;
+      if ((overflowX === "auto" || overflowX === "scroll") && node.scrollWidth > node.clientWidth) {
+        return true;
+      }
+    }
+    return false;
+  };
+
+  let swipe = null;
+
+  document.addEventListener(
+    "touchstart",
+    (event) => {
+      const touch = event.touches[0];
+      const edge = 24;
+      swipe =
+        event.touches.length === 1 &&
+        touch.clientX > edge &&
+        touch.clientX < window.innerWidth - edge &&
+        !event.target.closest("input, textarea, select, [contenteditable]") &&
+        !scrollsHorizontally(event.target)
+          ? { x: touch.clientX, y: touch.clientY, time: event.timeStamp }
+          : null;
+    },
+    { passive: true },
+  );
+
+  document.addEventListener(
+    "touchend",
+    (event) => {
+      if (!swipe || event.touches.length > 0) {
+        swipe = null;
+        return;
+      }
+
+      const touch = event.changedTouches[0];
+      const dx = touch.clientX - swipe.x;
+      const dy = touch.clientY - swipe.y;
+      const elapsed = event.timeStamp - swipe.time;
+      swipe = null;
+
+      if (
+        Math.abs(dx) < 80 ||
+        Math.abs(dx) < Math.abs(dy) * 2 ||
+        elapsed > 600 ||
+        String(window.getSelection()).length > 0
+      ) {
+        return;
+      }
+
+      document.querySelector(dx < 0 ? "[data-pager-next]" : "[data-pager-prev]")?.click();
+    },
+    { passive: true },
+  );
+
+  document.addEventListener("touchcancel", () => {
+    swipe = null;
+  });
 };
 
 const initializeEventBindings = () => {
