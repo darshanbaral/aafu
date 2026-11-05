@@ -10,4 +10,6 @@
 />
 <meta name="description" content="{{ .Description | default .Site.Params.description }}" />
 <meta name="author" content="{{ .Site.Params.author }}" />
-<link rel="icon" href="{{ `favicon.ico` | relURL }}" type="image/x-icon" />
+<link rel="icon" href="{{ `favicon.ico` | relURL }}" sizes="48x48" />
+<link rel="icon" href="{{ `favicon-192.png` | relURL }}" type="image/png" sizes="192x192" />
+<link rel="apple-touch-icon" href="{{ `apple-touch-icon.png` | relURL }}" />
