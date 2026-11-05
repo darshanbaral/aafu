@@ -5,14 +5,14 @@
     <a class="nav-menu-item {{ if .IsHome }} active {{ end }}" href="{{ `/` | relURL }}" aria-label="Home" title="Home">
       <i class="fas fa-house" aria-hidden="true"></i>
     </a>
-    <a class="nav-menu-item {{ if eq .Section "search" }} active {{ end }}" href="{{ `search` | relURL }}" aria-label="Search" title="Search">
-      <i class="fas fa-search" aria-hidden="true"></i>
-    </a>
     <a class="nav-menu-item {{ if eq .Section "blog" }} active {{ end }}" href="{{ "blog" | relURL }}" aria-label="Blog" title="Blog">
       <i class="fas fa-blog" aria-hidden="true"></i>
     </a>
     <a class="nav-menu-item {{ if eq .Section "archive" }} active {{ end }}" href="{{ "archive" | relURL }}" aria-label="Archive" title="Archive">
       <i class="fas fa-box-archive" aria-hidden="true"></i>
+    </a>
+    <a class="nav-menu-item {{ if eq .Section "search" }} active {{ end }}" href="{{ `search` | relURL }}" aria-label="Search" title="Search">
+      <i class="fas fa-search" aria-hidden="true"></i>
     </a>
   </div>
 
