@@ -10,10 +10,11 @@ This site, including its source code and content, is licensed under the [MIT Lic
 
 ## Third-party assets
 
-This site is built with [Hugo](https://gohugo.io/) and uses the following third-party assets.
+This site uses the following third-party software and assets.
 
 | Asset | Author | License |
 |---|---|---|
+| [Hugo](https://gohugo.io/) static site generator | The Hugo Authors | [Apache 2.0](https://github.com/gohugoio/hugo/blob/master/LICENSE) |
 | [aafu](https://github.com/darshanbaral/aafu) theme | Darshan Baral | [MIT](https://github.com/darshanbaral/aafu/blob/main/LICENSE) |
 | [Pagefind](https://pagefind.app/) search | Pagefind | [MIT](https://github.com/Pagefind/pagefind/blob/main/LICENSE) |
 | [Font Awesome Free](https://fontawesome.com/) icons | Fonticons, Inc. | [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/) |
