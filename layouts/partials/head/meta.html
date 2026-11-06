@@ -13,3 +13,6 @@
 <link rel="icon" href="{{ `favicon.ico` | relURL }}" sizes="48x48" />
 <link rel="icon" href="{{ `favicon-192.png` | relURL }}" type="image/png" sizes="192x192" />
 <link rel="apple-touch-icon" href="{{ `apple-touch-icon.png` | relURL }}" />
+{{ with site.Home.OutputFormats.Get "rss" }}
+<link rel="alternate" type="{{ .MediaType.Type }}" href="{{ .Permalink }}" title="{{ site.Title }}" />
+{{ end }}
