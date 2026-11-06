@@ -1,6 +1,6 @@
 ---
-title: "Credits"
-description: "Third-party assets used on this site and their licenses"
+title: "License & Credits"
+description: "License of this site and third-party assets used"
 draft: false
 ---
 
@@ -8,7 +8,7 @@ draft: false
 
 This site, including its source code and content, is licensed under the [MIT License](https://github.com/althaser/website/blob/main/LICENSE).
 
-## Third-party assets
+## Credits
 
 This site uses the following third-party software and assets.
 
@@ -26,7 +26,7 @@ This site uses the following third-party software and assets.
 | [OFTC logo](https://commons.wikimedia.org/wiki/File:OFTC_logo.svg) | Open and Free Technology Community | Public domain |
 | [YouTube icon](https://commons.wikimedia.org/wiki/File:YouTube_full-color_icon_(2017).svg) | YouTube, via Wikimedia Commons | Public domain |
 
-## Trademarks
+### Trademarks
 
 - The [GitHub logo](https://github.com/logos) is a trademark of GitHub, Inc., used to link to GitHub.
 - The [Matrix logo](https://matrix.org/branding/) is the trademark of [The Matrix.org Foundation](https://matrix.org/). Use of this logo does not imply endorsement or affiliation.
