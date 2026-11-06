@@ -3,6 +3,9 @@
   "extends": [
     "config:best-practices"
   ],
+  "constraints": {
+    "npm": ">=11.18.0 <12"
+  },
   "schedule": [
     "before 7:00 am"
   ],
