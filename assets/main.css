@@ -147,13 +147,13 @@
     }
   }
   .panel {
-    @apply max-h-0 transition-[max-height] duration-300 ease-out;
+    @apply max-h-0 transition-[max-height] duration-500 ease-[cubic-bezier(0.22,1,0.36,1)];
   }
   .accordion-item.active > .panel {
     @apply max-h-none;
   }
   .accordion-trigger {
-    @apply mt-2 mb-2 flex w-full items-center justify-between rounded-sm px-2 py-[8px] text-left transition-colors;
+    @apply mt-2 mb-0 flex w-full items-center justify-between rounded-sm px-2 py-[8px] text-left transition-colors;
     @apply text-blue-600 hover:bg-gray-200 dark:text-heading-dark dark:hover:bg-title-dark;
   }
   .accordion-item.active > h2 > .accordion-trigger,
@@ -272,7 +272,7 @@
     @apply box-content inline-block h-[1em] w-[1.25em] overflow-visible align-[-0.125em];
   }
   .chevron {
-    @apply transition-transform duration-300 ease-linear;
+    @apply transition-transform duration-500 ease-[cubic-bezier(0.22,1,0.36,1)];
   }
   .accordion-item.active .chevron {
     @apply rotate-90;

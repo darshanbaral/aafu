@@ -31,6 +31,6 @@
     aria-labelledby="{{ $buttonID }}"
     {{ if not $isExpanded }}hidden{{ end }}
   >
-    <div>{{ partial (print "accordion/" $itemKey) $page }}</div>
+    <div class="pt-2">{{ partial (print "accordion/" $itemKey) $page }}</div>
   </div>
 </div>
