@@ -4,7 +4,7 @@
     "config:best-practices"
   ],
   "constraints": {
-    "npm": ">=11.18.0 <12"
+    "npm": "<13"
   },
   "schedule": [
     "before 7:00 am"
