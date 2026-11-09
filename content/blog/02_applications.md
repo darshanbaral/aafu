@@ -2,7 +2,7 @@
 title: "Applications"
 date: 2024-02-20
 lastmod: 2026-11-09
-tags: ["applications", "backup", "sync", "storage", "diff", "compare", "git", "k8s", "kubernetes", "ide", "homeassistant", "home-automation", "selfhosted", "monitoring", "system-info", "netdata", "nextcloud", "cloud", "security", "deleted-files", "recover", "remote", "touchpad", "smartphone", "renovatebot", "updates", "dependencies", "automation", "cli", "webcheck", "osint", "restic", "garage", "s3", "object-storage", "utils", "linux", "cleanup", "deduplication", "jless", "less", "json", "topgrade", "upgrade", "wttr", "weather", "nuclei", "scanner", "vulnerabilities", "headscale", "tailscale", "cloudflared", "cloudflare", "tunnel", "vpn", "wireguard", "networking"]
+tags: ["applications", "backup", "sync", "storage", "diff", "compare", "git", "k8s", "kubernetes", "ide", "homeassistant", "home-automation", "selfhosted", "monitoring", "system-info", "netdata", "nextcloud", "cloud", "security", "deleted-files", "recover", "remote", "touchpad", "smartphone", "renovatebot", "updates", "dependencies", "automation", "cli", "webcheck", "osint", "restic", "garage", "s3", "object-storage", "utils", "linux", "cleanup", "deduplication", "jless", "less", "json", "topgrade", "upgrade", "wttr", "weather", "nuclei", "scanner", "vulnerabilities", "headscale", "tailscale", "cloudflared", "cloudflare", "tunnel", "vpn", "wireguard", "networking", "ghostty", "starship", "gogh", "terminal", "shell", "colors"]
 categories: ["linux", "software", "applications", "tools", "backup"]
 description: "Applications"
 draft: false
@@ -41,6 +41,87 @@ https://git.deuxfleurs.fr/Deuxfleurs/garage
 https://restic.net
 
 https://github.com/restic/restic
+
+## CLI Tools
+
+### JLess
+
+{{< img src="https://raw.githubusercontent.com/PaulJuliusMartinez/jless/e6cdef719c7319020391d6bbf838ab272ce44cf0/logo/mascot.svg" alt="jless" width="110" height="100" >}}
+
+**jless** is a command-line JSON viewer. Use it as a replacement for whatever combination of less, jq, cat and your editor you currently use for viewing JSON files. It is written in Rust and can be installed as a single standalone binary.
+
+https://jless.io/
+
+https://github.com/PaulJuliusMartinez/jless
+
+### Rdfind
+
+{{< img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/Bash_Logo_Colored.svg/960px-Bash_Logo_Colored.svg.png" alt="rdfind" width="100" height="100" >}}
+
+**Rdfind** is a command line tool that finds duplicate files. It is useful for compressing backup directories or just finding duplicate files. It compares files based on their content, NOT on their file names.
+
+https://github.com/pauldreik/rdfind
+
+### Topgrade
+
+{{< img src="https://raw.githubusercontent.com/topgrade-rs/topgrade/31c5d0da3c554f7b0d822bb73ddf8db68cf8a99e/doc/topgrade_transparent.png" alt="topgrade" width="300" height="79" >}}
+
+**Topgrade** keeps your system up to date with a single command. It detects which package managers and tools you use (apt, flatpak, snap, cargo, pip, npm, firmware and many more) and runs the appropriate commands to update them. It is written in Rust.
+
+https://github.com/topgrade-rs/topgrade
+
+### Weather
+
+{{< img src="https://upload.wikimedia.org/wikipedia/commons/5/52/Weather-few-clouds.svg" alt="weather" width="64" height="64" >}}
+
+**Weather** in the terminal with https://wttr.in.
+
+```shell
+$ curl wttr.in/lisbon?format=2
+⛅  🌡️+15°C 🌬️↘21km/h
+
+$ curl wttr.in/lisbon
+Weather report: lisbon
+
+     \  /       Partly cloudy
+   _ /"".-.     15 °C
+     \_(   ).   ↘ 21 km/h
+     /(___(__)  10 km
+                0.1 mm
+                                                       ┌─────────────┐
+┌──────────────────────────────┬───────────────────────┤  Mon 13 Apr ├───────────────────────┬──────────────────────────────┐
+│            Morning           │             Noon      └──────┬──────┘     Evening           │             Night            │
+├──────────────────────────────┼──────────────────────────────┼──────────────────────────────┼──────────────────────────────┤
+│    \  /       Partly Cloudy  │    \  /       Partly cloudy  │  _`/"".-.     Patchy rain ne…│               Cloudy         │
+│  _ /"".-.     +13(11) °C     │  _ /"".-.     15 °C          │   ,\_(   ).   15 °C          │      .--.     +13(12) °C     │
+│    \_(   ).   ↘ 19-25 km/h   │    \_(   ).   ↘ 21-24 km/h   │    /(___(__)  ↘ 22-27 km/h   │   .-(    ).   ↘ 15-21 km/h   │
+│    /(___(__)  10 km          │    /(___(__)  10 km          │      ‘ ‘ ‘ ‘  10 km          │  (___.__)__)  10 km          │
+│               0.0 mm | 0%    │               0.1 mm | 100%  │     ‘ ‘ ‘ ‘   0.0 mm | 84%   │               0.0 mm | 0%    │
+└──────────────────────────────┴──────────────────────────────┴──────────────────────────────┴──────────────────────────────┘
+                                                       ┌─────────────┐
+┌──────────────────────────────┬───────────────────────┤  Tue 14 Apr ├───────────────────────┬──────────────────────────────┐
+│            Morning           │             Noon      └──────┬──────┘     Evening           │             Night            │
+├──────────────────────────────┼──────────────────────────────┼──────────────────────────────┼──────────────────────────────┤
+│    \  /       Partly Cloudy  │  _`/"".-.     Patchy rain ne…│     \   /     Sunny          │     \   /     Clear          │
+│  _ /"".-.     15 °C          │   ,\_(   ).   18 °C          │      .-.      18 °C          │      .-.      +15(14) °C     │
+│    \_(   ).   → 9-12 km/h    │    /(___(__)  ↘ 13-15 km/h   │   ― (   ) ―   ↘ 20-27 km/h   │   ― (   ) ―   ↘ 15-23 km/h   │
+│    /(___(__)  10 km          │      ‘ ‘ ‘ ‘  10 km          │      `-’      10 km          │      `-’      10 km          │
+│               0.0 mm | 0%    │     ‘ ‘ ‘ ‘   0.0 mm | 80%   │     /   \     0.0 mm | 0%    │     /   \     0.0 mm | 0%    │
+└──────────────────────────────┴──────────────────────────────┴──────────────────────────────┴──────────────────────────────┘
+                                                       ┌─────────────┐
+┌──────────────────────────────┬───────────────────────┤  Wed 15 Apr ├───────────────────────┬──────────────────────────────┐
+│            Morning           │             Noon      └──────┬──────┘     Evening           │             Night            │
+├──────────────────────────────┼──────────────────────────────┼──────────────────────────────┼──────────────────────────────┤
+│     \   /     Sunny          │     \   /     Sunny          │     \   /     Sunny          │     \   /     Clear          │
+│      .-.      +15(14) °C     │      .-.      19 °C          │      .-.      18 °C          │      .-.      +14(13) °C     │
+│   ― (   ) ―   ↘ 13-18 km/h   │   ― (   ) ―   ↓ 14-17 km/h   │   ― (   ) ―   ↘ 24-30 km/h   │   ― (   ) ―   ↘ 17-26 km/h   │
+│      `-’      10 km          │      `-’      10 km          │      `-’      10 km          │      `-’      10 km          │
+│     /   \     0.0 mm | 0%    │     /   \     0.0 mm | 0%    │     /   \     0.0 mm | 0%    │     /   \     0.0 mm | 0%    │
+└──────────────────────────────┴──────────────────────────────┴──────────────────────────────┴──────────────────────────────┘
+Location: Lisboa, Grande Lisboa, Área Metropolitana de Lisboa, Portugal [38.7077926,-9.136506]
+
+Follow @igor_chubin for wttr.in updates
+```
 
 ## HomeAssistant
 
@@ -216,86 +297,37 @@ pbeja@Sirius:~/go $ bin/nuclei -u https://althaser.eu
 
 https://github.com/Lissy93/web-check
 
-## Terminal
+## Terminals
 
-### JLess
+### Ghostty
 
-{{< img src="https://raw.githubusercontent.com/PaulJuliusMartinez/jless/e6cdef719c7319020391d6bbf838ab272ce44cf0/logo/mascot.svg" alt="jless" width="110" height="100" >}}
+{{< img src="https://avatars.githubusercontent.com/u/169223740?s=200&v=4" alt="ghostty" width="100" height="100" >}}
 
-**jless** is a command-line JSON viewer. Use it as a replacement for whatever combination of less, jq, cat and your editor you currently use for viewing JSON files. It is written in Rust and can be installed as a single standalone binary.
+**Ghostty** is a fast, feature-rich, and cross-platform terminal emulator that uses platform-native UI and GPU acceleration.
 
-https://jless.io/
+https://ghostty.org
 
-https://github.com/PaulJuliusMartinez/jless
+https://github.com/ghostty-org/ghostty
 
-### Rdfind
+### Gogh
 
-{{< img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/Bash_Logo_Colored.svg/960px-Bash_Logo_Colored.svg.png" alt="rdfind" width="100" height="100" >}}
+{{< img src="https://raw.githubusercontent.com/Gogh-Co/Gogh/3277da1a295142cd8664e0657c5a3c2a44cc520a/.images/gogh/Gogh-logo-dark.png" alt="gogh" width="200" height="85" >}}
 
-**Rdfind** is a command line tool that finds duplicate files. It is useful for compressing backup directories or just finding duplicate files. It compares files based on their content, NOT on their file names.
+**Gogh** Color Schemes For Ubuntu, Linux Mint, Elementary OS and all distributions that use Gnome Terminal, Pantheon Terminal, Tilix, or XFCE4 Terminal; initially inspired by Elementary OS Luna. Also works on iTerm for macOS.
 
-https://github.com/pauldreik/rdfind
+https://gogh.website
 
-### Topgrade
+https://github.com/Gogh-Co/Gogh
 
-{{< img src="https://raw.githubusercontent.com/topgrade-rs/topgrade/31c5d0da3c554f7b0d822bb73ddf8db68cf8a99e/doc/topgrade_transparent.png" alt="topgrade" width="300" height="79" >}}
+### Starship
 
-**Topgrade** keeps your system up to date with a single command. It detects which package managers and tools you use (apt, flatpak, snap, cargo, pip, npm, firmware and many more) and runs the appropriate commands to update them. It is written in Rust.
+{{< img src="https://starship.rs/logo.svg" alt="starship" width="200" height="53" >}}
 
-https://github.com/topgrade-rs/topgrade
+**Starship** The minimal, blazing-fast, and infinitely customizable prompt for any shell!
 
-### Weather
+https://starship.rs
 
-{{< img src="https://upload.wikimedia.org/wikipedia/commons/5/52/Weather-few-clouds.svg" alt="weather" width="64" height="64" >}}
-
-**Weather** in the terminal with https://wttr.in.
-
-```shell
-$ curl wttr.in/lisbon?format=2
-⛅  🌡️+15°C 🌬️↘21km/h
-
-$ curl wttr.in/lisbon
-Weather report: lisbon
-
-     \  /       Partly cloudy
-   _ /"".-.     15 °C
-     \_(   ).   ↘ 21 km/h
-     /(___(__)  10 km
-                0.1 mm
-                                                       ┌─────────────┐
-┌──────────────────────────────┬───────────────────────┤  Mon 13 Apr ├───────────────────────┬──────────────────────────────┐
-│            Morning           │             Noon      └──────┬──────┘     Evening           │             Night            │
-├──────────────────────────────┼──────────────────────────────┼──────────────────────────────┼──────────────────────────────┤
-│    \  /       Partly Cloudy  │    \  /       Partly cloudy  │  _`/"".-.     Patchy rain ne…│               Cloudy         │
-│  _ /"".-.     +13(11) °C     │  _ /"".-.     15 °C          │   ,\_(   ).   15 °C          │      .--.     +13(12) °C     │
-│    \_(   ).   ↘ 19-25 km/h   │    \_(   ).   ↘ 21-24 km/h   │    /(___(__)  ↘ 22-27 km/h   │   .-(    ).   ↘ 15-21 km/h   │
-│    /(___(__)  10 km          │    /(___(__)  10 km          │      ‘ ‘ ‘ ‘  10 km          │  (___.__)__)  10 km          │
-│               0.0 mm | 0%    │               0.1 mm | 100%  │     ‘ ‘ ‘ ‘   0.0 mm | 84%   │               0.0 mm | 0%    │
-└──────────────────────────────┴──────────────────────────────┴──────────────────────────────┴──────────────────────────────┘
-                                                       ┌─────────────┐
-┌──────────────────────────────┬───────────────────────┤  Tue 14 Apr ├───────────────────────┬──────────────────────────────┐
-│            Morning           │             Noon      └──────┬──────┘     Evening           │             Night            │
-├──────────────────────────────┼──────────────────────────────┼──────────────────────────────┼──────────────────────────────┤
-│    \  /       Partly Cloudy  │  _`/"".-.     Patchy rain ne…│     \   /     Sunny          │     \   /     Clear          │
-│  _ /"".-.     15 °C          │   ,\_(   ).   18 °C          │      .-.      18 °C          │      .-.      +15(14) °C     │
-│    \_(   ).   → 9-12 km/h    │    /(___(__)  ↘ 13-15 km/h   │   ― (   ) ―   ↘ 20-27 km/h   │   ― (   ) ―   ↘ 15-23 km/h   │
-│    /(___(__)  10 km          │      ‘ ‘ ‘ ‘  10 km          │      `-’      10 km          │      `-’      10 km          │
-│               0.0 mm | 0%    │     ‘ ‘ ‘ ‘   0.0 mm | 80%   │     /   \     0.0 mm | 0%    │     /   \     0.0 mm | 0%    │
-└──────────────────────────────┴──────────────────────────────┴──────────────────────────────┴──────────────────────────────┘
-                                                       ┌─────────────┐
-┌──────────────────────────────┬───────────────────────┤  Wed 15 Apr ├───────────────────────┬──────────────────────────────┐
-│            Morning           │             Noon      └──────┬──────┘     Evening           │             Night            │
-├──────────────────────────────┼──────────────────────────────┼──────────────────────────────┼──────────────────────────────┤
-│     \   /     Sunny          │     \   /     Sunny          │     \   /     Sunny          │     \   /     Clear          │
-│      .-.      +15(14) °C     │      .-.      19 °C          │      .-.      18 °C          │      .-.      +14(13) °C     │
-│   ― (   ) ―   ↘ 13-18 km/h   │   ― (   ) ―   ↓ 14-17 km/h   │   ― (   ) ―   ↘ 24-30 km/h   │   ― (   ) ―   ↘ 17-26 km/h   │
-│      `-’      10 km          │      `-’      10 km          │      `-’      10 km          │      `-’      10 km          │
-│     /   \     0.0 mm | 0%    │     /   \     0.0 mm | 0%    │     /   \     0.0 mm | 0%    │     /   \     0.0 mm | 0%    │
-└──────────────────────────────┴──────────────────────────────┴──────────────────────────────┴──────────────────────────────┘
-Location: Lisboa, Grande Lisboa, Área Metropolitana de Lisboa, Portugal [38.7077926,-9.136506]
-
-Follow @igor_chubin for wttr.in updates
-```
+https://github.com/starship/starship
 
 ## Tunnels and VPN
 
