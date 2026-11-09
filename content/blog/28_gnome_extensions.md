@@ -1,6 +1,7 @@
 ---
 title: "GNOME Shell Extensions"
 date: 2024-10-24
+lastmod: 2026-11-09
 tags: ["gnome", "gnome-shell", "extensions"]
 categories: ["linux", "software", "applications", "tools"]
 description: "GNOME Shell Extensions"
@@ -10,14 +11,11 @@ draft: false
 Favourite **GNOME Shell Extensions**:
 
 {{< linkcards >}}
-{{< linkcard href="https://github.com/Fire-man-x/Public-IP-address---Gnome-shell-extension" src="https://avatars.githubusercontent.com/u/102694121?s=48&v=4" alt="public-ip-address" label="Public IP address" >}}
-{{< linkcard href="https://github.com/Tudmotu/gnome-shell-extension-clipboard-indicator" src="https://extensions.gnome.org/extension-data/icons/icon_779_cGrEoF7.png" alt="clipboard-indicator" label="Clipboard Indicator" >}}
-{{< linkcard href="https://gitlab.com/LinxGem33/IP-Finder" src="https://extensions.gnome.org/extension-data/icons/icon_2983_CLeDYLk.png" alt="ip-finder" label="IP Finder" >}}
-{{< linkcard href="https://extensions.gnome.org/extension/8261/simpleweather/" src="https://extensions.gnome.org/extension-data/icons/icon_8261.png" alt="simpleweather" label="SimpleWeather" >}}
-{{< linkcard href="https://github.com/mgalgs/gnome-shell-system-monitor-applet" src="https://extensions.gnome.org/extension-data/icons/icon_3010.png" alt="system-monitor-applet" label="System Monitor Applet" >}}
-{{< linkcard href="https://micheleg.github.io/dash-to-dock/" src="https://extensions.gnome.org/extension-data/icons/icon_307_2.png" alt="Dash To Dock" label="Dash To Dock" >}}
-{{< linkcard href="https://gitlab.gnome.org/GNOME/gnome-shell-extensions" src="https://extensions.gnome.org/extension-data/icons/icon_10.png" alt="windowNavigator" label="Window Navigator" >}}
-{{< linkcard href="https://github.com/neffo/bing-wallpaper-gnome-extension" src="https://extensions.gnome.org/extension-data/icons/icon_1262_qXt2a7I.png" alt="bingWallpaper" label="Bing Wallpaper" >}}
-{{< linkcard href="https://github.com/ifl0w/RandomWallpaperGnome3" src="https://extensions.gnome.org/extension-data/icons/icon_1040_99yazJQ.png" alt="randomwallpaper" label="Random Wallpaper" >}}
-{{< linkcard href="https://framagit.org/razer/bubblemail" src="https://framagit.org/uploads/-/system/project/avatar/49237/bubblemail.png" alt="bubblemail" label="BubbleMail" >}}
+{{< linkcard href="https://github.com/neffo/bing-wallpaper-gnome-extension" src="/images/gnome-extensions/bing-wallpaper.svg" alt="bingWallpaper" label="Bing Wallpaper" >}}
+{{< linkcard href="https://codeberg.org/LinxGem33/IP-Finder" src="/images/gnome-extensions/ip-finder.png" alt="ip-finder" label="IP Finder" >}}
+{{< linkcard href="https://github.com/subz69/pigeon" src="/images/gnome-extensions/pigeon-email-notifier.svg" alt="pigeon-email-notifier" label="Pigeon Email Notifier" >}}
+{{< linkcard href="https://github.com/mgalgs/gnome-shell-system-monitor-next-applet" src="/images/gnome-extensions/system-monitor-next.svg" alt="system-monitor-next" label="System Monitor Next" >}}
+{{< linkcard href="https://github.com/ubuntu/gnome-shell-extension-appindicator" src="/images/gnome-extensions/ubuntu-appindicators.png" alt="ubuntu-appindicators" label="Ubuntu AppIndicators" >}}
+{{< linkcard href="https://github.com/vijaybala-lang/weatherglass" src="/images/gnome-extensions/weatherglass.png" alt="weatherglass" label="Weatherglass" >}}
+{{< linkcard href="https://gitlab.gnome.org/GNOME/gnome-shell-extensions" src="/images/gnome-extensions/window-navigator.svg" alt="windowNavigator" label="Window Navigator" >}}
 {{< /linkcards >}}

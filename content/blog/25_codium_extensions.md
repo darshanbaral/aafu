@@ -11,12 +11,12 @@ draft: false
 Favourite **Codium Extensions**:
 
 {{< linkcards >}}
-{{< linkcard href="https://open-vsx.org/extension/Anthropic/claude-code" src="/images/extensions/claude-code.png" alt="claude code" label="Claude Code" >}}
-{{< linkcard href="https://github.com/moshfeu/vscode-compare-folders" src="/images/extensions/compare-folders.png" alt="compare folders" label="Compare Folders" >}}
-{{< linkcard href="https://github.com/gitkraken/vscode-gitlens" src="/images/extensions/gitlens.png" alt="gitlens" label="GitLens" >}}
-{{< linkcard href="https://github.com/fabiospampinato/vscode-highlight" src="/images/extensions/highlight.png" alt="highlight" label="Highlight" >}}
-{{< linkcard href="https://github.com/wholroyd/vscode-jinja" src="/images/extensions/jinja.png" alt="jinja" label="Jinja" >}}
-{{< linkcard href="https://github.com/vscode-shellcheck/vscode-shellcheck" src="/images/extensions/shellcheck.png" alt="shellcheck" label="ShellCheck" >}}
-{{< linkcard href="https://github.com/jhhtaylor/tabstronaut" src="/images/extensions/tabstronaut.png" alt="tabstronaut" label="Tabstronaut" >}}
-{{< linkcard href="https://github.com/shardulm94/vscode-trailingspaces" src="/images/extensions/trailing-spaces.png" alt="trailing spaces" label="Trailing Spaces" >}}
+{{< linkcard href="https://open-vsx.org/extension/Anthropic/claude-code" src="/images/codium-extensions/claude-code.png" alt="claude code" label="Claude Code" >}}
+{{< linkcard href="https://github.com/moshfeu/vscode-compare-folders" src="/images/codium-extensions/compare-folders.png" alt="compare folders" label="Compare Folders" >}}
+{{< linkcard href="https://github.com/gitkraken/vscode-gitlens" src="/images/codium-extensions/gitlens.png" alt="gitlens" label="GitLens" >}}
+{{< linkcard href="https://github.com/fabiospampinato/vscode-highlight" src="/images/codium-extensions/highlight.png" alt="highlight" label="Highlight" >}}
+{{< linkcard href="https://github.com/wholroyd/vscode-jinja" src="/images/codium-extensions/jinja.png" alt="jinja" label="Jinja" >}}
+{{< linkcard href="https://github.com/vscode-shellcheck/vscode-shellcheck" src="/images/codium-extensions/shellcheck.png" alt="shellcheck" label="ShellCheck" >}}
+{{< linkcard href="https://github.com/jhhtaylor/tabstronaut" src="/images/codium-extensions/tabstronaut.png" alt="tabstronaut" label="Tabstronaut" >}}
+{{< linkcard href="https://github.com/shardulm94/vscode-trailingspaces" src="/images/codium-extensions/trailing-spaces.png" alt="trailing spaces" label="Trailing Spaces" >}}
 {{< /linkcards >}}
