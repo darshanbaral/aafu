@@ -2,7 +2,7 @@
 title: "Applications"
 date: 2024-02-20
 lastmod: 2026-11-09
-tags: ["applications", "backup", "sync", "storage", "diff", "compare", "git", "k8s", "kubernetes", "ide", "homeassistant", "home-automation", "selfhosted", "monitoring", "system-info", "netdata", "nextcloud", "cloud", "security", "deleted-files", "recover", "remote", "touchpad", "smartphone", "renovatebot", "updates", "dependencies", "automation", "cli", "webcheck", "osint", "restic", "garage", "s3", "object-storage", "utils", "linux", "cleanup", "deduplication", "jless", "less", "json", "topgrade", "upgrade", "wttr", "weather", "nuclei", "scanner", "vulnerabilities", "headscale", "tailscale", "cloudflared", "cloudflare", "tunnel", "vpn", "wireguard", "networking", "ghostty", "starship", "gogh", "terminal", "shell", "colors"]
+tags: ["applications", "backup", "sync", "storage", "diff", "compare", "git", "k8s", "kubernetes", "ide", "homeassistant", "home-automation", "selfhosted", "monitoring", "system-info", "netdata", "nextcloud", "cloud", "security", "deleted-files", "recover", "remote", "touchpad", "smartphone", "renovatebot", "updates", "dependencies", "automation", "cli", "webcheck", "osint", "restic", "garage", "s3", "object-storage", "utils", "linux", "cleanup", "deduplication", "jless", "less", "json", "topgrade", "upgrade", "wttr", "weather", "nuclei", "scanner", "vulnerabilities", "headscale", "tailscale", "cloudflared", "cloudflare", "tunnel", "vpn", "wireguard", "networking", "ghostty", "starship", "gogh", "terminal", "shell", "colors", "sablier", "docker"]
 categories: ["linux", "software", "applications", "tools", "backup"]
 description: "Applications"
 draft: false
@@ -235,6 +235,16 @@ https://www.unifiedremote.com
 https://github.com/apps/renovate
 
 Renovate runs: https://developer.mend.io/github/althaser/website
+
+## Sablier
+
+{{< img src="https://raw.githubusercontent.com/sablierapp/artwork/b203cf1509329ca044340ce68e2712c10e679b6e/icon/sablier-icon-color.png" alt="sablier" width="100" height="100" >}}
+
+**Sablier** is a free and open-source software that can scale your workloads on demand, down to zero when they are not in use.
+
+https://sablierapp.dev
+
+https://github.com/sablierapp/sablier
 
 ## Security
 
