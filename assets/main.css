@@ -31,6 +31,15 @@
   --color-link-dark: #f5d76e;
   --color-link-dark-hover: #fff3c4;
   --color-heading-dark: #e6c34a;
+  --color-terminal: #282c34;
+  --color-headerbar: #2e2e32;
+  --animate-blink: blink 1s step-end infinite;
+
+  @keyframes blink {
+    50% {
+      opacity: 0;
+    }
+  }
 }
 
 @custom-variant dark (&:where(.dark, .dark *));
@@ -358,6 +367,57 @@
   }
   .link-image-anchor {
     @apply inline-flex items-center gap-1;
+  }
+  .terminal {
+    @apply mt-4 overflow-hidden rounded-xl bg-terminal shadow-lg ring-1 ring-black/40;
+  }
+  .terminal-bar {
+    @apply grid grid-cols-[1fr_auto_1fr] items-center gap-2 bg-headerbar px-2 py-1.5 text-gray-200;
+  }
+  .terminal-bar-start {
+    @apply flex justify-start;
+  }
+  .terminal-bar-end {
+    @apply flex items-center justify-end gap-2;
+  }
+  .terminal-button {
+    @apply inline-flex size-8 items-center justify-center rounded-md text-sm;
+  }
+  .terminal-control {
+    @apply inline-flex size-6 items-center justify-center rounded-full bg-white/10 text-[0.65rem];
+  }
+  .terminal-control .icon {
+    @apply w-[1em];
+  }
+  .terminal-title {
+    @apply truncate text-sm font-bold;
+  }
+  .terminal-screen {
+    @apply m-0 h-[24rem] overflow-auto whitespace-pre p-3 font-mono text-xs leading-relaxed sm:p-4 sm:text-sm text-gray-200;
+  }
+  .terminal-cursor {
+    @apply inline-block h-[1.1em] w-[0.6em] translate-y-[0.2em] animate-blink bg-gray-200;
+  }
+  .term-green {
+    @apply text-green-400;
+  }
+  .term-blue {
+    @apply text-blue-400;
+  }
+  .term-yellow {
+    @apply text-yellow-300;
+  }
+  .term-red {
+    @apply text-orange-500;
+  }
+  .term-magenta {
+    @apply text-fuchsia-400;
+  }
+  .term-cyan {
+    @apply text-cyan-400;
+  }
+  .term-gray {
+    @apply text-gray-400;
   }
 }
 

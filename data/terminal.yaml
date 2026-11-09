@@ -1,0 +1,41 @@
+title: "althaser@laptop: ~"
+prompt: "{green}althaser@laptop{/}:{blue}~{/}$ "
+clearDelay: 5000
+sessions:
+  - cmd: "uptime -p"
+    output: |
+      up 3 days, 7 hours, 42 minutes
+
+  - cmd: "fastfetch --logo-type small"
+    output: |
+      {red}         _  {/}  {yellow}althaser{/}@{yellow}laptop{/}
+      {red}     ---(_) {/}  ---------------
+      {red} _/  ---  \ {/}  {yellow}OS{/}: Ubuntu 26.04.1 LTS x86_64
+      {red}(_) |   |   {/}  {yellow}Kernel{/}: Linux 7.0.0-43-generic
+      {red}  \  --- _/ {/}  {yellow}Uptime{/}: 3 days, 7 hours, 42 mins
+      {red}     ---(_) {/}  {yellow}Shell{/}: bash 5.3.9
+                    {yellow}DE{/}: GNOME 50.1
+                    {yellow}Terminal{/}: ghostty
+
+                    {red}███{/}{green}███{/}{yellow}███{/}{blue}███{/}{magenta}███{/}{cyan}███{/}{gray}███{/}
+
+  - cmd: "pi \"what is althaser.me about?\""
+    lineDelay: 120
+    output: |
+      {magenta}π{/} {gray}reading https://althaser.me ...{/}
+      {green}✓{/} {gray}fetched 30 pages{/}
+
+      {yellow}althaser.me{/} is Pedro Beja's personal website: blog posts and
+      some personal links about open source topics and other stuff he
+      uses on a daily basis.
+
+  - cmd: "cowsay kkthxbye"
+    output: |2
+       __________
+      < kkthxbye >
+       ----------
+              \   ^__^
+               \  (oo)\_______
+                  (__)\       )\/\
+                      ||----w |
+                      ||     ||

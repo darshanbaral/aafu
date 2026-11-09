@@ -11,6 +11,9 @@
     <a class="nav-menu-item {{ if eq .Section "archive" }} active {{ end }}" href="{{ "archive" | relURL }}" aria-label="Archive" title="Archive">
       {{ partial "icon.html" "solid/box-archive" }}
     </a>
+    <a class="nav-menu-item {{ if eq .Section "ai" }} active {{ end }}" href="{{ `ai` | relURL }}" aria-label="AI" title="AI">
+      {{ partial "icon.html" "solid/robot" }}
+    </a>
     <a class="nav-menu-item {{ if eq .Section "search" }} active {{ end }}" href="{{ `search` | relURL }}" aria-label="Search" title="Search">
       {{ partial "icon.html" "solid/magnifying-glass" }}
     </a>

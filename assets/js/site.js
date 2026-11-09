@@ -307,6 +307,105 @@ const initializePostNavigation = () => {
   });
 };
 
+const initializeTerminal = () => {
+  const screen = document.querySelector("[data-terminal-screen]");
+  const source = document.querySelector("[data-terminal-script]");
+
+  if (!screen || !source) {
+    return;
+  }
+
+  let config;
+  try {
+    config = JSON.parse(source.textContent);
+  } catch {
+    return;
+  }
+
+  const prompt = config.prompt ?? "$ ";
+  const sessions = config.sessions ?? [];
+
+  if (!sessions.length) {
+    return;
+  }
+
+  const escapeHtml = (text) =>
+    text.replace(/[&<>"']/g, (char) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" })[char]);
+  const markup = (text) =>
+    escapeHtml(text).replace(/\{(green|blue|yellow|red|magenta|cyan|gray)\}(.*?)\{\/\}/g, '<span class="term-$1">$2</span>');
+  const outputLines = (session) => (session.output ? session.output.replace(/\n+$/, "").split("\n") : []);
+  const cursor = '<span class="terminal-cursor"></span>';
+
+  if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+    screen.innerHTML =
+      sessions
+        .flatMap((session) => [markup(prompt) + escapeHtml(session.cmd), ...outputLines(session).map(markup)])
+        .join("\n") + `\n${markup(prompt)}${cursor}`;
+    return;
+  }
+
+  const sleep = (ms) => new Promise((resolve) => window.setTimeout(resolve, ms));
+  const whenVisible = () =>
+    document.hidden
+      ? new Promise((resolve) => {
+          const handler = () => {
+            if (!document.hidden) {
+              document.removeEventListener("visibilitychange", handler);
+              resolve();
+            }
+          };
+          document.addEventListener("visibilitychange", handler);
+        })
+      : Promise.resolve();
+
+  let html = "";
+  const render = (tail = cursor) => {
+    screen.innerHTML = html + tail;
+    screen.scrollTop = screen.scrollHeight;
+  };
+
+  const type = async (cmd, delay) => {
+    html += markup(prompt);
+    render();
+    await sleep(delay);
+
+    for (const char of cmd) {
+      await whenVisible();
+      html += escapeHtml(char);
+      render();
+      await sleep(45 + Math.random() * 90);
+    }
+
+    await sleep(350);
+    html += "\n";
+  };
+
+  const run = async () => {
+    for (;;) {
+      let delay = 900;
+
+      for (const session of sessions) {
+        await type(session.cmd, delay);
+
+        for (const line of outputLines(session)) {
+          await whenVisible();
+          html += `${markup(line)}\n`;
+          render("");
+          await sleep(session.lineDelay ?? 35);
+        }
+
+        delay = session.pause ?? 2200;
+      }
+
+      await type("clear", delay + (config.clearDelay ?? 5000));
+      html = "";
+      render();
+    }
+  };
+
+  run();
+};
+
 const initializeEventBindings = () => {
   document.querySelectorAll("[data-accordion-trigger]").forEach((trigger) => {
     trigger.addEventListener("click", () => {
@@ -340,4 +439,5 @@ window.addEventListener("DOMContentLoaded", () => {
   syncActiveAccordionPanel();
   initializeSkillBars();
   initializeSearch();
+  initializeTerminal();
 });

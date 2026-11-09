@@ -1,0 +1,23 @@
+{{ define "main" }}
+<div class="page-shell prose dark:prose-invert max-w-none">
+  <h1 class="mt-1 mb-4">{{ .Title }}</h1>
+  {{ .Content }}
+  <p class="sr-only">A simulated terminal session that types commands and shows their output.</p>
+  <div class="terminal not-prose" aria-hidden="true">
+    <div class="terminal-bar">
+      <span class="terminal-bar-start">
+        <span class="terminal-button">{{ partial "icon.html" "solid/plus" }}</span>
+      </span>
+      <span class="terminal-title">{{ hugo.Data.terminal.title }}</span>
+      <span class="terminal-bar-end">
+        <span class="terminal-button">{{ partial "icon.html" "solid/bars" }}</span>
+        <span class="terminal-control">{{ partial "icon.html" "solid/minus" }}</span>
+        <span class="terminal-control">{{ partial "icon.html" "regular/square" }}</span>
+        <span class="terminal-control">{{ partial "icon.html" "solid/xmark" }}</span>
+      </span>
+    </div>
+    <div class="terminal-screen" data-terminal-screen></div>
+  </div>
+  <script type="application/json" data-terminal-script>{{ hugo.Data.terminal | jsonify | safeJS }}</script>
+</div>
+{{ end }}
