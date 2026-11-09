@@ -2,7 +2,7 @@
 title: "Applications"
 date: 2024-02-20
 lastmod: 2026-11-09
-tags: ["applications", "backup", "sync", "storage", "diff", "compare", "git", "k8s", "kubernetes", "ide", "homeassistant", "home-automation", "selfhosted", "monitoring", "system-info", "netdata", "nextcloud", "cloud", "security", "deleted-files", "recover", "remote", "touchpad", "smartphone", "renovatebot", "updates", "dependencies", "automation", "cli", "webcheck", "osint", "restic", "garage", "s3", "object-storage", "utils", "linux", "cleanup", "deduplication", "jless", "less", "json", "topgrade", "upgrade", "wttr", "weather", "nuclei", "scanner", "vulnerabilities", "headscale", "tailscale", "cloudflared", "cloudflare", "tunnel", "vpn", "wireguard", "networking", "ghostty", "starship", "gogh", "terminal", "shell", "colors", "sablier", "docker", "editor", "code", "ai"]
+tags: ["applications", "backup", "sync", "storage", "diff", "compare", "git", "k8s", "kubernetes", "ide", "homeassistant", "home-automation", "selfhosted", "monitoring", "system-info", "netdata", "nextcloud", "cloud", "security", "deleted-files", "recover", "remote", "touchpad", "smartphone", "renovatebot", "updates", "dependencies", "automation", "cli", "webcheck", "osint", "sherlock", "username", "social-media", "restic", "garage", "s3", "object-storage", "utils", "linux", "cleanup", "deduplication", "jless", "less", "json", "topgrade", "upgrade", "wttr", "weather", "nuclei", "scanner", "vulnerabilities", "headscale", "tailscale", "cloudflared", "cloudflare", "tunnel", "vpn", "wireguard", "networking", "ghostty", "starship", "gogh", "terminal", "shell", "colors", "sablier", "docker", "editor", "code", "ai"]
 categories: ["linux", "software", "applications", "tools", "backup"]
 description: "Applications"
 draft: false
@@ -319,6 +319,67 @@ pbeja@Sirius:~/go $ bin/nuclei -u https://althaser.eu
 [nameserver-fingerprint] [dns] [info] althaser.eu ["ns71.domaincontrol.com.","ns72.domaincontrol.com."]
 [ssl-issuer] [ssl] [info] althaser.eu:443 ["Let's Encrypt"]
 [ssl-dns-names] [ssl] [info] althaser.eu:443 ["althaser.eu"]
+```
+
+### Sherlock
+
+{{< img src="/images/applications/sherlock.png" alt="sherlock" width="100" height="100" >}}
+
+**Sherlock** hunts down social media accounts by username across 400+ social networks.
+
+https://sherlockproject.xyz
+
+https://github.com/sherlock-project/sherlock
+
+```shell
+$ docker run --rm -t sherlock/sherlock hackerman1337
+Update available! 0.16.0 --> 0.16.2
+https://github.com/sherlock-project/sherlock/releases/tag/v0.16.2
+[*] Checking username hackerman1337 on:
+
+[+] 7Cups: https://www.7cups.com/@hackerman1337
+[+] 9GAG: https://www.9gag.com/u/hackerman1337
+[+] Bluesky: https://bsky.app/profile/hackerman1337.bsky.social
+[+] Chess: https://www.chess.com/member/hackerman1337
+[+] Codecademy: https://www.codecademy.com/profiles/hackerman1337
+[+] Cracked Forum: https://cracked.ax/hackerman1337
+[+] DailyMotion: https://www.dailymotion.com/hackerman1337
+[+] Discord: https://discord.com
+[+] Disqus: https://disqus.com/hackerman1337
+[+] Docker Hub: https://hub.docker.com/u/hackerman1337/
+[+] Envato Forum: https://forums.envato.com/u/hackerman1337
+[+] F3.cool: https://f3.cool/hackerman1337/
+[+] Freesound: https://freesound.org/people/hackerman1337/
+[+] GitHub: https://www.github.com/hackerman1337
+[+] Warframe Market: https://warframe.market/profile/hackerman1337
+[+] GitLab: https://gitlab.com/hackerman1337
+[+] Gravatar: http://en.gravatar.com/hackerman1337
+[+] Hackaday: https://hackaday.io/hackerman1337
+[+] HudsonRock: https://cavalier.hudsonrock.com/api/json/v2/osint-tools/search-by-username?username=hackerman1337
+[+] Hugging Face: https://huggingface.co/hackerman1337
+[+] Imgur: https://imgur.com/user/hackerman1337
+[+] Kick: https://kick.com/hackerman1337
+[+] Kvinneguiden: https://forum.kvinneguiden.no
+[+] NitroType: https://www.nitrotype.com/racer/hackerman1337
+[+] OpenStreetMap: https://www.openstreetmap.org/user/hackerman1337
+[+] Outgress: https://outgress.com/agents/hackerman1337
+[+] Pastebin: https://pastebin.com/u/hackerman1337
+[+] Pokemon Showdown: https://pokemonshowdown.com/users/hackerman1337
+[+] Redbubble: https://www.redbubble.com/people/hackerman1337
+[+] Replit.com: https://replit.com/@hackerman1337
+[+] Scratch: https://scratch.mit.edu/users/hackerman1337
+[+] Snapchat: https://www.snapchat.com/add/hackerman1337
+[+] Steam Community (Group): https://steamcommunity.com/groups/hackerman1337
+[+] Steam Community (User): https://steamcommunity.com/id/hackerman1337/
+[+] Strava: https://www.strava.com/athletes/hackerman1337
+[+] TheMovieDB: https://www.themoviedb.org/u/hackerman1337
+[+] TikTok: https://www.tiktok.com/@hackerman1337
+[+] Telegram: https://t.me/hackerman1337
+[+] Trakt: https://www.trakt.tv/users/hackerman1337
+[+] Trawelling: https://traewelling.de/@hackerman1337
+[+] Typeracer: https://data.typeracer.com/pit/profile?user=hackerman1337
+
+[*] Search completed with 41 results
 ```
 
 ### WebCheck
