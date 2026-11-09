@@ -2,7 +2,7 @@
 title: "Applications"
 date: 2024-02-20
 lastmod: 2026-11-09
-tags: ["applications", "backup", "sync", "storage", "diff", "compare", "git", "k8s", "kubernetes", "ide", "homeassistant", "home-automation", "selfhosted", "monitoring", "system-info", "netdata", "nextcloud", "cloud", "security", "deleted-files", "recover", "remote", "touchpad", "smartphone", "renovatebot", "updates", "dependencies", "automation", "cli", "webcheck", "osint", "restic", "garage", "s3", "object-storage", "utils", "linux", "cleanup", "deduplication", "jless", "less", "json", "topgrade", "upgrade", "wttr", "weather", "nuclei", "scanner", "vulnerabilities", "headscale", "tailscale", "cloudflared", "cloudflare", "tunnel", "vpn", "wireguard", "networking", "ghostty", "starship", "gogh", "terminal", "shell", "colors", "sablier", "docker"]
+tags: ["applications", "backup", "sync", "storage", "diff", "compare", "git", "k8s", "kubernetes", "ide", "homeassistant", "home-automation", "selfhosted", "monitoring", "system-info", "netdata", "nextcloud", "cloud", "security", "deleted-files", "recover", "remote", "touchpad", "smartphone", "renovatebot", "updates", "dependencies", "automation", "cli", "webcheck", "osint", "restic", "garage", "s3", "object-storage", "utils", "linux", "cleanup", "deduplication", "jless", "less", "json", "topgrade", "upgrade", "wttr", "weather", "nuclei", "scanner", "vulnerabilities", "headscale", "tailscale", "cloudflared", "cloudflare", "tunnel", "vpn", "wireguard", "networking", "ghostty", "starship", "gogh", "terminal", "shell", "colors", "sablier", "docker", "editor", "code", "ai"]
 categories: ["linux", "software", "applications", "tools", "backup"]
 description: "Applications"
 draft: false
@@ -11,6 +11,28 @@ draft: false
 A collection of applications and tools I use/recommend.
 
 {{< toc >}}
+
+## AI Code Editors
+
+AI powered code editors.
+
+### Cursor
+
+{{< img src="https://cursor.com/marketing-static/icon-192x192-light.png" alt="cursor" width="100" height="100" >}}
+
+**Cursor** The AI code editor and coding agent, built on VS Code.
+
+https://cursor.com/
+
+### Void Editor
+
+{{< img src="https://voideditor.com/void/slice_of_void.png" alt="void-editor" width="100" height="100" >}}
+
+**Void Editor** The open source AI code editor.
+
+https://voideditor.com
+
+https://github.com/voideditor/void
 
 ## Backups
 
@@ -338,6 +360,14 @@ https://github.com/Gogh-Co/Gogh
 https://starship.rs
 
 https://github.com/starship/starship
+
+### Warp
+
+{{< img src="https://avatars.githubusercontent.com/u/71840468?s=200&v=4" alt="warp" width="100" height="100" >}}
+
+**Warp** is the terminal reimagined with AI and collaborative tools for better productivity.
+
+https://www.warp.dev/
 
 ## Tunnels and VPN
 
